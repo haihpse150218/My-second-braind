@@ -1,8 +1,9 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
-**Cập nhật lần cuối:** 2026-08-09 20:50
+**Cập nhật lần cuối:** 2026-08-09 21:12
 **Bước đang làm:** — (xong toàn bộ kế hoạch)
-**Tiến độ:** ✅ **50/50 bước**
+**Tiến độ:** ✅ **54/54 bước** (50 kế hoạch + 4 bước đưa lên GitHub)
+**Repo:** https://github.com/haihpse150218/My-second-braind (`main`, `456aa59`)
 
 **Kho hiện tại:** 239 note · 5 vault · 8 project · 1193 cạnh · 27 cạnh liên môn · 69/69 test xanh
 
@@ -67,6 +68,10 @@
 | P10 | 10.2 | Viết `README.md` gốc | ✅ | 2026-08-09 20:44 | |
 | P10 | 10.3 | `git init` + `.gitignore` | ✅ | 2026-08-09 20:47 | + `.gitattributes` (ép LF) |
 | P10 | 10.4 | Tổng kết cuối vào `PROGRESS.md` | ✅ | 2026-08-09 20:50 | |
+| **P11** | 11.1 | Quét khoá/token/PII trước khi công khai | ✅ | 2026-08-09 21:05 | sạch |
+| P11 | 11.2 | Commit toàn kho | ✅ | 2026-08-09 21:08 | `456aa59` · 346 file · 32.758 dòng |
+| P11 | 11.3 | Push lên GitHub | ✅ | 2026-08-09 21:10 | nhánh `main` |
+| P11 | 11.4 | Đặt description + topics | ✅ | 2026-08-09 21:12 | 11 topic |
 
 ---
 
@@ -177,6 +182,26 @@ COPY `Machine learning/secondbrain-app` → `app/` (42 file, bỏ `node_modules`
 - `git init` + `.gitignore` (loại `node_modules/`, `dist/`) + `.gitattributes` ép LF cho `.md`/`.js` — script ghi file bằng LF, không ép thì Windows tạo diff giả toàn bộ kho mỗi lần checkout.
 - **Chưa commit** — repo đã init, 344 file sẵn sàng, chờ quyết định.
 
+### 2026-08-09 21:12 — P11 ✅ Đưa lên GitHub
+
+**Repo:** https://github.com/haihpse150218/My-second-braind — nhánh `main`, commit `456aa59`, 346 file / 32.758 dòng.
+
+> ⚠️ **Repo để PUBLIC.** Kho có ghi chú cá nhân, đề cương luận văn đang làm, và đường dẫn tuyệt đối trên máy (`D:\MSA-FPT\...`). Nếu không muốn công khai thì đổi sang private:
+> `gh repo edit haihpse150218/My-second-braind --visibility private`
+
+Quét trước khi đẩy:
+| Kiểm tra | Kết quả |
+|---|---|
+| Khoá API / token / private key | ✅ sạch |
+| `.claude/`, `.env`, `settings.local.json` lọt vào | ✅ không |
+| `node_modules/`, `dist/` bị loại | ✅ đúng (`.gitignore`) |
+| Mã sinh viên `25MS23323` | ⚠️ có ở 3 file (`hub/nguon-chua-xu-ly.md`, `projects/ivp-enhancement-suite.md`, `vaults/ivp/SECOND_BRAIN_IVP.md`) — chỉ là tên thư mục bài nộp, repo mang tên chính chủ nên giữ nguyên |
+| PDF bài giảng / paper | ✅ **không copy** — chỉ trỏ bằng đường dẫn tuyệt đối, tránh vấn đề bản quyền |
+
+Cấu hình repo: description + 11 topic (`second-brain`, `pkm`, `zettelkasten`, `knowledge-graph`, `machine-learning`, `deep-learning`, `digital-signal-processing`, `obsidian`, `markdown`, `cytoscape`, `vietnamese`).
+
+`.gitattributes` ép LF cho `.md`/`.js` — script ghi file bằng LF, không ép thì mỗi lần checkout trên Windows sẽ tạo diff giả toàn kho.
+
 ---
 
 ## 📊 Kết quả cuối
@@ -233,7 +258,7 @@ COPY `Machine learning/secondbrain-app` → `app/` (42 file, bỏ `node_modules`
 **Kế hoạch dựng kho đã xong 50/50.** Việc tiếp theo là *dùng* và *bồi đắp*, theo thứ tự giá trị giảm dần:
 
 1. **Chạy thử web app** — `cd app && npm start` → http://localhost:5173. Xem tab 🌉 Liên môn, bật *"chỉ cạnh liên môn"*.
-2. **Quyết định có commit git không** — repo đã init, 344 file chờ (`git add -A && git commit`).
+2. **Quyết định public hay private** — repo đang PUBLIC. Đổi: `gh repo edit haihpse150218/My-second-braind --visibility private`
 3. **Viết 3 note gỡ được nhiều link gãy nhất:** `chain-rule` (5 note đang chờ) → `dao-ham-rieng` (3) → `naive-bayes` (3). Gỡ 11/35 link gãy. Xem [[hub/nguon-chua-xu-ly]] mục 4.
 4. **Chưng cất `_inbox/`** — bắt đầu từ `vaults/ivp/_inbox/ivp-tom-tat-lectures.md` (bảng thuật ngữ L0–L12, mỗi dòng ≈ 1 note, tách nhanh nhất). Quy trình 8 bước ở [[hub/nguon-chua-xu-ly]] mục 5. Ước tính ~57 note sẽ sinh ra.
 5. **Soát lại 47 note 🟡 của `ml`** — vault duy nhất còn 0% ✅. Cách kiểm tra: đọc mục `💡 Ý chính` rồi gấp lại giải thích bằng lời mình.
@@ -245,4 +270,7 @@ npm start                                       # web app
 npm run check                                   # sức khoẻ toàn kho
 npm run build                                   # đóng gói dist/
 node scripts/migrate-frontmatter.mjs ml --reorder --dry-run   # sau khi sửa lộ trình trong hub
+
+cd ..                                           # đồng bộ GitHub
+git add -A && git commit -m "..." && git push
 ```
