@@ -1,0 +1,77 @@
+{
+  "ml": {
+    "label": "Machine Learning",
+    "dir": "../vaults/ml",
+    "type": "concept",
+    "color": "#3b82f6",
+    "branches": {
+      "A": "Giải tích → Tối ưu hóa",
+      "B": "Đại số tuyến tính → Giảm chiều (PCA)",
+      "C": "Xác suất → Thống kê",
+      "D": "Xử lý dữ liệu (lớp thực hành, 90% công việc)",
+      "E": "Thuật toán & Mô hình",
+      "F": "Nhập môn ML / DL / GenAI"
+    }
+  },
+  "dl": {
+    "label": "Deep Learning",
+    "dir": "../vaults/dl",
+    "type": "concept",
+    "color": "#8b5cf6",
+    "branches": {
+      "A": "Nền tảng NN & Backprop",
+      "B": "CNN & kiến trúc thị giác",
+      "C": "Detection & Segmentation",
+      "D": "Metric learning & Face",
+      "E": "Chuỗi · RNN · LSTM",
+      "F": "NLP & Word Embedding",
+      "G": "Thực chiến & pipeline (xuyên suốt)",
+      "H": "Attention & Transformer (S07)",
+      "I": "QA · RAG · Prompt Engineering (S08)"
+    }
+  },
+  "nckh": {
+    "label": "Nghiên cứu khoa học",
+    "dir": "../vaults/nckh",
+    "type": "literature",
+    "color": "#f59e0b",
+    "branches": {
+      "A": "Coding Agent Harness & Architecture",
+      "B": "Multi-Agent Coding",
+      "C": "Coding Agent Evaluation & Benchmarks",
+      "D": "Agent Safety, Security & Robustness",
+      "E": "Agent Memory & Context Management",
+      "F": "Tool-Use & Function Calling",
+      "G": "Agent Planning & Reasoning",
+      "H": "Multi-Agent Frameworks & Orchestration",
+      "I": "Bổ sung",
+      "S": "Surveys tham khảo"
+    }
+  },
+  "dsp": {
+    "label": "Digital Signal Processing",
+    "dir": "../vaults/dsp",
+    "type": "concept",
+    "color": "#10b981",
+    "branches": {
+      "A": "Tín hiệu & hệ thống rời rạc",
+      "B": "Biến đổi (Fourier · DFT/FFT · Z)",
+      "C": "Lọc số (FIR · IIR)",
+      "D": "Đặc trưng âm thanh & ứng dụng"
+    }
+  },
+  "ivp": {
+    "label": "Image & Video Processing",
+    "dir": "../vaults/ivp",
+    "type": "concept",
+    "color": "#ec4899",
+    "branches": {
+      "A": "Điểm ảnh & biểu diễn ảnh",
+      "B": "Xử lý miền không gian",
+      "C": "Xử lý miền tần số",
+      "D": "Phân đoạn & hình thái học",
+      "E": "Nén ảnh",
+      "F": "Video & chuyển động"
+    }
+  }
+}

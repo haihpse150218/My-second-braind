@@ -1,0 +1,23 @@
+# phụ thuộc
+node_modules/
+
+# bản build (sinh lại được bằng: cd app && npm run build)
+dist/
+
+# log & file tạm
+*.log
+*.tmp
+*.md.tmp
+
+# hệ điều hành / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# khoá & cấu hình local
+.env
+.env.*
+!.env.example
+app/.claude/

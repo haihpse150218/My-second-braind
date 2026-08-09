@@ -1,0 +1,15 @@
+# Note được các script trong app/scripts ghi ra bằng LF. Ép LF trong repo để
+# Windows không tạo diff giả toàn file mỗi lần checkout.
+*.md    text eol=lf
+*.js    text eol=lf
+*.mjs   text eol=lf
+*.json  text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+
+# nhị phân — đừng đụng vào
+*.png   binary
+*.jpg   binary
+*.pdf   binary
+*.woff2 binary
+*.excalidraw binary

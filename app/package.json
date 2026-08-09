@@ -1,0 +1,20 @@
+{
+  "name": "secondbrain-app",
+  "version": "0.1.0",
+  "description": "Second Brain tổng hợp MSA-FPT — web app xem note, đồ thị liên môn, dashboard tiến độ",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "build": "node scripts/build-index.mjs",
+    "check": "node scripts/check-all.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.105.0"
+  },
+  "devDependencies": {
+    "cytoscape": "^3.30.0",
+    "katex": "^0.16.11",
+    "marked": "^14.0.0"
+  }
+}
