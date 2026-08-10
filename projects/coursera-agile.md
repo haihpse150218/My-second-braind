@@ -7,6 +7,7 @@ status: done
 period: 2026-02 → 2026-04
 stack: [agile, design-thinking, scrum]
 repo_path: "D:\\MSA-FPT\\Coursera"
+repo_url: null
 artifacts: [cert, Agile Meets Design Thinking/assignment-submission.md]
 tags: [coursera, agile, design-thinking, chung-chi]
 related: [pm-nhom4-tai-cau-truc]
@@ -19,6 +20,7 @@ created: 2026-08-09
 
 **Loại:** Khoá học online · **Ngôn ngữ:** tiếng Anh · **Thời gian:** 2026-02 → 2026-04
 **Thư mục gốc:** `D:\MSA-FPT\Coursera`
+**Repo GitHub:** — chưa có. 2 khoá Coursera — chứng chỉ + ghi chú, không có mã nguồn.
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 
 ---

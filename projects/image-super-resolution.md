@@ -7,6 +7,8 @@ status: done
 period: 2026-05 → 2026-07
 stack: [pytorch, srcnn, swinir, esrgan, real-esrgan, lpips, basicsr]
 repo_path: "D:\\MSA-FPT\\Image Super-Resolution for Low-Quality Images"
+repo_url: "https://github.com/haihpse150218/Super-Resolution"
+repo_visibility: public
 artifacts: [report/report.md, report/report.vi.md, results/benchmark_final.md, registry.json]
 tags: [ivp, super-resolution, benchmark, danh-gia]
 related: [ivp/nen-mat-mat-vs-khong, dl/kien-truc-cnn-4-tang, ml/danh-gia-mo-hinh]
@@ -19,6 +21,7 @@ created: 2026-08-09
 
 **Môn:** Image & Video Processing (FPT — Master AI), đề tài #2 · **Thời gian:** 2026-05 → 2026-07
 **Thư mục gốc:** `D:\MSA-FPT\Image Super-Resolution for Low-Quality Images`
+**Repo GitHub:** [Super-Resolution](https://github.com/haihpse150218/Super-Resolution) — public
 **Bản trong môn IVP:** `D:\MSA-FPT\Image and video processing\image-super-resolution`
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 

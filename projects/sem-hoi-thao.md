@@ -7,6 +7,7 @@ status: done
 period: 2026-04 → 2026-06
 stack: [markdown, python-pdf]
 repo_path: "D:\\MSA-FPT\\Report-Hội-Thảo"
+repo_url: null
 artifacts: [output/SEM501_BaiThuHoach02_BuildWithAI2026.md, output/SEM501_BaiThuHoach03_QuantumComputing.md]
 tags: [seminar, bao-cao, pipeline]
 related: []
@@ -19,6 +20,7 @@ created: 2026-08-09
 
 **Môn:** SEM501 · **Loại:** Bài thu hoạch · **Thời gian:** 2026-04 → 2026-06
 **Thư mục gốc:** `D:\MSA-FPT\Report-Hội-Thảo`
+**Repo GitHub:** — chưa có. Bài thu hoạch dạng tài liệu, không có mã nguồn.
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 
 ---

@@ -4,23 +4,33 @@
 > Code · dataset · checkpoint · `.venv` vẫn nằm nguyên ở `repo_path` của từng thẻ.
 > Xem `CONVENTIONS.md` §1.
 
-**Cập nhật:** 2026-08-09 · **Số project:** 8
+**Cập nhật:** 2026-08-10 · **Số project:** 8 · **5/8 có repo GitHub**
 **Quay lại:** [[../hub/MASTER|🏠 MASTER]]
 
 ---
 
 ## Bảng tổng
 
-| Project | Môn | Thời gian | Trạng thái | Kết quả nổi bật |
-|---|---|---|---|---|
-| [[viic-image-captioning]] | Deep Learning | 2026-06 → 08 | ✅ xong | CIDEr **119.95** · BLEU-4 42.91 (M3 × CLIP) |
-| [[image-super-resolution]] | IVP | 2026-05 → 07 | ✅ xong | 8 phương pháp × 4 benchmark × 3 chỉ số |
-| [[dsp-urbansound]] | DSP | 2026-03 → 05 | ✅ xong | ML cổ điển > CNN-2D khi dữ liệu ít |
-| [[harness-eval-nckh]] | NCKH | 2026-04 → nay | 🟡 đang làm | 49 paper đã tóm tắt, đề cương v2 xong |
-| [[pm-nhom4-tai-cau-truc]] | Project Manager | 2026-06 → 07 | ✅ xong | Báo cáo 16 chương, 5 Whys từng nguyên nhân |
-| [[sem-hoi-thao]] | SEM501 | 2026-04 → 06 | ✅ xong | 3 bài thu hoạch, pipeline `record/`→`output/` |
-| [[coursera-agile]] | — | 2026-02 → 04 | ✅ xong | 2 chứng chỉ UVA Darden |
-| [[ivp-enhancement-suite]] | IVP | 2026-03 → 05 | ⏸️ dừng | 9 notebook; thư viện dừng, chuyển sang SR |
+| Project | Môn | Thời gian | Trạng thái | Repo GitHub | Kết quả nổi bật |
+|---|---|---|---|---|---|
+| [[viic-image-captioning]] | Deep Learning | 2026-06 → 08 | ✅ xong | [DoAn-ViIC](https://github.com/haihpse150218/DoAn-ViIC) 🔒 | CIDEr **119.95** · BLEU-4 42.91 (M3 × CLIP) |
+| [[image-super-resolution]] | IVP | 2026-05 → 07 | ✅ xong | [Super-Resolution](https://github.com/haihpse150218/Super-Resolution) | 8 phương pháp × 4 benchmark × 3 chỉ số |
+| [[dsp-urbansound]] | DSP | 2026-03 → 05 | ✅ xong | [DSP501](https://github.com/haihpse150218/DSP501) | ML cổ điển > CNN-2D khi dữ liệu ít |
+| [[harness-eval-nckh]] | NCKH | 2026-04 → nay | 🟡 đang làm | [Methods-of-Learning…](https://github.com/haihpse150218/Methods-of-Learning-and-Scientific-Research) | 49 paper đã tóm tắt, đề cương v2 xong |
+| [[pm-nhom4-tai-cau-truc]] | Project Manager | 2026-06 → 07 | ✅ xong | — | Báo cáo 16 chương, 5 Whys từng nguyên nhân |
+| [[sem-hoi-thao]] | SEM501 | 2026-04 → 06 | ✅ xong | — | 3 bài thu hoạch, pipeline `record/`→`output/` |
+| [[coursera-agile]] | — | 2026-02 → 04 | ✅ xong | — | 2 chứng chỉ UVA Darden |
+| [[ivp-enhancement-suite]] | IVP | 2026-03 → 05 | ⏸️ dừng | [img_video_processing](https://github.com/haihpse150218/img_video_processing) | 9 notebook; thư viện dừng, chuyển sang SR |
+
+> 🔒 `DoAn-ViIC` để **private** — link chỉ mở được khi đăng nhập đúng tài khoản.
+> Ba thẻ không có repo là bài nộp dạng tài liệu (báo cáo, chứng chỉ), không có mã nguồn để đẩy lên.
+
+### 📚 Repo nguồn của chính kho này
+
+| Repo | Vai trò |
+|---|---|
+| [My-second-braind](https://github.com/haihpse150218/My-second-braind) | **Kho này** · web live: https://haihpse150218.github.io/My-second-braind/ |
+| [machine-learning](https://github.com/haihpse150218/machine-learning) | **Nguồn gốc** — chứa `note/` (đã thành [[../vaults/ml/SECOND_BRAIN_ML\|vault ml]]) và `secondbrain-app/` (đã thành `app/`) |
 
 ---
 

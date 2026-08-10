@@ -71,6 +71,20 @@ Second-brain/
 2. **Vault phẳng 1 cấp.** Note nằm trong thư mục con thì app không thấy. `_inbox/` và `_archive/` cố ý nằm ngoài tầm đọc.
 3. **YAML frontmatter thắng, dòng đậm là dự phòng.** Giữ cả hai để 180 note viết trước khi có schema vẫn chạy nguyên.
 
+## 🌐 Repo liên quan
+
+| Repo | Vai trò |
+|---|---|
+| [My-second-braind](https://github.com/haihpse150218/My-second-braind) | **Kho này** · bản web: https://haihpse150218.github.io/My-second-braind/ |
+| [machine-learning](https://github.com/haihpse150218/machine-learning) | **Nguồn gốc kho** — `note/` → [[../vaults/ml/SECOND_BRAIN_ML\|vault ml]], `secondbrain-app/` → `app/` |
+| [DSP501](https://github.com/haihpse150218/DSP501) | → [[../projects/dsp-urbansound]] |
+| [Super-Resolution](https://github.com/haihpse150218/Super-Resolution) | → [[../projects/image-super-resolution]] |
+| [img_video_processing](https://github.com/haihpse150218/img_video_processing) | → [[../projects/ivp-enhancement-suite]] |
+| [Methods-of-Learning-and-Scientific-Research](https://github.com/haihpse150218/Methods-of-Learning-and-Scientific-Research) | → [[../projects/harness-eval-nckh]] |
+| [DoAn-ViIC](https://github.com/haihpse150218/DoAn-ViIC) 🔒 | → [[../projects/viic-image-captioning]] — **private** |
+
+Bảng đầy đủ kèm ghi chú: [[../projects/INDEX]].
+
 ## 🔗 Quy ước liên kết
 
 | Kiểu | Cú pháp |

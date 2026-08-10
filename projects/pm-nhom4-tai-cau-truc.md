@@ -7,6 +7,7 @@ status: done
 period: 2026-06 → 2026-07
 stack: [5-whys, root-cause-analysis, marp]
 repo_path: "D:\\MSA-FPT\\Project Manager\\final"
+repo_url: null
 artifacts: [Nhom4-Bao-cao-tai-cau-truc-du-an.md, Nhom4-Slides.md, Nhom4-Top15-Van-de-Giai-phap.csv]
 tags: [project-manager, case-study, root-cause, bai-tap-nhom]
 related: []
@@ -19,6 +20,7 @@ created: 2026-08-09
 
 **Môn:** Quản lý dự án phần mềm nâng cao · **Loại:** Bài tập nhóm cuối kỳ · **Thời gian:** 2026-06 → 2026-07
 **Thư mục gốc:** `D:\MSA-FPT\Project Manager\final`
+**Repo GitHub:** — chưa có. Bài nộp dạng tài liệu (case study), không có mã nguồn.
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 
 ---

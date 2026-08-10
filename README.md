@@ -6,6 +6,14 @@ Kho kiến thức gộp của toàn bộ chương trình học, kèm web app đ�
 
 **🌐 Xem online (bản chỉ đọc): https://haihpse150218.github.io/My-second-braind/**
 
+**Repo liên quan** — kho này là *thẻ tham chiếu*, code thật nằm ở các repo riêng:
+[machine-learning](https://github.com/haihpse150218/machine-learning) (nguồn gốc kho + app) ·
+[DSP501](https://github.com/haihpse150218/DSP501) ·
+[Super-Resolution](https://github.com/haihpse150218/Super-Resolution) ·
+[img_video_processing](https://github.com/haihpse150218/img_video_processing) ·
+[Methods-of-Learning-and-Scientific-Research](https://github.com/haihpse150218/Methods-of-Learning-and-Scientific-Research) ·
+[DoAn-ViIC](https://github.com/haihpse150218/DoAn-ViIC) 🔒
+
 ---
 
 ## Chạy

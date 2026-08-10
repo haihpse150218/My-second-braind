@@ -7,6 +7,8 @@ status: done
 period: 2026-06 → 2026-08
 stack: [pytorch, clip, resnet50, lstm, gru, bahdanau-attention, transformer, gradio]
 repo_path: "D:\\MSA-FPT\\DeepLearning\\DoAn-ViIC"
+repo_url: "https://github.com/haihpse150218/DoAn-ViIC"
+repo_visibility: private
 artifacts: [docs/BAO-CAO.md, paper/fisat2026-vi.md, app/gradio_demo.py]
 tags: [dl, image-captioning, attention, do-an]
 related: [dl/attention-qkv, dl/lstm-cell-state, dl/kien-truc-cnn-4-tang, dl/word2vec]
@@ -19,6 +21,7 @@ created: 2026-08-09
 
 **Môn:** Deep Learning (FSB/FPT) · **Loại:** Đồ án cuối kỳ · **Thời gian:** 2026-06 → 2026-08
 **Thư mục gốc:** `D:\MSA-FPT\DeepLearning\DoAn-ViIC`
+**Repo GitHub:** [DoAn-ViIC](https://github.com/haihpse150218/DoAn-ViIC) — 🔒 **private**
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 
 > ⚠️ Thẻ tham chiếu — code/checkpoint/dataset vẫn nằm ở `repo_path`.

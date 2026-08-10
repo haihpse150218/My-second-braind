@@ -7,6 +7,8 @@ status: paused
 period: 2026-03 → 2026-05
 stack: [python, opencv, numpy, jupyter]
 repo_path: "D:\\MSA-FPT\\Image and video processing"
+repo_url: "https://github.com/haihpse150218/img_video_processing"
+repo_visibility: public
 artifacts: [HPH_25MS23323, image-enhancement-suite]
 tags: [ivp, thuc-hanh, thu-vien]
 related: [image-super-resolution]
@@ -19,6 +21,7 @@ created: 2026-08-09
 
 **Môn:** Image & Video Processing · **Thời gian:** 2026-03 → 2026-05
 **Thư mục gốc:** `D:\MSA-FPT\Image and video processing`
+**Repo GitHub:** [img_video_processing](https://github.com/haihpse150218/img_video_processing) — public
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 
 ---

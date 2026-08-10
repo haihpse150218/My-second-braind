@@ -7,6 +7,8 @@ status: done
 period: 2026-03 → 2026-05
 stack: [python, librosa, scipy-signal, scikit-learn, pytorch, torchaudio]
 repo_path: "D:\\MSA-FPT\\Digital Signal Processing\\workspaces\\final\\DSP501"
+repo_url: "https://github.com/haihpse150218/DSP501"
+repo_visibility: public
 artifacts: [report.md, presentation.md, docs/SIGNAL_ANALYSIS.md, notebooks]
 tags: [dsp, audio, classification, do-an-nhom]
 related: [ml/danh-gia-mo-hinh, ml/cross-validation, dl/cnn]
@@ -19,6 +21,7 @@ created: 2026-08-09
 
 **Môn:** Digital Signal Processing · **Loại:** Đồ án nhóm cuối kỳ · **Thời gian:** 2026-03 → 2026-05
 **Thư mục gốc:** `D:\MSA-FPT\Digital Signal Processing\workspaces\final\DSP501`
+**Repo GitHub:** [DSP501](https://github.com/haihpse150218/DSP501) — public
 **Bản làm việc (superset):** `…\workspaces\project\DSP501`
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 

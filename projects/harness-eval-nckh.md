@@ -7,6 +7,8 @@ status: doing
 period: 2026-04 → nay
 stack: [python, docker, ollama, swe-agent, swe-bench, anova]
 repo_path: "D:\\MSA-FPT\\Methods of Learnning and scientific research\\NCKK-Docs\\de-tai\\harness-eval"
+repo_url: "https://github.com/haihpse150218/Methods-of-Learning-and-Scientific-Research"
+repo_visibility: public
 artifacts: [HUONG-DAN-CHAY.md, docs/metrics-anova-explained.md, DE-CUONG-HarnessEval-v2.md]
 tags: [nckh, luan-van, coding-agent, benchmark]
 related: [nckh/a1-2026-bui-opendev, nckh/a2-2026-lou-autoharness, nckh/gap-analysis]
@@ -19,6 +21,7 @@ created: 2026-08-09
 
 **Môn:** Phương pháp NCKH · **Loại:** Đề tài luận văn (đang làm) · **Thời gian:** 2026-04 → nay
 **Thư mục gốc:** `D:\MSA-FPT\Methods of Learnning and scientific research\NCKK-Docs\de-tai\harness-eval`
+**Repo GitHub:** [Methods-of-Learning-and-Scientific-Research](https://github.com/haihpse150218/Methods-of-Learning-and-Scientific-Research) — public
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 
 ---
