@@ -3,25 +3,27 @@
 > Danh sách mọi thứ đã **đưa vào kho** nhưng **chưa thành atomic note**.
 > Đây là hàng đợi công việc: mỗi mục xong thì đánh dấu và xoá khỏi đây.
 
-**Cập nhật:** 2026-08-09
+**Cập nhật:** 2026-08-10
 **Quay lại:** [[MASTER|🏠 MASTER]]
 
 ---
 
-## 1. Đang nằm trong `_inbox/` (đã copy vào kho, chờ tách)
+## 1. `_inbox/` — ✅ **ĐÃ CHƯNG CẤT XONG CẢ HAI VAULT (2026-08-10)**
 
-App **không đọc** `_inbox/` — note ở đó không lên graph, không tính vào tiến độ.
+App **không đọc** `_inbox/`. 10 file thô ban đầu ước tính sinh ~57 note; thực tế nguồn giàu hơn nhiều → **86 note**.
 
-### `vaults/dsp/_inbox/` — 6 file
+### `vaults/dsp/_inbox/` — 6 file · ✅ **XONG** → 21 note, 5 nhánh A–E
 
-| File | Tách ra | Ước tính | Ưu tiên |
-|---|---|---|---|
-| `dsp501-phan-tich-tin-hieu.md` | miền thời gian vs tần số · FFT · STFT · ZCR · RMS | ~6 note | 🔴 |
-| `dsp501-dataset.md` | fold · vì sao không tự shuffle · rò rỉ dữ liệu | ~4 note | 🔴 |
-| `dsp501-mo-hinh.md` | MFCC · mel-spectrogram · CNN trên phổ | ~5 note | 🟡 |
-| `dsp501-tong-quan.md` | bài toán · pipeline · thuật ngữ nền | ~3 note | 🟡 |
-| `dsp501-phan-tich.md` | confusion matrix · so sánh phương pháp | ~2 note | 🟢 |
-| `dsp501-bao-cao.md` | kho công thức LaTeX — tra cứu khi viết note | 0 (tra cứu) | 🟢 |
+| File | Kết quả |
+|---|---|
+| `dsp501-phan-tich-tin-hieu.md` | ✅ nguồn chính cho nhánh B (tần số) + D (đặc trưng) |
+| `dsp501-bao-cao.md` | ✅ công thức LaTeX cho nhánh A, C, D, E |
+| `dsp501-dataset.md` | ✅ toàn bộ [[../vaults/dsp/fold-va-ro-ri-du-lieu]] |
+| `dsp501-mo-hinh.md` | ✅ phần model → [[../vaults/dsp/phan-loai-am-thanh]] |
+| `dsp501-tong-quan.md` | ✅ đối chiếu, chống sót |
+| `dsp501-phan-tich.md` | ✅ confusion matrix → bảng cặp lớp dễ nhầm |
+
+> ➕ **Thêm nhánh E · Thực nghiệm & đánh giá.** Lộ trình cũ chỉ có A–D (kỹ thuật thuần), bỏ sót phần phương pháp trong báo cáo: fold/rò rỉ dữ liệu, kiểm định `p` + Cohen's `d`, SNR. Ba note này là **bài học dùng được ngoài môn DSP**.
 
 ### `vaults/ivp/_inbox/` — 4 file · ✅ **XONG 2026-08-10**
 
@@ -37,7 +39,7 @@ Cả 4 file đã chưng cất hết → **65 atomic note**, 10 nhánh A–J bám
 
 > ⚠️ **Đã sửa lộ trình IVP.** Bản dự kiến cũ có nhánh *Nén ảnh* và *Video & chuyển động* — **không có trong tài liệu nguồn** (nén chỉ được nhắc 1 dòng ở L2; video thuộc Session 9 chưa học). Đã thay bằng 10 nhánh bám lecture thật; hai chủ đề cũ chuyển xuống mục 2 dưới đây.
 
-**Còn lại: `vaults/dsp/_inbox/` — 6 file (~20 note).**
+
 
 ---
 
@@ -47,7 +49,7 @@ Vẫn nằm nguyên ở thư mục gốc, chưa copy vào `Second-brain`.
 
 | Nguồn | Nội dung | Xử lý thế nào |
 |---|---|---|
-| `D:\MSA-FPT\Digital Signal Processing\Slide` | 8 bài giảng PDF | Dùng `/api/import-slide` (Claude đọc PDF → sinh note) hoặc đọc tay |
+| `D:\MSA-FPT\Digital Signal Processing\Slide` | 8 bài giảng PDF | 🔴 **Còn thiếu: `bien-doi-z` và `chuoi-fourier`** — không có trong 6 file inbox, phải đọc thẳng từ PDF |
 | `D:\MSA-FPT\Image and video processing\_txt` | Lecture 0–12 dạng `.txt` (grep được) | 🔴 **Còn thiếu: nén ảnh (DCT/JPEG/PSNR-SSIM) và video/optical flow** — hai chủ đề này không có trong 4 file inbox, phải đọc thẳng từ đây |
 | `D:\MSA-FPT\Image and video processing\HPH_25MS23323` | 9 notebook `session1..9.ipynb` | Trích ví dụ code bổ sung vào mục `⚙️ Khi nào dùng` của 65 note IVP đã có |
 | `D:\MSA-FPT\Coursera` | 2 khoá Agile (tiếng Anh) | → đã có thẻ [[../projects/coursera-agile]] |

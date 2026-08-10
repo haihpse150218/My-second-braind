@@ -1,12 +1,12 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
-**Cập nhật lần cuối:** 2026-08-10 10:05
-**Bước đang làm:** 🟡 P13.2 — chưng cất `_inbox/` vault `dsp` (ivp đã xong)
-**Tiến độ:** ✅ **58/59 bước** (50 kế hoạch + 4 GitHub + 3 Pages + 1/2 chưng cất)
+**Cập nhật lần cuối:** 2026-08-10 11:20
+**Bước đang làm:** — (chưng cất `_inbox/` xong cả 2 vault)
+**Tiến độ:** ✅ **59/59 bước** (50 kế hoạch + 4 GitHub + 3 Pages + 2 chưng cất)
 **Repo:** https://github.com/haihpse150218/My-second-braind (`main`)
 **🌐 Web live:** https://haihpse150218.github.io/My-second-braind/
 
-**Kho hiện tại:** 304 note · 5 vault · 8 project · 1601 cạnh · 53 cạnh liên môn · 69/69 test xanh
+**Kho hiện tại:** 325 note · 5 vault · 8 project · 1721 cạnh · 93 cạnh liên môn · 69/69 test xanh
 
 > File này là **checkpoint**. Sau khi xong MỖI bước phải cập nhật ngay tại đây trước khi sang bước kế.
 > Quy ước: `⬜ chưa làm` · `🟡 đang làm` · `✅ xong` · `⏸️ tạm dừng` · `❌ bỏ`
@@ -77,7 +77,7 @@
 | P12 | 12.2 | Bật Pages (`build_type=workflow`) | ✅ | 2026-08-10 08:28 | |
 | P12 | 12.3 | Verify site live (HTTP 200 + JSON hợp lệ) | ✅ | 2026-08-10 08:32 | 239 note · 1193 cạnh |
 | **P13** | 13.1 | Chưng cất `_inbox/` vault **ivp** → 65 note | ✅ | 2026-08-10 10:05 | 10 nhánh A–J · 0 link chết |
-| P13 | 13.2 | Chưng cất `_inbox/` vault **dsp** | ⬜ | | 6 file · ước ~20 note |
+| P13 | 13.2 | Chưng cất `_inbox/` vault **dsp** → 21 note | ✅ | 2026-08-10 11:20 | 5 nhánh A–E · 0 link chết |
 
 ---
 
@@ -263,6 +263,28 @@ Viết note cho hai nhánh kia lúc này là **bịa nội dung không có trong
 - `ivp/wiener-filter` ↔ [[../vaults/ml/danh-gia-mo-hinh]] — "tối ưu MSE" không đồng nghĩa "trông đẹp nhất"; đúng bài học chọn sai chỉ số là tối ưu sai thứ.
 
 Toàn bộ note để `status: learning` (🟡) — chúng được chưng cất từ tóm tắt của chính mình, nhưng chưa qua bước tự kiểm tra "gấp note lại và giải thích bằng lời". Đánh ✅ lúc này là để số liệu tiến độ nói dối.
+
+### 2026-08-10 11:20 — P13.2 ✅ Chưng cất inbox DSP → 21 note
+
+Vault `dsp` từ **0 → 21 note**, 5 nhánh A–E. `check-links`: **0 link chết · 0 thiếu branch/order · 5/5 nhánh liền mạch**.
+
+**Mở rộng lộ trình từ 4 lên 5 nhánh.** Kế hoạch cũ chỉ có A–D (kỹ thuật thuần). Nhưng nguồn — báo cáo cuối kỳ DSP501 — có cả phần **thực nghiệm và đánh giá** rất đáng giá mà lộ trình cũ bỏ sót: fold/rò rỉ dữ liệu, kiểm định thống kê, SNR. Đã thêm **nhánh E · Thực nghiệm & đánh giá**.
+
+**Ba note đắt nhất của nhánh E** — chúng là bài học phương pháp, dùng được ngoài môn DSP:
+
+| Note | Bài học |
+|---|---|
+| [[../vaults/dsp/fold-va-ro-ri-du-lieu]] | 8.732 clip cắt từ chỉ **1.297 bản ghi gốc** → shuffle là rò rỉ. Chia ngẫu nhiên **chỉ đúng khi mẫu thực sự độc lập** |
+| [[../vaults/dsp/so-sanh-thong-ke]] | `p` và Cohen's `d` trả lời **hai câu hỏi khác nhau**; "không bác bỏ được H₀" **không phải** "chứng minh H₀ đúng" |
+| [[../vaults/dsp/snr]] | SNR **+4,5 dB** mà accuracy **không đổi** — chỉ số trung gian tốt lên không đảm bảo chỉ số cuối tốt lên |
+
+**Cạnh liên môn 53 → 93** — bước nhảy lớn nhất từ trước tới nay, vì DSP nằm đúng giữa `ivp` và `ml`/`dl`:
+- `dsp/tich-chap` ↔ [[../vaults/ivp/tich-chap-2d]] ↔ [[../vaults/dl/phep-tich-chap]] — **cầu 3 môn** đã cắm sẵn từ P5 nay nối được thật. Khác biệt duy nhất giữa ba nơi: **ai quyết định kernel**.
+- `dsp/spectrogram-stft` ↔ [[../vaults/ivp/anh-so-la-gi]] — STFT biến âm thanh 1D thành ảnh 2D, từ đó mọi công cụ thị giác dùng được.
+- `dsp/fold-va-ro-ri-du-lieu` ↔ [[../vaults/dl/group-leakage]] — cùng một cái bẫy, hai môn phát hiện độc lập.
+- `dsp/mfcc` ↔ [[../vaults/ml/pca]] — DCT trong MFCC đóng đúng vai trò khử tương quan của PCA, chỉ khác là cơ sở cố định thay vì học từ dữ liệu.
+
+**Chưa lấy được từ inbox** (phải đọc 8 PDF bài giảng gốc): `bien-doi-z` và `chuoi-fourier`. Đã ghi vào hub DSP thay vì tạo stub rỗng.
 
 ---
 

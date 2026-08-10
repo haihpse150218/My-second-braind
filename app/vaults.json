@@ -55,9 +55,10 @@
     "color": "#10b981",
     "branches": {
       "A": "Tín hiệu & hệ thống rời rạc",
-      "B": "Biến đổi (Fourier · DFT/FFT · Z)",
+      "B": "Phân tích tần số (Fourier · DFT/FFT · STFT)",
       "C": "Lọc số (FIR · IIR)",
-      "D": "Đặc trưng âm thanh & ứng dụng"
+      "D": "Đặc trưng âm thanh",
+      "E": "Thực nghiệm & đánh giá (DSP501)"
     }
   },
   "ivp": {
