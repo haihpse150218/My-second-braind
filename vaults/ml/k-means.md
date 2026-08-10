@@ -4,7 +4,7 @@ title: K-means (Phân cụm)
 vault: ml
 type: concept
 branch: E
-order: 11
+order: 10
 status: learning
 tags: [ml, thuat-toan, unsupervised, clustering]
 prev: [ky-vong-trung-binh]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh E (Thuật toán) · #11 — *không giám sát* ← cần [[ky-vong-trung-binh]]
+**📖 Lộ trình:** Nhánh E (Thuật toán) · #10 — *không giám sát* ← cần [[ky-vong-trung-binh]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #thuat-toan #unsupervised #clustering
 

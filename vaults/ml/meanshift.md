@@ -4,7 +4,7 @@ title: MeanShift (Phân cụm theo mật độ)
 vault: ml
 type: concept
 branch: E
-order: 12
+order: 11
 status: learning
 tags: [ml, thuat-toan, unsupervised, clustering]
 prev: [k-means]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh E (Thuật toán) · #12 · *không giám sát* ← liên quan [[k-means]]
+**📖 Lộ trình:** Nhánh E (Thuật toán) · #11 · *không giám sát* ← liên quan [[k-means]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #thuat-toan #unsupervised #clustering
 

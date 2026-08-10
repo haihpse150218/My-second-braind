@@ -4,7 +4,7 @@ title: Trung bình & Kỳ vọng (Mean & Expectation)
 vault: ml
 type: concept
 branch: C
-order: 12
+order: 13
 status: learning
 tags: [toan, thong-ke, xac-suat, nen-tang]
 created: 2026-06-14
@@ -16,7 +16,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #12 · nền tảng gốc (không cần tiền đề)
+**📖 Lộ trình:** Nhánh C (Thống kê) · #13 · nền tảng gốc (không cần tiền đề)
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #thong-ke #xac-suat #nen-tang
 

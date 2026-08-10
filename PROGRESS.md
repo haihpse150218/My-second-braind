@@ -1,12 +1,12 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
-**Cập nhật lần cuối:** 2026-08-10 11:20
-**Bước đang làm:** — (chưng cất `_inbox/` xong cả 2 vault)
-**Tiến độ:** ✅ **59/59 bước** (50 kế hoạch + 4 GitHub + 3 Pages + 2 chưng cất)
+**Cập nhật lần cuối:** 2026-08-10 13:40
+**Bước đang làm:** — (backlog link gãy đã cạn)
+**Tiến độ:** ✅ **61/61 bước** (50 kế hoạch + 4 GitHub + 3 Pages + 2 chưng cất + 2 bồi đắp)
 **Repo:** https://github.com/haihpse150218/My-second-braind (`main`)
 **🌐 Web live:** https://haihpse150218.github.io/My-second-braind/
 
-**Kho hiện tại:** 325 note · 5 vault · 8 project · 1721 cạnh · 93 cạnh liên môn · 69/69 test xanh
+**Kho hiện tại:** 346 note · 5 vault · 8 project · 1934 cạnh · 120 cạnh liên môn · **0 link gãy** · 69/69 test xanh
 
 > File này là **checkpoint**. Sau khi xong MỖI bước phải cập nhật ngay tại đây trước khi sang bước kế.
 > Quy ước: `⬜ chưa làm` · `🟡 đang làm` · `✅ xong` · `⏸️ tạm dừng` · `❌ bỏ`
@@ -78,6 +78,8 @@
 | P12 | 12.3 | Verify site live (HTTP 200 + JSON hợp lệ) | ✅ | 2026-08-10 08:32 | 239 note · 1193 cạnh |
 | **P13** | 13.1 | Chưng cất `_inbox/` vault **ivp** → 65 note | ✅ | 2026-08-10 10:05 | 10 nhánh A–J · 0 link chết |
 | P13 | 13.2 | Chưng cất `_inbox/` vault **dsp** → 21 note | ✅ | 2026-08-10 11:20 | 5 nhánh A–E · 0 link chết |
+| **P14** | 14.1 | Link repo GitHub vào 8 thẻ project | ✅ | 2026-08-10 12:30 | 5 có repo (đã verify), 3 ghi rõ "chưa có" |
+| P14 | 14.2 | Viết 21 note `ml` còn thiếu → **link gãy 35 → 0** | ✅ | 2026-08-10 13:40 | nhánh B: 3 → 12 note |
 
 ---
 
@@ -285,6 +287,36 @@ Vault `dsp` từ **0 → 21 note**, 5 nhánh A–E. `check-links`: **0 link ch�
 - `dsp/mfcc` ↔ [[../vaults/ml/pca]] — DCT trong MFCC đóng đúng vai trò khử tương quan của PCA, chỉ khác là cơ sở cố định thay vì học từ dữ liệu.
 
 **Chưa lấy được từ inbox** (phải đọc 8 PDF bài giảng gốc): `bien-doi-z` và `chuoi-fourier`. Đã ghi vào hub DSP thay vì tạo stub rỗng.
+
+### 2026-08-10 13:40 — P14 ✅ Link repo + gỡ sạch link gãy
+
+**14.1 — Link repo GitHub vào thẻ project.** 5/8 thẻ có repo. **Đã verify từng repo bằng cách soi nội dung**, không đoán theo tên: `DSP501` (có `notebooks/` + `report.md`), `Super-Resolution` (có `classic/` + `deeplearning/` — đúng "cổ điển vs học sâu"), `img_video_processing` (`EX1_1.png`… bài thực hành), `Methods-of-Learning-and-Scientific-Research` (chứa `NCKK-Docs/`), `DoAn-ViIC` (🔒 private).
+
+3 thẻ còn lại (`coursera-agile`, `pm-nhom4-tai-cau-truc`, `sem-hoi-thao`) là bài nộp dạng tài liệu — ghi rõ **"chưa có" kèm lý do** thay vì để trống, để lần sau không phải đi tìm lại.
+
+Phát hiện đáng ghi: repo `machine-learning` chính là **nguồn gốc của cả kho này** — nó chứa `note/` (đã thành vault `ml`) và `secondbrain-app/` (đã thành `app/`). Đã thêm mục "Repo nguồn của chính kho này" vào [[../projects/INDEX]] và `MASTER`.
+
+**14.2 — Viết 21 note `ml` còn thiếu.**
+
+> 🎉 **Link gãy toàn kho: 35 → 0.** Lần đầu tiên kho sạch hoàn toàn.
+
+| | Trước | Sau |
+|---|---|---|
+| Note `ml` | 65 | **86** |
+| Note toàn kho | 325 | **346** |
+| Cạnh liên môn | 93 | **120** |
+| Link gãy | 35 | **0** |
+
+**Nhánh B (đại số tuyến tính) từ 3 → 12 note** — đây từng là mảng hổng lớn nhất, chiếm 7/21 link gãy. Giờ đi trọn mạch: `vector` → `ma-tran` → `phep-bien-doi-tuyen-tinh` → hiệp phương sai → trị riêng → `svd` → `giam-chieu-du-lieu` → `pca` → `kernel-pca` → `t-sne` → `he-goi-y-recommender`.
+
+**Cách đánh số lại:** không sửa `order` bằng tay cho 86 note. Thay vào đó **cập nhật lộ trình trong hub** rồi chạy `migrate-frontmatter.mjs ml --reorder` — script suy `branch`+`order` từ hub và ghi ngược cả YAML lẫn dòng `**📖 Lộ trình:**`. **40 note được gán lại**, cả 6 nhánh liền mạch 1..N. Đây đúng là việc script được viết ra để làm ở P3.4.
+
+**Ba note đáng chú ý nhất:**
+- [[../vaults/ml/chain-rule]] — 5 note đang chờ nó. Chốt được rằng **backpropagation không phải thuật toán mới**, nó là chain rule có tổ chức; và vanishing/exploding gradient là hệ quả trực tiếp của phép nhân dài đó.
+- [[../vaults/ml/svd]] — nối được `SVD → PCA → hệ gợi ý → LoRA`. Ghi lại chi tiết thực hành: **thư viện tính PCA bằng SVD chứ không phân rã hiệp phương sai**, vì tạo `XᵀX` làm bình phương số điều kiện.
+- [[../vaults/ml/t-sne]] — dành hẳn một mục cho **ba điều KHÔNG được kết luận** từ hình t-SNE. Đây là công cụ bị đọc sai nhiều nhất trong ML.
+
+4 note vẫn không có `branch` (`dinh-huong-hoc`, `eda-checklist`, `note`, `template-checklist`) — **đúng ý**, chúng là note meta không thuộc nhánh nào.
 
 ---
 

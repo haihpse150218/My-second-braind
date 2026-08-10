@@ -4,7 +4,7 @@ title: Phân phối Gauss & Nhị thức (2 phân phối chủ lực)
 vault: ml
 type: concept
 branch: C
-order: 3
+order: 4
 status: learning
 tags: [toan, xac-suat, data, ab-testing, chuan-hoa]
 created: 2026-06-14
@@ -16,7 +16,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #3 · mở rộng của [[phan-phoi-xac-suat]]
+**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #4 · mở rộng của [[phan-phoi-xac-suat]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #xac-suat #data #ab-testing #chuan-hoa
 

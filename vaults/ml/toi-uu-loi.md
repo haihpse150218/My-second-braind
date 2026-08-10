@@ -4,7 +4,7 @@ title: Tối ưu lồi (Convex Optimization)
 vault: ml
 type: concept
 branch: A
-order: 6
+order: 14
 status: learning
 tags: [toan, toi-uu-hoa, convex]
 prev: [gradient-descent, loss-function]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh A (Tối ưu) · #6 ← liên quan [[gradient-descent]] · [[loss-function]]
+**📖 Lộ trình:** Nhánh A (Tối ưu) · #14 ← liên quan [[gradient-descent]] · [[loss-function]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #toi-uu-hoa #convex
 **Nguồn slide:** `L1_Math_Overview.pdf` slide 50 — TS. Cao Tiến Dũng

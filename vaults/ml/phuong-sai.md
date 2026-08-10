@@ -4,7 +4,7 @@ title: Phương sai & Độ lệch chuẩn (Variance & Std)
 vault: ml
 type: concept
 branch: C
-order: 13
+order: 14
 status: learning
 tags: [toan, thong-ke, spread, nen-tang]
 prev: [ky-vong-trung-binh]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #13 · nền tảng ← cần [[ky-vong-trung-binh]]
+**📖 Lộ trình:** Nhánh C (Thống kê) · #14 · nền tảng ← cần [[ky-vong-trung-binh]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #thong-ke #spread #nen-tang
 

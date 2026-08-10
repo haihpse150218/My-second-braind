@@ -4,7 +4,7 @@ title: Từ vựng Thống kê & Phân loại biến
 vault: ml
 type: concept
 branch: C
-order: 6
+order: 7
 status: learning
 tags: [thong-ke, data, nen-tang]
 sources: [L1_Math_Overview.pdf]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #6 · từ vựng nền tảng
+**📖 Lộ trình:** Nhánh C (Thống kê) · #7 · từ vựng nền tảng
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #thong-ke #data #nen-tang
 **Nguồn slide:** `L1_Math_Overview.pdf` trang 33 — TS. Cao Tiến Dũng

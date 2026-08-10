@@ -4,7 +4,7 @@ title: Xác suất có điều kiện & Định lý Bayes
 vault: ml
 type: concept
 branch: C
-order: 4
+order: 5
 status: learning
 tags: [toan, xac-suat, bayes, phan-loai]
 prev: [xac-suat]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #4 · nhánh phụ Bayes ← cần [[xac-suat]] · → ứng dụng [[naive-bayes]]
+**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #5 · nhánh phụ Bayes ← cần [[xac-suat]] · → ứng dụng [[naive-bayes]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #xac-suat #bayes #phan-loai
 

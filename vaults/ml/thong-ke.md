@@ -4,7 +4,7 @@ title: Thống kê trong ML — Rút hiểu biết từ dữ liệu
 vault: ml
 type: concept
 branch: C
-order: 5
+order: 6
 status: learning
 tags: [toan, thong-ke, data, bat-buoc, eda]
 prev: [xac-suat, phan-phoi-xac-suat]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #5 (nửa Thống kê) ← cần [[xac-suat]] · [[phan-phoi-xac-suat]]
+**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #6 (nửa Thống kê) ← cần [[xac-suat]] · [[phan-phoi-xac-suat]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #thong-ke #data #bat-buoc #eda
 

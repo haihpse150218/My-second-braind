@@ -3,7 +3,7 @@ slug: svm
 title: Máy vector hỗ trợ (SVM — Support Vector Machine)
 vault: ml
 type: concept
-branch: E
+branch: B
 order: 10
 status: learning
 tags: [ml, thuat-toan, supervised, phan-loai]

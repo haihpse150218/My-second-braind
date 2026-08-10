@@ -4,7 +4,7 @@ title: Tương quan (Correlation)
 vault: ml
 type: concept
 branch: C
-order: 14
+order: 15
 status: learning
 tags: [thong-ke, eda, feature]
 prev: [phuong-sai, ma-tran-hiep-phuong-sai]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #14 ← cần [[phuong-sai]] · [[ma-tran-hiep-phuong-sai]]
+**📖 Lộ trình:** Nhánh C (Thống kê) · #15 ← cần [[phuong-sai]] · [[ma-tran-hiep-phuong-sai]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #thong-ke #eda #feature
 

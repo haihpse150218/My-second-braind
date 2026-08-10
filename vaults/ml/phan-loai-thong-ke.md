@@ -4,7 +4,7 @@ title: "Phân loại Thống kê: Mô tả vs Suy diễn"
 vault: ml
 type: concept
 branch: C
-order: 7
+order: 8
 status: learning
 tags: [thong-ke, eda, inference]
 prev: [thong-ke]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #7 ← mở rộng [[thong-ke]]
+**📖 Lộ trình:** Nhánh C (Thống kê) · #8 ← mở rộng [[thong-ke]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #thong-ke #eda #inference
 **Nguồn slide:** `L1_Math_Overview.pdf` trang 30–31 (Thống kê mô tả + Mô tả dữ liệu bằng thống kê) — TS. Cao Tiến Dũng

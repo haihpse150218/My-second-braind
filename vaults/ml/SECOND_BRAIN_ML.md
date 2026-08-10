@@ -18,23 +18,39 @@
 
 **Nhánh A · Giải tích → Tối ưu hóa**
 1. [[giai-tich]] — bức tranh lớn: học = tìm hàm f, vì sao cần đạo hàm
-2. [[dao-ham]] — đạo hàm: đo tốc độ thay đổi (độ dốc), 1 chiều
-3. [[gradient]] — nhiều chiều: đạo hàm riêng từng trục → gradient (hướng + step)
-4. [[gradient-descent]] — dùng gradient để "đi mò" huấn luyện mô hình
-5. [[loss-function]] — hàm chi phí (MSE / Cross-Entropy): cái mà gradient descent tối thiểu
-6. [[toi-uu-loi]] — hàm lồi: 1 đáy → train nhiều lần ra kết quả giống nhau (tái lập)
-7. [[regularization]] — *(L5)* Ridge(L2)/Lasso(L1)/ElasticNet: phạt độ lớn trọng số → chống overfit (hướng 1); Lasso còn chọn biến
+2. [[ham-so]] — quy tắc gán vào→ra; ⚠️ lúc train thì **biến là `w`**, không phải `x`
+3. [[gioi-han]] — nền của đạo hàm; nói được "nhích cực nhỏ" mà không chia cho 0
+4. [[dao-ham]] — đạo hàm: đo tốc độ thay đổi (độ dốc), 1 chiều
+5. [[chain-rule]] — đạo hàm hàm hợp = **tích** dọc chuỗi → **chính là backpropagation** ⭐
+6. [[dao-ham-rieng]] — đạo hàm theo 1 biến, giữ nguyên các biến khác
+7. [[gradient]] — nhiều chiều: gom đạo hàm riêng thành vector (hướng + step)
+8. [[gradient-descent]] — dùng gradient để "đi mò" huấn luyện mô hình
+9. [[sgd]] — mini-batch: gradient nhiễu nhưng đi được **nhiều bước hơn hẳn**
+10. [[learning-rate]] — độ dài mỗi bước; **siêu tham số quan trọng nhất**
+11. [[adam-optimizer]] — momentum + bước riêng từng tham số; mặc định khi chưa biết chọn gì
+12. [[loss-function]] — hàm chi phí (MSE / Cross-Entropy): cái mà gradient descent tối thiểu
+13. [[toi-uu-hoa]] — khung chung: train = `argmin L(w)`; điểm yên ngựa mới là trở ngại thật
+14. [[toi-uu-loi]] — hàm lồi: 1 đáy → train nhiều lần ra kết quả giống nhau (tái lập)
+15. [[regularization]] — *(L5)* Ridge(L2)/Lasso(L1)/ElasticNet: phạt độ lớn trọng số → chống overfit (hướng 1); Lasso còn chọn biến
    - [[bias-variance]] — *(L5)* khung lý thuyết: tăng độ phức tạp → bias↓ variance↑ → chữ U có điểm tối ưu
 
 **Nhánh B · Đại số tuyến tính → Giảm chiều (PCA)**
-1. [[ma-tran-hiep-phuong-sai]] — các đặc trưng biến thiên cùng nhau thế nào (Σ)
-2. [[tri-rieng-vector-rieng]] — Av = λv: tìm hướng quan trọng
-3. [[pca]] — gộp 1+2: xoay trục, giảm chiều
-   - *(tiếp theo, chưa viết)* → `[[svd]]` → `[[he-goi-y-recommender]]` (Netflix)
+1. [[vector]] — điểm trong không gian n chiều; tích vô hướng = đo độ giống nhau
+2. [[ma-tran]] — bảng dữ liệu **và** phép biến đổi; hạng thấp → đa cộng tuyến
+3. [[phep-bien-doi-tuyen-tinh]] — nhân ma trận = xoay/kéo giãn/chiếu không gian
+4. [[ma-tran-hiep-phuong-sai]] — các đặc trưng biến thiên cùng nhau thế nào (Σ)
+5. [[tri-rieng-vector-rieng]] — Av = λv: tìm hướng quan trọng
+6. [[svd]] — mọi ma trận = xoay → kéo giãn → xoay; xấp xỉ hạng thấp tốt nhất
+7. [[giam-chieu-du-lieu]] — vì sao cần; ⚠️ **phương sai lớn ≠ hữu ích cho phân loại**
+8. [[pca]] — gộp lại: xoay trục, giảm chiều
+9. [[kernel-pca]] — kernel trick cho dữ liệu cong (cùng mẹo với [[svm]])
+10. [[t-sne]] — ⚠️ **CHỈ để vẽ hình**; khoảng cách giữa các cụm vô nghĩa
+11. [[he-goi-y-recommender]] — phân rã ma trận người dùng × phim (Netflix)
 
 **Nhánh C · Xác suất → Thống kê** 🔴 bắt buộc
 1. [[xac-suat]] — vì sao ML cần xác suất + các khái niệm cốt lõi
-2. [[phan-phoi-xac-suat]] — biến ngẫu nhiên & phân phối: hiểu từng cột để xử lý/sinh dữ liệu đúng
+2. [[xac-suat-co-dieu-kien]] — `P(A|B)`; ⚠️ `P(A|B) ≠ P(B|A)`; ML có giám sát = ước lượng `P(y|x)`
+3. [[phan-phoi-xac-suat]] — biến ngẫu nhiên & phân phối: hiểu từng cột để xử lý/sinh dữ liệu đúng
    - [[gauss-va-nhi-thuc]] — Gauss → chuẩn hóa đặc trưng · Nhị thức → test A/B
    - *nhánh phụ Bayes:* [[dinh-ly-bayes]] — xác suất có điều kiện + Bayes → `[[naive-bayes]]` (lọc spam)
 3. [[thong-ke]] — rút hiểu biết từ dữ liệu: mô tả, suy diễn, kiểm định (A/B test), EDA
@@ -48,7 +64,7 @@
    - [[entropy]] — đo độ hỗn tạp/bất định (bit) → cầu sang cây quyết định
    - [[suy-dien-hoc-may]] — 🌉 cầu khái niệm: thống kê suy diễn = bản chất của Machine Learning
    - [[maximum-likelihood]] — MLE: ước lượng tham số = đường cong ôm nhiều điểm nhất (= hồi quy)
-   - *tiếp theo:* `[[khoang-tin-cay]]` · `[[loss-function]]`
+   - [[khoang-tin-cay]] — báo cáo khoảng thay vì một số; hai mặt của [[kiem-dinh-gia-thuyet]]
 
 **Nhánh D · Xử lý dữ liệu (Lớp LÀM — 90% công việc thật)** ⭐
 0. [[xac-dinh-van-de]] — 🚦 Bước 0: chốt rõ vấn đề + mẫu chuẩn TRƯỚC khi làm (giải sai bài = vứt)
@@ -76,7 +92,8 @@
 8. [[chon-mo-hinh]] — 🧭 cheat sheet: chọn thuật toán nào? yếu tố cân nhắc + sơ đồ quyết định
 9. [[danh-gia-mo-hinh]] — 📊 *(L2 Mục 03)* độ đo PHÂN LOẠI: Accuracy/Precision/Recall/F1/AUC + confusion matrix
 10. [[metric-hoi-quy]] — 📏 *(L3)* độ đo HỒI QUY: MAE/MSE/RMSE/R²/Adjusted R² (khi nào dùng cái nào)
-    - *(tiếp theo, chưa viết)* → `[[knn]]` · `[[naive-bayes]]`
+11. [[naive-bayes]] — giả định độc lập gần như luôn SAI mà vẫn chạy tốt (lọc spam)
+12. [[knn]] — không có bước train; ⚠️ **bắt buộc chuẩn hoá**; lõi của tìm kiếm vector
 
 **Nhánh F · Nhập môn ML / DL / GenAI** 📘 *(L2)*
 1. [[ai-ml-dl]] — AI ⊃ ML ⊃ DL: ba vòng lồng nhau; ML = học từ dữ liệu
@@ -88,6 +105,7 @@
    - [[neural-network]] — 🧠 *(L8)* CƠ CHẾ chi tiết: neuron=LR · activation · forward pass · loss · **backpropagation** (chain rule + 4 PT) · vanishing gradient ⭐
 6. [[generative-ai]] — *(L2 Mục 06)* sinh dữ liệu mới: học P(dữ liệu) — GAN/VAE/Diffusion/Transformer
    - [[autoencoder]] — nén → mã → tái tạo (PCA phi tuyến); nền của VAE
+7. [[fine-tuning]] — dùng lại model pretrained; ⚠️ learning rate phải **nhỏ hơn 10–100 lần**
 7. [[pytorch-vs-tensorflow]] — 🔧 framework để LÀM DL/GenAI: PyTorch vs TensorFlow + high-level(Keras) vs low-level API
 
 > Quy ước: mỗi note ghi sẵn breadcrumb **📖 Lộ trình: Nhánh _ · #_** ở đầu để biết mình đang ở đâu.

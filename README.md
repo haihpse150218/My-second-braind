@@ -52,7 +52,7 @@ npm start       # → http://localhost:5173
 ```
 Second-brain/
 ├── vaults/       ZONE 1 — note nguyên tử. PHẲNG 1 cấp. App đọc, lên đồ thị.
-│   ├── ml/       Machine Learning        65 note
+│   ├── ml/       Machine Learning        86 note
 │   ├── dl/       Deep Learning          123 note
 │   ├── nckh/     Nghiên cứu khoa học     51 note (tóm tắt paper)
 │   ├── dsp/      Digital Signal Proc.     0 note · 6 file trong _inbox/

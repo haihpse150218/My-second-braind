@@ -2,7 +2,7 @@
 
 > Trang chủ của toàn bộ kho kiến thức. Từ đây đi tới mọi môn, mọi project, mọi ghi chú.
 
-**Cập nhật:** 2026-08-10 · **Tổng:** 325 note · 5 vault · 8 project
+**Cập nhật:** 2026-08-10 · **Tổng:** 346 note · 5 vault · 8 project
 **Chạy web:** `cd app && npm start` → http://localhost:5173
 
 ---
@@ -11,7 +11,7 @@
 
 | Vault | Môn | Note | Tiến độ | Nhánh | Hub |
 |---|---|---:|---|---:|---|
-| `ml` | Machine Learning | **65** | ⬜18 · 🟡47 | 6 | [[../vaults/ml/SECOND_BRAIN_ML\|→ vào]] |
+| `ml` | Machine Learning | **86** | ⬜18 · 🟡68 | 6 | [[../vaults/ml/SECOND_BRAIN_ML\|→ vào]] |
 | `dl` | Deep Learning | **123** | ✅123 | 9 | [[../vaults/dl/SECOND_BRAIN_DL\|→ vào]] |
 | `nckh` | Nghiên cứu khoa học | **51** | ✅51 | 10 | [[../vaults/nckh/SECOND_BRAIN_NCKH\|→ vào]] |
 | `dsp` | Digital Signal Processing | **21** | 🟡21 | 5 | [[../vaults/dsp/SECOND_BRAIN_DSP\|→ vào]] |

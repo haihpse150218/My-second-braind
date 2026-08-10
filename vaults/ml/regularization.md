@@ -4,7 +4,7 @@ title: Chính quy hóa (Regularization) — Ridge · Lasso · Elastic Net
 vault: ml
 type: concept
 branch: A
-order: 7
+order: 15
 status: learning
 tags: [ml, toi-uu-hoa, regularization, overfitting]
 sources: [L5_Regularization_FeatureSelection.pdf]
@@ -18,7 +18,7 @@ updated: 2026-06-21
 
 **Ngày tạo:** 2026-06-14 · **Cập nhật:** 2026-06-21 (bám slide L5)
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh A (Tối ưu) · #7 — vũ khí chống [[overfitting]] · song hành [[feature-selection]] (hướng 2)
+**📖 Lộ trình:** Nhánh A (Tối ưu) · #15 — vũ khí chống [[overfitting]] · song hành [[feature-selection]] (hướng 2)
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #toi-uu-hoa #regularization #overfitting
 **Nguồn slide:** `L5_Regularization_FeatureSelection.pdf` Phần 03 — TS. Cao Tiến Dũng

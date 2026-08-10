@@ -4,7 +4,7 @@ title: Entropy (Độ hỗn tạp / bất định)
 vault: ml
 type: concept
 branch: C
-order: 15
+order: 16
 status: learning
 tags: [toan, xac-suat, information-theory, decision-tree]
 next: [xac-suat]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Xác suất) · #15 → cầu sang cây quyết định ← cần [[xac-suat]]
+**📖 Lộ trình:** Nhánh C (Xác suất) · #16 → cầu sang cây quyết định ← cần [[xac-suat]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #xac-suat #information-theory #decision-tree
 

@@ -4,7 +4,7 @@ title: Hàm chi phí / Hàm mất mát (Cost / Loss Function)
 vault: ml
 type: concept
 branch: A
-order: 5
+order: 12
 status: learning
 tags: [ml, toi-uu-hoa, loss, core]
 sources: [L1_Math_Overview.pdf]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh A (Tối ưu) · #5 — cái mà [[gradient-descent]] đi tìm cực tiểu
+**📖 Lộ trình:** Nhánh A (Tối ưu) · #12 — cái mà [[gradient-descent]] đi tìm cực tiểu
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #toi-uu-hoa #loss #core
 **Nguồn slide:** `L1_Math_Overview.pdf` slide 48 — TS. Cao Tiến Dũng

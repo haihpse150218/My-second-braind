@@ -4,7 +4,7 @@ title: Độ đo Hồi quy (Regression Metrics)
 vault: ml
 type: concept
 branch: E
-order: 15
+order: 14
 status: todo
 tags: [ml, danh-gia, metric, hoi-quy, lop-lam]
 prev: [linear-regression]
@@ -19,7 +19,7 @@ created: 2026-06-20
 
 **Ngày tạo:** 2026-06-20
 **Trạng thái:** 🟢 Trọng tâm (Lớp LÀM)
-**📖 Lộ trình:** Nhánh E (Đánh giá) · #15 ← cần [[linear-regression]] · → so với [[danh-gia-mo-hinh]] (độ đo PHÂN LOẠI)
+**📖 Lộ trình:** Nhánh E (Đánh giá) · #14 ← cần [[linear-regression]] · → so với [[danh-gia-mo-hinh]] (độ đo PHÂN LOẠI)
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #danh-gia #metric #hoi-quy #lop-lam
 **Nguồn slide:** `L3_LinearReg.pdf` (Mục 05 — Đánh giá mô hình) — TS. Cao Tiến Dũng

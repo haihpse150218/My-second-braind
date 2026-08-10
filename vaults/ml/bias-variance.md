@@ -4,7 +4,7 @@ title: Đánh đổi Bias – Variance (Bias–Variance Tradeoff)
 vault: ml
 type: concept
 branch: A
-order: 8
+order: 16
 status: learning
 tags: [ml, overfitting, bias-variance, core]
 prev: [overfitting, phuong-sai]

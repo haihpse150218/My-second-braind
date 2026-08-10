@@ -4,7 +4,7 @@ title: Ma trận hiệp phương sai (Covariance Matrix)
 vault: ml
 type: concept
 branch: B
-order: 1
+order: 4
 status: learning
 tags: [toan, thong-ke, dai-so-tuyen-tinh, pca]
 next: [tri-rieng-vector-rieng]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh B (Đại số TT → PCA) · #1 → kế tiếp [[tri-rieng-vector-rieng]]
+**📖 Lộ trình:** Nhánh B (Đại số TT → PCA) · #4 → kế tiếp [[tri-rieng-vector-rieng]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #thong-ke #dai-so-tuyen-tinh #pca
 

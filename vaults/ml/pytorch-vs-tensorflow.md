@@ -4,7 +4,7 @@ title: PyTorch vs TensorFlow (Chọn framework nào?)
 vault: ml
 type: concept
 branch: F
-order: 10
+order: 11
 status: learning
 tags: [cong-cu, framework, deep-learning, pytorch, tensorflow]
 prev: [deep-learning, generative-ai]
@@ -17,7 +17,7 @@ created: 2026-07-05
 
 **Ngày tạo:** 2026-07-05
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh F (Công cụ) · #10 · framework để LÀM DL/GenAI ← cần [[deep-learning]] · [[generative-ai]]
+**📖 Lộ trình:** Nhánh F (Công cụ) · #11 · framework để LÀM DL/GenAI ← cần [[deep-learning]] · [[generative-ai]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #cong-cu #framework #deep-learning #pytorch #tensorflow
 **Gắn với định hướng:** [[dinh-huong-hoc]] (90/10 — trọng tâm là dùng lại model pretrained)

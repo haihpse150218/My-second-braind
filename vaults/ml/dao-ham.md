@@ -4,7 +4,7 @@ title: Đạo hàm (Derivative)
 vault: ml
 type: concept
 branch: A
-order: 2
+order: 4
 status: learning
 tags: [toan, giai-tich, nen-tang]
 prev: [giai-tich]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh A (Giải tích → Tối ưu) · #2 ← cần [[giai-tich]] · → kế tiếp [[gradient]]
+**📖 Lộ trình:** Nhánh A (Giải tích → Tối ưu) · #4 ← cần [[giai-tich]] · → kế tiếp [[gradient]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #giai-tich #nen-tang
 

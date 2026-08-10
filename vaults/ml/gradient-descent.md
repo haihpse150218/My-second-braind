@@ -4,7 +4,7 @@ title: Gradient Descent (Hạ Gradient)
 vault: ml
 type: concept
 branch: A
-order: 4
+order: 8
 status: learning
 tags: [ml, toi-uu-hoa, giai-tich]
 prev: [giai-tich, dao-ham, gradient]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh A (Giải tích → Tối ưu) · #4 ← cần [[giai-tich]] + [[dao-ham]] + [[gradient]] trước
+**📖 Lộ trình:** Nhánh A (Giải tích → Tối ưu) · #8 ← cần [[giai-tich]] + [[dao-ham]] + [[gradient]] trước
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #toi-uu-hoa #giai-tich
 

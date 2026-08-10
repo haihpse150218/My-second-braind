@@ -4,7 +4,7 @@ title: Maximum Likelihood Estimation (MLE) — Ước lượng hợp lý cực �
 vault: ml
 type: concept
 branch: C
-order: 17
+order: 18
 status: learning
 tags: [toan, xac-suat, estimation, regression]
 next: [xac-suat, phan-phoi-xac-suat]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #17 → cầu sang hồi quy ← cần [[xac-suat]] · [[phan-phoi-xac-suat]]
+**📖 Lộ trình:** Nhánh C (Thống kê) · #18 → cầu sang hồi quy ← cần [[xac-suat]] · [[phan-phoi-xac-suat]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #xac-suat #estimation #regression
 

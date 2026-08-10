@@ -4,7 +4,7 @@ title: Kiểm định giả thuyết (Hypothesis Testing)
 vault: ml
 type: concept
 branch: C
-order: 10
+order: 11
 status: learning
 tags: [thong-ke, ab-testing, inference]
 prev: [thong-ke, gauss-va-nhi-thuc]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #10 ← cần [[thong-ke]] · [[gauss-va-nhi-thuc]]
+**📖 Lộ trình:** Nhánh C (Thống kê) · #11 ← cần [[thong-ke]] · [[gauss-va-nhi-thuc]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Dùng trong:** [[../../projects/harness-eval-nckh|📦 harness-eval-nckh]]
 **Tags:** #thong-ke #ab-testing #inference

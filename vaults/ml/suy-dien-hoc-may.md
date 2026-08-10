@@ -4,7 +4,7 @@ title: Thống kê suy diễn → Machine Learning
 vault: ml
 type: concept
 branch: C
-order: 16
+order: 17
 status: todo
 tags: [meta, thong-ke, inference, learning, core]
 created: 2026-06-14

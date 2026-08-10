@@ -4,7 +4,7 @@ title: Chọn mô hình nào? (Model Selection)
 vault: ml
 type: concept
 branch: E
-order: 13
+order: 12
 status: todo
 tags: [ml, thuat-toan, model-selection, lop-lam]
 prev: [phan-loai-hoc-may]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟢 Cheat sheet (Lớp LÀM)
-**📖 Lộ trình:** Nhánh E (Thuật toán) · #13 — tổng hợp ← cần [[phan-loai-hoc-may]]
+**📖 Lộ trình:** Nhánh E (Thuật toán) · #12 — tổng hợp ← cần [[phan-loai-hoc-may]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #thuat-toan #model-selection #lop-lam
 **Nguồn slide:** `L2_Intro_ML_DL_GenAI.pdf` slide 16, 18, 19 — TS. Cao Tiến Dũng

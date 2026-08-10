@@ -4,7 +4,7 @@ title: Gradient & Đạo hàm riêng (nhiều chiều)
 vault: ml
 type: concept
 branch: A
-order: 3
+order: 7
 status: learning
 tags: [toan, giai-tich, toi-uu-hoa, nhieu-chieu]
 prev: [dao-ham]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh A (Giải tích → Tối ưu) · #3 ← cần [[dao-ham]] · → kế tiếp [[gradient-descent]]
+**📖 Lộ trình:** Nhánh A (Giải tích → Tối ưu) · #7 ← cần [[dao-ham]] · → kế tiếp [[gradient-descent]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #giai-tich #toi-uu-hoa #nhieu-chieu
 

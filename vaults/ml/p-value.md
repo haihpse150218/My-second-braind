@@ -4,7 +4,7 @@ title: p-value
 vault: ml
 type: concept
 branch: C
-order: 11
+order: 12
 status: learning
 tags: [thong-ke, inference, de-hieu-sai]
 prev: [kiem-dinh-gia-thuyet]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Thống kê) · #11 ← cần [[kiem-dinh-gia-thuyet]]
+**📖 Lộ trình:** Nhánh C (Thống kê) · #12 ← cần [[kiem-dinh-gia-thuyet]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Dùng trong:** [[../../projects/harness-eval-nckh|📦 harness-eval-nckh]]
 **Tags:** #thong-ke #inference #de-hieu-sai

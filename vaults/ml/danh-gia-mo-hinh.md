@@ -4,7 +4,7 @@ title: Đánh giá mô hình & Độ đo (Evaluation Metrics)
 vault: ml
 type: concept
 branch: E
-order: 14
+order: 13
 status: todo
 tags: [ml, danh-gia, metric, lop-lam]
 prev: [phan-loai-hoc-may]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟢 Trọng tâm (Lớp LÀM)
-**📖 Lộ trình:** Nhánh E (Thuật toán & Đánh giá) · #14 ← cần [[phan-loai-hoc-may]]
+**📖 Lộ trình:** Nhánh E (Thuật toán & Đánh giá) · #13 ← cần [[phan-loai-hoc-may]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Dùng trong:** [[../../projects/viic-image-captioning|📦 viic-image-captioning]] · [[../../projects/image-super-resolution|📦 image-super-resolution]] · [[../../projects/dsp-urbansound|📦 dsp-urbansound]]
 **Tags:** #ml #danh-gia #metric #lop-lam

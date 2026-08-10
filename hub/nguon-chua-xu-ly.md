@@ -70,38 +70,21 @@ Vẫn nằm nguyên ở thư mục gốc, chưa copy vào `Second-brain`.
 
 ---
 
-## 4. Note dự kiến viết — 21 khái niệm đã được trỏ tới nhưng chưa có file
+## 4. Note dự kiến viết — ✅ **XONG 2026-08-10**
 
-Đây là **35 link gãy** mà Dashboard đang báo ở vault `ml`. Chúng **không phải lỗi** — mỗi cái là một chỗ mà note hiện có đã nói *"cái này liên quan tới X"* trong khi X chưa được viết. Danh sách này chính là **thứ tự nên viết tiếp**, xếp theo số note đang chờ.
+Toàn bộ **21 khái niệm** từng được trỏ tới mà chưa có file nay đã viết xong → **link gãy toàn kho: 35 → 0**.
 
-> ⚠️ **Cố ý KHÔNG tạo file stub rỗng cho chúng.** Tạo 21 note rỗng sẽ làm Dashboard báo 21 note `⬜ Chưa học` trong khi thực chất chẳng có nội dung gì — số liệu tiến độ sẽ nói dối.
+| Nhánh | Note đã viết |
+|---|---|
+| **A · Giải tích → Tối ưu** (8) | [[../vaults/ml/ham-so]] · [[../vaults/ml/gioi-han]] · [[../vaults/ml/chain-rule]] · [[../vaults/ml/dao-ham-rieng]] · [[../vaults/ml/sgd]] · [[../vaults/ml/learning-rate]] · [[../vaults/ml/adam-optimizer]] · [[../vaults/ml/toi-uu-hoa]] |
+| **B · Đại số tuyến tính** (8) | [[../vaults/ml/vector]] · [[../vaults/ml/ma-tran]] · [[../vaults/ml/phep-bien-doi-tuyen-tinh]] · [[../vaults/ml/svd]] · [[../vaults/ml/giam-chieu-du-lieu]] · [[../vaults/ml/kernel-pca]] · [[../vaults/ml/t-sne]] · [[../vaults/ml/he-goi-y-recommender]] |
+| **C · Xác suất → Thống kê** (2) | [[../vaults/ml/xac-suat-co-dieu-kien]] · [[../vaults/ml/khoang-tin-cay]] |
+| **E · Thuật toán** (2) | [[../vaults/ml/naive-bayes]] · [[../vaults/ml/knn]] |
+| **F · Nhập môn** (1) | [[../vaults/ml/fine-tuning]] |
 
-| Note cần viết | Nhánh | Được trỏ tới từ |
-|---|---|---|
-| `chain-rule` | A | dao-ham · deep-learning · giai-tich · gradient · huan-luyen-vs-suy-luan |
-| `dao-ham-rieng` | A | dao-ham · giai-tich · gradient |
-| `naive-bayes` | E | chon-mo-hinh · dinh-ly-bayes · xac-suat |
-| `svd` | B | pca · tri-rieng-vector-rieng |
-| `ma-tran` | B | ma-tran-hiep-phuong-sai · tri-rieng-vector-rieng |
-| `he-goi-y-recommender` | B | pca · tri-rieng-vector-rieng |
-| `giam-chieu-du-lieu` | B | pca · tri-rieng-vector-rieng |
-| `ham-so` | A | dao-ham · giai-tich |
-| `fine-tuning` | F | dinh-huong-hoc · pytorch-vs-tensorflow |
-| `vector` | B | tri-rieng-vector-rieng |
-| `phep-bien-doi-tuyen-tinh` | B | tri-rieng-vector-rieng |
-| `adam-optimizer` · `sgd` · `learning-rate` | A | gradient-descent |
-| `kernel-pca` · `t-sne` | B | pca |
-| `gioi-han` | A | dao-ham |
-| `toi-uu-hoa` | A | giai-tich |
-| `khoang-tin-cay` | C | thong-ke |
-| `knn` | E | chon-mo-hinh |
-| `xac-suat-co-dieu-kien` | C | xac-suat |
+> 💡 Nhánh **B** từng là mảng hổng lớn nhất (3 note, 7/21 link gãy trỏ vào đó). Giờ có **12 note**, đi trọn từ vector → ma trận → SVD → PCA → hệ gợi ý.
 
-**Nên viết trước:** `chain-rule` (5 note đang chờ) → `dao-ham-rieng` (3) → `naive-bayes` (3). Ba cái này gỡ được 11/35 link gãy.
-
-> 💡 Nhánh **B (đại số tuyến tính)** chiếm 7/21 — đây là mảng hổng lớn nhất của vault `ml`. Hiện chỉ có 3 note trong khi nhánh A có 8, nhánh C có 17.
-
-**Đã xử lý xong (không còn trong danh sách):** 5 link chết được nối sang note có sẵn bên `dl` thay vì viết lại — `backpropagation`, `transfer-learning`, `transformer`→`transformer-block`, `resnet50`→`resnet`, `cnn`→`vi-sao-can-cnn`. Xem [[map-lien-mon]].
+**Việc tiếp theo của `ml`:** không còn link gãy nào, nên hàng đợi giờ là **soát lại 68 note 🟡** — vault duy nhất còn 0% ✅. Cách kiểm tra: đọc mục `💡 Ý chính`, gấp note lại, giải thích bằng lời mình.
 
 ---
 

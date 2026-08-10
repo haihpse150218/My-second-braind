@@ -4,7 +4,7 @@ title: Kỹ thuật lấy mẫu (Sampling)
 vault: ml
 type: concept
 branch: C
-order: 9
+order: 10
 status: todo
 tags: [thong-ke, data, sampling, lop-lam]
 prev: [thong-ke, xac-dinh-van-de]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟢 Trọng tâm (Lớp LÀM)
-**📖 Lộ trình:** Nhánh C (Thống kê) · #9 ↔ Nhánh D · ← cần [[thong-ke]] · liên quan [[xac-dinh-van-de]]
+**📖 Lộ trình:** Nhánh C (Thống kê) · #10 ↔ Nhánh D · ← cần [[thong-ke]] · liên quan [[xac-dinh-van-de]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #thong-ke #data #sampling #lop-lam
 

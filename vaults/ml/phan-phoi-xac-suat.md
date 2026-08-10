@@ -4,7 +4,7 @@ title: Biến ngẫu nhiên & Phân phối xác suất
 vault: ml
 type: concept
 branch: C
-order: 2
+order: 3
 status: learning
 tags: [toan, xac-suat, data, bat-buoc]
 prev: [xac-suat]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #2 ← cần [[xac-suat]] · → kế tiếp [[ky-vong-trung-binh]]
+**📖 Lộ trình:** Nhánh C (Xác suất → Thống kê) · #3 ← cần [[xac-suat]] · → kế tiếp [[ky-vong-trung-binh]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #xac-suat #data #bat-buoc
 

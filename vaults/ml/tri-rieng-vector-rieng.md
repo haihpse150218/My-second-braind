@@ -4,7 +4,7 @@ title: Trị riêng & Vector riêng (Eigenvalue & Eigenvector)
 vault: ml
 type: concept
 branch: B
-order: 2
+order: 5
 status: learning
 tags: [toan, dai-so-tuyen-tinh, pca, svd]
 prev: [ma-tran-hiep-phuong-sai]
@@ -18,7 +18,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh B (Đại số TT → PCA) · #2 ← cần [[ma-tran-hiep-phuong-sai]] · → kế tiếp [[pca]]
+**📖 Lộ trình:** Nhánh B (Đại số TT → PCA) · #5 ← cần [[ma-tran-hiep-phuong-sai]] · → kế tiếp [[pca]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #toan #dai-so-tuyen-tinh #pca #svd
 **Hình minh hoạ:** `eigenvector-pca.excalidraw` (xem `eigenvector-pca.png`)

@@ -4,7 +4,7 @@ title: PCA (Principal Component Analysis — Phân tích thành phần chính)
 vault: ml
 type: concept
 branch: B
-order: 3
+order: 8
 status: learning
 tags: [ml, giam-chieu, dai-so-tuyen-tinh, unsupervised]
 prev: [ma-tran-hiep-phuong-sai, tri-rieng-vector-rieng]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh B (Đại số TT → PCA) · #3 ← cần [[ma-tran-hiep-phuong-sai]] + [[tri-rieng-vector-rieng]]
+**📖 Lộ trình:** Nhánh B (Đại số TT → PCA) · #8 ← cần [[ma-tran-hiep-phuong-sai]] + [[tri-rieng-vector-rieng]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #giam-chieu #dai-so-tuyen-tinh #unsupervised
 **Hình minh hoạ:** `eigenvector-pca.excalidraw` (xem `eigenvector-pca.png`)

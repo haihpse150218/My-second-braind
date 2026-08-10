@@ -4,7 +4,7 @@ title: Tổng thể vs Mẫu & Overfitting
 vault: ml
 type: concept
 branch: C
-order: 8
+order: 9
 status: learning
 tags: [ml, thong-ke, overfitting, generalization, core]
 prev: [thong-ke, dinh-huong-hoc]
@@ -17,7 +17,7 @@ created: 2026-06-14
 
 **Ngày tạo:** 2026-06-14
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh C · #8 / Lớp LÀM ← cần [[thong-ke]] · liên quan [[dinh-huong-hoc]]
+**📖 Lộ trình:** Nhánh C · #9 / Lớp LÀM ← cần [[thong-ke]] · liên quan [[dinh-huong-hoc]]
 **Chủ đề cha:** [[SECOND_BRAIN_ML]] · [[note]]
 **Tags:** #ml #thong-ke #overfitting #generalization #core
 
