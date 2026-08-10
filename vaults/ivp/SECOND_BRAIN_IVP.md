@@ -3,7 +3,7 @@
 > Trang trung tâm (Map of Content) cho môn Xử lý ảnh và video.
 
 **Cập nhật lần cuối:** 2026-08-10
-**Trạng thái:** 🌿 Đang chưng cất — nhánh A–D xong (L1→L6), nhánh E–J còn trong `_inbox/`
+**Trạng thái:** ✅ Chưng cất xong L1→L12 — 64 atomic note, 10 nhánh A–J
 **Nguồn:** `D:\MSA-FPT\Image and video processing` — Lecture 0→12 (PDF + bản `.txt`), 9 notebook thực hành
 **Quay lại:** [[../../hub/MASTER|🏠 MASTER]]
 
@@ -51,40 +51,58 @@
 9. [[clahe]] — equalize theo ô + chặn trần tương phản
 10. [[dac-ta-histogram]] — ép về phân phối đích qua trạm trung chuyển "phân phối đều"
 
-**Nhánh E · Lọc không gian & phục hồi ảnh (L6–L7)** — ⬜ chưa viết
-1. `tich-chap-2d` — kernel trượt trên ảnh
+**Nhánh E · Lọc không gian & phục hồi ảnh (L6–L7)**
+1. [[tich-chap-2d]] — kernel trượt trên ảnh; **phép toán trung tâm của cả môn**
    → 🌉 cùng phép toán với `dsp/tich-chap` (1D) và [[dl/phep-tich-chap]] (kernel **học ra**)
-2. `loc-lam-min` — trung bình · Gaussian
-3. `loc-trung-vi` — khử muối tiêu mà **giữ cạnh**
-4. `lam-sac-net` — unsharp masking, high-boost
-5. `mo-hinh-suy-hao` — `g = f∗h + n`, nền của cả L7
-6. `nhieu-anh` — Gaussian · muối tiêu · Rayleigh · Erlang
-7. `uoc-luong-nhieu` — crop vùng đồng nhất → đọc histogram → đoán loại nhiễu
-8. `loc-thong-ke-thu-tu` — min · max · trung vị · alpha-trimmed · contraharmonic
-9. `loc-tan-so` — thông thấp/cao · band-reject · notch · ringing
-10. `loc-nguoc` — `F = G/H`; ⚠️ chia cho `H` nhỏ là nổ
-11. `wiener-filter` — khử mờ + nhiễu, tối thiểu MSE
+2. [[loc-lam-min]] — trung bình · Gaussian; đánh đổi khử nhiễu ↔ giữ cạnh
+3. [[loc-trung-vi]] — phi tuyến: khử muối tiêu mà **giữ cạnh sắc**
+4. [[lam-sac-net]] — unsharp masking = ảnh gốc + (gốc − bản mờ)
+5. [[mo-hinh-suy-hao]] — `g = f∗h + n`, **một phương trình gói cả L7**
+6. [[nhieu-anh]] — Gaussian · muối tiêu · Rayleigh · Erlang · tuần hoàn
+7. [[uoc-luong-nhieu]] — crop vùng đồng nhất → đọc histogram → ra loại nhiễu
+8. [[loc-thong-ke-thu-tu]] — bảng chọn theo nhiễu + bộ lọc **thích nghi**
+9. [[fourier-2d]] — phổ ảnh; **pha quan trọng hơn biên độ**
+10. [[dinh-ly-tich-chap]] — tích chập ⟷ nhân; ⚠️ bẫy tích chập **vòng**
+11. [[loc-tan-so]] — thông thấp/cao · notch; ⚠️ "lý tưởng" là **tệ nhất** (ringing)
+12. [[loc-nguoc]] — `F = G/H`; ⚠️ chia cho `H` nhỏ là **nổ**
+13. [[wiener-filter]] — lọc ngược **có phanh**, tối thiểu MSE
 
-**Nhánh F · Hình thái học (L8)** — ⬜ chưa viết
-1. `phan-tu-cau-truc` · 2. `gian-no-va-co-hep` · 3. `opening-closing`
-4. `top-hat` — sửa chiếu sáng không đều bằng đường khác hẳn [[clahe]]
-5. `thanh-phan-lien-thong` — đếm vật thể
+**Nhánh F · Hình thái học (L8)**
+1. [[hinh-thai-hoc]] — ảnh là **tập hợp**; mọi phép đều ghép từ 2 phép nguyên thuỷ
+2. [[phan-tu-cau-truc]] — SE quyết định kết quả, như kernel với tích chập
+3. [[gian-no-va-co-hep]] — "chạm là nở, lọt là co"
+4. [[opening-closing]] — dọn **ngoài** vật vs vá **trong** vật; luỹ đẳng
+5. [[top-hat]] — sửa chiếu sáng không đều bằng đường khác hẳn [[clahe]]
+6. [[thanh-phan-lien-thong]] — đếm vật thể; ảnh → **danh sách vật đo được**
 
-**Nhánh G · Phát hiện biên (L9)** — ⬜ chưa viết
-1. `bien-anh-la-gi` · 2. `dao-ham-bac-1-anh` (Sobel/Prewitt/Roberts)
-3. `laplacian-va-log` · 4. `canny` · 5. `hough-transform`
+**Nhánh G · Phát hiện biên (L9)**
+1. [[bien-anh-la-gi]] — biên = đạo hàm lớn; đánh đổi làm mịn ↔ định vị
+2. [[dao-ham-bac-1-anh]] — Sobel/Prewitt/Roberts; mọi mask có **tổng hệ số = 0**
+3. [[laplacian-va-log]] — bậc 2 + Gaussian gộp thành "mũ Mexico"
+4. [[canny]] — 4 bước; **non-max suppression** + **hysteresis 2 ngưỡng**
+5. [[hough-transform]] — điểm bỏ phiếu cho đường; nối được biên **đứt**
 
-**Nhánh H · Phân đoạn ảnh (L10)** — ⬜ chưa viết
-1. `phan-doan-anh` · 2. `nguong-hoa` · 3. `otsu` · 4. `nguong-cuc-bo`
-5. `region-growing` · 6. `watershed`
+**Nhánh H · Phân đoạn ảnh (L10)**
+1. [[phan-doan-anh]] — gián đoạn (nhánh G) vs tương đồng (nhánh H)
+2. [[nguong-hoa]] — cần histogram **bimodal**; xem histogram trước
+3. [[otsu]] — tự chọn `T`; phân cụm 1D giải bằng vét cạn
+4. [[nguong-cuc-bo]] — chuyển từ so sánh **tuyệt đối** sang **tương đối**
+5. [[region-growing]] — lan từ seed; ⚠️ rò rỉ qua biên yếu
+6. [[watershed]] — địa hình + distance transform → **tách vật dính nhau**
    → 🌉 so với hướng học sâu: [[dl/mask-rcnn]]
 
-**Nhánh I · Ảnh màu (L11)** — ⬜ chưa viết
-1. `mo-hinh-mau-rgb` · 2. `cmyk-va-mau-tru` · 3. `mo-hinh-mau-hsv`
-4. `ycbcr` · 5. `gamut-va-quan-ly-mau` · 6. `pseudocolor`
+**Nhánh I · Ảnh màu (L11)**
+1. [[mo-hinh-mau-rgb]] — 3 kênh đủ vì mắt có 3 loại tế bào nón (metamerism)
+2. [[cmyk-va-mau-tru]] — mực **hấp thụ**; vì sao ảnh in khác ảnh màn hình
+3. [[mo-hinh-mau-hsv]] — **tách tông màu khỏi độ sáng**; ⚠️ Hue là **góc**
+4. [[ycbcr]] — tách chói/màu → **chroma subsampling** 4:2:0 của mọi ảnh & video
+5. [[gamut-va-quan-ly-mau]] — bộ ba số vô nghĩa nếu thiếu profile; CIELAB & ΔE
+6. [[pseudocolor]] — tô màu ảnh xám; ⚠️ **đừng dùng colormap `jet`**
 
-**Nhánh J · Keypoint & video (L12)** — ⬜ chưa viết
-1. `keypoint-la-gi` · 2. `fast-corner` · 3. `keypoint-tracking`
+**Nhánh J · Keypoint & video (L12)**
+1. [[keypoint-la-gi]] — vì sao phải là **góc**: bài toán khẩu độ
+2. [[fast-corner]] — 16 pixel trên vòng tròn; mẹo kiểm tra sớm 4 điểm
+3. [[keypoint-tracking]] — 3 giả định của Lucas–Kanade; drift & RANSAC
 
 ---
 
@@ -103,12 +121,17 @@ Viết note cho hai nhánh đó lúc này là bịa nội dung không có trong 
 
 > App **không đọc** `_inbox/`. Note ở đây là nguyên liệu thô, chưa lên graph.
 
-| File | Còn lại gì chưa tách | Ưu tiên |
+| File | Tình trạng | |
 |---|---|---|
-| `_inbox/ivp-tom-tat-lectures.md` | 🟡 L1–L6 đã tách xong → **còn L7–L12** (nhánh E–J) | 🔴 cao |
+| `_inbox/ivp-tom-tat-lectures.md` | ✅ **đã tách hết** L1→L12 → nhánh A–J | — |
 | `_inbox/ivp-mindmap-mo-rong.md` | ✅ đã dùng hết cho nhánh C + D | — |
-| `_inbox/ivp-mindmap.md` | ✅ đã đối chiếu L0–L6; phần L7+ không có trong file | — |
-| `_inbox/ivp-note-tho.md` | 🟡 phần L7–L12 (restoration, morphology, edge) chưa tách | 🟡 vừa |
+| `_inbox/ivp-mindmap.md` | ✅ đã đối chiếu L0–L6 | — |
+| `_inbox/ivp-note-tho.md` | ✅ đã đối chiếu L7–L12 (restoration, morphology, edge) | — |
+
+**Chưa lấy được từ nguồn nào** (không có trong 4 file inbox, cần đọc PDF/notebook gốc):
+- **Nén ảnh** — DCT, JPEG, PSNR/SSIM (Session 6 theo lịch)
+- **Video & chuyển động** — ước lượng chuyển động, optical flow (Session 9)
+- Ví dụ code thực hành từ 9 notebook `session1..9.ipynb` → bổ sung vào mục `⚙️ Khi nào dùng` của các note đã có
 
 ## ❓ Câu hỏi mở
 

@@ -1,12 +1,12 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
-**Cập nhật lần cuối:** 2026-08-10 08:32
-**Bước đang làm:** 🟡 P13 — chưng cất `_inbox/` → vault `ivp` + `dsp`
-**Tiến độ:** ✅ **57/57 bước** (50 kế hoạch + 4 GitHub + 3 Pages)
+**Cập nhật lần cuối:** 2026-08-10 10:05
+**Bước đang làm:** 🟡 P13.2 — chưng cất `_inbox/` vault `dsp` (ivp đã xong)
+**Tiến độ:** ✅ **58/59 bước** (50 kế hoạch + 4 GitHub + 3 Pages + 1/2 chưng cất)
 **Repo:** https://github.com/haihpse150218/My-second-braind (`main`)
 **🌐 Web live:** https://haihpse150218.github.io/My-second-braind/
 
-**Kho hiện tại:** 239 note · 5 vault · 8 project · 1193 cạnh · 27 cạnh liên môn · 69/69 test xanh
+**Kho hiện tại:** 304 note · 5 vault · 8 project · 1601 cạnh · 53 cạnh liên môn · 69/69 test xanh
 
 > File này là **checkpoint**. Sau khi xong MỖI bước phải cập nhật ngay tại đây trước khi sang bước kế.
 > Quy ước: `⬜ chưa làm` · `🟡 đang làm` · `✅ xong` · `⏸️ tạm dừng` · `❌ bỏ`
@@ -76,6 +76,8 @@
 | **P12** | 12.1 | Workflow `deploy-pages.yml` (CI build → Pages) | ✅ | 2026-08-10 08:28 | không cần `npm ci` |
 | P12 | 12.2 | Bật Pages (`build_type=workflow`) | ✅ | 2026-08-10 08:28 | |
 | P12 | 12.3 | Verify site live (HTTP 200 + JSON hợp lệ) | ✅ | 2026-08-10 08:32 | 239 note · 1193 cạnh |
+| **P13** | 13.1 | Chưng cất `_inbox/` vault **ivp** → 65 note | ✅ | 2026-08-10 10:05 | 10 nhánh A–J · 0 link chết |
+| P13 | 13.2 | Chưng cất `_inbox/` vault **dsp** | ⬜ | | 6 file · ước ~20 note |
 
 ---
 
@@ -231,6 +233,36 @@ Chế độ tĩnh chạy đúng vì `data.js` dò server bằng `fetch('/api/vau
 
 > ⚠️ **Site này CÔNG KHAI và bị search engine đánh chỉ mục.** Repo vốn đã public, nhưng có website thì nội dung dễ tìm thấy hơn hẳn. Kho có ghi chú cá nhân, đề cương luận văn đang làm, đường dẫn tuyệt đối trên máy (`D:\MSA-FPT\...`) và mã sinh viên ở 3 file.
 > Muốn gỡ: `gh api -X DELETE repos/haihpse150218/My-second-braind/pages` (Pages chỉ chạy được với repo public ở gói free — chuyển repo sang private sẽ tự tắt site).
+
+### 2026-08-10 10:05 — P13.1 ✅ Chưng cất inbox IVP → 65 note
+
+Vault `ivp` từ **0 → 65 atomic note**, 10 nhánh A–J bám sát Lecture 1→12. `check-links`: **0 link chết · 0 thiếu branch/order · 10/10 nhánh đánh số liền mạch 1..N**.
+
+| | Trước | Sau |
+|---|---|---|
+| Note toàn kho | 239 | **304** |
+| Cạnh đồ thị | 1193 | **1601** |
+| Cạnh liên môn | 27 | **53** |
+| Link gãy | 35 | **35** (y nguyên — toàn bộ là backlog cũ của `ml`, ivp không đẻ thêm cái nào) |
+
+**Quyết định đáng ghi nhất — sửa lộ trình cho khớp nguồn thật.** Lộ trình dự kiến hôm 2026-08-09 vạch 6 nhánh, trong đó có **Nén ảnh** và **Video & chuyển động**. Đọc hết 4 file inbox mới thấy:
+
+- Nén ảnh: L2 chỉ nhắc `lossy/lossless` đúng một dòng, **không có** DCT/JPEG/PSNR.
+- Video: thuộc Part II, theo lịch nằm ở Session 9 — **chưa học**.
+- Ngược lại, nguồn có **thừa** ra những mảng lộ trình cũ bỏ sót: phục hồi ảnh (L7, rất dày), ảnh màu (L11), phép số học/affine/nội suy (L5), thu nhận ảnh (L4).
+
+Viết note cho hai nhánh kia lúc này là **bịa nội dung không có trong tài liệu**. Đã dựng lại 10 nhánh A–J theo đúng lecture, và ghi hai chủ đề cũ vào [[nguon-chua-xu-ly]] kèm chỉ dẫn nguồn phải đọc (`_txt/`) khi học tới.
+
+**Nhánh:** A ảnh số & biểu diễn (7) · B thu nhận & số hoá (4) · C số học·logic·hình học (5) · D mức xám & histogram (10) · E lọc & phục hồi (13) · F hình thái học (6) · G phát hiện biên (5) · H phân đoạn (6) · I ảnh màu (6) · J keypoint (3).
+
+**Cách viết:** mỗi note bám khung `CONVENTIONS.md` §7, ưu tiên **vì sao** hơn **là gì** — chỗ nào có bẫy thực hành thì nói thẳng ra bẫy đó (ép kiểu `double()` vs `im2double()`, tràn số bị kẹp im lặng, ảnh nhãn bắt buộc nội suy nearest, `jet` là colormap tệ, chọn sai dấu `R` của contraharmonic là hỏng ảnh). Đây là loại thông tin không tra lại được nhanh, nên đáng để trong note nhất.
+
+**26 cạnh liên môn mới** — đáng chú ý là ba cầu nối làm rõ quan hệ giữa các môn:
+- `ivp/tich-chap-2d` ↔ [[../vaults/dl/phep-tich-chap]] — **cùng một phép toán**, khác biệt duy nhất là **ai quyết định kernel**: con người thiết kế (IVP) hay dữ liệu học ra (DL).
+- `ivp/otsu` ↔ [[../vaults/ml/k-means]] — Otsu chính là phân cụm 1 chiều, giải bằng vét cạn nên tìm được tối ưu **toàn cục**, khác k-means vốn có thể kẹt ở tối ưu cục bộ.
+- `ivp/wiener-filter` ↔ [[../vaults/ml/danh-gia-mo-hinh]] — "tối ưu MSE" không đồng nghĩa "trông đẹp nhất"; đúng bài học chọn sai chỉ số là tối ưu sai thứ.
+
+Toàn bộ note để `status: learning` (🟡) — chúng được chưng cất từ tóm tắt của chính mình, nhưng chưa qua bước tự kiểm tra "gấp note lại và giải thích bằng lời". Đánh ✅ lúc này là để số liệu tiến độ nói dối.
 
 ---
 

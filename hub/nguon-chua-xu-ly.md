@@ -23,16 +23,21 @@ App **không đọc** `_inbox/` — note ở đó không lên graph, không tín
 | `dsp501-phan-tich.md` | confusion matrix · so sánh phương pháp | ~2 note | 🟢 |
 | `dsp501-bao-cao.md` | kho công thức LaTeX — tra cứu khi viết note | 0 (tra cứu) | 🟢 |
 
-### `vaults/ivp/_inbox/` — 4 file
+### `vaults/ivp/_inbox/` — 4 file · ✅ **XONG 2026-08-10**
 
-| File | Tách ra | Ước tính | Ưu tiên |
-|---|---|---|---|
-| `ivp-tom-tat-lectures.md` | bảng thuật ngữ L0–L12, **mỗi dòng ≈ 1 note** | ~20 note | 🔴 |
-| `ivp-mindmap-mo-rong.md` | đã cấu trúc theo chủ đề, khớp thẳng nhánh A–C | ~12 note | 🔴 |
-| `ivp-mindmap.md` | mermaid Lecture 0→6 — đối chiếu, chống sót | ~3 note | 🟡 |
-| `ivp-note-tho.md` | brain-dump gốc, câu cụt | ~2 note | 🟢 |
+Cả 4 file đã chưng cất hết → **65 atomic note**, 10 nhánh A–J bám sát Lecture 1→12.
+Ước tính ban đầu ~37 note; thực tế nguồn giàu hơn nhiều.
 
-**Tổng ước tính: ~57 atomic note** sẽ sinh ra từ 10 file thô này.
+| File | Kết quả |
+|---|---|
+| `ivp-tom-tat-lectures.md` | ✅ nguồn chính — tách hết L1→L12 |
+| `ivp-mindmap-mo-rong.md` | ✅ dùng hết cho nhánh C (phép số học) + D (histogram) |
+| `ivp-mindmap.md` | ✅ đối chiếu L0–L6, chống sót |
+| `ivp-note-tho.md` | ✅ đối chiếu L7–L12 |
+
+> ⚠️ **Đã sửa lộ trình IVP.** Bản dự kiến cũ có nhánh *Nén ảnh* và *Video & chuyển động* — **không có trong tài liệu nguồn** (nén chỉ được nhắc 1 dòng ở L2; video thuộc Session 9 chưa học). Đã thay bằng 10 nhánh bám lecture thật; hai chủ đề cũ chuyển xuống mục 2 dưới đây.
+
+**Còn lại: `vaults/dsp/_inbox/` — 6 file (~20 note).**
 
 ---
 
@@ -43,8 +48,8 @@ Vẫn nằm nguyên ở thư mục gốc, chưa copy vào `Second-brain`.
 | Nguồn | Nội dung | Xử lý thế nào |
 |---|---|---|
 | `D:\MSA-FPT\Digital Signal Processing\Slide` | 8 bài giảng PDF | Dùng `/api/import-slide` (Claude đọc PDF → sinh note) hoặc đọc tay |
-| `D:\MSA-FPT\Image and video processing\_txt` | Lecture 0–12 dạng `.txt` (grep được) | Nguồn tốt để đối chiếu khi chưng cất IVP |
-| `D:\MSA-FPT\Image and video processing\HPH_25MS23323` | 9 notebook `session1..9.ipynb` | Trích ví dụ code cho mục `⚙️ Khi nào dùng` |
+| `D:\MSA-FPT\Image and video processing\_txt` | Lecture 0–12 dạng `.txt` (grep được) | 🔴 **Còn thiếu: nén ảnh (DCT/JPEG/PSNR-SSIM) và video/optical flow** — hai chủ đề này không có trong 4 file inbox, phải đọc thẳng từ đây |
+| `D:\MSA-FPT\Image and video processing\HPH_25MS23323` | 9 notebook `session1..9.ipynb` | Trích ví dụ code bổ sung vào mục `⚙️ Khi nào dùng` của 65 note IVP đã có |
 | `D:\MSA-FPT\Coursera` | 2 khoá Agile (tiếng Anh) | → đã có thẻ [[../projects/coursera-agile]] |
 | `D:\MSA-FPT\Python` | Bài tập môn Python | Gần như không có kiến thức atomic — **bỏ qua** |
 | `D:\MSA-FPT\AI-base` | 1 PDF + 1 bookmark | Không đủ để thành vault — **bỏ qua** |
