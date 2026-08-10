@@ -66,12 +66,16 @@
     "type": "concept",
     "color": "#ec4899",
     "branches": {
-      "A": "Điểm ảnh & biểu diễn ảnh",
-      "B": "Xử lý miền không gian",
-      "C": "Xử lý miền tần số",
-      "D": "Phân đoạn & hình thái học",
-      "E": "Nén ảnh",
-      "F": "Video & chuyển động"
+      "A": "Ảnh số & biểu diễn (L1–L3)",
+      "B": "Thu nhận & số hoá ảnh (L4)",
+      "C": "Phép toán số học · logic · hình học (L5)",
+      "D": "Biến đổi mức xám & histogram (L6)",
+      "E": "Lọc không gian & phục hồi ảnh (L6–L7)",
+      "F": "Hình thái học (L8)",
+      "G": "Phát hiện biên (L9)",
+      "H": "Phân đoạn ảnh (L10)",
+      "I": "Ảnh màu (L11)",
+      "J": "Keypoint & video (L12)"
     }
   }
 }
