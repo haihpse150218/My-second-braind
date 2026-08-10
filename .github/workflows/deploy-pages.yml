@@ -1,0 +1,55 @@
+name: Deploy Second Brain lên GitHub Pages
+
+# dist/ nằm trong .gitignore (sinh lại được) nên CI tự build từ nguồn
+# rồi đẩy thẳng lên Pages — không commit bản build vào repo.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Chỉ cho 1 lần deploy chạy tại một thời điểm; push mới huỷ lần đang chạy dở.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # KHÔNG cần `npm ci`: scripts/build-index.mjs chỉ dùng module có sẵn của Node
+      # (node:fs, node:path, node:url) + lib/ nội bộ. Dependency @anthropic-ai/sdk
+      # chỉ được lib/import.js nạp, mà đó là đường của server chứ không phải bản build.
+      - name: Build dist/
+        working-directory: app
+        run: node scripts/build-index.mjs
+
+      # Pages mặc định chạy Jekyll — Jekyll BỎ QUA mọi file/thư mục bắt đầu bằng '_'.
+      # Không có file này thì một phần vendor/ có thể biến mất im lặng.
+      - name: Tắt Jekyll
+        run: touch dist/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
