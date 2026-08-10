@@ -1,9 +1,10 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
-**Cập nhật lần cuối:** 2026-08-09 21:12
-**Bước đang làm:** — (xong toàn bộ kế hoạch)
-**Tiến độ:** ✅ **54/54 bước** (50 kế hoạch + 4 bước đưa lên GitHub)
-**Repo:** https://github.com/haihpse150218/My-second-braind (`main`, `456aa59`)
+**Cập nhật lần cuối:** 2026-08-10 08:32
+**Bước đang làm:** 🟡 P13 — chưng cất `_inbox/` → vault `ivp` + `dsp`
+**Tiến độ:** ✅ **57/57 bước** (50 kế hoạch + 4 GitHub + 3 Pages)
+**Repo:** https://github.com/haihpse150218/My-second-braind (`main`)
+**🌐 Web live:** https://haihpse150218.github.io/My-second-braind/
 
 **Kho hiện tại:** 239 note · 5 vault · 8 project · 1193 cạnh · 27 cạnh liên môn · 69/69 test xanh
 
@@ -72,6 +73,9 @@
 | P11 | 11.2 | Commit toàn kho | ✅ | 2026-08-09 21:08 | `456aa59` · 346 file · 32.758 dòng |
 | P11 | 11.3 | Push lên GitHub | ✅ | 2026-08-09 21:10 | nhánh `main` |
 | P11 | 11.4 | Đặt description + topics | ✅ | 2026-08-09 21:12 | 11 topic |
+| **P12** | 12.1 | Workflow `deploy-pages.yml` (CI build → Pages) | ✅ | 2026-08-10 08:28 | không cần `npm ci` |
+| P12 | 12.2 | Bật Pages (`build_type=workflow`) | ✅ | 2026-08-10 08:28 | |
+| P12 | 12.3 | Verify site live (HTTP 200 + JSON hợp lệ) | ✅ | 2026-08-10 08:32 | 239 note · 1193 cạnh |
 
 ---
 
@@ -201,6 +205,32 @@ Quét trước khi đẩy:
 Cấu hình repo: description + 11 topic (`second-brain`, `pkm`, `zettelkasten`, `knowledge-graph`, `machine-learning`, `deep-learning`, `digital-signal-processing`, `obsidian`, `markdown`, `cytoscape`, `vietnamese`).
 
 `.gitattributes` ép LF cho `.md`/`.js` — script ghi file bằng LF, không ép thì mỗi lần checkout trên Windows sẽ tạo diff giả toàn kho.
+
+### 2026-08-10 08:32 — P12 ✅ Deploy GitHub Pages
+
+**🌐 Bản web live: https://haihpse150218.github.io/My-second-braind/**
+
+Cách làm: `dist/` vẫn nằm trong `.gitignore` (sinh lại được, 2.7 MB, đổi mỗi lần sửa note → commit vào repo là tự tạo diff rác). Thay vào đó `.github/workflows/deploy-pages.yml` **build từ nguồn trong CI** rồi đẩy artifact thẳng lên Pages. Sửa note → `git push` → site tự cập nhật.
+
+**Workflow không chạy `npm ci`** — `scripts/build-index.mjs` chỉ dùng module có sẵn của Node (`node:fs`, `node:path`, `node:url`) + `lib/` nội bộ. Dependency duy nhất `@anthropic-ai/sdk` chỉ được `lib/import.js` nạp, mà đó là đường của server. Đã kiểm chứng bằng cách build trong thư mục sạch không có `node_modules`. → build ~5 giây, không phụ thuộc mạng npm.
+
+**`touch dist/.nojekyll` là bắt buộc.** Pages mặc định chạy Jekyll, mà Jekyll **bỏ qua im lặng** mọi file/thư mục bắt đầu bằng `_`. Không có file này thì một phần asset có thể biến mất mà không báo lỗi gì.
+
+Chế độ tĩnh chạy đúng vì `data.js` dò server bằng `fetch('/api/vaults')` → trên Pages trả **404** → rơi sang đọc `index.json`. Mọi đường dẫn asset trong `index.html` đều **tương đối**, nên chạy được ở subpath `/My-second-braind/` mà không phải sửa gì.
+
+**Đã verify sau khi deploy:**
+
+| Đích | Kết quả |
+|---|---|
+| `/My-second-braind/` | 200 · 7.762 byte |
+| `…/index.json` | 200 · 1.638.367 byte · JSON hợp lệ |
+| `…/vendor/cytoscape.min.js` | 200 · 435 KB |
+| `…/vendor/katex/fonts/KaTeX_Main-Regular.woff2` | 200 (xác nhận `.nojekyll` có tác dụng) |
+| `/api/vaults` | 404 → đúng, kích hoạt chế độ chỉ đọc |
+| Nội dung `index.json` | 239 note · 247 node · 1193 cạnh · 5 vault |
+
+> ⚠️ **Site này CÔNG KHAI và bị search engine đánh chỉ mục.** Repo vốn đã public, nhưng có website thì nội dung dễ tìm thấy hơn hẳn. Kho có ghi chú cá nhân, đề cương luận văn đang làm, đường dẫn tuyệt đối trên máy (`D:\MSA-FPT\...`) và mã sinh viên ở 3 file.
+> Muốn gỡ: `gh api -X DELETE repos/haihpse150218/My-second-braind/pages` (Pages chỉ chạy được với repo public ở gói free — chuyển repo sang private sẽ tự tắt site).
 
 ---
 

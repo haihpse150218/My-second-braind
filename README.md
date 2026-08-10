@@ -4,6 +4,8 @@ Kho kiến thức gộp của toàn bộ chương trình học, kèm web app đ�
 
 **239 note · 5 vault · 8 project · 1193 cạnh đồ thị**
 
+**🌐 Xem online (bản chỉ đọc): https://haihpse150218.github.io/My-second-braind/**
+
 ---
 
 ## Chạy
