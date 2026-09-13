@@ -1,12 +1,15 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
-**Cập nhật lần cuối:** 2026-08-10 13:40
-**Bước đang làm:** — (backlog link gãy đã cạn)
-**Tiến độ:** ✅ **61/61 bước** (50 kế hoạch + 4 GitHub + 3 Pages + 2 chưng cất + 2 bồi đắp)
+**Cập nhật lần cuối:** 2026-09-13
+**Bước đang làm:** — (P15 đã commit + push xong)
+**Tiến độ:** ✅ 61/61 bước cũ · ✅ P15 xong (trừ 15.7 ❌ không tải được giáo trình)
 **Repo:** https://github.com/haihpse150218/My-second-braind (`main`)
 **🌐 Web live:** https://haihpse150218.github.io/My-second-braind/
 
-**Kho hiện tại:** 346 note · 5 vault · 8 project · 1934 cạnh · 120 cạnh liên môn · **0 link gãy** · 69/69 test xanh
+**Kho hiện tại:** **353 note** · **7 vault** · 8 project · 271 link gãy *(xem P15 — cố ý, là lộ trình đặt sẵn)*
+
+> ⚠️ **Máy này KHÔNG có Node.js** → `npm run check` / `npm test` / `npm start` đều không chạy được.
+> Số liệu trên đếm bằng script Python tạm ở scratchpad, **không phải** `check-all.mjs`. Cần đối chiếu lại khi về máy có Node.
 
 > File này là **checkpoint**. Sau khi xong MỖI bước phải cập nhật ngay tại đây trước khi sang bước kế.
 > Quy ước: `⬜ chưa làm` · `🟡 đang làm` · `✅ xong` · `⏸️ tạm dừng` · `❌ bỏ`
@@ -80,6 +83,16 @@
 | P13 | 13.2 | Chưng cất `_inbox/` vault **dsp** → 21 note | ✅ | 2026-08-10 11:20 | 5 nhánh A–E · 0 link chết |
 | **P14** | 14.1 | Link repo GitHub vào 8 thẻ project | ✅ | 2026-08-10 12:30 | 5 có repo (đã verify), 3 ghi rõ "chưa có" |
 | P14 | 14.2 | Viết 21 note `ml` còn thiếu → **link gãy 35 → 0** | ✅ | 2026-08-10 13:40 | nhánh B: 3 → 12 note |
+| **P15** | 15.0 | Cài PortableGit + clone repo về máy mới | ✅ | 2026-09-12 | máy không có Node/winget/choco |
+| P15 | 15.1 | Tải slide Triết học 232 trang + bóc text | ✅ | 2026-09-12 | `vaults/triet/slides/` — PDF 14.8 MB |
+| P15 | 15.2 | Dựng vault `triet` (hub 10 nhánh · 65 note dự kiến) | ✅ | 2026-09-12 | mỗi mục gắn sẵn số slide |
+| P15 | 15.3 | Viết 5 atomic note `triet` | ✅ | 2026-09-12 | the-gioi-quan · chan-ly · nguyen-nhan-va-ket-qua · tat-nhien-va-ngau-nhien · vai-tro-cua-thuc-tien |
+| P15 | 15.4 | Dựng vault `tamly` (hub 13 nhánh · 125 góc nhìn) | ✅ | 2026-09-12 | + ma trận 6 trục · 2 note seed |
+| P15 | 15.5 | Đăng ký `triet` + `tamly` vào `app/vaults.json` | ✅ | 2026-09-12 | 7 vault, JSON parse OK |
+| P15 | 15.6 | Skill `truy-ban-chat` + 11 agent lăng kính | ✅ | 2026-09-12 | `.claude/` + copy `~/.claude/`, khớp byte |
+| P15 | 15.7 | Tải giáo trình chính thức 2021 | ❌ | 2026-09-12 | 5 nguồn đều hỏng — xem nhật ký |
+| P15 | 15.8 | Commit + push P15 | ✅ | 2026-09-13 | 3 commit: vault · skill · PROGRESS |
+| P15 | 15.9 | Quyết định `.gitignore` cho `*.pdf` | ✅ | 2026-09-13 | **chốt: commit cả PDF**, không ignore |
 
 ---
 
@@ -318,6 +331,66 @@ Phát hiện đáng ghi: repo `machine-learning` chính là **nguồn gốc củ
 
 4 note vẫn không có `branch` (`dinh-huong-hoc`, `eda-checklist`, `note`, `template-checklist`) — **đúng ý**, chúng là note meta không thuộc nhánh nào.
 
+### 2026-09-12 — P15 ✅ Máy mới · 2 vault mới · skill biện chứng
+
+> ✅ **Đã commit + push 2026-09-13** — 3 commit: vault · skill · PROGRESS.
+
+**Bối cảnh:** phiên này chạy trên **máy khác** (`C:\Users\Admin\Desktop\Triết Ho`, user `Admin`), không phải `D:\MSA-FPT\Second-brain\` như các phase trước.
+
+**15.0 — Môi trường máy mới.** Máy trắng: không Git, không Node.js, không winget/choco/scoop. Chỉ có Python 3.14.
+- Đã cài **PortableGit 2.55.0** vào `%LOCALAPPDATA%\Programs\PortableGit`, đã thêm vào **PATH user** (mở terminal mới là gõ `git` được, không cần admin).
+- Clone repo qua HTTPS public → **chưa cấu hình push**, cần PAT hoặc SSH key.
+- ⚠️ **Không có Node.js** nên `npm run check`, `node --test`, `npm start` đều không chạy được suốt phiên. Mọi kiểm tra làm bằng script Python tạm.
+- ⚠️ **PowerShell 5.1 đọc file UTF-8 sai** (`Get-Content` ra `ChÃ¢n lÃ½`) → mọi lần kiểm nội dung tiếng Việt phải dùng Python, không dùng PowerShell. Đã mắc bẫy này một lần: script PS báo "thiếu 8 mục" trong khi file hoàn toàn đúng.
+
+**15.1–15.3 — Vault `triet`.** Nguồn: slide môn Triết học Mác – Lênin của **TS. Đặng Hoàng Vũ (FSB)**, 232 slide, 10 chương. Tải từ `https://ap.fsb.edu.vn/subject/document/0dd409ff0b20b071788944599.pdf`.
+- PDF gốc **14.8 MB** + bản text đã bóc (88 KB, grep theo `=== PAGE n ===`) để ở `vaults/triet/slides/`.
+- Hub `SECOND_BRAIN_TRIET.md`: 10 nhánh A–J, **65 note dự kiến, mỗi mục gắn sẵn số slide** — tra ngược được ngay.
+- **5 note đã viết**, tất cả trích nguyên văn slide thay vì diễn giải:
+
+| Note | Nhánh | Điểm chính |
+|---|---|---|
+| `the-gioi-quan` | A#1 | 3 biến số của thầy: **góc nhìn · hướng nhìn · tầm nhìn** (slide 3) |
+| `chan-ly` | E#6 | 4 tính chất + **định kiến ngành** & 3 kiểu lỗi |
+| `nguyen-nhan-va-ket-qua` | D#8 | Tách **nguyên nhân · điều kiện · nguyên cớ** (*"gà không gáy thì trời vẫn sáng"*) |
+| `tat-nhien-va-ngau-nhien` | D#6 | Phép thử *"điều kiện như nhau → kết quả như nhau"* |
+| `vai-tro-cua-thuc-tien` | E#4 | 3 vai trò · 3 hình thức · thang chấm 🟢🟡🔴 |
+
+**Một ví dụ chạy xuyên suốt 3 note cuối** — chuỗi *"thương lái mua móng trâu → trộm cắt chân trâu → kinh tế đi xuống"*. Soi bằng 3 phạm trù thì lòi ra 4 lỗi: nhầm nguyên cớ thành nguyên nhân · nâng ngẫu nhiên thành tất nhiên · nhảy từ đơn nhất lên cái chung · chưa qua thực tiễn kiểm nghiệm. Dùng một ví dụ cho 3 note dễ nhớ hơn 3 ví dụ rời, và cho thấy các phạm trù ăn khớp nhau.
+
+**15.4 — Vault `tamly`.** 13 nhánh A–M, **125 góc nhìn** từ Descartes tới predictive processing. Hub có 3 thứ dùng được ngay: bảng *"một người trầm cảm"* × 10 lăng kính · **ma trận 6 trục** để định vị bất kỳ trường phái nào · bảng 4 cuộc chuyển hệ hình. 2 note seed: `tam-ly-la-su-phan-anh` (nhánh E — trường phái Mác-xít, nối thẳng sang môn Triết) và `da-nguyen-luan-ly-thuyet`.
+
+**15.6 — Skill `truy-ban-chat` + 11 agent.** Đóng gói khuôn phân tích đã dùng cho ví dụ con trâu thành công cụ tái dùng. Quy trình 6 pha, mục tiêu **truy bản chất và quy luật**.
+
+Thiết kế đổi giữa chừng khi chốt được một điểm: **đặt vấn đề là khâu đòn bẩy cao nhất**, vì quan hệ này bất đối xứng — slide 121 (nhắc lại 123): *"Nhận thức đúng thì hành động **có đúng, có sai**; nhận thức sai thì hành động **không thể đúng**!"*. Nên `tbc-dat-van-de` thành **Pha 1 chạy một mình trước tất cả**.
+
+Cùng lúc tách được 2 lỗi hay bị gộp làm một:
+
+| | Sai ở đâu | Ví dụ |
+|---|---|---|
+| **Post hoc** | thứ tự thời gian | gà gáy rồi trời sáng → gà làm trời sáng |
+| **Khẳng định hậu kiện** | hướng suy luận | **đường ướt → kết luận trời mưa** |
+
+Mọi agent bắt buộc khai trường **⛔ Cái lăng kính này KHÔNG thấy** — cơ chế chống búa–đinh, vì agent nào được giao cặp phạm trù nào cũng sẽ luôn "tìm ra" cái đó.
+
+Đặt ở **cả hai nơi**: `<repo>/.claude/` (commit được) và `~/.claude/` (dùng ở mọi project). 14 file, đã verify khớp byte. ⚠️ **Sửa ở repo phải copy lại sang user-level**, lệnh ghi ở cuối `SKILL.md`.
+
+**15.7 — ❌ Không tải được giáo trình chính thức 2021.** Thử 5 nguồn:
+
+| Nguồn | Kết quả |
+|---|---|
+| `dokumen.pub` (2 URL) | 403 Forbidden |
+| `thuviendientutriethocc500.edu.vn` | **cert SSL không khớp hostname** (`SEC_E_WRONG_PRINCIPAL`) — không bypass |
+| `giaotrinh.edu.vn` | 406, trả HTML |
+| `thuvienso.hoasen.edu.vn` | *"No item found"* — record đã gỡ |
+| `thuvien.qui.edu.vn` | trang giới thiệu, không có file |
+
+Slide là bản rút gọn có chủ ý, nhiều chỗ chỉ ghi từ khoá → **cần định nghĩa chính xác để đi thi thì phải tra giáo trình giấy**. Đã ghi cảnh báo này vào `SKILL.md`.
+
+**Về 271 link gãy.** Trong đó **240 cái là của 2 vault mới** (tamly 140, triet 100) — **cố ý, đúng thiết kế**: hub là lộ trình đặt sẵn chỗ cho note tương lai, `CONVENTIONS.md §6` cho phép. 31 cái còn lại nằm ở vault cũ (ml 12, ivp 9, dl 7, dsp 2, nckh 1) — **nhiều khả năng là chênh lệch cách đếm**, vì script Python tạm của tao quét cả file `SECOND_BRAIN_*.md` còn `check-all.mjs` có thể không. **Phải chạy `npm run check` trên máy có Node để biết con số thật.**
+
+✅ **CI không bị ảnh hưởng** — `deploy-pages.yml` chỉ chạy `build-index.mjs`, không chạy `check-links.js` hay test. Push lên là site vẫn build, chỉ có link dangling.
+
 ---
 
 ## 📊 Kết quả cuối
@@ -369,7 +442,34 @@ Phát hiện đáng ghi: repo `machine-learning` chính là **nguồn gốc củ
 
 ---
 
-## ▶️ Resume: làm gì tiếp theo
+## ▶️ RESUME — đọc mục này trước tiên khi mở lại
+
+> ✅ **P15 đã push xong 2026-09-13.** Working tree sạch, remote `origin/main` đã có đủ 3 commit.
+
+### Làm ngay khi mở lại — theo thứ tự
+
+**1. Đã chốt 2026-09-13:** PDF 14.8 MB **commit thẳng vào repo**, không gitignore (`.gitattributes` đã khai `*.pdf binary`). Git identity đặt ở level repo vì máy này không có `~/.gitconfig`.
+
+**2. Chạy `npm run check` khi về máy có Node** — con số 271 link gãy hiện tại đếm bằng script Python tạm, **chưa đối chiếu với tooling thật của kho**. 31 link gãy ở vault cũ có thể chỉ là chênh lệch cách đếm.
+
+### Việc dở của P15
+
+| Việc | Ghi chú |
+|---|---|
+| 2 note nhánh E `triet` đang là link gãy | `thuc-tien` (E#3) · `hai-giai-doan-nhan-thuc` (E#5 — đã bàn kỹ: ma trận 2×2 kinh nghiệm/giáo điều, slide 133–136) |
+| Chạy thử skill `truy-ban-chat` | Ném ví dụ **con trâu** vào — đã có sẵn phân tích đúng trong hội thoại làm **ground truth**. Nếu nó không tự tìm ra *"bản tin là nguyên cớ"* và không chấm 🔴 thì phải sửa agent |
+| `note.md` ở thư mục gốc | Sơ đồ ASCII bị vỡ khi paste, chưa sửa. Bản đúng nằm trong `vaults/triet/the-gioi-quan.md` |
+| 11 agent đang để `model: opus` | Chạy 5–8 agent Opus song song khá tốn. Thấy nặng thì sửa 1 dòng/file sang `sonnet` |
+| Giáo trình 2021 | Chưa tải được. Kiếm link khác hoặc tự tải rồi bỏ vào `vaults/triet/slides/` |
+
+### ⚠️ Hai cái bẫy của máy này
+
+1. **Không có Node.js** → `npm run check` / `npm test` / `npm start` đều chết. Muốn chạy web app phải cài Node trước.
+2. **PowerShell 5.1 đọc UTF-8 sai** → kiểm nội dung tiếng Việt **phải dùng Python**. Dùng `Get-Content` sẽ ra `ChÃ¢n lÃ½` và báo lỗi giả.
+
+---
+
+## ▶️ Backlog cũ (từ P14, vẫn còn giá trị)
 
 **Kế hoạch dựng kho đã xong 50/50.** Việc tiếp theo là *dùng* và *bồi đắp*, theo thứ tự giá trị giảm dần:
 
