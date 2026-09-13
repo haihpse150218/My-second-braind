@@ -61,6 +61,45 @@
       "E": "Thực nghiệm & đánh giá (DSP501)"
     }
   },
+  "triet": {
+    "label": "Triết học Mác – Lênin",
+    "dir": "../vaults/triet",
+    "type": "concept",
+    "color": "#dc2626",
+    "branches": {
+      "A": "Khái luận về triết học (slide 2–24)",
+      "B": "Sự ra đời & vai trò của triết học Mác – Lênin (25–41)",
+      "C": "Vật chất và ý thức (43–71)",
+      "D": "Phép biện chứng duy vật (72–118)",
+      "E": "Lý luận nhận thức (119–141)",
+      "F": "Hình thái kinh tế – xã hội (142–164)",
+      "G": "Giai cấp · Dân tộc · Nhà nước · Cách mạng (165–195)",
+      "H": "Tồn tại xã hội & Ý thức xã hội (196–205)",
+      "I": "Triết học về con người (206–219)",
+      "J": "Khoa học & Triết học (220–232)"
+    }
+  },
+  "tamly": {
+    "label": "Tâm lý học",
+    "dir": "../vaults/tamly",
+    "type": "concept",
+    "color": "#0ea5e9",
+    "branches": {
+      "A": "Nền triết học & tiền sử (trước 1879)",
+      "B": "Trường phái kinh điển (1879–1950)",
+      "C": "Hậu duệ & biến thể của hai phái lớn",
+      "D": "Cách mạng nhận thức (1950s → nay)",
+      "E": "Văn hoá–lịch sử & Hoạt động (trường phái Mác-xít)",
+      "F": "Sinh học · Thần kinh · Tiến hoá",
+      "G": "Xã hội · Văn hoá · Phê phán",
+      "H": "Nhân cách · Trắc nghiệm · Khác biệt cá nhân",
+      "I": "Phát triển suốt đời",
+      "J": "Lâm sàng & Trị liệu",
+      "K": "Đương đại & Mới nổi",
+      "L": "Phương pháp luận (meta) — tranh luận nền",
+      "M": "Phương Đông & phi Phương Tây"
+    }
+  },
   "ivp": {
     "label": "Image & Video Processing",
     "dir": "../vaults/ivp",
