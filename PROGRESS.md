@@ -1,7 +1,7 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
 **Cập nhật lần cuối:** 2026-09-20
-**Bước đang làm:** P16 — ⏸️ **CHỜ QUYẾT ĐỊNH**: tái cấu trúc theo bản hạ cấp, hay vá từng lỗi? · P17 ✅ xong
+**Bước đang làm:** P16 — ✅ Deck 20 slide đã dựng xong (PDF). Còn: phát phiếu ca ngành + 6 việc trong tuần. · P17 ✅ xong
 **Tiến độ:** ✅ 61/61 bước cũ · ✅ P15 xong (trừ 15.7 ❌ không tải được giáo trình) · ✅ P17 xong
 **Repo:** https://github.com/haihpse150218/My-second-braind (`main`)
 **🌐 Web live:** https://haihpse150218.github.io/My-second-braind/
@@ -109,7 +109,16 @@
 | P16 | 16.3l | Viết `present/de-tai-viec-lam-tri-thuc.md` — kịch bản 15 slide | ✅ | 2026-09-20 | **908 dòng · 15 slide · 3 phụ lục** · 0 link gãy |
 | P16 | 16.4 | Viết note `triet` xương sống của bài | 🟡 | 2026-09-20 | **nhánh D đủ D1–D12** ✅; còn thiếu `hai-giai-doan-nhan-thuc` (E5) — không chặn bài |
 | P16 | 16.5 | Thu dữ liệu — **phiếu ca ngành 6 câu** thay khảo sát | ⬜ | | mỗi thành viên 1 trang về ngành mình, thu trong 2 ngày |
-| P16 | 16.6 | Dựng 15 slide + tổng duyệt bấm giờ | ⬜ | | 3 hình bắt buộc: sơ đồ mâu thuẫn · bảng các bên · trục điểm nút |
+| P16 | 16.3m | Tái cấu trúc sau pha 5 — hạ luận đề xuống mức bằng chứng chịu được | ✅ | 2026-09-20 | bỏ khung A/B, thay bằng **4 giả thuyết H1–H4** + 2 phép phân biệt |
+| P16 | 16.6a | Tải 6 ảnh PD/CC0 + sinh biểu đồ | ✅ | 2026-09-20 | Wikimedia Commons · `present/img/` + `NGUON.md` |
+| P16 | 16.6b | Dựng deck **HTML/SVG → PDF bằng Chrome** | ✅ | 2026-09-20 | **20 slide** (15 + 5 dự phòng) · 960×540pt = 16:9 · 3,3 MB |
+| P16 | 16.6c | Dựng bản kịch bản nói | ✅ | 2026-09-20 | `notes.html` → PDF 9 trang A4 |
+| P16 | 16.6d | Xuất bản **.pptx** qua PowerPoint COM | ✅ | 2026-09-20 | 20 slide · 16:9 · **speaker notes là text thật** · 6,9 MB |
+| P16 | 16.6e | Sửa chữ *"khi nào lật"* → *"khi nào đổi chất"* | ✅ | 2026-09-20 | chữ tự bịa, không rõ nghĩa; **vault đã ghi đúng từ đầu** |
+| P16 | 16.6f | **Deck v2** — cấu trúc *bày từ khoá trước, rồi gỡ từng cái* | ✅ | 2026-09-20 | 16 slide + 5 dự phòng · bản đồ 8 từ khoá + dải chỉ vị trí |
+| P16 | 16.6g | Kịch bản nói bản v2 + vá tham chiếu chéo lệch số | ✅ | 2026-09-20 | PDF 10 trang A4; **9 chỗ trỏ sai slide** ở cả 2 đường sinh notes |
+| P16 | 16.6h | **Deck v3** — trả phần chữ về slide, bỏ viết tắt | ✅ | 2026-09-20 | chữ/slide **28–42 → 150–300**; 8 từ khoá viết đủ nghĩa; 0 chữ nghiêng |
+| P16 | 16.7 | Tổng duyệt bấm giờ | ⬜ | | cả nhóm |
 | **P17** | 17.1 | Bóc toàn văn bài Anthropic *"Scenarios for Our Economic Future"* (9/2026) | ✅ | 2026-09-20 | curl + Python strip HTML → `NGUON.md` 18,4 KB. **PowerShell/Node vô dụng như thường lệ** |
 | P17 | 17.2 | Pha 0 — `tbc-dat-van-de` chạy một mình | ✅ | 2026-09-20 | 9 tiền đề ngầm · 4 phép thử đảo chiều · 6 phép kiểm thiết kế sẵn |
 | P17 | 17.3 | Pha 2 — fan-out **9 lăng kính** song song | ✅ | 2026-09-20 | 2 nguyên lý + 3 lõi + 2 chọn + 2 quy luật; ~5 phút/agent |
@@ -657,6 +666,122 @@ WGA/SAG-AFTRA 2023 và Alaska Permanent Fund Dividend: **cả hai có thật**, 
 **Đang quan sát thấy:** tỷ trọng lao động giảm nhanh (95,999 → 93,446 trong ~3 quý) **trong khi U-3 đứng yên**. Đúng chữ ký *"vùng chuyển mà đèn báo không sáng"*. ⚠️ Vài quý là **nhiễu**, số đã bị điều chỉnh một lần (53,8 → 54,4). **Theo dõi hằng quý, không trích làm bằng chứng.**
 
 **Đầu ra:** `vaults/triet/ca-kich-ban-kinh-te-ai-anthropic.md` (nhánh J #4, 🟡) + hub đã cập nhật. Độ tin cậy **🟡** — mọi con số từ báo cáo kỹ thuật đi qua **trích xuất tự động, chưa ai đọc PDF bằng mắt**.
+
+---
+
+### 2026-09-20 — P16 ✅ Deck 20 slide dựng xong
+
+**Tái cấu trúc sau pha 5.** Ba đòn chí mạng làm sập kiến trúc cũ, không vá được. Luận đề hạ xuống mức bằng chứng thật chịu được:
+> Dữ liệu nói rõ **một** điều: điều chỉnh **không** diễn ra trên tiền lương. Nó **không** nói được phần dôi lớn bao nhiêu và ai giữ nó. → **Bốn ứng viên H1–H4**, **hai phép đo phân biệt được**, chưa ai đo.
+
+Bỏ hẳn khung A/B *(hoá ra là né việc phải chọn — A bị loại bằng định nghĩa, không bằng dữ liệu)*. Khách hàng vào lại chỉnh thể S8 thành **ba bên**. Câu bị bỏ sót — *phần dôi lớn bao nhiêu* — thành **trục chính**, và S12 đổi từ "chỉ số gãy thước" sang **cây bốn giả thuyết** — đây mới là chỗ ăn điểm LLO7.
+
+**Đường dựng deck.** `python-pptx` **không có** trên máy và không được `pip install` → đường `.pptx` đóng; Marp cần Node → cũng đóng. Chốt **HTML/SVG → Chrome `--print-to-pdf`**, mọi mắt xích đều có sẵn.
+
+| Sản phẩm | |
+|---|---|
+| `present/viec-lam-tri-thuc.pdf` | **20 trang** (15 slide + 5 dự phòng) · 960×540pt = 16:9 · 3,3 MB |
+| `present/viec-lam-tri-thuc-notes.pdf` | kịch bản nói, 9 trang A4 |
+| `present/slides/` | `index.html` · `style.css` · `notes.html` — sửa được bằng text editor |
+| `present/img/` | 6 ảnh **PD/CC0** + biểu đồ + `NGUON.md` |
+| `present/build.py` | tải ảnh · sinh biểu đồ · gọi Chrome |
+
+**Hai bẫy đã né — ghi lại cho lần sau:**
+1. **Font.** `Poppins` bản Google phủ **28/75** ký tự tiếng Việt; `Bebas` **0/75**. Và matplotlib tra tên `"Arial"` lại trúng `ARIALN.TTF` *(Arial Narrow, hỏng dấu)*. → **bắt buộc `FontProperties(fname=...)` đường dẫn tuyệt đối**. Đã dùng **Segoe UI** (100%).
+2. **Wikimedia chặn theo nhịp.** UA chứa chữ `Bot` → **429 toàn bộ 11/11**. Gửi dồn → 429 ở 15/18. Phải dùng `Special:FilePath/...?width=1600` *(file gốc 8,4 MB timeout >120s)* + `sleep(2.5)`.
+
+**Quyết định về ảnh AI — và nó là một luận điểm, không chỉ là quy tắc:** không dùng ảnh do AI sinh ra. Bài hỏi *"năng suất tăng lên đã đi đâu?"*; minh hoạ bằng ảnh AI là **tự trình diễn đúng cơ chế đang phê phán**. Slide B5 ghi thẳng: *"Toàn bộ hình là ảnh chụp thật, PD hoặc CC0. Không dùng ảnh do AI sinh ra."*
+
+⚠️ **Còn lại, theo thứ tự giá trị:** gài **một ca nghịch** vào phiếu *(1 cuộc gọi — quyết định S11 có kiểm được không)* · phát **phiếu ca ngành 8 câu** · mở báo cáo gốc ITviec trích chính xác · mở PDF WP 2026-02 ghi số trang · đếm tay tin tuyển fresher theo quý · **tổng duyệt bấm giờ**.
+
+---
+
+### 2026-09-20 — P16 · Deck v2: bày từ khoá trước, rồi gỡ từng cái
+
+Người dùng yêu cầu đổi cấu trúc để **có cái nhìn logic**: show keyword rồi mới phân tích từng cái.
+
+**Tám từ khoá chịu lực** — rút từ chính nội dung bài, không bịa thêm:
+① PHẦN DÔI · ② THỜI GIAN · ③ MỘT Ô · ④ NGUYÊN CỚ · ⑤ QUY KẾT · ⑥ QUYỀN HÃM · ⑦ KHOẢNG LỆCH · ⑧ KẾ THỪA
+
+**S2 là bản đồ** — bày cả tám cùng lúc, mỗi cái một dòng nghĩa + số slide gỡ nó. Từ đó mỗi slide phân tích mang **chip từ khoá** + **dải 8 vạch** chỉ đang ở đâu.
+
+**Chi tiết đắt nhất của cấu trúc này:** từ khoá ① **PHẦN DÔI quay lại ở S13** — dải hiện *"1 / 8 — QUAY LẠI"*. Cả bài khép về đúng câu hỏi nó mở ra, và người nghe **nhìn thấy** vòng khép đó chứ không phải tự ghép.
+
+| Sản phẩm | |
+|---|---|
+| `viec-lam-tri-thuc-v2.pdf` · `-v2.pptx` | **21 slide** (16 + 5 dự phòng) · 16:9 · notes text thật |
+| `slides/index-v2.html` | nguồn sửa được |
+| `build_v2.py` · `make_pptx.ps1 -Ver v2` | dựng lại được |
+
+Bản v1 giữ nguyên, không đụng.
+
+---
+
+### 2026-09-20 — P16 · Kịch bản nói v2 + một lỗi chỉ lộ ra khi đổi thứ tự slide
+
+V2 đổi thứ tự slide nhưng **lời nói vẫn là chữ viết cho v1** — nên mọi câu trỏ chéo kiểu *"quay về câu hỏi ở slide hai"* đều **trỏ nhầm slide**. Không script nào báo lỗi: file vẫn dựng, PDF vẫn ra, chỉ có người trình bày đứng trên bục nói sai số.
+
+**Chín chỗ, nằm ở hai đường sinh notes khác nhau** — đây mới là chỗ dễ sót:
+
+| Đường | Nguồn | Chỗ lệch |
+|---|---|---|
+| `build_notes_v2.py` → `notes-v2.html` → PDF | `slides/notes.html` *(kịch bản viết tay)* | S3 `S14`→`S15` · S7 `slide hai`→`ba`, `slide 5`→`6` · S9 `slide năm`→`sáu`, `slide sáu`→`bảy` |
+| `build_v2.py` → `png-v2/notes.txt` → **.pptx** | mục **Lời nói** trong file md | S7 `slide hai`→`ba` · S9 `slide năm`→`sáu`, `slide sáu`→`bảy` · S15 `slide hai`→`ba` |
+
+Hai file nguồn có chữ **khác nhau**, nên vá một bên là còn sót bên kia. Bản .pptx có thêm một chỗ (*"trả lời vội ở slide hai"* ở S15) mà bản HTML không có.
+
+**Ba điều rút ra:**
+
+1. **Vá ở script sinh, không vá ở file ra.** Bảng `SUA_THAM_CHIEU` nằm trong cả `build_notes_v2.py` và `build_v2.py`, có `assert cu in t` — chạy lại là tự vá, và nếu chữ nguồn đổi thì **assert nổ** chứ không lặng lẽ bỏ qua.
+2. **Thứ tự thay chuỗi là bẫy thật.** Ở S9 phải đổi `slide sáu`→`bảy` **trước** `slide năm`→`sáu`, không thì lần sau ăn vào chính chuỗi lần trước vừa tạo. Vì vậy neo dùng cụm dài (`ống dẫn ở slide sáu vẽ sai`) chứ không dùng `slide sáu` trần.
+3. **Để yên số slide giáo trình.** `slide 87` · `93` · `89` · `112` là trang giáo trình, không phải slide của deck. Grep máy móc sẽ đổi nhầm cả bốn.
+
+**Đã kiểm:** PDF 10 trang · 16 khối đúng chip · 21/21 slide có ghi chú · đọc ngược XML trong `.pptx` (`ppt/notesSlides/*.xml`) xác nhận chữ đã sửa nằm trong file.
+
+⚠️ Console PowerShell in ra `kÃ½ tá»±` — **lỗi hiển thị của console, không phải lỗi file**. Kiểm nội dung tiếng Việt luôn phải bằng Python.
+
+---
+
+### 2026-09-20 — P16 · Deck v3: nhìn vào phải hiểu, không cần người nói
+
+Phản hồi của người dùng: *"Slide hơi ít chữ quá mới nhìn vào tao chưa hiểu gì… hạn chế viết tắt, hạn chế italic note, viết keyword rõ ràng."*
+
+**Gốc của lỗi** — không phải lỗi thiết kế, là lỗi chuyển nguồn. File `de-tai-viec-lam-tri-thuc.md` có sẵn mục **Chữ trên slide** đầy đủ cho từng slide. Khi dựng deck, phần chữ đó **bị vứt đi để lấy chỗ cho sơ đồ**. Kết quả: lập luận nằm hết trong kịch bản nói, slide chỉ còn tiêu đề + hình. Đếm thật: 8 slide lăng kính chỉ **28–42 chữ**.
+
+**V3 trả phần chữ đó về**, đặt dưới sơ đồ thành 2–3 cột có nhãn. Chữ mỗi slide: **150 → 300**.
+
+**Ba việc v3 làm:**
+
+| | Việc | Cách làm |
+|---|---|---|
+| 1 | Trả chữ về | Bảng `GIAI` trong `build_v3.py` — mỗi slide 2–3 ô có nhãn chữ hoa + 1 khối **tự khai** |
+| 2 | Bỏ viết tắt | Bảng `BO_VIET_TAT` — `LLSX–QHSX` · `TFP` · `JD` · `n=846` · `man-day` · `P90/P50` · `null` → viết đủ chữ |
+| 3 | Bỏ chữ nghiêng | Xoá sạch thẻ `<em>` (14 chỗ), thay bằng nhãn chữ hoa có màu |
+
+**Tên từ khoá viết lại cho đứng một mình cũng hiểu:**
+
+`PHẦN DÔI` → **PHẦN NĂNG SUẤT DÔI RA** · `THỜI GIAN` → **TRẢ THEO THỜI GIAN** · `MỘT Ô` → **CHỈ MỘT Ô CHO LAO ĐỘNG** · `NGUYÊN CỚ` → **NGUYÊN CỚ KHÁC NGUYÊN NHÂN** · `QUY KẾT` → **QUY KẾT PHẦN GIÁ TRỊ** · `KHOẢNG LỆCH` → **KHOẢNG LỆCH HAI ĐẦU HỢP ĐỒNG** · `KẾ THỪA` → **CÁI MỚI KẾ THỪA GÌ**
+
+**Bốn lỗi bố cục chỉ lộ ra khi render — script không bắt được cái nào:**
+
+1. **`width:100%` cho sơ đồ làm vỡ slide xếp ngang.** S14 có `.than` hướng `row`; sơ đồ ăn hết bề ngang, ép cột ảnh còn một sợi chữ dọc. ⇒ dùng `max-width` chứ không `width`.
+2. **`.than{flex:1}` nuốt chỗ trống rồi đẩy khối chữ xuống đè chân slide.** Bản v2 không có khối chữ nên không lộ. ⇒ `flex:0 1 auto` + `justify-content:flex-start`.
+3. **Dải chỉ vị trí lấy mốc sai ở slide có ảnh nền.** Ảnh nền bọc thêm lớp `.tren{position:relative}` nên `top:30px` tính từ `.tren`, không từ `section` → đè lên tiêu đề. ⇒ `section.v3 .tren > .dai-tk{top:-36px}`.
+4. **Dòng chữ cuối trong sơ đồ bị cụt chân chữ** — SVG cắt theo `viewBox`, chữ sát đáy mất phần dưới. ⇒ nới đáy **+16 đơn vị cho cả 10 sơ đồ**, chỉ thêm khoảng trắng.
+
+**Chỗ chữ thêm vào bị lặp với sơ đồ thì phải bỏ bớt, không phải thêm nữa.** S8 có ô cảnh báo cũ trùng khối tự khai → xoá. S15 có sẵn việc số 0 + ba việc + hai ràng buộc **ở trong sơ đồ** → khối chữ chỉ giữ phần sơ đồ KHÔNG có.
+
+**Một lỗ thật của bài được vá nhân tiện:** đề GK hỏi thẳng *"đơn vị nào sẽ áp dụng?"* mà cả v1 lẫn v2 **không có một danh xưng nào** — grep `C&B` 0, `Công đoàn` 0, `PMO` 0. S15 nay trả lời: ban giám đốc quyết · phòng nhân sự dựng thước đo · quản lý dự án chạy thí điểm · công đoàn cơ sở giám sát, và **bắt đầu ở hợp đồng trọn gói** vì ở đó phần dôi lộ ra trong nội bộ ngay kỳ đầu.
+
+| Sản phẩm | |
+|---|---|
+| `viec-lam-tri-thuc-v3.pdf` · `-v3.pptx` | 21 slide · 16:9 · ghi chú text thật |
+| `viec-lam-tri-thuc-v3-notes.pdf` | 10 trang A4 — lời nói giữ nguyên, thứ tự slide y hệt v2 |
+| `slides/index-v3.html` · `build_v3.py` · `build_notes_v3.py` | dựng lại được |
+
+Bản v1 và v2 giữ nguyên, không đụng.
+
+⚠️ **Bẫy máy tái phát 3 lần trong phiên này:** heredoc `<<'EOF'` qua Bash tool **ăn mất dấu `\`** — `"\n"` thành xuống dòng thật, Python báo `unterminated string literal`. Nội dung có dấu thoát thì dùng Write/Edit, đừng dùng heredoc.
 
 ---
 

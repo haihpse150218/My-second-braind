@@ -1,0 +1,192 @@
+/* Deck GK Triết — tối giản học thuật
+   Nền trắng · chữ đen · MỘT màu nhấn cam.
+   ⚠ KHÔNG BAO GIỜ khai Poppins (28/75 dấu tiếng Việt) hoặc Bebas (0/75).
+   Font an toàn đã kiểm 100% dấu: Segoe UI · Montserrat · Open Sans · Source Sans 3. */
+
+@page { size: 1280px 720px; margin: 0; }
+
+:root {
+  --cam:  #E8641A;   /* màu nhấn duy nhất */
+  --den:  #1A1A1A;
+  --xam:  #6E6E6E;
+  --nhat: #C9C9C9;
+  --nen:  #FAFAF8;
+  --do:   #B3261E;   /* 🔴 chịu thiệt */
+  --xanh: #1B7A3D;   /* 🟢 được lợi */
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", "Montserrat", "Open Sans", sans-serif;
+  color: var(--den);
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+section.slide {
+  width: 1280px; height: 720px;
+  padding: 58px 76px 52px;
+  page-break-after: always; break-after: page;
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+section.slide:last-child { page-break-after: auto; }
+
+/* ── tiêu đề ─────────────────────────────────────── */
+h1 { font-size: 40px; font-weight: 700; line-height: 1.18; letter-spacing: -.4px; }
+h1 .gach { display: block; width: 88px; height: 5px; background: var(--cam); margin-top: 16px; }
+h2 { font-size: 27px; font-weight: 600; line-height: 1.3; }
+.sub { font-size: 17px; color: var(--xam); margin-top: 10px; font-weight: 400; }
+
+/* số slide + nhãn neo, góc dưới */
+.chan {
+  position: absolute; left: 76px; right: 76px; bottom: 22px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 12px; color: var(--nhat); letter-spacing: .4px;
+}
+.chan b { color: var(--cam); font-weight: 600; }
+
+.than { flex: 1; display: flex; flex-direction: column; justify-content: center; margin-top: 26px; }
+
+/* ── khối chữ ────────────────────────────────────── */
+.to     { font-size: 30px; font-weight: 600; line-height: 1.42; }
+.vua    { font-size: 21px; line-height: 1.5; }
+.nho    { font-size: 15px; color: var(--xam); line-height: 1.5; }
+.cam    { color: var(--cam); }
+.dam    { font-weight: 700; }
+em      { font-style: italic; color: var(--xam); }
+
+.canhbao {
+  border-left: 4px solid var(--cam); padding: 4px 0 4px 16px;
+  font-size: 17px; line-height: 1.45; margin-top: 12px;
+}
+.canhbao.lon { font-size: 21px; font-weight: 600; }
+
+/* ── bảng ────────────────────────────────────────── */
+table { border-collapse: collapse; width: 100%; font-size: 17px; }
+th, td { text-align: left; padding: 9px 14px; border-bottom: 1px solid #E6E6E6; }
+th { font-weight: 600; font-size: 14px; color: var(--xam); letter-spacing: .5px; text-transform: uppercase; }
+tr.trong td { color: var(--nhat); font-style: italic; }
+td.loi  { color: var(--xanh); font-weight: 600; }
+td.thiet{ color: var(--do);   font-weight: 600; }
+td.gt   { color: var(--cam);  font-weight: 600; }
+.bang-nho table { font-size: 14.5px; }
+.bang-nho th, .bang-nho td { padding: 6px 10px; }
+
+/* ── ảnh ─────────────────────────────────────────── */
+.anh-nen { position: absolute; inset: 0; z-index: 0; }
+.anh-nen img { width: 100%; height: 100%; object-fit: cover; }
+.anh-nen::after { content: ""; position: absolute; inset: 0; background: rgba(255,255,255,.90); }
+.tren { position: relative; z-index: 1; }
+.anh-ben { width: 300px; height: 210px; object-fit: cover; border-radius: 2px; }
+/* bottom 4px — nằm DƯỚI .chan (22px) để không đè lên số trang */
+.nguon-anh { position: absolute; right: 76px; bottom: 4px; font-size: 10.5px; color: var(--nhat); z-index: 2; }
+
+/* ── SVG ─────────────────────────────────────────── */
+svg { display: block; }
+svg text { font-family: "Segoe UI", "Montserrat", sans-serif; fill: var(--den); }
+.hop      { fill: #fff; stroke: var(--den);  stroke-width: 2; }
+.hop-dut  { fill: #fff; stroke: var(--cam);  stroke-width: 2; stroke-dasharray: 7 5; }
+.hop-mo   { fill: var(--nen); stroke: var(--nhat); stroke-width: 1.5; }
+.hop-cam  { fill: #FDF0E8; stroke: var(--cam); stroke-width: 2; }
+.mui      { stroke: var(--den); stroke-width: 2; fill: none; }
+.mui-cam  { stroke: var(--cam); stroke-width: 2.5; fill: none; }
+.mui-dut  { stroke: var(--cam); stroke-width: 2; fill: none; stroke-dasharray: 6 4; }
+.nhan     { font-size: 15px; }
+.nhan-to  { font-size: 19px; font-weight: 600; }
+.nhan-nho { font-size: 12.5px; fill: var(--xam); }
+
+/* slide dự phòng */
+section.duphong { background: var(--nen); }
+section.duphong h1 { font-size: 30px; }
+.tag-duphong {
+  position: absolute; top: 24px; right: 76px;
+  font-size: 11px; letter-spacing: 1.4px; color: var(--cam);
+  border: 1px solid var(--cam); padding: 3px 10px; border-radius: 2px;
+}
+
+/* ══════════════════════════════════════════════════════════
+   V2 — cấu trúc "bày từ khoá trước, rồi gỡ từng cái"
+   ══════════════════════════════════════════════════════════ */
+
+/* dải chỉ vị trí: 8 vạch, vạch đang nói tô cam */
+.dai-tk { position: absolute; top: 30px; left: 76px; display: flex; gap: 5px; align-items: center; z-index: 3; }
+.dai-tk i { width: 24px; height: 4px; background: #E6E6E6; border-radius: 2px; display: block; }
+.dai-tk i.on { background: var(--cam); }
+.dai-tk b { font-size: 11px; color: var(--nhat); letter-spacing: 1.2px; margin-left: 10px; font-weight: 400; }
+
+/* chip từ khoá đặt trên tiêu đề */
+.chip {
+  display: inline-block; align-self: flex-start;   /* không để flex kéo full-width */
+  font-size: 12.5px; letter-spacing: 1.8px;
+  color: var(--cam); border: 1px solid var(--cam);
+  padding: 4px 13px; border-radius: 2px; margin-bottom: 14px;
+}
+.chip.xam { color: var(--xam); border-color: var(--nhat); }
+
+section.v2 { padding-top: 74px; }
+
+/* bản đồ từ khoá — S2 */
+.bando { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.tk {
+  border: 1.5px solid #E6E6E6; border-radius: 2px; padding: 15px 16px 14px;
+  position: relative; min-height: 118px;
+}
+.tk .so { font-size: 12px; color: var(--cam); font-weight: 700; letter-spacing: 1px; }
+.tk .ten { font-size: 21px; font-weight: 700; margin: 5px 0 7px; line-height: 1.15; }
+.tk .y { font-size: 13.5px; color: var(--xam); line-height: 1.42; }
+.tk .s { position: absolute; right: 14px; bottom: 11px; font-size: 11px; color: var(--nhat); }
+.tk.dam { border-color: var(--cam); border-width: 2px; background: #FEF8F4; }
+
+/* ══════════════════════════════════════════════════════════
+   V3 — đọc vào hiểu ngay: trả phần chữ về cạnh sơ đồ
+   Nguyên tắc: không viết tắt · không dùng chữ nghiêng làm ghi chú
+   ══════════════════════════════════════════════════════════ */
+
+section.v3 { padding-top: 66px; }
+section.v3 h1 { font-size: 33px; }
+section.v3 h1 .gach { margin-top: 11px; height: 4px; }
+/* Xếp từ trên xuống, KHÔNG để .than nuốt hết chỗ trống rồi đẩy khối chữ
+   xuống đè chân slide — bản v2 không có khối chữ nên không lộ lỗi này. */
+section.v3 .than { margin-top: 16px; flex: 0 1 auto; justify-content: flex-start; }
+
+/* Slide có ảnh nền bọc thêm lớp .tren (position:relative), nên dải chỉ vị
+   trí lấy mốc từ .tren chứ không từ section → phải kéo ngược lên đúng
+   bằng phần đệm trên, nếu không nó đè vào tiêu đề. */
+section.v3 .tren > .dai-tk { top: -36px; }
+
+/* sơ đồ giữ nguyên, chỉ hạ trần chiều cao để nhường chỗ cho chữ */
+section.v3 .than > svg { display: block; max-width: 100%; height: auto; max-height: 214px; }
+/* slide xếp NGANG: sơ đồ không được ép 100% bề ngang, sẽ nuốt cột bên cạnh */
+section.v3 .than[style*="row"] > svg { max-height: 200px; }
+
+/* khối giải thích — thay cho phần chữ mà bản v2 đã bỏ đi */
+.giai { display: grid; gap: 0 24px; margin-top: 15px; }
+.giai.hai { grid-template-columns: repeat(2, 1fr); }
+.giai.ba  { grid-template-columns: repeat(3, 1fr); }
+.giai .o { border-top: 2px solid #E0E0E0; padding-top: 8px; }
+.giai .o.nhan { border-top-color: var(--cam); border-top-width: 3px; }
+.giai h4 {
+  font-size: 12px; letter-spacing: 1.1px; font-weight: 700;
+  color: var(--xam); margin-bottom: 5px;
+}
+.giai .o.nhan h4 { color: var(--cam); }
+.giai p { font-size: 15.5px; line-height: 1.47; }
+.giai p + p { margin-top: 5px; }
+
+/* chỗ tự khai — KHÔNG dùng chữ nghiêng, dùng nhãn chữ hoa */
+.tukhai {
+  margin-top: 13px; border-left: 4px solid var(--cam);
+  padding: 6px 0 6px 15px; font-size: 15.5px; line-height: 1.45;
+}
+.tukhai b { color: var(--cam); letter-spacing: .5px; }
+
+/* chip v3 dài hơn — viết đủ chữ, không viết tắt */
+section.v3 .chip { font-size: 12px; letter-spacing: 1.3px; padding: 4px 12px; margin-bottom: 11px; }
+
+/* thẻ từ khoá ở bản đồ: tên dài hơn nên hạ cỡ chữ, nới ô */
+.bando.v3 .tk { min-height: 132px; }
+.bando.v3 .tk .ten { font-size: 18px; line-height: 1.2; }
+.bando.v3 .tk .y { font-size: 13px; }

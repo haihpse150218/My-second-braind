@@ -21,3 +21,19 @@ Desktop.ini
 .env.*
 !.env.example
 app/.claude/
+
+# ── present/ — bài thuyết trình GK Triết ──────────────────────
+# Ảnh slide trung gian, sinh lại bằng: python present/build_v3.py
+present/png/
+present/png-v2/
+present/png-v3/
+__pycache__/
+
+# File xuất của hai bản nháp v1 & v2 — nguồn HTML đã giữ trong slides/,
+# dựng lại bằng: python present/build.py  /  python present/build_v2.py
+present/viec-lam-tri-thuc.pdf
+present/viec-lam-tri-thuc.pptx
+present/viec-lam-tri-thuc-notes.pdf
+present/viec-lam-tri-thuc-v2.pdf
+present/viec-lam-tri-thuc-v2.pptx
+present/viec-lam-tri-thuc-v2-notes.pdf

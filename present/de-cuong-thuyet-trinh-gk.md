@@ -234,7 +234,7 @@ Nói rõ điều này thì chỗ bị nghi là lỗi trở thành **một phát 
 | Quy luật | Câu hỏi nó trả lời | Slide |
 |---|---|---|
 | Mâu thuẫn | **Vì sao nó vận động?** | S8 |
-| Lượng – chất | **Khi nào nó lật?** | S12 |
+| Lượng – chất | **Khi nào thì đổi chất?** | S12 |
 | Phủ định của phủ định | **Rồi đi về đâu?** | S13 |
 
 **Đây là chỗ mạnh nhất:** cả 3 quy luật đều có việc thật và **không giẫm chân nhau** — mỗi cái trả lời một câu hỏi khác hẳn.

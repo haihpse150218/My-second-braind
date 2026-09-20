@@ -6,273 +6,256 @@ type: project
 status: learning
 tags: [triet, thuyet-trinh-nhom, giua-ky, viec-lam, ai, phan-phoi]
 created: 2026-09-20
+updated: 2026-09-20
 ---
 
-# 🎤 Việc làm tri thức dưới tác động của AI: khi đóng góp và thu nhập tách rời nhau
+# 🎤 Việc làm tri thức dưới tác động của AI: năng suất tăng lên đã đi đâu?
 
-> **Một mâu thuẫn chung, nhiều lời giải riêng — đối chiếu các ngành của chính thành viên trong nhóm**
+> **Bốn giả thuyết, một câu hỏi chưa ai đo — đối chiếu các ngành của chính thành viên trong nhóm**
 
 **Lớp:** SEM.47_MSA.37_MSA.40 · **Người ra đề:** TS. Đặng Hoàng Vũ
-**Từ khoá neo:** **#2 — Việc làm** *(một từ khoá duy nhất, đúng yêu cầu đề)*
+**Từ khoá neo:** **#2 — Việc làm**
 **Chủ thể:** người lao động tri thức đang được **trả công theo thời gian**
 **Toạ độ:** **Việt Nam · 2024–2026**
-**Thời lượng:** 15 slide · 15–20 phút · 5 người
+**15 slide · 15–20 phút · 5 người**
 **▶ Công cụ:** [⚖️ mở app Bàn biện chứng](../app-bien-chung/index.html) · [chạy thẳng Claude](http://127.0.0.1:8787/) <small>(cần `run.bat`)</small>
 
-> ⚙️ **Cách đọc file này.** Mỗi slide là một khối 7 phần: **tiêu đề** · **chữ trên slide** *(copy thẳng vào deck)* · **hình** · **lời nói** *(kịch bản ~60–90 giây)* · **neo** *(CLO · lý thuyết · key word)* · **▶ lăng kính** *(deep-link mở đúng lăng kính đã sinh ra luận điểm)* · **⚠️ nếu bị hỏi**.
+> ⚙️ Mỗi slide là một khối 7 phần: **tiêu đề** · **chữ trên slide** · **hình** · **lời nói** · **neo** · **▶ lăng kính** · **⚠️ nếu bị hỏi**.
 
 ---
 
-## 📐 Ba quy ước bắt buộc của bài
+## 📐 Bốn quy ước bắt buộc
 
-**① Trật tự chủ–tân.** *Việc làm* là **chủ ngữ**, *AI* là **tân ngữ**. Mọi câu dạng *"việc làm/nghề … dưới tác động của AI"*, không bao giờ *"AI làm … cho việc làm"*. Sai trật tự này là bài tự chuyển sang từ khoá #1 — đụng ví dụ mẫu của thầy và đụng nửa lớp.
+**① Trật tự chủ–tân.** *Việc làm* là chủ ngữ, *AI* là tân ngữ. Sai trật tự này là bài tự chuyển sang từ khoá #1.
 
-**② Nhãn nguồn.** Mọi con số từ Korinek, Jones, Sacher, Cotter, McCrory (2026), *"Economic Scenarios for Transformative AI"*, Anthropic Institute WP 2026-02 phải ghi kèm: **kịch bản, không phải dự báo; dữ liệu Mỹ; so với đường không-AI năm 2030**. Tài liệu tự nói ba lần nó không phải dự báo. **Tuyệt đối không viết *"Anthropic dự báo…"***.
+**② Nhãn nguồn.** Mọi con số từ Korinek et al. (2026), Anthropic Institute WP 2026-02 phải ghi kèm **kịch bản, không phải dự báo; dữ liệu Mỹ; so đường không-AI 2030**. Không bao giờ viết *"Anthropic dự báo"*.
 
-**③ Nhãn bằng chứng.** Ba mức, không được trộn:
+**③ Nhãn bằng chứng.** *(không nhãn)* = có nguồn mở ra đọc được · **🔬** = suy luận cơ chế, chưa có dữ liệu · *(suy ra)* = nhóm tự diễn giải.
 
-| Nhãn | Nghĩa |
-|---|---|
-| *(không nhãn)* | Có nguồn mở ra đọc được |
-| **🔬 giả thuyết** | Suy luận cơ chế, **chưa có dữ liệu** — phải nói ra khi trình bày |
-| *(suy ra)* | Nhóm tự diễn giải, không phải chữ của thầy hay của nguồn |
+**④ ⭐ Mệnh đề tồn tại, KHÔNG phải mệnh đề phổ biến.**
+5 ca, **n = 1 mỗi ngành**, tự thuật. Thiết kế này chứng minh được *"cơ chế X **có tồn tại**"*; **không bao giờ** chứng minh được *"X phổ biến"* hay *"X là lý do chính"*.
+→ Động từ trên mọi slide: **"Trong các ca chúng tôi ghi nhận, xuất hiện cơ chế…"**, không phải *"AI khiến lao động tri thức bị…"*.
 
 ---
 
 ## S1 · Mở đề
 
 **Tiêu đề slide**
-> Việc làm tri thức dưới tác động của AI: khi đóng góp và thu nhập tách rời nhau
+> Việc làm tri thức dưới tác động của AI: năng suất tăng lên đã đi đâu?
 
 **Chữ trên slide**
 ```
 Từ khoá: #2 — VIỆC LÀM
 
-Chủ thể:  người lao động tri thức trả công theo thời gian
-Toạ độ:   Việt Nam · 2024–2026
+Chủ thể:   người lao động tri thức trả công theo thời gian
+Toạ độ:    Việt Nam · 2024–2026
 Đối tượng: quan hệ phân phối giá trị — ai nhận bao nhiêu, trên cơ sở nào
 
-KHÔNG bàn: người trả tiền · tổ chức · người sắp vào nghề
-           — ba chủ thể, ba vấn đề khác nhau
+KHÔNG bàn: người sắp vào nghề · chính sách vĩ mô · thuế
+           — khác chủ thể, khác vấn đề
 ```
 
-**Hình** — không có. Slide chữ.
+**Hình** — slide chữ.
 
 **Lời nói**
-> Nhóm chọn từ khoá số 2, Việc làm. Và trước khi vào bài, xin nói rõ bài này **không** bàn về ai — vì cùng một hiện tượng, bốn chủ thể có bốn vấn đề khác nhau hẳn. Với người trả tiền, năng suất tăng là món hời. Với tổ chức, là bài toán định giá. Với người sắp vào nghề, là mất cửa vào. Chúng tôi chọn **một** chủ thể: người đang đi làm và được trả công theo thời gian. Bốn mươi lăm phút cũng không gộp nổi cả bốn, mười lăm phút thì càng không.
+> Nhóm chọn từ khoá số 2, Việc làm. Trước khi vào bài, xin nói rõ cái chúng tôi **không** bàn — vì cùng một hiện tượng, mỗi chủ thể có một vấn đề khác hẳn.
 >
-> Câu hỏi mồi: *nếu hôm nay bạn làm xong việc trong hai giờ thay vì tám giờ, tám giờ lương kia đi đâu?*
+> Câu hỏi mồi: *nếu hôm nay bạn làm xong việc trong hai giờ thay vì tám giờ, sáu giờ kia đi đâu?*
+>
+> Và xin báo trước kết cấu bài: chúng tôi **không** đưa ra một câu trả lời. Chúng tôi đưa ra **bốn ứng viên** và **cách phân biệt chúng**.
 
-**Neo** — tự giới hạn phạm vi ăn điểm **CLO4** *(chọn lựa yếu tố cốt lõi)*. Nói ra cái mình **không** làm là biểu hiện của việc biết chọn.
+**Neo** — **CLO4** *(tự giới hạn phạm vi là biểu hiện của việc biết chọn)*
 
 **▶ Lăng kính** — [đặt vấn đề](../app-bien-chung/index.html#tbc-dat-van-de)
-
-**⚠️ Nếu bị hỏi** — *"Sao không bàn cả bốn chủ thể?"* → Vì gộp lại thì mỗi cái nói được một phần ba câu, và không cái nào có kết luận hành động được. Đề đòi *"ứng dụng được ngay"* — muốn vậy phải có địa chỉ cụ thể.
 
 ---
 
-## S2 · Hai khung cạnh tranh — và nhóm chưa chọn
+## S2 · Câu hỏi
 
 **Tiêu đề slide**
-> Thước đo cũ hỏng, hay chưa bao giờ là thước đo?
+> Một thứ chúng ta biết, và một thứ chưa ai đo
 
 **Chữ trên slide**
 ```
-KHUNG A                          KHUNG B
-Thước đo thời gian TỪNG KHỚP     Thời gian CHƯA BAO GIỜ đo giá trị
-AI làm lệch nó                   Nó là THOẢ HIỆP PHÂN BỔ RỦI RO
-                                 AI chỉ LÀM LỘ
+ĐÃ BIẾT — có dữ liệu quan sát
 
-Thiếu: một thước đo mới          Thiếu: cơ sở quy kết
-                                        + bên chịu rủi ro khi đo sai
+  Đan Mạch, dữ liệu hành chính, 25.000 lao động:
+    người dùng tự báo tiết kiệm ~3% thời gian
+    thu nhập và giờ công ghi nhận: NULL CHÍNH XÁC
+    (loại trừ mọi hiệu ứng lớn hơn 2%)
 
-        NHÓM CHƯA CHỌN — để dữ liệu phân định
+  Mỹ, bảng lương ADP tới 6/2026:
+    điều chỉnh ở BIÊN SỐ LƯỢNG (tuyển ít đi)
+    KHÔNG ở BIÊN GIÁ (lương cơ bản đứng yên)
+
+CHƯA AI ĐO — và đây là câu hỏi của bài
+
+  PHẦN DÔI ĐANG TRANH CHẤP LỚN BAO NHIÊU?
 ```
 
-**Hình** — hai cột đối xứng, ở giữa là một dấu hỏi lớn.
+**Hình** — hai khối: khối trái đầy chữ, khối phải để trống với một dấu hỏi.
 
 **Lời nói**
-> Chúng tôi bắt đầu bằng một tiền đề nghe rất hiển nhiên: *AI làm hỏng thước đo lao động*. Nhưng chữ **"làm hỏng"** giả định nó **từng đúng**. Và khi đi tìm bằng chứng cho chữ "từng đúng" đó, chúng tôi không tìm được — không có thời kỳ nào mà năng suất tăng bao nhiêu thì lương tăng đúng bấy nhiêu.
+> Có một thứ dữ liệu nói khá rõ: **điều chỉnh không diễn ra trên tiền lương**. Đan Mạch có dữ liệu hành chính của hai mươi lăm nghìn lao động — người dùng tự báo tiết kiệm khoảng ba phần trăm thời gian, nhưng thu nhập và giờ công ghi nhận thì **null chính xác**, loại trừ được mọi hiệu ứng lớn hơn hai phần trăm. Mỹ, bảng lương ADP: điều chỉnh diễn ra ở **số lượng người được tuyển**, không ở **giá của một giờ**.
 >
-> Nên có khung thứ hai: trả công theo thời gian **chưa bao giờ là phép đo**. Nó là một **thoả hiệp**: đầu ra không đo được thì đo đầu vào; người lao động **đổi phần dôi lấy thu nhập chắc chắn**, tổ chức **đổi rủi ro lấy quyền giữ phần dôi**.
+> Nhưng có một thứ **chưa ai đo**, và nó là câu hỏi của bài này: **phần dôi đang tranh chấp lớn bao nhiêu?**
 >
-> Hai khung dẫn tới hai việc phải làm khác hẳn nhau. Khung A bảo: đi tìm thước đo mới. Khung B bảo: thước không phải vấn đề — vấn đề là **ai có quyền định đoạt phần chênh lệch**.
->
-> Nhóm **không chọn trước**. Chúng tôi thiết kế một câu hỏi phân định và đem hỏi chính ngành của mình.
+> Chúng tôi từng viết câu *"năng suất tăng lên đã đi đâu đó, và chỗ đó không phải là lương"*. Rồi phải bỏ câu đó, vì nó **giả định luôn cái cần chứng minh**. Trong toàn bộ nguồn của bài **không có một đo lường năng suất tăng nào**: có ba phần trăm **tự báo**, có thu nhập **null**, và có một ước lượng vĩ mô nói tác động lên năng suất tổng hợp **không quá 0,66% trong mười năm**.
 
-**Neo** — **CLO1** mô tả vấn đề · key word **① Phản biện** *(giả định kết quả sai, rồi đi tìm bằng chứng cho giả định đó)*
+**Neo** — **CLO1** · key word **① Phản biện**
 
-**▶ Lăng kính** — [đặt vấn đề](../app-bien-chung/index.html#tbc-dat-van-de)
+**▶ Lăng kính** — [đặt vấn đề](../app-bien-chung/index.html#tbc-dat-van-de) · [thực tiễn](../app-bien-chung/index.html#tbc-thuc-tien)
 
-**⚠️ Nếu bị hỏi**
-- *"Không chọn thì lấy gì mà kết luận?"* → Chúng tôi có câu hỏi phân định *(S3)* và có kết quả từ N ca ngành. Đưa ra hai khung rồi để dữ liệu quyết là **phương pháp**, không phải né tránh.
-- ⚠️ **Lưu ý cho người trình bày:** chữ *"tách rời"* trong tiêu đề bài là **tên của hiện tượng**, không phải kết luận về bản chất. Dưới Khung B thì đóng góp và thu nhập **chưa bao giờ được nối bằng một phép đo** — S5 sẽ lật chỗ này. Nói trước ở đây thì khán giả đi cùng mạch.
+**⚠️ Nếu bị hỏi** — *"Chưa đo được thì bàn làm gì?"* → Vì **biết mình chưa biết gì cũng là một kết quả**, và nó quyết định kiến nghị. Nếu phần dôi nhỏ thì đề nghị xây cả một hệ quy kết – thẩm định – chia rủi ro là **tốn hơn khoản được chia**. Câu này quyết định S14 có nghĩa hay vô nghĩa.
 
 ---
 
 ## S3 · N ngành, một câu hỏi
 
 **Tiêu đề slide**
-> Mỗi người một ngành, cùng một câu hỏi
+> Mỗi người một ngành, cùng hai câu hỏi
 
 **Chữ trên slide**
 ```
 NGÀNH │ ĐƠN VỊ TÍNH ĐẦU VÀO │ ĐƠN VỊ TÍNH ĐẦU RA │ AI VÀO KHÂU NÀO
       │ (tổ chức ↔ người làm)│ (tổ chức ↔ khách)  │
 ──────┼─────────────────────┼────────────────────┼─────────────────
-  …   │  tháng / giờ        │ giờ · man-day ·    │
-      │                     │ gói · sản phẩm     │
 
 Phương pháp: khái niệm → phán đoán → suy luận
 Dữ liệu: N phiếu tự thuật · n = 1 mỗi ngành · mẫu thuận tiện
+         + ÍT NHẤT MỘT CA NGHỊCH (ăn theo gói/sản phẩm/hoa hồng)
+
+⚠ Chỉ nói được: "cơ chế này CÓ TỒN TẠI"
+   KHÔNG nói được: "cơ chế này PHỔ BIẾN"
 ```
 
-**Hình** — bảng, mỗi thành viên một dòng. **Hai cột đơn vị tính, không phải một** — đây là chỗ cả bài xoay quanh.
+**Hình** — bảng, mỗi thành viên một dòng, **hai cột đơn vị tính**.
 
 **Lời nói**
-> Nhóm chúng tôi ở nhiều ngành khác nhau. Ban đầu đó là hạn chế. Sau thì thành lợi thế: mỗi người mang về một ca thật từ chỗ mình làm, và chúng tôi có **N ngành độc lập** thay vì một ca lẻ.
+> Nhóm ở nhiều ngành khác nhau. Ban đầu đó là hạn chế, sau thì thành lợi thế: mỗi người mang về một ca thật, và chúng tôi có N ngành độc lập thay vì một ca lẻ.
 >
-> Chỗ quan trọng là bảng này có **hai cột đơn vị tính**, không phải một. Đơn vị mà tổ chức **trả cho người làm** — thường là tháng, là giờ. Và đơn vị mà tổ chức **bán ra cho khách** — có thể là giờ, man-day, trọn gói, sản phẩm, hoa hồng. Hai cột này **không phải lúc nào cũng cùng một đơn vị**. Và chúng tôi sẽ chỉ ra rằng chính **khoảng lệch giữa hai cột** mới là chỗ phần năng suất tăng thêm rơi vào.
+> Bảng này có **hai cột đơn vị tính**. Đơn vị tổ chức **trả cho người làm** — thường là tháng, là giờ. Và đơn vị tổ chức **bán ra cho khách** — có thể là giờ, man-day, trọn gói, sản phẩm. Hai cột không phải lúc nào cũng cùng đơn vị, và khoảng lệch giữa chúng sẽ là một phần của câu trả lời.
 >
-> Về giới hạn: mỗi ngành ở đây có **đúng một quan sát**, do chính người trong cuộc tự thuật. Đủ để nói *"cơ chế này không đóng khung trong một ngành"*. **Không đủ** để nói *"đây là quy luật của lao động tri thức"*. Chúng tôi giữ đúng mức đó.
+> Về giới hạn, xin nói ngay chứ không giấu xuống cuối: mỗi ngành có **một quan sát**, do chính người trong cuộc tự thuật. Nên mọi câu trong bài này phải đọc ở dạng *"trong các ca chúng tôi ghi nhận, xuất hiện cơ chế…"*. Một ca mô tả kỹ đủ để nói **cơ chế có tồn tại**; nó **không bao giờ** đủ để nói cơ chế đó **phổ biến**.
 
-**Neo** — **CLO1** · **Nhận thức luận** *(khái niệm → phán đoán → suy luận)* · key word **④ Thực tế** *(dữ liệu từ chính chỗ làm)*
+**Neo** — **CLO1** · **Nhận thức luận** · key word **④ Thực tế**
 
 **▶ Lăng kính** — [chung – riêng – đơn nhất](../app-bien-chung/index.html#tbc-chung-rieng)
 
-**⚠️ Nếu bị hỏi** — *"N ca thì nói được gì?"* → Nói được rằng cơ chế **lặp lại qua nhiều ngành khác nhau**, nên nó không phải đặc thù một nghề. Không nói được độ phổ biến. Nếu mỗi thành viên hỏi thêm **2 người cùng ngành khác tổ chức** — mất khoảng một giờ — thì mỗi ngành từ 1 điểm thành 3 điểm, và câu này có chỗ đứng vững hơn hẳn.
+**⚠️ Nếu bị hỏi** — *"N ca thì nói được gì?"* → Nói được **cơ chế lặp lại qua nhiều ngành khác nhau**, nên không phải đặc thù một nghề. Không nói được độ phổ biến. Nếu mỗi thành viên hỏi thêm **2 người cùng ngành khác tổ chức** — mất một giờ — thì mỗi ngành từ 1 điểm thành 3 điểm.
 
 ---
 
 ## S4 · Khung phân tích
 
 **Tiêu đề slide**
-> Ba quy luật, ba câu hỏi
+> Ba quy luật, ba câu hỏi — và một thiên kiến chúng tôi tự khai
 
 **Chữ trên slide**
 ```
-MÂU THUẪN          → VÌ SAO nó vận động?      S8
-LƯỢNG – CHẤT       → KHI NÀO nó lật?          S12
-PHỦ ĐỊNH           → RỒI ĐI VỀ ĐÂU?           S13
+MÂU THUẪN    → VÌ SAO nó vận động?     S8
+LƯỢNG – CHẤT → KHI NÀO thì ĐỔI CHẤT?    S12
+PHỦ ĐỊNH     → RỒI ĐI VỀ ĐÂU?          S13
 
 Nền: mối liên hệ phổ biến (toàn diện) · sự phát triển (xoáy ốc, có bước lùi)
 
-⚠ Khung này CÓ THIÊN KIẾN — và chúng tôi nói ra:
-   chọn LLSX–QHSX thì "quan hệ lạc hậu phải đổi"
-   là ĐỊNH LÝ CỦA KHUNG, không phải phát hiện từ dữ liệu
+⚠ KHUNG NÀY CÓ THIÊN KIẾN:
+  chọn LLSX–QHSX thì "quan hệ lạc hậu phải đổi"
+  là ĐỊNH LÝ CỦA KHUNG, không phải phát hiện từ dữ liệu
+  → khung dùng làm NGÔN NGỮ SẮP XẾP, không dùng làm BẰNG CHỨNG
 ```
 
-**Hình** — ba khối ngang, mỗi khối một câu hỏi, có mũi tên xuống số slide.
+**Hình** — ba khối ngang, mỗi khối một câu hỏi.
 
 **Lời nói**
-> Ba quy luật của phép biện chứng trả lời ba câu hỏi khác hẳn nhau, nên chúng không giẫm chân nhau: vì sao vận động, khi nào lật, rồi đi về đâu. Đó là kiến trúc của bài.
+> Ba quy luật trả lời ba câu hỏi khác hẳn nhau nên chúng không giẫm chân nhau. Đó là kiến trúc bài.
 >
-> Nhưng có một điều chúng tôi phải nói ra ngay, không để đến phần hỏi đáp. Khi chọn khung lực lượng sản xuất – quan hệ sản xuất, thì câu *"quan hệ sản xuất lạc hậu phải đổi"* trở thành **định lý của khung** — nó đúng bất kể số liệu ra sao. Trình bày nó như một phát hiện thì đó là **giáo điều đội lốt phân tích**.
+> Nhưng phải nói ra ngay, không để đến phần hỏi đáp: khi chọn khung lực lượng sản xuất – quan hệ sản xuất, thì câu *"quan hệ sản xuất lạc hậu phải đổi"* trở thành **định lý của khung** — nó đúng bất kể số liệu ra sao. Trình bày nó như một phát hiện là **giáo điều đội lốt phân tích**.
 >
-> Vậy nên phần chịu lực của bài này **không** dựa vào khung. Nó dựa vào ba thứ đứng độc lập, mà chúng tôi sẽ chỉ ra ở các slide sau: một đối chứng nội tại trong dữ liệu, một phép phản chứng có sẵn trong nguồn, và một bài toán kỹ thuật có thật.
+> Vậy nên chúng tôi dùng khung này làm **ngôn ngữ sắp xếp**, không dùng làm **bằng chứng**. Hai vai khác nhau.
 
-**Neo** — **CLO2** · 3 quy luật + 2 nguyên lý · key word **③ Hệ thống** *(khung là một lựa chọn có chủ ý, không phải phát hiện khách quan)*
+**Neo** — **CLO2** · 3 quy luật + 2 nguyên lý · key word **③ Hệ thống**
 
 **▶ Lăng kính** — [phát triển](../app-bien-chung/index.html#tbc-phat-trien) · [toàn diện](../app-bien-chung/index.html#tbc-toan-dien)
-
-**⚠️ Nếu bị hỏi** — *"Vậy nhóm dùng khung Mác để làm gì?"* → Dùng làm **ngôn ngữ sắp xếp** — nó sắp rất gọn. Không dùng làm **bằng chứng**. Hai vai khác nhau, và chúng tôi tách bạch.
 
 ---
 
 ## S5 · Bản chất ↔ Hiện tượng
 
 **Tiêu đề slide**
-> Cái được mua không phải kết quả — là quyền định đoạt thời gian
+> Hiện tượng thì ồn ào; cái im lặng là đơn vị đo
 
 **Chữ trên slide**
 ```
-HIỆN TƯỢNG (ồn ào, dễ thấy)      BẢN CHẤT (im lặng, quyết định)
-─────────────────────────        ──────────────────────────────
+HIỆN TƯỢNG (ai cũng thấy)         CÁI IM LẶNG BÊN DƯỚI
+────────────────────────          ─────────────────────
 xong sớm vẫn ngồi đủ giờ
-giấu việc dùng AI                Cái được mua là QUYỀN ĐỊNH ĐOẠT
-JD thêm "biết dùng AI",          THỜI GIAN LAO ĐỘNG.
+giấu việc dùng AI                 Quan hệ làm công mua
+JD thêm "biết dùng AI",           THỜI GIAN, không mua KẾT QUẢ.
  thang lương không thêm dòng
-khách ép giá "AI làm được mà"    Phần năng suất tăng thêm MẶC ĐỊNH
-"có AI rồi thì phải làm nhiều"    thuộc về BÊN MUA — trừ khi bên bán
-tranh cãi "AI có thay người"      có sức mặc cả để đòi lại.
+⭐ khách ép giá "AI làm được mà"   Hợp đồng KHÔNG CÓ ĐIỀU KHOẢN
+"có AI rồi thì phải làm nhiều"     nào nói phần chênh lệch
+tranh cãi "AI có thay người"       thuộc về ai.
 
 ⚠ Đánh lừa nhất: "AI CƯỚP VIỆC LÀM"
+  — kéo câu hỏi từ AI NHẬN BAO NHIÊU sang CÒN BAO NHIÊU VIỆC
 ```
 
-**Hình** — hai cột. Cột trái nhiều dòng, cột phải một khối duy nhất.
+**Hình** — hai cột, dòng *"khách ép giá"* được tô đậm *(nó sẽ quay lại ở S8)*.
 
 **Lời nói**
-> Hiện tượng thì nhiều và ồn ào. Bản chất chỉ có một và im lặng.
+> Hiện tượng thì nhiều và ồn ào. Cái im lặng bên dưới thì đơn giản đến mức dễ bỏ qua: **quan hệ làm công mua thời gian, không mua kết quả**. Và **không hợp đồng nào có điều khoản nói phần chênh lệch thuộc về ai** — vì trước đây không có phần chênh lệch nào đáng nói.
 >
-> Bản chất ở đây: trong quan hệ làm công, cái được mua **không phải kết quả lao động** — mà là **quyền định đoạt thời gian lao động**. Vì thế mọi phần năng suất tăng thêm **mặc định thuộc về bên mua**, trừ khi bên bán có sức mặc cả để đòi lại.
+> Xin chú ý một dòng trong cột hiện tượng, vì nó sẽ quay lại: **khách ép giá**. Chúng tôi để nó ở đây để không tự lừa mình ở các slide sau.
 >
-> Phát biểu này giải thích được ba thứ mà bảng hiện tượng bên trái không giải thích nổi. **Một:** vì sao cùng một công cụ AI mà người ăn khoán và người ăn lương giờ lại chịu hai kết cục ngược nhau — khác **quan hệ**, không khác công cụ. **Hai:** vì sao giấu việc dùng AI là **hành vi hợp lý**, không phải gian dối — giấu chính là cách duy nhất giữ lại phần chênh lệch khi hợp đồng đã mặc định giao nó cho bên mua. **Ba:** vì sao bên hưởng lợi **không muốn sửa** thước đo dù ai cũng biết nó sai. Nếu vấn đề chỉ là *thước đo lệch* thì mọi bên đều có lợi khi sửa. Thực tế không phải vậy.
->
-> Và hiện tượng đánh lừa mạnh nhất là câu **"AI cướp việc làm"**. Nó kéo câu hỏi từ *ai nhận bao nhiêu* sang *còn bao nhiêu việc*.
-
-**🟢 Bằng chứng thực tiễn — đây là chỗ bài có nền vững nhất, phải nói ra**
-
-| Nguồn | Kết quả |
-|---|---|
-| **Humlum & Vestergaard (2025), NBER WP 33777** — Đan Mạch, **dữ liệu hành chính** khớp khảo sát, **25.000 lao động / 7.000 nơi làm việc**, 11 nghề phơi nhiễm | Người dùng tự báo **tiết kiệm ~3% thời gian**. Thu nhập và giờ công ghi nhận: **null chính xác** — loại trừ được **mọi hiệu ứng lớn hơn 2%**, sau hai năm ChatGPT |
-| **Brynjolfsson et al. (2026), "Canaries in the Coal Mine"** — Mỹ, **bảng lương ADP** hàng tháng tới 6/2026 | Điều chỉnh diễn ra **ở biên số lượng (tuyển ít đi)**, **không ở biên giá** — lương cơ bản gần như đứng yên |
-
-> **Năng suất tăng lên đã đi đâu đó. Và chỗ đó không phải là lương.**
-> Đan Mạch là thị trường lao động **linh hoạt, thương lượng lương phi tập trung** — tức kênh chia phần **có tồn tại** — mà kết quả vẫn null.
-
-Hai nguồn này là **quan sát trong sổ sách**, không phải mô hình. Đây là **mệnh đề có bằng chứng mạnh nhất của cả bài**.
+> Và hiện tượng đánh lừa mạnh nhất là câu *"AI cướp việc làm"*. Nó kéo câu hỏi từ **ai nhận bao nhiêu** sang **còn bao nhiêu việc** — hai câu hỏi khác nhau, và câu thứ hai dễ trả lời hơn nên ai cũng trả lời câu đó.
 
 **Neo** — **CLO2** · phạm trù **bản chất ↔ hiện tượng** *(slide 87–88)*
 
-**▶ Lăng kính** — [bản chất – hiện tượng](../app-bien-chung/index.html#tbc-hien-tuong) · [thực tiễn](../app-bien-chung/index.html#tbc-thuc-tien)
+**▶ Lăng kính** — [bản chất – hiện tượng](../app-bien-chung/index.html#tbc-hien-tuong)
 
-**⚠️ Nếu bị hỏi** — *"Vậy tiêu đề bài nói 'tách rời' là sao?"* → *"Tách rời"* là **tên của hiện tượng**, chúng tôi mượn đúng chữ của tài liệu nguồn. Bản chất thì ngược lại: đóng góp và thu nhập **chưa bao giờ được nối bằng một phép đo** — chúng được nối bằng **quan hệ mặc cả và quyền sở hữu**. Cái nối cũ chỉ đang lộ ra là quan hệ chứ không phải phép đo.
+**⚠️ Nếu bị hỏi**
+- *"Sao không nói thẳng phần chênh lệch thuộc về bên mua?"* → Vì mệnh đề đó **chúng tôi từng viết và đã phải rút**. Bản cũ có cụm *"trừ khi bên bán có sức mặc cả"* — mà *sức mặc cả* thì bài không đo được ở bất kỳ đâu. Thành ra: lương không tăng thì bảo *không có sức mặc cả*; lương tăng thì bảo *có sức mặc cả đòi lại được*. **Không dữ kiện nào bác được.** Một mệnh đề không thể sai thì cũng không thể đúng.
+- 🔬 *"Còn bản chất thì sao?"* → Bản chất chúng tôi **chưa chốt được**, vì nó phụ thuộc câu S12 — phần dôi lớn bao nhiêu và đi đâu.
 
 ---
 
 ## S6 · Nội dung ↔ Hình thức
 
 **Tiêu đề slide**
-> Chấm công theo giờ không phải cái cân — nó là cái ống dẫn
+> Nội dung mọc thêm một yếu tố; hình thức không có ô nào cho nó
 
 **Chữ trên slide**
 ```
 NỘI DUNG — đã đổi, và MỌC THÊM một yếu tố
-  • lao động sống: nay tách rõ THỰC HIỆN ≠ ĐẶC TẢ · THẨM ĐỊNH · CHỊU TRÁCH NHIỆM
+  • lao động sống: THỰC HIỆN ≠ ĐẶC TẢ · THẨM ĐỊNH · CHỊU TRÁCH NHIỆM
   • ⭐ TƯ BẢN DƯỚI DẠNG CÔNG CỤ AI — yếu tố mới, trước không có
   • tri thức tích luỹ của tổ chức
   • rủi ro: ai gánh khi kết quả sai
 
 HÌNH THỨC — chưa đổi
-  đơn vị đo: giờ · man-day · tháng
-  thang bậc: thâm niên, chức danh
-  thể thức: loại hợp đồng, điều khoản trả công
-  cách bán ra: báo giá theo thời gian
+  đơn vị đo giờ · thang bậc thâm niên · thể thức hợp đồng · báo giá theo thời gian
 
 → Cấu trúc này có ĐÚNG MỘT Ô cho lao động: giờ × đơn giá
+  Giá trị do yếu tố mới tạo ra KHÔNG CÓ Ô NÀO ĐỂ GHI
 ```
 
-**Hình** — sơ đồ ống dẫn: nhiều nguồn giá trị đổ vào, chỉ một ống nhỏ chảy về phía lao động, phần còn lại chảy về phía "phần dôi".
+**Hình** — bảng hai cột, ô trống được khoanh đỏ.
 
 **Lời nói**
-> Đây là chỗ khác với slide trước, và khác một cách quan trọng. Slide trước **chẩn đoán**. Slide này **kê đơn**.
+> Slide trước **chẩn đoán**. Slide này **kê đơn**.
 >
 > Nội dung của quan hệ phân phối không chỉ *đổi* — nó **mọc thêm một yếu tố cấu thành mới**: tư bản dưới dạng công cụ AI. Đó là loại biến đổi nặng nhất với một cấu trúc, vì cấu trúc cũ **không có ô nào dành sẵn cho nó**.
 >
-> Và đây là cơ chế: chấm công theo giờ **không phải cái cân, nó là cái ống dẫn**. Nó có đúng một ô cho lao động — giờ nhân đơn giá. Mọi thứ tổ chức thu được ngoài ô đó rơi vào phần dôi, và phần dôi thuộc về bên giữ quyền nhận phần dôi. Nên khi nội dung mọc thêm một yếu tố, giá trị do yếu tố ấy tạo ra **không có ô nào để ghi về phía lao động**. Không phải vì ai xấu. Vì cấu trúc không có chỗ đó.
+> Chấm công theo giờ có đúng một ô cho lao động: giờ nhân đơn giá. Giá trị do yếu tố mới tạo ra **không có ô nào để ghi về phía lao động**.
 >
-> **Đo sai chỉ làm con số lệch. Dẫn sai làm dòng giá trị đổi chủ.**
+> Nhưng phải nói ngay phần chúng tôi **không** khẳng định được. Bản trước chúng tôi viết *"nên giá trị không có đường chảy về phía lao động"*. Rồi thấy bằng chứng **nghiêng về hướng khác**: Đan Mạch có thị trường lao động linh hoạt, thương lượng lương phi tập trung — tức **kênh chia phần có tồn tại** — mà kết quả vẫn null. **Ống có, dòng chảy không đủ.** Vậy vấn đề ở **áp suất**, không ở **ống**. Và áp suất thì quay về câu hỏi ở slide hai: phần dôi lớn bao nhiêu.
 
 **Neo** — **CLO2** · phạm trù **nội dung ↔ hình thức** *(slide 93–94)*
 
 **▶ Lăng kính** — [nội dung – hình thức](../app-bien-chung/index.html#tbc-noi-dung-hinh-thuc)
 
-**⚠️ Nếu bị hỏi**
-- *"Chỗ này khác gì slide 5?"* → Bản chất–hiện tượng có quan hệ **phản ánh**, nên nó **không có phạm trù nào mang nghĩa đường dẫn** — từ đó không suy ra được ai nhận bao nhiêu. Nội dung–hình thức có: hình thức **là** hệ thống mối liên hệ giữa các yếu tố. Chỉ cặp này nói được *giá trị chảy theo đường nào*. Và chỉ cặp này **mở ra phương án**, vì *"một nội dung tồn tại dưới nhiều hình thức"* là một mệnh đề **cho phép chọn**.
-- 🔬 *"Có chắc hình thức khoá được việc chia không?"* → **Phiên bản trung thực hơn:** hình thức giờ **không chặn việc chia — nó chặn việc chia TỰ ĐỘNG**. Nó buộc mọi điều chỉnh phải đi qua một vòng **thương lượng lại đơn giá**. Thế thương lượng cân bằng thì đó chỉ là độ trễ; thế thương lượng lệch thì độ trễ thành **mất vĩnh viễn**.
-- ⚠️ **Và bằng chứng hiện có nghiêng về "áp suất", không nghiêng về "ống".** Đan Mạch có thị trường lao động linh hoạt, **thương lượng lương phi tập trung** — tức **ống dẫn CÓ tồn tại** — mà kết quả vẫn **null** về thu nhập. **Ống có, dòng chảy không đủ → vấn đề ở áp suất, không ở ống.** Nên S6 chỉ được nói *"cấu trúc chỉ có một ô cho lao động"* — phần đó quan sát được.
-
-> 🚫 **ĐÃ CẮT khỏi slide:** cụm *"kể cả khi mọi bên đều muốn"*. Không có cách nào quan sát được *"mọi bên đều muốn"* → mệnh đề bất khả bác bỏ.
+**⚠️ Nếu bị hỏi** — *"Khác gì slide 5?"* → Bản chất–hiện tượng có quan hệ **phản ánh**, không có phạm trù nào mang nghĩa **đường dẫn**, nên từ đó **không suy ra được ai nhận bao nhiêu**. Nội dung–hình thức thì có: hình thức **là** hệ thống mối liên hệ giữa các yếu tố. Và chỉ cặp này **mở ra phương án**, vì *"một nội dung tồn tại dưới nhiều hình thức"* là một mệnh đề **cho phép chọn**.
 
 ---
 
@@ -285,94 +268,80 @@ HÌNH THỨC — chưa đổi
 ```
 NGUYÊN CỚ    "kinh tế khó khăn, cắt giảm chi phí"
 ĐIỀU KIỆN    lãi suất cao · ngân sách co · dư cung lao động
-NGUYÊN NHÂN  đóng góp KHÔNG QUY KẾT ĐƯỢC cho cá nhân
-             + QUYỀN SỞ HỮU công cụ thuộc bên vốn
+NGUYÊN NHÂN  ? — chưa tách được, vì chưa đo được phần dôi
 
-PHÉP KIỂM — tách "do AI" khỏi "do chu kỳ":
-  cùng doanh nghiệp, cùng năm → so nghề phơi nhiễm AI cao vs thấp
-  chu kỳ : giảm ĐỀU, HỒI khi lãi suất hạ
-  AI     : giảm LỆCH theo đầu việc, KHÔNG hồi
+PHÉP KIỂM — đối chứng TRONG CÙNG doanh nghiệp, CÙNG năm
+  so nghề phơi nhiễm AI cao vs thấp → macro bị triệt tiêu
+
+⚠ GIỚI HẠN CỦA PHÉP KIỂM — chúng tôi tự nêu:
+  "chu kỳ giảm ĐỀU, AI giảm LỆCH" KHÔNG phân biệt được,
+  vì suy thoái CHƯA BAO GIỜ giảm đều theo nghề —
+  biên tuyển người mới là biên nhạy chu kỳ nhất
 ```
 
-**Hình** — ba tầng xếp chồng, mũi tên chỉ xuống tầng "nguyên nhân".
+**Hình** — ba tầng xếp chồng, tầng dưới cùng là một dấu hỏi.
 
 **Lời nói**
-> Cái được nói ra là *"kinh tế khó khăn"*. Đó là **nguyên cớ**. Lãi suất, ngân sách co lại — đó là **điều kiện**, chúng làm hiện tượng lộ ra đúng lúc AI tới, và đó chính là nguồn gốc của nhầm lẫn.
+> Cái được nói ra là *"kinh tế khó khăn"*. Đó là **nguyên cớ**. Lãi suất, ngân sách co lại — **điều kiện**.
 >
-> Nguyên nhân thật thì nằm chỗ khác, và có hai vế. Vế một: **đóng góp tri thức không quy kết được cho cá nhân** — nên buộc phải lấy thời gian làm vật thế chân. Vế hai: **quyền sở hữu công cụ thuộc về bên vốn** — nên phần tăng do công cụ quy về người sở hữu công cụ.
+> Còn **nguyên nhân** thì chúng tôi **chưa tách được**, và xin nói thẳng vì sao. Phép kiểm chuẩn là đối chứng trong cùng doanh nghiệp cùng năm, so nghề phơi nhiễm AI cao với thấp — yếu tố vĩ mô bị triệt tiêu. Nhưng cách đọc kết quả thì có vấn đề: chúng tôi từng định dùng *"chu kỳ giảm đều, AI giảm lệch"* làm dấu vân tay. **Không dùng được.** Suy thoái **chưa bao giờ** giảm đều theo nghề, và **biên tuyển người mới vào nghề là biên nhạy chu kỳ nhất trong mọi lần xuống**. Nên con số giảm ở nhóm trẻ **đúng hình dạng mà một chu kỳ ngành công nghệ tạo ra**.
 >
-> Cách kiểm thì đơn giản và không cần khảo sát: **trong cùng một doanh nghiệp, cùng một năm** — tức cùng một chi phí vốn — so nhóm nghề phơi nhiễm AI cao với nhóm phơi nhiễm thấp. Yếu tố vĩ mô bị triệt tiêu. Và hai nguyên nhân để lại **hai dấu vân tay khác nhau**: chu kỳ làm giảm **đều** và **hồi lại** khi lãi suất hạ; AI làm giảm **lệch theo đầu việc** và **không hồi**. Chu kỳ thì đối xứng, công nghệ thì không.
+> Dấu vân tay thứ hai — *không hồi lại khi lãi suất hạ* — thì chỉ quan sát được **sau khi lãi suất đã hạ và đã đủ thời gian**. Tức là **không dùng được vào hôm nay**.
 
 **Neo** — **CLO2** · phạm trù **nguyên nhân ↔ kết quả** *(slide 95–96)* · key word **① Phản biện**
 
 **▶ Lăng kính** — [nguyên nhân – kết quả](../app-bien-chung/index.html#tbc-nhan-qua)
 
-**⚠️ Nếu bị hỏi** — 🔬 *"Còn vòng phản hồi nào không?"* → Có một vòng đáng ngờ: trả theo giờ thì khai năng suất thật sẽ bị nâng định mức, nên người lao động có **lợi ích khách quan** trong việc giấu; sản lượng đo được không tăng; tổ chức kết luận *"AI vô dụng"*.
-
-**Chỉ được nói ở mức MỆNH ĐỀ TỒN TẠI** — *"cơ chế này có xuất hiện trong các ca chúng tôi ghi nhận"*. **Không** được nói nó phổ biến, càng **không** được nói nó là lý do năng suất tổng không tăng: 5 ca, n=1 mỗi ngành, tự thuật — không đủ tư cách cho bất kỳ mệnh đề nào về mức phổ biến.
-
-⚠️ **Vấn đề tương đương quan sát:** dữ liệu Đan Mạch cho thấy người dùng tự báo tiết kiệm **~3% thời gian** mà giờ công ghi nhận **null**. Điều đó **tương thích với giả thuyết giấu**, nhưng cũng tương thích với *"mức lợi thật vốn nhỏ"*. Hai giả thuyết sinh ra **cùng một dấu vết** — không phân biệt được bằng dữ liệu tổng hợp, chỉ phân biệt được bằng **mô tả chuỗi sự kiện trong từng ca** *(phiếu câu 7)*.
-
-Ở Việt Nam phần lớn ăn lương tháng cố định nên động cơ giấu yếu hơn.
+**⚠️ Nếu bị hỏi** — ⚠️ *"Nhưng nhóm lại dùng con số 24,7% doanh nghiệp nói cắt tuyển vì năng suất AI?"* → **Đây là chỗ chúng tôi suýt tự mâu thuẫn, và xin nói ra.** Slide này vừa dạy rằng lý do **tự khai** của doanh nghiệp là **nguyên cớ**. Con số 24,7% cũng là lý do tự khai. Tệ hơn: *"năng suất AI"* là lý do **được xã hội chấp nhận** để giải thích việc cắt tuyển vì ngân sách — đúng định nghĩa nguyên cớ. Nên chúng tôi dùng nó làm **dấu hiệu về ý thức của người ra quyết định**, không làm bằng chứng về nguyên nhân thật.
 
 ---
 
 ## S8 · 🖼️ Mâu thuẫn — hình bắt buộc ①
 
 **Tiêu đề slide**
-> Mâu thuẫn không nằm ở AI với thước đo cũ
+> Chỉnh thể có ba bên, không phải hai
 
 **Chữ trên slide** — *(chính là hình)*
 ```
-          CHỈNH THỂ: QUAN HỆ PHÂN PHỐI GIÁ TRỊ
+            CHỈNH THỂ: QUAN HỆ PHÂN PHỐI GIÁ TRỊ
 
-  MẶT A                          MẶT B
-  LAO ĐỘNG SỐNG      <---->      SỞ HỮU VỐN
-  bán THỜI GIAN                  vốn · mô hình AI · dữ liệu
-  ─────────────                  ─────────────────────────
-  được  : thu nhập chắc chắn     được  : toàn bộ phần dôi
-  nhường: phần dôi               gánh  : rủi ro kết quả
+   LAO ĐỘNG SỐNG  <──>  SỞ HỮU VỐN  <──>  NGƯỜI TRẢ TIỀN
+   bán THỜI GIAN        vốn·mô hình        khách hàng cuối
+                        ·dữ liệu
+   được : thu nhập      được : phần dôi    được : giá rẻ hơn
+          chắc chắn            CÒN LẠI            nếu ép được
+   nhường: phần dôi     gánh : rủi ro      công cụ: cạnh tranh giá
 
- ═══ THỐNG NHẤT (hiện tượng) ═══
-   A không có B → không công cụ, không thu nhập chắc chắn
-   B không có A → không có gì để chiếm hữu
-   MỘT GIAO KÈO: ĐỔI PHẦN DÔI LẤY SỰ CHẮC CHẮN
+ ═══ THỐNG NHẤT ═══  một giao kèo: đổi phần dôi lấy sự chắc chắn
+ ═══ ĐẤU TRANH  ═══  lao động XÃ HỘI HOÁ → không quy kết được
+                     chiếm hữu TƯ NHÂN   → buộc phải quy kết
 
- ═══ ĐẤU TRANH (bản chất) ═══
-   Lao động XÃ HỘI HOÁ  → không quy kết được cho ai
-   Chiếm hữu TƯ NHÂN    → buộc phải quy kết mới chia được
-   Không đo được → CHIA THEO TƯƠNG QUAN QUYỀN LỰC
+ ⚠ BÊN THỨ BA KHÔNG PHẢI THÊM CHO ĐỦ:
+   nếu khách ép giá thành công, phần dôi CHƯA TỪNG VÀO TỔ CHỨC
+   → và điều đó giải thích "lương null" KHÔNG KÉM giả thuyết của nhóm
 ```
 
 **Lời nói**
-> Cặp đối lập thật **không phải** *"công cụ AI chọi với chấm công theo giờ"*. Bảng chấm công tồn tại hàng thế kỷ mà không cần AI; AI tồn tại không cần bảng chấm công. Tiêu diệt cái này thì cái kia vẫn nguyên vai trò — vậy đó chỉ là **hai thứ khác nhau va vào nhau**, chưa phải mặt đối lập biện chứng.
+> Cặp đối lập **không phải** *"công cụ AI chọi chấm công theo giờ"*. Bảng chấm công tồn tại hàng thế kỷ không cần AI; AI tồn tại không cần bảng chấm công. Tiêu diệt cái này thì cái kia vẫn nguyên vai trò — vậy đó chỉ là **hai thứ va vào nhau**, chưa phải mặt đối lập biện chứng.
 >
-> Cặp thật là: **lao động sống bán thời gian** và **quyền sở hữu vốn**. Hai mặt này **nương tựa nhau**: sự chắc chắn về thu nhập của bên A tồn tại được **chỉ vì** bên B hấp thụ rủi ro; quyền của bên B với phần dôi có cơ sở **chỉ vì** B gánh rủi ro đó. Đó là **một giao kèo**, không phải hai bên tình cờ đứng cạnh nhau.
+> Cặp thật là **lao động sống bán thời gian** và **quyền sở hữu vốn**. Hai mặt nương tựa nhau: sự chắc chắn về thu nhập của bên A tồn tại được **chỉ vì** bên B hấp thụ rủi ro; quyền của B với phần dôi có cơ sở **chỉ vì** B gánh rủi ro đó.
 >
-> Và ở tầng sâu hơn: **lao động ngày càng xã hội hoá** — output là sản phẩm chung của người, của mô hình, và của dữ liệu quá khứ của vô số người khác, xã hội hoá tới mức **không phép đo nào tách ra được phần của ai**. Nhưng **chiếm hữu vẫn tư nhân**, mà chiếm hữu tư nhân thì **đòi** một con số quy về một chủ thể. Đó không phải hai thứ va nhau — đó là **một mặt đòi cái mà mặt kia không thể cho**.
+> Nhưng bản trước của bài này vẽ chỉnh thể **chỉ có hai mặt** — và đó là một lỗi. Vì ở slide năm chính chúng tôi đã liệt kê *"khách ép giá vì AI làm được mà"*. **Nếu khách ép giá thành công thì phần dôi chưa từng vào tổ chức** — nó bị cạnh tranh giá đẩy thẳng sang bên mua. Khi đó mô hình ống dẫn ở slide sáu vẽ sai chỗ: giá trị chưa vào ống.
 >
-> Và khi không đo được, phân phối chuyển từ *theo đo lường* sang **theo tương quan quyền lực**.
+> Và đây là chỗ khó chịu nhất: **giả thuyết khách hàng lấy mất giải thích hiện tượng lương null không kém gì giả thuyết của chúng tôi.** Đó là một **biến thứ ba chưa bị loại trừ**, và chúng tôi để nó ngay trên hình thay vì giấu.
 
 **Neo** — **CLO2** · **quy luật mâu thuẫn** *(slide 106–111)* + **LLSX–QHSX**
 
-**▶ Lăng kính** — [mâu thuẫn](../app-bien-chung/index.html#tbc-mau-thuan)
+**▶ Lăng kính** — [mâu thuẫn](../app-bien-chung/index.html#tbc-mau-thuan) · [toàn diện](../app-bien-chung/index.html#tbc-toan-dien)
 
-**⚠️ Nếu bị hỏi** — *"Có phải AI gây ra chuyện này không?"* → **Không**, và có **ba chân đế quan sát được**:
-
-| Chân | Bằng chứng |
-|---|---|
-| **a** | **Cùng mức tự động hoá tác vụ, đổi thiết chế tiền lương thì kết quả phân phối ĐẢO DẤU.** Lương linh hoạt → lương −42,2% / thất nghiệp 2,6%. Lương cứng → lương +2,8% / thất nghiệp 24,0%. *(phân tích độ nhạy, WP 2026-02)* |
-| **b** | **Canaries, Fact 5:** việc làm **giảm** ở nghề AI **thay thế** tác vụ, **đi ngang hoặc tăng** ở nghề AI **bổ trợ** — trong **dữ liệu bảng lương ADP** hàng triệu lao động Mỹ tới 6/2026. Hai dấu ngược nhau **trong sổ sách thật**, không trong mô hình |
-| **c** | **Đan Mạch null vs Mỹ −19%** ở tầng 22–25 — cùng công nghệ, hai thiết chế thị trường lao động, hai kết quả |
-
-> 🚫 **KHÔNG dùng lập luận cũ** *"hai dấu ngược nhau, −11,5% vs +33,6%"* — hai con số đó nằm **bên trong cùng một mô hình**, nên lấy chúng làm bằng chứng là **lập luận vòng tròn**: đó là đầu ra của giả định, không phải quan sát. Chân đế (a) mới là "bằng chứng nội tại" đúng nghĩa, vì nó **đổi một biến thiết chế** thay vì so hai nghề trong cùng một lần chạy.
+**⚠️ Nếu bị hỏi** — *"Có phải AI gây ra chuyện này không?"* → **Chúng tôi không chứng minh được là không.** Bản trước đưa ba *"chân đế quan sát được"* và cả ba đều hỏng: phân tích độ nhạy **là đầu ra mô hình**; Canaries Fact 5 giữ thiết chế cố định cho công nghệ biến thiên nên nó chứng minh **AI CÓ hiệu lực nhân quả dị biệt**, chỉ ngược hướng chúng tôi gọi nó vào; và so Đan Mạch với Mỹ là **so hai biến khác nhau** — thu nhập/giờ công đối với số đầu việc. Hai nguồn đó thực ra **khớp nhau**, cùng nói *không điều chỉnh qua lương*. Nên đây vẫn là **câu hỏi mở**.
 
 ---
 
-## S9 · 🖼️ Phần tăng chảy về đâu — hình bắt buộc ②
+## S9 · 🖼️ Kịch bản nói gì — hình bắt buộc ②
 
 **Tiêu đề slide**
-> 60% → 45%: toàn bộ phần tăng chảy về phía vốn
+> Nếu giả định như thế, thì cấu trúc phân phối sẽ như thế
 
 **Chữ trên slide**
 ```
@@ -383,98 +352,89 @@ PHÉP KIỂM — tách "do AI" khỏi "do chu kỳ":
  LAO  │  60,0  │     │  56,1  │     │  45,2  │
  ĐỘNG └────────┘     └────────┘     └────────┘
 
- "A full 15 percent of GDP moves from being paid to labor
-  to being captured as a return on investment."
-
  ⚠ KỊCH BẢN MÔ HÌNH HOÁ — không phải dự báo, không phải quan sát
+   tài liệu tự nói vậy ba lần, không gán xác suất cho kịch bản nào
  ⚠ Tỷ trọng lao động giảm ≠ mọi người lao động nghèo đi
-   (chính bộ số này có nhóm +33,6%)
+   trong CÙNG bộ số, nghề khác +33,6% · lao động tri thức −11,5%
+ ⚠ Ba kịch bản khác nhau ở 8 THAM SỐ, không phải một
+   → KHÔNG so độ dốc giữa chúng, KHÔNG nội suy
 ```
 
-**Hình** — cột chồng ba nhóm. Kèm hình nhỏ: hai mũi tên ngược chiều, nghề khác **+33,6%** / lao động tri thức **−11,5%**.
+**Hình** — cột chồng ba nhóm, ba dòng cảnh báo in ngay dưới, **cùng cỡ chữ với số**.
 
 **Lời nói**
-> Đây là chỗ lý luận gặp số liệu. Và điều đáng nói là: con số này **không do nhóm chúng tôi suy ra** — nó đến từ mô hình của các nhà kinh tế chính thống, đăng dưới dạng working paper học thuật.
+> Đây là chỗ bài chạm vào số liệu, và cũng là chỗ dễ đọc sai nhất — nên ba cảnh báo in cùng cỡ chữ với con số, không phải chú thích nhỏ.
 >
-> Tỷ trọng thu nhập chảy về lao động giảm từ 60% xuống 56% rồi 45%. Nguyên văn: *toàn bộ phần tăng của GDP do đó chảy về thu nhập từ vốn*. Mười lăm phần trăm GDP chuyển từ chỗ được trả cho lao động sang chỗ được thu về như lợi tức đầu tư.
+> **Thứ nhất**, đây là **kịch bản**, không phải dự báo. Tài liệu tự nói ba lần và **không gán xác suất** cho kịch bản nào. Về mặt triết học nó là **khả năng**, không phải hiện thực.
 >
-> Hai cảnh báo, và xin nhấn mạnh vì đây là chỗ dễ đọc sai nhất. **Thứ nhất**, đây là **kịch bản**, không phải dự báo — tài liệu tự nói vậy ba lần và không gán xác suất cho kịch bản nào. Về mặt triết học nó là **khả năng**, không phải hiện thực. **Thứ hai**, tỷ trọng lao động giảm **không có nghĩa là mọi người lao động nghèo đi**. Chính bộ số này cho thấy nghề khác **tăng 33,6%**. Con số 60 xuống 45 đo **tỷ lệ chia giữa lao động và vốn**, nó không đo mức lương.
+> **Thứ hai**, tỷ trọng lao động giảm **không có nghĩa mọi người lao động nghèo đi** — trong cùng bộ số đó, nghề khác tăng ba mươi ba phẩy sáu phần trăm.
 >
-> Và chính vế thứ hai đó phá một giả định mà bài nào cũng dễ mắc: **trục lao động chọi tư bản là không đủ** — hai nhóm cùng là người làm công mà đứng hai phía ngược nhau.
->
-> ⚠️ **Nhưng phải nói rõ giới hạn của câu vừa rồi:** hai con số này nằm **bên trong cùng một mô hình**, nên chúng cho thấy **mô hình phân hoá hai nhóm**, chứ chưa cho thấy hiện thực phân hoá. Muốn nói về hiện thực thì phải dùng **Canaries Fact 5** — dữ liệu bảng lương thật: việc làm giảm ở nghề AI *thay thế*, đi ngang hoặc tăng ở nghề AI *bổ trợ*.
+> **Thứ ba**, và đây là chỗ chúng tôi tự bác bỏ mình: chúng tôi **từng** dùng hai con số ngược dấu đó để kết luận *"vậy công nghệ không quyết định phân phối"*. Sai — vì **hai con số ấy nằm trong cùng một mô hình**, chúng là đầu ra của giả định. Lấy chúng làm bằng chứng về hiện thực là **lập luận vòng tròn**. Chúng tôi cũng **từng** định vị điểm nút bằng cách so độ dốc giữa ba kịch bản; khi mở tài liệu gốc thì thấy ba kịch bản khác nhau ở **tám tham số**, và trục dùng để so **tự nó là tích của hai tham số**. Phép so đó không hợp lệ. **Bỏ.**
 
-**Neo** — **CLO3** *(vai trò từng yếu tố)* · key word **② Pháp lý** *(dẫn sang S14)*
+**Neo** — **CLO3** · key word **③ Hệ thống**
 
-**▶ Lăng kính** — [xã hội – lịch sử](../app-bien-chung/index.html#tbc-xa-hoi)
+**▶ Lăng kính** — [thực tiễn](../app-bien-chung/index.html#tbc-thuc-tien)
 
-**⚠️ Nếu bị hỏi**
-- *"Có phải AI làm 15% GDP chuyển từ lao động sang vốn không?"* → **Nói vậy là đọc sai tài liệu.** Chữ ***"therefore"*** trong chính câu trích cho thấy đó là một **suy ra**, không phải quan sát: trong mô hình đó AI được **xếp loại là vốn**, nên mọi sản lượng nó tạo ra **theo định nghĩa** quy về thu nhập vốn. Con số ấy là hệ quả của **cấu trúc sở hữu + quy ước hạch toán**. Đổi ai sở hữu công cụ thì con số đổi, dù AI mạnh y hệt.
-- *"Nguồn này của một hãng AI, có tin được không?"* → **Chúng tôi nêu điều đó ra trước khi bị hỏi** — xem S15.
+**⚠️ Nếu bị hỏi** — *"Nguồn này của một hãng AI, tin được không?"* → Nghiên cứu **do chính một hãng AI công bố**, về **tác động kinh tế của sản phẩm họ bán**, **hiệu chuẩn một phần bằng dữ liệu dùng sản phẩm đó**. Chúng tôi dùng nó dưới **đúng một tư cách**: *"nếu giả định như thế thì cấu trúc phân phối sẽ như thế"*. Mọi luận điểm về hiện thực trong bài đều đứng trên **nguồn quan sát khác**.
 
 ---
 
-## S10 · Vì sao người chống lại chống
+## S10 · Ai được lợi, ai chống — và ai không có tiếng nói
 
 **Tiêu đề slide**
-> Không ai bảo thủ cả — họ đang phản ứng đúng với thiết chế của mình
+> Sức chống tỉ lệ với quyền hãm, không tỉ lệ với mức thiệt
 
 **Chữ trên slide**
 ```
-BA GIẢ THUYẾT CẠNH TRANH — chưa cái nào được kiểm
+🟢 chủ sở hữu mô hình + hạ tầng (đặt ngoài VN)
+🟢 bên nắm hợp đồng và quan hệ khách hàng
+🟢 người hành nghề TỰ KÝ ĐƯỢC hợp đồng
+🟢 lao động PHẢI CÓ MẶT TẠI CHỖ
 
-(a) Ý THỨC LẠC HẬU      "quản lý giỏi = quản lý nhiều người"
-                         — từng là phản ánh ĐÚNG của một thời kỳ
+🔴 lao động tri thức tầng thực hiện — không sở hữu gì
+🔴 NGƯỜI CHƯA ĐƯỢC TUYỂN — quyền hãm BẰNG KHÔNG
+🔬 quản lý đo vị thế bằng quân số
+🔬 bộ phận có quyền phủ quyết công cụ
 
-(b) THIẾT CHẾ           bậc lương, quyền hạn, ngân sách
-    VẪN ĐẾM ĐẦU NGƯỜI    VẪN ĐANG được tính theo quân số
-                         → giữ quân số là phản ứng ĐÚNG
-
-(c) RỦI RO LỆCH         chịu trách nhiệm chất lượng đầu ra
-                         nhưng KHÔNG được chia phần tiết kiệm
-
-PHÉP PHÂN BIỆT: (a) đúng → quản lý TRẺ sẽ ủng hộ AI
-                (c) đúng → CẢ quản lý trẻ cũng hãm
+  Mỹ, bảng lương ADP: nhóm 22–25 ở nghề phơi nhiễm cao −19%
+  doãng từ 15% (7/2025) · cơ chế là GIẢM TUYỂN, không phải sa thải
+  người có kinh nghiệm KHÔNG có khoảng cách tương ứng
 ```
 
-**Hình** — ba hộp song song, bên dưới là một mũi tên rẽ đôi *(quản lý trẻ ủng hộ / quản lý trẻ cũng hãm)*.
+**Hình** — bảng hai màu; dòng *"người chưa được tuyển"* nằm riêng, không có ô "quyền hãm".
 
 **Lời nói**
-> Đến phần dễ sa vào quy kết nhất, nên chúng tôi làm chậm lại.
+> Bảng này có một kết luận không hiển nhiên: **bên chống mạnh nhất không phải bên thiệt nhất**.
 >
-> Nói *"họ bảo thủ"* là quy kết đạo đức. Nhưng nói *"ý thức họ lạc hậu"* thì vẫn còn là quy kết — chỉ đổi từ đạo đức sang nhận thức. Vì nếu **bậc lương và quyền hạn của họ vẫn đang được tính theo quân số**, thì giữ quân số **không phải ý thức lạc hậu — đó là phản ứng đúng với cái tồn tại đang bao quanh họ**. Cái lạc hậu nằm ở **thiết chế trả công và bổ nhiệm của tổ chức**, không nằm trong đầu người quản lý.
+> Người gánh toàn bộ chi phí là **người chưa được tuyển** — quyền hãm bằng không, tiếng nói trong tổ chức bằng không, và họ **không xuất hiện trong bất kỳ cuộc thương lượng nào**. Dữ liệu bảng lương Mỹ cho thấy nhóm hai mươi hai đến hai mươi lăm tuổi ở nghề phơi nhiễm cao thấp hơn mười chín phần trăm so với mức lẽ ra đạt được, và cơ chế là **giảm tuyển** chứ không phải sa thải — tức người tại vị, người **có** quyền hãm, thì **không chịu thiệt đo được**.
 >
-> Và còn giả thuyết thứ ba, không cần giả định ý thức gì cả: quản lý cấp trung **chịu trách nhiệm về chất lượng đầu ra của đội nhưng không được chia phần tiết kiệm chi phí**. Đội dùng AI ra sản phẩm lỗi thì họ chịu; đội dùng AI nhanh hơn thì phần tiết kiệm lên báo cáo cấp trên, còn họ nhận thêm việc.
+> Hai dòng có dấu 🔬 là **giả thuyết của chúng tôi, chưa kiểm** — chúng tôi **không có bằng chứng nào** cho thấy quản lý cấp trung đang chống. Phiếu ca ngành có hai câu để kiểm, và chúng chưa chạy.
 >
-> Ba giả thuyết này phân biệt được bằng **một câu hỏi**: nếu là ý thức lạc hậu thì quản lý trẻ mới bổ nhiệm sẽ ủng hộ AI; nếu là rủi ro lệch thì **cả quản lý trẻ cũng hãm** — vì vị trí giống nhau.
->
-> Hệ quả về giải pháp thì rất thẳng: **muốn đổi ý thức thì phải đổi tồn tại**. Đổi cách đo, đổi cách chia tiền, đặt lại chỗ chịu rủi ro. Hội thảo và khoá "đổi tư duy" thì không.
+> Và nếu họ có chống thật, thì xin đừng quy kết. Nếu **bậc lương và quyền hạn của họ vẫn đang được tính theo quân số**, thì giữ quân số **là phản ứng đúng với cái tồn tại đang bao quanh họ**. Cái lạc hậu nằm ở **thiết chế trả công và bổ nhiệm**, không nằm trong đầu người quản lý. Muốn đổi ý thức thì **phải đổi tồn tại** — đổi cách đo, đổi cách chia. Hội thảo thì không.
 
-**Neo** — **CLO3** · **Vật chất ↔ Ý thức** *(slide 66–70)* · key word **① Phản biện** *(hạ kết luận xuống 🔬 giả thuyết)*
+**Neo** — **CLO3** · **Vật chất ↔ Ý thức** *(slide 66–70)* · key word **① Phản biện**
 
 **▶ Lăng kính** — [xã hội – lịch sử](../app-bien-chung/index.html#tbc-xa-hoi)
 
-**⚠️ Nếu bị hỏi** — *"Nhóm có đang tuyệt đối hoá công nghệ không?"* → Không. **Ý thức có tính độc lập tương đối và tác động trở lại**: chữ ký chịu trách nhiệm trong nghề có điều kiện, quy định bảo vệ dữ liệu, điều khoản hợp đồng của khách — tất cả đang **hãm** quá trình. Ở Việt Nam, nhóm biến số thể chế này quyết định tốc độ thực tế **nhiều hơn** chất lượng mô hình.
+**⚠️ Nếu bị hỏi** — *"Nhóm có tuyệt đối hoá công nghệ không?"* → Không. **Ý thức có tính độc lập tương đối và tác động trở lại**: chữ ký chịu trách nhiệm trong nghề có điều kiện, quy định bảo vệ dữ liệu, điều khoản hợp đồng của khách — tất cả đang **hãm**. Ở Việt Nam nhóm biến số thể chế này quyết định tốc độ thực tế **nhiều hơn** chất lượng mô hình.
 
 ---
 
-## S11 · Cùng mâu thuẫn, mỗi ngành một lời giải
+## S11 · Cùng câu hỏi, mỗi ngành một hình dạng
 
 **Tiêu đề slide**
-> Cái chung không phải "lao động tri thức" — là khoảng lệch giữa hai đầu hợp đồng
+> Cái chung là khoảng lệch giữa hai đầu hợp đồng
 
 **Chữ trên slide**
 ```
-CÁI CHUNG   khoảng lệch giữa ĐƠN VỊ TÍNH hai đầu hợp đồng
-            đầu vào: tổ chức ↔ người làm   (tháng · giờ)
-            đầu ra : tổ chức ↔ người trả tiền (giờ · man-day · gói · sản phẩm)
-            → AI rơi vào KHOẢNG LỆCH giữa hai đơn vị
+CÁI CHUNG    khoảng lệch giữa ĐƠN VỊ TÍNH hai đầu hợp đồng
+             đầu vào: tổ chức ↔ người làm (tháng · giờ)
+             đầu ra : tổ chức ↔ khách (giờ · man-day · gói · sản phẩm)
 
-CÁI RIÊNG   mỗi ngành khoảng lệch mang DẤU KHÁC NHAU
+CÁI RIÊNG    mỗi ngành khoảng lệch mang DẤU KHÁC NHAU
 CÁI ĐƠN NHẤT tổ chức cụ thể của từng người
 
 KHUNG KHÔNG ÁP ĐƯỢC khi:
-  • đơn vị tính hai đầu VỐN ĐÃ CÙNG DẤU (hoa hồng, khoán sản phẩm)
   • AI bị CẤM ĐƯA DỮ LIỆU RA — rào cản thể chế, không phải kỹ thuật
   • nghề bán "RỦI RO ĐÃ ĐƯỢC GÁNH" — kiểm toán, tuân thủ:
     thời gian ở đó đo SỰ CẨN TRỌNG, chưa bao giờ nhận là đo sản lượng
@@ -483,226 +443,204 @@ KHUNG KHÔNG ÁP ĐƯỢC khi:
 CỐ Ý BỎ: giai cấp–nhà nước · hình thái KT-XH · triết học về con người
 ```
 
-**Hình** — sơ đồ hai hợp đồng nối một tổ chức ở giữa, khoảng lệch được tô đậm.
+**Hình** — sơ đồ hai hợp đồng nối một tổ chức, khoảng lệch tô đậm.
 
 **Lời nói**
-> Nếu nói cái chung ở đây là *"lao động tri thức"* thì nó rộng tới mức đúng với mọi thứ mà chẳng hành động được gì. Cái chung sắc hơn nhiều: **khoảng lệch giữa đơn vị tính ở hai đầu hợp đồng**.
+> Nếu nói cái chung ở đây là *"lao động tri thức"* thì nó rộng tới mức đúng với mọi thứ mà chẳng hành động được gì. Cái chung sắc hơn: **khoảng lệch giữa đơn vị tính ở hai đầu hợp đồng**. Nó **tự sinh ra phân loại ngành** thay vì để nhóm gán.
 >
-> Vì sao bản này sắc hơn? Vì nó **tự sinh ra phân loại ngành**, không phải do nhóm gán. Phần năng suất AI rơi vào tay **bên nào có đơn vị tính không đổi**. Nơi bán theo gói thì tổ chức hưởng. Nơi bán theo giờ thì AI **làm giảm doanh thu** chứ không làm tăng lợi nhuận. Nơi không có hợp đồng đầu ra thì phần dôi biểu hiện bằng **giảm nhu cầu đầu người**.
+> Nhưng phải nêu một giả định chịu lực mà bản trước giấu: câu *"nơi bán theo giờ thì AI làm giảm doanh thu"* chỉ đúng **nếu tổng cầu đứng yên**. Giá giờ rẻ đi có thể **mở rộng thị trường**. Chúng tôi không có dữ liệu về vế đó.
 >
-> Và đây là phần chúng tôi tự giới hạn. Khung này **không áp được** ở bốn ca. Đặc biệt ca thứ ba đáng nói: với kiểm toán, tuân thủ, kiểm soát nội bộ — giá trị là **một tổn thất đã không xảy ra**, tức là một sự kiện **không xảy ra**, không đo được. Ở đó thời gian không phải thước đo sản lượng dở; nó là **thước đo sự cẩn trọng và phạm vi trách nhiệm**, và nó đang làm đúng việc của nó. Ép nhóm nghề này sang "đo theo kết quả" là **áp tiêu chí của loài khác**.
+> Và đây là phần tự giới hạn. Khung này **không áp được** ở ba ca. Ca thứ hai đáng nói: với kiểm toán, tuân thủ, kiểm soát nội bộ — giá trị là **một tổn thất đã không xảy ra**, tức một sự kiện **không xảy ra**, không đo được. Ở đó thời gian không phải thước đo sản lượng dở; nó là **thước đo sự cẩn trọng và phạm vi trách nhiệm**, và nó đang làm đúng việc của nó.
 >
-> Kết luận rút ra: **mâu thuẫn phát triển không đều**. Cùng một thời điểm, có nơi đã qua điểm nút, có nơi chưa vào Độ. **Không có một lộ trình chung cho tất cả.**
+> Kết luận: **mâu thuẫn phát triển không đều.** Không có một lộ trình chung cho tất cả.
 
-**Neo** — **CLO4** *(chọn lựa yếu tố cốt lõi — và nói rõ cái cố ý bỏ)* · phạm trù **chung – riêng – đơn nhất** *(slide 89–90)* · key word **③ Hệ thống** *(kiểm biên)*
+**Neo** — **CLO4** · phạm trù **chung – riêng – đơn nhất** *(slide 89–90)* · key word **③ Hệ thống**
 
 **▶ Lăng kính** — [chung – riêng – đơn nhất](../app-bien-chung/index.html#tbc-chung-rieng)
 
-**⚠️ Nếu bị hỏi** — *"Sao nhóm không dùng phạm trù X?"* → **Đây là câu nhóm muốn bị hỏi.** Rubric trả điểm cho việc **biết bỏ**, không trả điểm cho việc kể hết. Ba thứ ở dòng cuối bị bỏ vì chúng kéo bài sang hướng chính trị hoặc thành trình bày học thuyết, xa yêu cầu *"ứng dụng được ngay"*.
+**⚠️ Nếu bị hỏi** — ⚠️ *"Nhóm bắt gài ca nghịch là nghề ăn theo gói, mà khung lại nói nghề đó nằm ngoài phạm vi — vậy ca nghịch để làm gì?"* → **Bản trước tự mâu thuẫn đúng chỗ này, và chúng tôi đã sửa.** Nghề đã khoán **vẫn nằm trong phạm vi** — nó là **ca đối chứng**, dùng để kiểm xem khoảng lệch có thật là cơ chế chung không. Chỉ ba ca trên slide mới nằm ngoài. **Quy tắc đọc: nếu ca hai đầu cùng đơn vị mà vẫn có vấn đề phân phối, thì "khoảng lệch" không phải cái chung, và chúng tôi bỏ luận điểm này.**
 
 ---
 
-## S12 · 🖼️ Độ và điểm nút — hình bắt buộc ③
+## S12 · ⭐ Lượng chưa đo được — và bốn ứng viên
 
 **Tiêu đề slide**
-> Khi nào thước gãy? Mỗi tổ chức có ngưỡng riêng
+> Muốn biết khi nào đổi chất, phải đo được cái đang tích luỹ. Chúng tôi chưa đo được.
 
 **Chữ trên slide**
 ```
-ĐỘ CỦA MỘT TỔ CHỨC = SỨC HẤP THỤ CỦA THANG LƯƠNG NÓ ĐANG DÙNG
+CÁI LƯỢNG CẦN ĐO: KÍCH THƯỚC PHẦN DÔI
+   — chưa nguồn nào đo. Ba số duy nhất có:
+     ~3% thời gian TỰ BÁO · thu nhập NULL · TFP ≤0,66%/thập kỷ
 
-  Độ kết thúc khi CHÊNH LỆCH SẢN LƯỢNG TRONG CÙNG MỘT BẬC
-  vượt KHOẢNG CÁCH ĐƠN GIÁ GIỮA HAI BẬC LIỀN KỀ
+BỐN ỨNG VIÊN — dữ liệu hiện có KHÔNG PHÂN BIỆT ĐƯỢC
 
-  CHỈ SỐ GÃY THƯỚC = (P90 ÷ P50 sản lượng, CÙNG BẬC)
-                     ─────────────────────────────────
-                     (đơn giá bậc kế ÷ đơn giá bậc hiện tại)
+  H1  vào bên mua sức lao động     hợp đồng mặc định giao phần chênh
+  H2  phần dôi VỐN CÒN NHỎ         chưa có gì đáng kể để tranh chấp
+  H3  khách hàng lấy qua ép giá    chưa từng vào tổ chức
+  H4  ĐỘ TRỄ, chưa lên sổ sách     Đan Mạch mới đo ở mốc 2 năm
 
-     < 1  còn trong Độ     ≈ 1  sát điểm nút     > 1  đã qua
-
-  → thang lương càng NÉN thì Độ càng HẸP, gãy SỚM hơn
-  → ngưỡng = 1 đến từ chính cấu trúc thang lương, KHÔNG ai bịa số
-
-BỆNH NÓNG VỘI   đổi cách trả công ngay khi chưa có hệ đo đáng tin
-                → rơi lại ở dạng tệ hơn: trả theo KẾT QUẢ GIẢ
-BỆNH BẢO THỦ    không đo gì cả → mặc định tin chất cũ còn nguyên
+CÁCH PHÂN BIỆT — đo được, không cần khảo sát
+  H1 ≠ H3 : biên lợi nhuận gộp trước/sau AI, cùng khách, cùng kỳ
+            KHÔNG tăng → H3 · tăng mà lương không đổi → H1
+  H1 ≠ H2 : đo "sức mặc cả" ĐỘC LẬP với lương
+            (offer cạnh tranh · thời gian tuyển thay thế · nghỉ tự nguyện)
+  H4      : chỉ phân biệt được bằng THỜI GIAN — đo lại sau 2–3 năm
 ```
 
-**Hình** — đường cong đi lên cắt một đường ngang *(khoảng cách hai bậc lương)*; giao điểm là điểm nút. Kèm bảng 5 chỉ số.
+**Hình** — bốn nhánh từ một nút "lương null", mỗi nhánh một giả thuyết; hai phép đo vẽ thành hai nhát cắt.
 
 **Lời nói**
-> Câu hỏi *"khi nào thì lật"* thường bị trả lời bằng một con số vay mượn từ báo cáo nước ngoài. Chúng tôi không làm vậy, vì lý do sẽ nói ở slide cuối.
+> Quy luật lượng – chất hỏi: **khi nào thì đổi chất?** Lượng tích luỹ dần trong giới hạn **Độ**, tới **điểm nút** thì **bước nhảy** sang chất mới. Muốn trả lời thì phải đo được **cái đang tích luỹ**. Và đây là chỗ bài này phải dừng lại một cách trung thực.
 >
-> Thay vào đó: **Độ của mỗi tổ chức bằng đúng sức hấp thụ chênh lệch của thang lương nó đang dùng**. Độ kết thúc khi chênh lệch sản lượng **trong cùng một bậc** vượt khoảng cách đơn giá **giữa hai bậc liền kề**. Qua mốc đó, người giỏi nhất bậc dưới làm ra nhiều hơn người trung bình bậc trên một cách hệ thống — và thang lương **mất chức năng phân loại**, tức là chất mất một thuộc tính cơ bản.
+> Chúng tôi **từng** có một chỉ số đẹp: so độ phân tán sản lượng trong cùng một bậc với khoảng cách hai bậc lương. Đã bỏ. Vì nó đòi **sản lượng của từng cá nhân**, trong khi cả bài này nói rằng **đóng góp không quy kết được cho cá nhân**. Chỉ số cờ đầu chạy được **khi và chỉ khi luận đề của chính nó sai**.
 >
-> Đẹp ở chỗ: **ngưỡng bằng 1, và nó đến từ chính cấu trúc thang lương của tổ chức**. Không ai phải bịa một con số chung. Và nó kéo theo một hệ quả trái trực giác: **thang lương càng nén thì Độ càng hẹp, gãy sớm hơn**. Hai công ty cùng mức dùng AI có thể ở hai vị trí khác hẳn nhau.
+> Vậy cái lượng cần đo là gì? Là **kích thước phần dôi**. Và chưa nguồn nào đo nó.
 >
-> Năm chỉ số kèm theo đều đo được bằng **dữ liệu đang nằm sẵn trong máy** — timesheet, sổ hợp đồng, thang bậc lương. Không cần khảo sát, không cần chờ ai công bố số quốc gia. Phòng nhân sự làm được trong một buổi chiều.
+> Từ đó ra **bốn ứng viên** cho câu *"năng suất tăng lên đi đâu"*: vào bên mua sức lao động; hoặc **phần dôi vốn còn nhỏ**; hoặc **khách hàng lấy mất** qua cạnh tranh giá; hoặc **độ trễ**, chưa lên sổ sách. **Dữ liệu hiện có không phân biệt được bốn cái này.**
 >
-> Một lưu ý về chẩn bệnh: **"chưa tới điểm nút" không có nghĩa là "chưa cần làm gì"**. Nó có nghĩa việc cần làm bây giờ là **đo và tích luỹ**, không phải nhảy.
+> Nhưng phân biệt được **bằng hai phép đo**, và cả hai đều rẻ. Muốn tách H1 với H3: nhìn **biên lợi nhuận gộp** trước và sau khi dùng AI, cùng khách, cùng kỳ. Nếu biên **không tăng** trong khi thời gian thực hiện giảm thì phần lợi **không ở lại tổ chức** — khách lấy. Muốn tách H1 với H2: đo **sức mặc cả** bằng thứ **độc lập với lương** — tỷ lệ có offer cạnh tranh, thời gian tuyển thay thế, tỷ lệ nghỉ việc tự nguyện. Nhóm nào có các chỉ số đó **cao** mà lương vẫn không nhúc nhích thì H1 sống.
+>
+> Đóng góp của bài không phải một câu trả lời. Là **một câu hỏi đã được đặt đủ sắc để đo**.
 
-**Neo** — **CLO5 ⭐** *(mục duy nhất đòi LLO7 Sáng tạo)* · **quy luật lượng – chất** *(slide 100, 102–105)* · key word **④ Thực tế**
+**Neo** — **CLO5 ⭐ LLO7** · **quy luật lượng – chất** *(slide 100, 102–105)* · key word **④ Thực tế**
 
-**▶ Lăng kính** — [lượng – chất](../app-bien-chung/index.html#tbc-luong-chat)
+**▶ Lăng kính** — [lượng – chất](../app-bien-chung/index.html#tbc-luong-chat) · [khả năng – hiện thực](../app-bien-chung/index.html#tbc-kha-nang)
 
-**⚠️ Nếu bị hỏi**
-- *"Việt Nam đã tới điểm nút chưa?"* → **Chưa — và lần này có số Việt Nam thật.**
-
-| Nguồn | Số |
-|---|---|
-| **ITviec (2025)**, *Thực trạng Ứng dụng AI & Tuyển dụng IT tại Việt Nam*, khảo sát online **n = 846**, thu 6–7/2025 | **48,6%** doanh nghiệp dự định mở rộng đội IT — **thấp nhất từ 2021** · **51,4%** giữ nguyên hoặc giảm · trong nhóm hạn chế tuyển, **24,7%** nêu lý do chính là **năng suất tăng nhờ AI** · chỉ **5,4%** tin hoàn toàn đầu ra AI mà không rà tay |
-
-> Đối chiếu Mỹ: điều chỉnh cũng diễn ra **ở biên tuyển dụng, không ở biên lương**. Hai nơi, **cùng một hình dạng: lượng đang đổi, chất chưa đổi** — đúng nghĩa *"còn trong Độ"*.
-
-🚫 **Đã bỏ cụm "ở nửa sau"** — không có chỉ số nào định vị được là nửa trước hay nửa sau của Độ.
-- ⚠️ *"Sao không dùng ba kịch bản để định vị điểm nút?"* → **Chúng tôi đã thử và đã bỏ** — xem S15. Ba kịch bản khác nhau ở **8 tham số**, không phải một, nên so độ dốc giữa chúng **không hợp lệ về phương pháp**.
+**⚠️ Nếu bị hỏi** — *"Không trả lời được thì bài có giá trị gì?"* → **Bốn giả thuyết kèm phép phân biệt có giá trị hơn một câu trả lời chưa kiểm.** Và nó đổi hẳn kiến nghị: nếu H2 đúng — phần dôi còn nhỏ — thì xây cả một hệ quy kết, thẩm định, chia rủi ro là **tốn hơn khoản được chia**. Không ai nói điều đó nếu đã trả lời vội.
 
 ---
 
 ## S13 · Phủ định của phủ định
 
 **Tiêu đề slide**
-> Cái bị phủ định không phải nghề — là thước đo phân phối
+> Cái bị phủ định là thước đo phân phối — và nó chưa bị phủ định
 
 **Chữ trên slide**
 ```
-  THƯỚC ĐO PHÂN PHỐI — HAI LẦN PHỦ ĐỊNH
-
   [1] TRẢ THEO KẾT QUẢ     khoán · thợ TỰ SỞ HỮU công cụ
-        │ phủ định 1  (công nghiệp hoá + lao động tri thức)
-  [2] TRẢ THEO THỜI GIAN   đầu ra KHÔNG đo được
-        │                  → thoả hiệp CHIA RỦI RO
-        │ phủ định 2  (AI: đầu ra tự để lại vết)
-  [3] TRẢ THEO ĐẦU RA      đo lường quay trở lại
+        │ phủ định 1
+  [2] TRẢ THEO THỜI GIAN   đầu ra không đo được
+        │ phủ định 2 — CHƯA XẢY RA
+  [3] TRẢ THEO ĐẦU RA      ?
 
-  [3] GIỐNG [1] ở NGUYÊN TẮC · KHÁC ở SỞ HỮU CÔNG CỤ
-      thợ có búa  ≠  người dùng có mô hình   → xoáy ốc, không vòng tròn
+  [3] sẽ GIỐNG [1] ở NGUYÊN TẮC · KHÁC ở SỞ HỮU CÔNG CỤ
+      thợ có búa ≠ người dùng có mô hình → xoáy ốc, không vòng tròn
 
-  ⚠ ĐANG Ở GIỮA [2] VÀ [3] — hai thước đo SONG SONG TỒN TẠI
-    còn song song thì CHƯA PHẢI phủ định, mới là CẠNH TRANH
+  ⚠ HAI THƯỚC ĐO ĐANG SONG SONG TỒN TẠI
+    còn song song thì CHƯA PHẢI phủ định — mới là CẠNH TRANH
+
+  ⚠ VÀ CƠ CHẾ CŨ CỦA CHÚNG TÔI SAI:
+    log, version control, ticket đã có HÀNG CHỤC NĂM.
+    Nếu "vết đầu ra" là ràng buộc thì phủ định 2 đã xảy ra từ lâu.
+    Nó không xảy ra → VẾT KHÔNG PHẢI RÀNG BUỘC.
 
   KẾ THỪA BẮT BUỘC: chia rủi ro · sàn thu nhập · tiền nuôi người học nghề
 ```
 
-**Hình** — đường xoáy ốc ba điểm, kèm chú thích "giống nguyên tắc, khác sở hữu".
+**Hình** — đường xoáy ốc ba điểm, điểm [3] vẽ nét đứt.
 
 **Lời nói**
-> Đối tượng của bài là quan hệ phân phối, nên cái bị phủ định phải là **thước đo phân phối**, không phải nghề. Vẽ *nghề cũ mất đi, nghề mới sinh ra* thì slide này đi lạc khỏi trục bài.
+> Đối tượng của bài là quan hệ phân phối, nên cái bị phủ định phải là **thước đo phân phối**, không phải nghề.
 >
-> Ba chặng: khoán theo kết quả, khi thợ còn tự sở hữu công cụ. Rồi trả theo thời gian — vì đầu ra tri thức không đo trực tiếp được, nên phải đo đầu vào. Rồi nay, khi đầu ra **tự để lại vết** — log, phiên bản, ticket — thì điều kiện kỹ thuật để đo trực tiếp lần đầu tiên tồn tại.
+> Nhưng phải sửa một chỗ trong bản trước. Chúng tôi từng viết: *"nay đầu ra tự để lại vết — log, phiên bản, ticket — nên điều kiện kỹ thuật để đo trực tiếp lần đầu tiên tồn tại"*. **Sai.** Log và version control đã tồn tại **hàng chục năm** trước AI. Nếu *vết đầu ra* là ràng buộc thì phủ định lần hai lẽ ra **đã xảy ra từ lâu**. Nó không xảy ra. Vậy **vết không phải ràng buộc**, và ràng buộc nằm ở chỗ khác — ở **quy kết** và ở **ai chịu rủi ro**.
 >
-> Chặng ba **giống chặng một ở nguyên tắc**, nhưng **khác ở sở hữu công cụ**: thợ có cái búa của mình, còn người dùng mô hình thì không sở hữu mô hình. Nên đây là **xoáy ốc, không phải vòng tròn**.
+> Chúng tôi cũng phải tự hãm một câu: lương tháng và khoán theo kết quả **đang song song tồn tại**. Còn song song thì **chưa phải phủ định** — mới là hai nguyên tắc cạnh tranh. Nói *"đã phủ định rồi"* là nói quá dữ liệu.
 >
-> Và chúng tôi phải tự hãm một câu: hiện lương tháng và khoán theo kết quả **đang song song tồn tại**. Theo đúng định nghĩa thì còn song song là **chưa phải phủ định** — mới là hai nguyên tắc cạnh tranh nhau. Nói *"đã phủ định rồi"* là nói quá dữ liệu.
->
-> Cảnh báo phủ định sạch trơn thì nằm ở tầng vào nghề. Cắt hết cửa vào nghề là phủ định luôn cả phần cần kế thừa — và điều nguy là **không có ai để đổ lỗi**: lợi ích đào tạo là **ngoại ứng**, A đào tạo thì người đó sang B, nên khi vừa có cớ chính đáng để cắt thì **mọi nơi cắt đồng thời**. Đó là **thất bại phối hợp**, không phải quyết định sai của riêng ai.
+> Còn cảnh báo phủ định sạch trơn thì ở tầng vào nghề. Điều nguy là **không có ai để đổ lỗi**: lợi ích đào tạo là **ngoại ứng** — A đào tạo, người đó sang B — nên khi vừa có cớ chính đáng để cắt thì **mọi nơi cắt đồng thời**. Đó là **thất bại phối hợp**.
 
 **Neo** — **CLO5** · **quy luật phủ định của phủ định** *(slide 112–116)* · key word **① Phản biện**
 
 **▶ Lăng kính** — [phủ định của phủ định](../app-bien-chung/index.html#tbc-phu-dinh)
 
-**⚠️ Nếu bị hỏi** — *"Nói kiểu gì chẳng đúng — mất việc thì bảo sạch trơn, đổi vai thì bảo phủ định?"* → **Đúng là một nguy cơ có thật, nên chúng tôi nêu điều kiện bác bỏ trước.**
-> **Đến hết 2029**, nếu tại chính nơi làm việc của các thành viên: ① lương vẫn tính theo thời gian với tỷ trọng **không đổi**, ② **không** thay đổi nào trong cách tính thưởng/định mức gắn với đầu ra, ③ tỷ lệ tuyển người mới vào nghề **không giảm** — **trong khi sản lượng trên đầu người đã tăng rõ nhờ AI** — thì luận điểm này **sai**.
-
-Và **tự bịt đường thoát**: nếu nghề đổi vai mà cách trả công vẫn theo thời gian thì **KHÔNG được tính là xác nhận**.
+**⚠️ Nếu bị hỏi** — *"Nói kiểu gì chẳng đúng?"* → **Nêu điều kiện bác bỏ trước:**
+> **Đến hết 2029**, nếu tại nơi làm việc của các thành viên: ① lương vẫn tính theo thời gian với tỷ trọng **không đổi**, ② **không** thay đổi nào trong cách tính thưởng gắn với đầu ra, ③ tỷ lệ tuyển người mới **không giảm** — **trong khi sản lượng trên đầu người đã tăng rõ** — thì luận điểm này **sai**.
+> Và **tự bịt đường thoát**: nếu nghề đổi vai mà cách trả công vẫn theo thời gian thì **KHÔNG tính là xác nhận**.
 
 ---
 
 ## S14 · Kiến nghị
 
 **Tiêu đề slide**
-> Không phải "đo bằng gì" — mà "ai chịu rủi ro khi đo sai"
+> Đo trước đã — rồi mới bàn xây gì
 
 **Chữ trên slide**
 ```
-BA VIỆC, THEO THỨ TỰ
+VIỆC SỐ 0 — TRƯỚC MỌI VIỆC KHÁC
+  ĐO KÍCH THƯỚC PHẦN DÔI
+  biên lợi nhuận gộp trước/sau AI, cùng khách, cùng kỳ
+  → nếu phần dôi nhỏ hoặc không ở lại tổ chức
+    thì ba việc dưới đây KHÔNG ĐÁNG LÀM
 
-① QUY KẾT ĐƯỢC   đo và công khai kết quả trong nội bộ, ở MỨC NHÓM
-② KIỂM ĐƯỢC      ai thẩm định, bằng tiêu chí nào, ai phúc tra
-③ CHIA RỦI RO    ghi rõ trong hợp đồng: phần tăng thêm chia thế nào,
-                 và AI CHỊU khi quy kết sai
-
-BỐN ĐIỀU KIỆN để khả năng thành hiện thực
-  1 đo được kết quả thật, công khai nội bộ          — tổ chức
-  2 thiết kế lại bậc nghề + cách trả công           — tổ chức
-  3 đổi chuẩn đầu ra: dạy THẨM ĐỊNH, không chỉ THỰC HIỆN — đào tạo
-  4 nguồn lực và thời gian để chuyển kỹ năng        — cả hai
+SAU ĐÓ, THEO THỨ TỰ
+  ① QUY KẾT ĐƯỢC   đo kết quả, công khai nội bộ, Ở MỨC NHÓM
+  ② KIỂM ĐƯỢC      ai thẩm định · tiêu chí nào · ai phúc tra
+  ③ CHIA RỦI RO    hợp đồng ghi rõ: phần tăng chia thế nào,
+                    AI CHỊU khi quy kết sai
 
 ⚠ TẬP HÌNH THỨC ĐƯỢC PHÉP CHỌN LÀ TẬP ĐÓNG
-  "chọn trong tập hợp pháp", không phải "thiết kế tối ưu"
-
 ⚠ VÀ CÓ CHỖ PHẢI KHUYẾN NGHỊ KHÔNG ĐỔI
-  nơi nội dung đang vận hành tốt, đổi cấu trúc là PHÁ
 ```
 
-**Hình** — ba bậc thang ①②③, bên cạnh là một hộp "ràng buộc pháp lý" chặn bớt không gian lựa chọn.
+**Hình** — việc số 0 nằm trên một bậc riêng, có mũi tên rẽ: *"nhỏ → dừng"*.
 
 **Lời nói**
-> Kiến nghị thường thấy là *"chuyển từ đo thời gian sang đo kết quả"*. Chúng tôi cho rằng câu đó **chưa đủ, và có thể sai thứ tự**.
+> Kiến nghị thường thấy là *"chuyển từ đo thời gian sang đo kết quả"*. Chúng tôi cho rằng câu đó **chưa đủ và sai thứ tự**.
 >
-> Vì đổi cách đo **không tạo ra căn cứ quy kết**. Đo được kết quả rồi thì vẫn còn nguyên câu hỏi: phần nào của kết quả là do người, phần nào do công cụ, phần nào do tri thức tích luỹ của tổ chức. Đổi đơn vị đo chỉ **dời câu hỏi, không trả lời nó**.
+> Việc số không, trước mọi việc khác: **đo kích thước phần dôi**. Vì nếu phần dôi nhỏ, hoặc nếu nó chưa từng ở lại tổ chức, thì đề nghị xây cả một hệ quy kết – thẩm định – chia rủi ro là **tốn hơn khoản được chia**. Đây là điều bài không nói được nếu trả lời vội ở slide hai.
 >
-> Nên ba việc theo thứ tự: quy kết được, kiểm được, và **chia rủi ro**. Việc thứ ba mới là chỗ nghẽn thật — hiện rủi ro đang được phân bổ **bằng im lặng**.
+> Sau đó mới tới ba việc: quy kết được, kiểm được, và **chia rủi ro**. Việc thứ ba mới là chỗ nghẽn thật — hiện rủi ro đang được phân bổ **bằng im lặng**. Và lưu ý việc ① phải **ở mức nhóm**, vì ở mức cá nhân thì chính bài này nói là không quy kết được.
 >
-> Hai ràng buộc phải nói rõ. **Thứ nhất**, tập hình thức được phép chọn là một **tập đóng** — bị chặn bởi thể thức giao kết quan hệ lao động, thủ tục thay đổi điều kiện lao động, nghĩa vụ xây dựng thang bảng lương, sàn lương tối thiểu, chế định thời giờ làm việc, ranh giới giữa hợp đồng lao động và hợp đồng dịch vụ, căn cứ đóng bảo hiểm và khấu trừ thuế, và quyền đối với sản phẩm có AI tham gia. Chúng tôi **chỉ nêu nhóm vấn đề cần tra**, không kết luận về hiệu lực pháp lý của bất kỳ phương án nào — việc đó cần người có thẩm quyền chuyên môn.
+> Hai ràng buộc. **Thứ nhất**, tập hình thức được phép chọn là **tập đóng** — bị chặn bởi thể thức giao kết quan hệ lao động, thủ tục thay đổi điều kiện lao động, nghĩa vụ xây dựng thang bảng lương, sàn lương tối thiểu, chế định thời giờ làm việc, ranh giới hợp đồng lao động với hợp đồng dịch vụ, căn cứ đóng bảo hiểm, và quyền đối với sản phẩm có AI tham gia. Chúng tôi **chỉ nêu nhóm vấn đề cần tra**, không kết luận về hiệu lực pháp lý — việc đó cần người có thẩm quyền chuyên môn.
 >
-> Điểm đáng chú ý: **kể cả khi bỏ giờ làm đơn vị trả công, vẫn không bỏ được giờ làm đơn vị quản lý nhà nước.** Giờ sẽ không biến mất — nó đổi chức năng.
+> Đáng chú ý: **kể cả khi bỏ giờ làm đơn vị trả công, vẫn không bỏ được giờ làm đơn vị quản lý nhà nước.**
 >
-> **Thứ hai**, và đây là chỗ chúng tôi khuyến nghị **không làm gì**: ở những nơi nội dung đang vận hành tốt — nghề vốn đã khoán, nghề AI chưa vào được, tổ chức đã chuyển xong — thì đổi cấu trúc là **phá**, không phải cải cách.
+> **Thứ hai**, có chỗ chúng tôi khuyến nghị **không làm gì**: nơi nội dung đang vận hành tốt thì đổi cấu trúc là **phá**, không phải cải cách.
 
 **Neo** — **CLO5 ⭐ LLO7** · phạm trù **khả năng ↔ hiện thực** *(slide 97–98)* · key word **② Pháp lý**
 
-**▶ Lăng kính** — [khả năng – hiện thực](../app-bien-chung/index.html#tbc-kha-nang)
+**▶ Lăng kính** — [khả năng – hiện thực](../app-bien-chung/index.html#tbc-kha-nang) · [nội dung – hình thức](../app-bien-chung/index.html#tbc-noi-dung-hinh-thuc)
 
-**⚠️ Nếu bị hỏi**
-- *"Lấy gì đảm bảo làm được?"* → **Không đảm bảo.** Đó là một **khả năng**, và trên slide là bốn điều kiện để nó thành hiện thực. Nêu được điều kiện mới là kiến nghị; không nêu thì là lời kêu gọi.
-- *"Đổi hình thức rồi thì sao?"* → **Phản biện mạnh nhất mà chúng tôi tự nêu:** hình thức do bên nào đặt ra thì mang lợi ích bên đó. Một cấu trúc mới do **cùng một bên** thiết kế nhiều khả năng cũng chỉ có một ô cho lao động — đổi tên ô từ *"giờ"* thành *"điểm KPI"*. Nên mâu thuẫn kế tiếp sẽ là: **ai định nghĩa và ai thẩm định "kết quả"**. Quyền cầm thước chính là quyền phân phối.
+**⚠️ Nếu bị hỏi** — *"Đổi hình thức rồi thì sao?"* → **Phản biện mạnh nhất chúng tôi tự nêu:** hình thức do bên nào đặt thì mang lợi ích bên đó. Một cấu trúc mới do **cùng một bên** thiết kế nhiều khả năng cũng chỉ có một ô cho lao động — đổi tên ô từ *"giờ"* thành *"điểm KPI"*. Nên mâu thuẫn kế tiếp sẽ là **ai định nghĩa và ai thẩm định "kết quả"**. Quyền cầm thước chính là quyền phân phối.
 
 ---
 
 ## S15 · Chốt · Hạn chế · Q&A
 
 **Tiêu đề slide**
-> Chúng tôi biết mình chưa biết gì
+> Chúng tôi biết mình chưa biết gì — và đó là kết quả
 
 **Chữ trên slide**
 ```
 CHỐT
-  Mỹ mất việc tri thức nhưng GIỮ ĐƯỢC PHẦN VỐN.
-  Việt Nam có thể MẤT VIỆC MÀ KHÔNG ĐƯỢC PHẦN VỐN.
+  Dữ liệu nói rõ một điều: điều chỉnh KHÔNG diễn ra trên tiền lương.
+  Dữ liệu KHÔNG nói được: phần dôi lớn bao nhiêu, và ai giữ nó.
+  Bốn ứng viên. Hai phép đo phân biệt được. Chưa ai đo.
 
 HẠN CHẾ — nói trước khi bị hỏi
-  ① Số Việt Nam CÓ, nhưng mỏng: một khảo sát ngành IT (n=846, giữa 2025).
-     Ngoài phạm vi đó, mọi mệnh đề về VN là 🔬 giả thuyết cơ chế.
-  ② n = 1 mỗi ngành · tự thuật · mẫu thuận tiện
-     → chỉ nói được "cơ chế này CÓ TỒN TẠI", KHÔNG nói được "phổ biến"
-  ③ Nguồn kịch bản do CHÍNH MỘT HÃNG AI công bố, về tác động kinh tế của
-     sản phẩm họ bán, hiệu chuẩn một phần bằng dữ liệu dùng sản phẩm đó
-  ④ HAI kết luận đã bị bỏ và MỘT lập luận đã bị thay — sau khi tự kiểm
-  ⑤ Câu hỏi mở chưa ai trả lời được: vì sao ĐAN MẠCH NULL mà MỸ −19%?
-     và AI TẬP TRUNG HOÁ hay PHI TẬP TRUNG HOÁ tư liệu sản xuất?
+  ① n = 1 mỗi ngành · tự thuật → chỉ nói được "cơ chế CÓ TỒN TẠI"
+  ② Số Việt Nam có, nhưng mỏng: một khảo sát ngành IT (n=846, giữa 2025)
+     — và nó là LÝ DO TỰ KHAI, tức nguyên cớ, không phải nguyên nhân
+  ③ Nguồn kịch bản do CHÍNH MỘT HÃNG AI công bố về sản phẩm họ bán
+  ④ Chúng tôi đã TỰ BÁC BỎ MÌNH BỐN LẦN — xem bên dưới
+  ⑤ Câu hỏi mở: AI TẬP TRUNG HOÁ hay PHI TẬP TRUNG HOÁ tư liệu sản xuất?
 ```
 
-**Hình** — không. Slide chữ, để trống nhiều.
+**Hình** — slide chữ, để trống nhiều.
 
 **Lời nói**
-> Xin chốt bằng một khác biệt mà chúng tôi cho là quan trọng nhất cho Việt Nam. Ở Mỹ, khi 15% GDP dịch từ lao động sang vốn thì phần đó **ở lại trong nước**, và người lao động Mỹ còn kênh hưởng gián tiếp qua quỹ hưu trí, qua cổ phiếu. Ở Việt Nam, phần rent công nghệ **chảy ra ngoài qua phí thuê mô hình**, và kênh để người lao động Việt Nam tham gia sở hữu vốn AI thì gần như không có.
+> Xin chốt bằng đúng thứ bài này làm được, không hơn.
 >
-> **Mỹ mất việc tri thức nhưng giữ được phần vốn. Việt Nam có thể mất việc mà không được phần vốn.** Hệ quả chính sách khác hẳn: công cụ *"đánh thuế vốn để bù cho lao động"* yếu hơn nhiều, vì **đối tượng đánh thuế không cư trú**.
+> Dữ liệu nói rõ **một** điều: điều chỉnh không diễn ra trên tiền lương. Nó **không** nói được phần dôi lớn bao nhiêu và ai giữ nó. Chúng tôi đưa ra bốn ứng viên và hai phép đo phân biệt được chúng. Chưa ai đo.
 >
-> Và các hạn chế, chúng tôi nói ra trước khi bị hỏi. Số liệu Việt Nam thì **có**, nhưng mỏng — một khảo sát ngành IT với 846 mẫu, thu giữa năm 2025. Ngoài phạm vi đó, mọi mệnh đề về Việt Nam trong bài này là **giả thuyết cơ chế**, không phải kết luận có số.
+> Và bốn lần chúng tôi **tự bác bỏ mình**, xin kể vì đề cho phép dùng AI hỗ trợ với điều kiện **con người phải dẫn dắt**:
 >
-> Mỗi ngành trong nhóm có **một quan sát**. Nên mọi câu trong bài đều phải đọc ở dạng *"trong các ca chúng tôi ghi nhận, xuất hiện cơ chế…"* — **không** phải *"AI khiến lao động tri thức bị…"*. Một ca được mô tả kỹ đủ để nói **cơ chế có tồn tại**; nó **không bao giờ** đủ để nói cơ chế đó **phổ biến**.
+> **Một** — bỏ kết luận về vị trí điểm nút, vì ba kịch bản khác nhau ở tám tham số chứ không phải một.
+> **Hai** — bỏ lập luận *"hai dấu ngược nhau nên công nghệ không quyết định"*, vì hai con số ấy nằm trong cùng một mô hình; đó là **lập luận vòng tròn**.
+> **Ba** — bỏ chỉ số gãy thước, vì nó đòi **sản lượng cá nhân** trong khi cả bài nói đóng góp **không quy kết được cho cá nhân**. Chỉ số cờ đầu chạy được khi và chỉ khi luận đề của chính nó sai.
+> **Bốn** — bỏ mệnh đề *"phần chênh lệch mặc định thuộc bên mua, trừ khi bên bán có sức mặc cả"*, vì **sức mặc cả không đo được**, nên không dữ kiện nào bác được nó. Một mệnh đề không thể sai thì cũng không thể đúng.
 >
-> Và hai chỗ chúng tôi đã **tự bác bỏ mình**.
->
-> **Thứ nhất**, chúng tôi từng có một kết luận về vị trí điểm nút, suy từ việc so độ dốc giữa ba kịch bản. Khi mở tài liệu gốc ra đọc thì thấy ba kịch bản khác nhau ở **tám tham số**, không phải một — và trục dùng để so **tự nó đã là tích của hai tham số**. Phép so đó không hợp lệ. **Bỏ.**
->
-> **Thứ hai**, chúng tôi từng dùng một lập luận nghe rất gọn: *"cùng công nghệ mà hai nhóm ra hai dấu ngược nhau, vậy công nghệ không quyết định phân phối"*. Nhưng hai con số ấy nằm **bên trong cùng một mô hình** — chúng là đầu ra của giả định, không phải quan sát. Dùng chúng làm bằng chứng là **lập luận vòng tròn**. Kết luận vẫn đúng, nhưng chúng tôi phải **thay toàn bộ chân đế** bằng ba bằng chứng quan sát thật.
->
-> Chúng tôi kể hai chuyện này không phải để khoe. Mà vì đề bài cho phép dùng AI hỗ trợ, với điều kiện **con người phải dẫn dắt**. Đây là chỗ chứng minh bằng vật chứng: hai lập luận nghe rất thuyết phục, bị **chính nhóm bác bỏ** sau khi mở nguồn gốc ra đọc.
->
-> Cuối cùng, một câu hỏi chúng tôi **không trả lời được**, và nó có thể là câu quan trọng nhất: **vì sao Đan Mạch ra kết quả null mà Mỹ ra −19%?** Cùng một công nghệ, hai thiết chế thị trường lao động, hai kết quả. Nếu trả lời được câu đó thì trả lời được gần hết bài này.
+> Chúng tôi kể bốn chuyện này không phải để khoe khiêm tốn. Mỗi lần bỏ một mệnh đề, bài **mất** một câu nghe hay và **được** một câu đứng vững. Đó là toàn bộ nội dung của chữ *"con người dẫn dắt"*.
 
 **Neo** — phạm trù **tất nhiên ↔ ngẫu nhiên** *(slide 91–92)* · key word **① ③ ④**
 
@@ -712,165 +650,133 @@ HẠN CHẾ — nói trước khi bị hỏi
 
 ## 📋 Phụ lục A — Phiếu ca ngành, 8 câu
 
-> Gửi mỗi thành viên, trả lời về **chính ngành / chỗ làm của mình**, khoảng 1 trang, nộp trong 2 ngày.
-> 🔒 **Không ghi tên tổ chức, tên khách hàng, đơn giá, điều khoản hợp đồng, số liệu doanh thu.**
+> Mỗi thành viên, về **chính ngành mình**, ~1 trang, nộp trong 2 ngày.
+> 🔒 **Không ghi tên tổ chức, tên khách hàng, đơn giá, điều khoản hợp đồng, doanh thu.**
 
-> 🔴 **BẮT BUỘC TRƯỚC KHI PHÁT PHIẾU — gài ít nhất MỘT CA NGHỊCH.**
-> Nếu cả 5 thành viên đều là **lao động trả theo thời gian ở tổ chức bán man-day**, thì biến độc lập **không có biến thiên**, và phiếu này **không kiểm được** luận điểm S6 và S11 về nguyên tắc — nó chỉ thu về **5 lần xác nhận**.
-> Phải có ít nhất một ca **ăn theo gói / sản phẩm / hoa hồng**, hoặc một tổ chức **bán theo sản phẩm**. Tốn không quá một cuộc gọi, và nó quyết định phiếu có giá trị nhận thức hay chỉ là trang trí.
+> 🔴 **BẮT BUỘC — gài ít nhất MỘT CA NGHỊCH.** Nếu cả 5 người đều là lao động trả theo thời gian ở tổ chức bán man-day thì **biến độc lập không có biến thiên**, phiếu chỉ thu về **5 lần xác nhận**. Phải có ít nhất một ca **ăn theo gói / sản phẩm / hoa hồng**. *(Ca nghịch là **ca đối chứng**, nằm trong phạm vi — khác ba ca biên ở S11.)*
 
 **Hiện trạng**
-1. Công việc ở chỗ anh/chị được **đo và trả công bằng gì**? Trả lời **hai vế**: (a) tổ chức trả cho anh/chị theo đơn vị gì · (b) tổ chức bán ra cho khách theo đơn vị gì.
-2. **AI đã vào khâu nào** chưa? Khâu nào?
+1. Công việc được **đo và trả công bằng gì** — **hai vế**: (a) tổ chức trả cho anh/chị theo đơn vị gì · (b) tổ chức bán ra cho khách theo đơn vị gì.
+2. **AI đã vào khâu nào** chưa?
 
-**Phân định hai khung** ⭐
-3. **Trước khi có AI**, đơn giá/lương theo thời gian có được **điều chỉnh theo kết quả** không — thưởng, phạt, nghiệm thu, phân tầng theo cấp bậc?
-4. **Từ khi có AI**, đơn giá / định mức / số giờ yêu cầu có bị **điều chỉnh** không? **Ai quyết định** điều chỉnh đó?
-5. Cách tính thu nhập của anh/chị có **thay đổi gì trong 24 tháng qua** không? Đổi theo hướng nào? Và **lần gần nhất chỗ anh/chị sửa cách đo hoặc cách trả công là khi nào**?
+**Kích thước phần dôi** ⭐ *— câu quan trọng nhất*
+3. Từ khi dùng AI, **biên lợi nhuận gộp** của đầu việc/dự án có đổi không? **Đơn giá bán cho khách** có bị ép xuống không?
+4. Ước chừng: một đầu việc điển hình trước cần bao nhiêu giờ, nay bao nhiêu giờ?
 
-**Điểm nghẽn**
-6. Muốn trả công theo kết quả thì **vướng ở đâu**: (a) không đo được kết quả · (b) đo được nhưng **không tách được phần của ai** · (c) tách được nhưng **không ai chịu rủi ro nếu đo sai** · (d) không vướng gì, chỉ là chưa ai làm.
+**Trục thời gian của thước đo**
+5. **Trước khi có AI**, lương/đơn giá theo thời gian có được **điều chỉnh theo kết quả** không — thưởng, phạt, nghiệm thu, phân tầng cấp bậc?
+6. Cách tính thu nhập có **thay đổi gì trong 24 tháng qua** không? **Lần gần nhất** chỗ anh/chị sửa cách đo hoặc cách trả công là khi nào?
 
-**Vòng giấu năng suất** *(hai câu nối nhau — phải hỏi cả hai)*
-7a. Anh/chị **có báo lên quản lý** phần thời gian tiết kiệm được nhờ AI không?
-7b. Sau khi báo, **định mức hoặc ước lượng có bị nâng lên** không?
-> Xác nhận khi **ít nhất một ca mô tả được đầy đủ chuỗi**: báo → bị nâng định mức → lần sau không báo, kèm mốc thời gian.
+**Vòng giấu năng suất** *(hỏi cả hai)*
+7a. Anh/chị **có báo lên** phần thời gian tiết kiệm được nhờ AI không?
+7b. Sau khi báo, **định mức có bị nâng** không?
 
-**Ba giả thuyết về quản lý cấp trung** *(hai câu — đây là test phân biệt)*
-8a. KPI của quản lý cấp trung có gắn với **quy mô đội** (đầu người, ngân sách) không?
-8b. Nếu chất lượng có lỗi thì **ai chịu**? Nếu tiết kiệm được chi phí thì **ai được chia**?
+**Sức mặc cả — đo độc lập với lương** ⭐
+8a. Trong 12 tháng qua, anh/chị hoặc đồng nghiệp có **offer cạnh tranh** không? Tỷ lệ **nghỉ việc tự nguyện** ở bộ phận?
+8b. Tuyển thay một người ở vị trí của anh/chị mất bao lâu?
 
-**Cách đọc kết quả:**
+**Cách đọc kết quả**
 
 | Câu | Kết quả này → kết luận kia |
 |---|---|
-| 1 *(hai vế)* | Hai đầu **cùng đơn vị** mà vẫn có vấn đề phân phối → *"khoảng lệch"* **không phải** cái chung |
-| 3 | *Có, khá sát* → **Khung A** · *Không* → **Khung B** |
-| 5 | **Không đổi gì cả** trong khi sản lượng đã tăng → luận điểm S13 **sai** |
-| 6 | Đa số **(d)** → điểm nghẽn của bài **sai**, phải quay về Khung A |
+| 1 | Hai đầu **cùng đơn vị** mà vẫn có vấn đề phân phối → *"khoảng lệch"* **không phải** cái chung, bỏ S11 |
+| 3 | Biên **không tăng** dù thời gian giảm → **H3** *(khách lấy)* · biên **tăng** mà lương không đổi → **H1** |
+| 4 | Mức tiết kiệm **nhỏ** → **H2** *(phần dôi vốn nhỏ)* |
+| 5 | *Có, khá sát* → thoả hiệp cũ vốn khớp · *Không* → nó chưa bao giờ là phép đo |
+| 6 | **Không đổi gì cả** trong khi sản lượng đã tăng → luận điểm S13 **sai** |
 | 7a+7b | Không ca nào mô tả được chuỗi → cơ chế giấu **không tồn tại** trong mẫu này |
-| 8a | Hãm **tương quan với (a)** → giả thuyết **thiết chế đếm đầu người** |
-| 8b | Hãm **tương quan với (b)** → giả thuyết **rủi ro lệch** |
-| 8a+8b | Hãm **bất kể** hai câu → giả thuyết **ý thức lạc hậu** |
-| — | Mọi ca trả lời **giống nhau** → không phân biệt được, giữ cả ba ở 🔬 |
-
-> 💡 **Nếu còn thời gian, việc rẻ nhất để tăng giá trị bài:** mỗi thành viên hỏi thêm **2 người cùng ngành nhưng khác tổ chức** đúng câu 1. Mất khoảng một giờ. Mỗi ngành từ 1 điểm thành 3 điểm.
+| 8a+8b | Sức mặc cả **cao** mà lương **không nhúc nhích** → **H1** sống, và nó **hết là mệnh đề bất khả bác bỏ** |
 
 ---
 
 ## 📋 Phụ lục B — Bản đối chiếu: các lăng kính nói gì
 
-> Đây là vật chứng cho key word **③ Hệ thống** — *"đổi phương pháp, giải lại bằng cách khác"*. Tám lăng kính chạy độc lập trên cùng một đề tài.
+> Vật chứng cho key word **③ Hệ thống** — *"đổi phương pháp, giải lại bằng cách khác"*. Tám lăng kính chạy độc lập, rồi một lượt kiểm nghiệm và một lượt phản biện.
 
 ### B1 · Năm chỗ hội tụ *(nhiều lăng kính, nhiều đường, cùng kết luận)*
 
 | Kết luận | Đi tới bằng đường nào |
 |---|---|
-| Con số 60%→45,2% là **hiện tượng**, không phải bản chất | *bản chất–hiện tượng*: đổi theo kịch bản thì chưa phải bản chất · *nhân quả*: chữ "therefore" = suy ra · *mâu thuẫn*: nó đo cuộc đấu phân phối |
+| Con số 60%→45,2% là **hiện tượng**, không phải bản chất | *bản chất–hiện tượng* (tiêu chí ổn định) · *nhân quả* (chữ "therefore") · *mâu thuẫn* (nó đo cuộc đấu phân phối) |
 | **Sở hữu công cụ** là mắt xích quyết định | nhân quả · bản chất · mâu thuẫn · xã hội |
-| **AI là tác nhân làm lộ**, không phải nguyên nhân | nhân quả · bản chất · mâu thuẫn |
 | **Giấu dùng AI là hành vi hợp lý**, không phải vấn đề đạo đức | bản chất · nhân quả · mâu thuẫn · xã hội |
-| **Hợp đề hai tầng A/B** | nội dung–hình thức · lượng–chất · chung–riêng · mâu thuẫn |
+| **Bên chống mạnh nhất ≠ bên thiệt nhất** | xã hội, và **xác nhận bằng dữ liệu bảng lương Mỹ** |
+| Trả công theo thời gian **chưa bao giờ là phép đo** | nội dung–hình thức · chung–riêng · mâu thuẫn |
 
-### B2 · Ba chỗ chỏi nhau
+### B2 · Chỗ chỏi nhau — và chỗ nào giải được
 
 | # | Chỏi ở đâu | Xử lý |
 |---|---|---|
-| 1 | *lượng–chất* nghiêng **A**, bảy cái còn lại nghiêng **B**. Lý do: khái niệm **Độ** đòi chất cũ phải **thật sự vận hành** | **Giải được** — B là mệnh đề về **bản chất** (S5, S8); A là mệnh đề về **Độ** (S12). Hai tầng, không phải hai lựa chọn. **Bất đồng này sinh ra kiến trúc bài** |
-| 2 | *mâu thuẫn* giả định AI **tập trung hoá** tư liệu sản xuất · *xã hội* tự nêu luận điểm đó **có thể sai dấu** — nếu mô hình mở thắng thế thì người lao động **tự thành chủ sở hữu tư liệu đủ dùng** | **CHƯA giải được** → đưa lên S15 làm câu hỏi mở, kèm chỉ số quan sát: tỷ lệ chuyển sang tự làm, biên lợi nhuận bên bán mô hình |
-| 3 | *xã hội* bác cách phát biểu S10: nói *"ý thức lạc hậu"* vẫn là quy kết, chỉ đổi từ đạo đức sang nhận thức | **Nhận sai, đã sửa** — cái lạc hậu nằm ở **thiết chế**, và thêm giả thuyết **rủi ro lệch** |
+| 1 | *lượng–chất* nghiêng **A**, bảy cái còn lại nghiêng **B** | **Giải sai, đã bỏ.** Hợp đề *"B là bản chất, A là Độ"* hoá ra **né việc phải chọn**: bài đã đặt tiêu chuẩn cho A ở mức **đẳng thức chính xác** không quan hệ kinh tế nào đạt → A bị loại **bằng định nghĩa, không bằng dữ liệu**. Nay bỏ hẳn khung A/B, thay bằng **bốn giả thuyết H1–H4** |
+| 2 | *mâu thuẫn* giả định AI **tập trung hoá** tư liệu sản xuất · *xã hội* nêu nó **có thể sai dấu** | **Chưa giải được** → S15, kèm chỉ số quan sát |
+| 3 | *xã hội* bác cách phát biểu S10 | **Nhận sai, đã sửa** — lạc hậu nằm ở **thiết chế**, thêm giả thuyết **rủi ro lệch** |
 
-### B3 · Năm lỗi bị bắt trong bản thiết kế trước đó
+### B3 · Chín lỗi bị bắt và đã sửa
 
-| Slide | Lỗi | Lăng kính bắt |
+| Chỗ | Lỗi | Ai bắt |
 |---|---|---|
-| S8 | Cặp *"AI ↔ chấm công theo giờ"* **trượt phép thử tồn tại** | mâu thuẫn |
-| S5 | Đặt bản chất là *"thước đo dịch chuyển"* — **thước đo CHÍNH LÀ hình thức** → S5 chiếm chỗ S6 | nội dung–hình thức |
+| S8 | Cặp *"AI ↔ chấm công"* **trượt phép thử tồn tại** | mâu thuẫn |
+| S8 | Chỉnh thể **thiếu bên thứ ba** — khách hàng, dù S5 tự liệt kê | phản biện |
+| S5 | *"Thước đo dịch chuyển"* — thước đo **chính là hình thức** | nội dung–hình thức |
+| S5 | *"Trừ khi bên bán có sức mặc cả"* — **bất khả bác bỏ** | phản biện |
 | S7 | *"Nguyên nhân thật"* vẫn là **sự kiện kỹ thuật** = điều kiện | mâu thuẫn |
-| S13 | **Phủ định sai đối tượng** — vẽ *nghề* thay vì *thước đo phân phối* | phủ định |
+| S9 | Cặp số bị cấm ở S8 **vẫn chạy ở S9** | phản biện |
+| S12 | Chỉ số gãy thước đòi **sản lượng cá nhân** — thứ cả bài nói không có | phản biện |
+| S13 | Phủ định **sai đối tượng**; và *"vết đầu ra"* **không phải ràng buộc** | phủ định · phản biện |
 | S10 | *"Ý thức lạc hậu"* vẫn là quy kết | xã hội |
 
-> Không chạy đối chứng thì cả năm lỗi lên thẳng sân khấu — và **S7 đá S8, S5 đá S6 ngay trên slide**.
+> Không chạy đối chứng thì cả chín lỗi lên thẳng sân khấu, và ít nhất **ba cặp đá nhau ngay trên slide**.
 
 ---
 
-## 🎯 Phụ lục C — Chấm độ tin cậy
+## 🎯 Phụ lục C — Độ tin cậy
 
-> Bảng này là kết quả một lượt **kiểm nghiệm độc lập**, chạy sau khi tám lăng kính đã xong. Áp đúng hai luật cứng: *"một ca đơn lẻ không bao giờ đủ — nếu chỉ có một quan sát, tối đa là 🔴"* và *"không nêu được cách kiểm cụ thể thì tự động 🔴"*.
+> Áp hai luật cứng: *"một ca đơn lẻ không bao giờ đủ — tối đa 🔴"* và *"không nêu được cách kiểm cụ thể thì tự động 🔴"*.
 
 ### C1 · Bảng chấm
 
-| # | Kết luận | Nhãn | Chân đế thực tiễn |
+| # | Kết luận | Nhãn | Chân đế |
 |---|---|---|---|
-| 1a | Dưới hình thức trả theo giờ, **sản lượng thực hiện thấp hơn có hệ thống** so với sản lượng khả thi của **cùng những con người đó** | 🟢 | **Lazear (2000), AER 90(5)** — Safelite chuyển lương giờ → trả theo sản phẩm: sản lượng/người **+44%**, nửa do nỗ lực, nửa do sàng lọc |
-| 1b | Trả theo giờ là **thoả hiệp phân bổ rủi ro** | 🟡 | Lazear **không** kiểm vế này. Kiểm bằng phiếu câu 1+6 |
-| 2 | **Cái được mua là quyền định đoạt thời gian; năng suất tăng thêm mặc định về bên mua** | 🟢 | **Humlum & Vestergaard** (Đan Mạch, hành chính, 25.000 LĐ, null, loại trừ >2%) + **Canaries** (Mỹ, ADP, điều chỉnh ở việc làm không ở lương) |
-| 3 | Lao động xã hội hoá ↔ chiếm hữu tư nhân | 🟡 ⚠️ | Chỉ giữ ở **dạng hẹp** có ngưỡng bác bỏ; dạng *"mâu thuẫn cơ bản của thời đại"* → 🔴 vì bất khả bác bỏ |
-| 4 | **AI làm lộ, không phải nguyên nhân** | 🟢 | **Đã thay chân đế:** độ nhạy đảo dấu · Canaries Fact 5 · Đan Mạch vs Mỹ · độ tản mát ước lượng (Acemoglu ≤0,66% TFP/thập kỷ vs tỷ trọng LĐ 45,2%) |
-| 5 | Câu *"accrues as capital income"* **là suy ra, không phải quan sát** | 🟢 | Tài liệu tự nói không phải dự báo, không gán xác suất; chữ *"therefore"*; bảng hiệu chuẩn 8 tham số |
-| 6a | Vòng giấu năng suất **có tồn tại** | 🟡 | Phiếu câu 7a+7b. Lazear cho tiền lệ ở ngành khác |
-| 6b | Vòng đó **là lý do** năng suất tổng không tăng | 🔴 | 5 ca n=1 **không bao giờ** đủ cho mệnh đề phổ biến |
-| 7 | Cái chung = **khoảng lệch đơn vị tính hai đầu hợp đồng** | 🟡 | Phiếu câu 1 hai vế — **bắt buộc có ca nghịch**, không có thì tự động 🔴 |
-| 8 | **Ống dẫn một ô** | 🟡 | Sau khi **cắt** cụm *"kể cả khi mọi bên đều muốn"*. Bằng chứng Đan Mạch nghiêng về **#2**, không về #8 |
-| 9a | **Có tổ chức đã tới ngưỡng** lệch sản lượng > khoảng cách đơn giá | 🟡 | ITviec công bố lương theo bậc → **một vế của bất đẳng thức là công khai** |
-| 9b | *"Mỗi tổ chức một điểm nút"* như một **quy luật** | 🔴 | 5 ca n=1 không đủ |
-| 10 | ~~Điểm nút giữa Substantial và Extreme~~ | ❌ **BỎ** | Không map được hình thức thực tiễn nào **và** bị chính phân tích độ nhạy của nguồn phản bác **và** mâu thuẫn với #4 |
-| 11a | **Việt Nam còn trong Độ** | 🟡 | **ITviec 2025, n=846**: 48,6% · 51,4% · 24,7%. Cùng hình dạng với Mỹ |
-| 11b | *"Ở nửa sau"* của Độ | 🔴 **BỎ** | Không có chỉ số định vị |
-| 12a | **Bên chống mạnh nhất ≠ bên thiệt nhất** *(Mỹ)* | 🟢 | Canaries: nhóm 22–25 ở nghề phơi nhiễm cao **−19%**, doãng từ 15% *(7/2025)*; cơ chế là **giảm tuyển**, không phải sa thải; người có kinh nghiệm **không** có khoảng cách tương ứng |
-| 12b | Suy rộng ra Việt Nam | 🟡 | Nâng lên 🟢 bằng cách **đếm tay** tin tuyển fresher/junior theo quý |
-| 13a+b | Chi trả ra nước ngoài cho dịch vụ AI **tăng nhanh hơn** phần giá trị giữ lại, trong khi tuyển đầu vào IT giảm | 🟡 | *(đã viết lại từ dạng "có thể" — dạng cũ bất khả bác bỏ)*. Cần chuỗi cán cân thanh toán |
-| 13c | *"Mỹ mất việc nhưng giữ phần vốn"* | 🔴 | Mệnh đề về tương lai, thuộc kịch bản |
-| 14a | **Ba cơ chế quản lý cấp trung có tồn tại** | 🟡 | ITviec: **5,4%** tin hoàn toàn đầu ra AI → gánh nặng rà soát nằm ở quản lý *(nghiêng (c))*; **24,7%** → đầu người vẫn là đại lượng điều hành *(nghiêng (b))* |
-| 14b | Cơ chế nào **chiếm ưu thế** | 🔴 | 5 ca không đủ để xếp hạng |
-| 15 | Phủ định của phủ định trên **thước đo phân phối** | 🟡 | Lazear cho đầu [3]; phần *"song song tồn tại"* lấy từ 5 ca. **Phải kèm điều kiện bác bỏ** |
+| 1 | **Điều chỉnh KHÔNG diễn ra trên biên tiền lương** | 🟢 | Humlum & Vestergaard *(Đan Mạch, hành chính, 25.000 LĐ, null, loại trừ >2%)* + Canaries *(Mỹ, ADP)* |
+| 2 | **Có điều chỉnh trên biên tuyển dụng, tập trung ở nhóm mới vào nghề** | 🟢 | Canaries: 22–25 nghề phơi nhiễm cao **−19%**, doãng từ 15%; cơ chế **giảm tuyển**; người có kinh nghiệm **không** có khoảng cách |
+| 3 | **Bên chống mạnh nhất ≠ bên thiệt nhất** *(Mỹ)* | 🟢 | Như trên — người chưa được tuyển gánh chi phí, quyền hãm **bằng không** |
+| 4 | Câu *"accrues as capital income"* **là suy ra, không phải quan sát** | 🟢 | Tài liệu tự nói không phải dự báo; chữ *"therefore"*; bảng hiệu chuẩn 8 tham số |
+| 5 | Dưới trả theo giờ, **sản lượng thực hiện < sản lượng khả thi** | 🟡 | Lazear/Safelite **+44%** — nhưng **nửa do sàng lọc**, tức **đổi người**, nên không đọc được là *"cùng những con người đó"*; và n=1 công ty, một nghề |
+| 6 | **H1–H4 là bốn ứng viên, dữ liệu chưa phân biệt được** | 🟡 | Suy ra từ chính bộ bằng chứng #1–#4; **kiểm được bằng phiếu câu 3, 4, 8** |
+| 7 | Cái chung = **khoảng lệch đơn vị tính hai đầu hợp đồng** | 🟡 | Phiếu câu 1 hai vế — **bắt buộc ca nghịch**, không có thì 🔴 |
+| 8 | Hình thức chỉ có **một ô cho lao động** | 🟡 | Quan sát được từ bảng lương; nhưng *"nên giá trị không chảy về lao động"* **không suy ra được** — Đan Mạch có ống mà vẫn null |
+| 9 | Vòng giấu năng suất **có tồn tại** | 🟡 | Phiếu 7a+7b. ⚠️ **Tương đương quan sát**: null cũng tương thích với *"mức lợi vốn nhỏ"* |
+| 10 | Ba cơ chế quản lý cấp trung **có tồn tại** | 🟡 | Phiếu 8a/8b. **Chưa có bằng chứng nào** cho thấy họ đang chống |
+| 11 | **Việt Nam còn trong Độ** | 🟡 | ITviec n=846 — ⚠️ nhưng đó là **lý do tự khai**, và mốc so 2021 là **đỉnh chu kỳ vốn rẻ** |
+| 12 | Phủ định **chưa hoàn tất** | 🟡 | Hai thước đo **song song tồn tại**; kèm điều kiện bác bỏ |
+| 13 | Chi trả ra nước ngoài tăng nhanh hơn giá trị giữ lại | 🔴 | **Chưa tra** chuỗi cán cân thanh toán |
+| 14 | ~~Điểm nút giữa Substantial và Extreme~~ | ❌ **BỎ** | Ba kịch bản khác **8 tham số**; trục so là tích `m×d` |
+| 15 | ~~Chỉ số gãy thước~~ | ❌ **BỎ** | Đòi **sản lượng cá nhân** — thứ S7, S8, S14 nói không có |
+| 16 | ~~*"Phần chênh lệch mặc định thuộc bên mua, trừ khi có sức mặc cả"*~~ | ❌ **BỎ** | **Bất khả bác bỏ** — sức mặc cả không đo được |
+| 17 | ~~*"Mỹ mất việc nhưng giữ phần vốn"*~~ | ❌ **BỎ** | Mệnh đề tương lai, thuộc kịch bản; và nằm ngoài phạm vi S1 |
 
-**Đếm lại bằng tay, 22 hàng: 🟢 = 5** *(1a · 2 · 4 · 5 · 12a)* **· 🟡 = 11** *(1b · 3 · 6a · 7 · 8 · 9a · 11a · 12b · 13a+b · 14a · 15)* **· 🔴 = 5** *(6b · 9b · 11b · 13c · 14b)* **· ❌ bỏ trọn = 2** *(#10 và #11b)*.
+**Đếm: 🟢 = 4 · 🟡 = 8 · 🔴 = 1 · ❌ bỏ = 4.**
 
-> ⚠️ Bản trước ghi *"🟡 = 10 · 🔴 = 6"* — **đếm trùng** hàng #3. Đã sửa. Lỗi nhỏ, nhưng nó nằm đúng trên bảng bài dùng làm vật chứng cho sự nghiêm ngặt, nên phải sửa.
+### C2 · Ba luật viết, rút từ các lỗi đã mắc
 
-### C2 · Bốn chỗ đã tự tước mất khả năng bị kiểm — đã sửa câu chữ
+1. **Không dán nhãn "quan sát được" cho đầu ra mô hình.** Phân tích độ nhạy là chạy lại cùng mô hình với tham số khác — nó nói về **mô hình**, không nói về thế giới.
+2. **Không dùng mệnh đề thoát không đo được.** *"Trừ khi có sức mặc cả"*, *"kể cả khi mọi bên đều muốn"* — cùng một cấu trúc. Muốn giữ thì phải **đo được vế thoát độc lập với kết quả**.
+3. **Sửa lỗi phải sửa trên slide, không chỉ trong ghi chú.** Tiêu đề là thứ khán giả nhớ; đính chính nằm trong sổ tay người nói thì không ai nghe.
 
-| Chỗ | Vấn đề | Đã làm |
-|---|---|---|
-| #8 | *"kể cả khi mọi bên đều muốn"* — không quan sát được | **Cắt khỏi slide** |
-| #13 | Chữ *"có thể"* — mệnh đề khả năng thì không dữ kiện nào bác được | **Viết lại thành mệnh đề có dấu, có chuỗi số** |
-| #3 | Dạng *"mâu thuẫn cơ bản của thời đại"* — mọi dữ kiện đều xác nhận | **Thu hẹp về dạng có ngưỡng bác bỏ** |
-| #15 | Khuôn ba bước lắp được lên mọi chuỗi lịch sử | **Nêu kèm điều kiện phân biệt với "phân loại ổn định"** |
-
-> *Một lý thuyết không thể sai thì cũng không thể đúng — nó ra khỏi địa hạt nhận thức.*
-> Bốn chỗ này **không phải nội dung sai**; chúng là **cách phát biểu đã tự tước mất khả năng bị kiểm**.
-
-### C3 · Ba lỗi phương pháp — đã sửa
-
-**① Mệnh đề tồn tại bị trộn với mệnh đề phổ biến.**
-5 phiếu, n=1 mỗi ngành, tự thuật. Thiết kế này **chứng minh được** *"cơ chế X có tồn tại"*; **không bao giờ** chứng minh được *"X phổ biến"* hay *"X là lý do chính"*.
-→ **Cách sửa rẻ nhất: đổi động từ trên mọi slide.** Từ *"AI khiến lao động tri thức bị…"* sang *"Trong các ca chúng tôi ghi nhận, xuất hiện cơ chế…"*. Miễn phí, và cứu toàn bộ phần dữ liệu sơ cấp khỏi bị bắt lỗi cỡ mẫu.
-
-**② Mẫu không có biến thiên trên biến độc lập.** → Bắt buộc gài **ca nghịch**, xem Phụ lục A.
-
-**③ Thuộc tính của mô hình bị dùng như thuộc tính của hiện thực.**
-Toàn bộ số kịch bản chỉ được dùng dưới **một tư cách duy nhất**: *"nếu giả định như thế thì cấu trúc phân phối sẽ như thế"*. **Slide nào để những con số đó cạnh chữ "Việt Nam" mà không có vách ngăn là slide không đứng được trước câu hỏi phản biện.**
-
-### C4 · Sáu việc trong tuần, xếp theo giá trị / công sức
+### C3 · Sáu việc trong tuần
 
 | # | Công | Việc | Xong cái gì |
 |---|---|---|---|
-| 1 | **30 phút** | Mở PDF WP 2026-02, ghi **số trang** câu *"accrues as capital income"* + phương trình hàm sản xuất | Đóng nốt #5 |
-| 2 | **1 giờ** | Mở báo cáo gốc ITviec 2025 + báo cáo lương 2025–2026, trích chính xác 3 con số kèm cỡ mẫu | Chân đế VN cho #11, #14 |
-| 3 | **1 cuộc gọi** | Gài **một ca nghịch** vào 5 phiếu | Quyết định #7, #8 có kiểm được không |
-| 4 | — | Sửa mẫu phiếu: 2 ô đơn vị tính · cặp 7a/7b · cặp 8a/8b | Đóng #6a, #14a |
-| 5 | **2 giờ** | **Đếm tay** tin tuyển fresher/junior theo quý, 2023 vs 2026 | Dữ liệu sơ cấp VN rẻ nhất; đối chứng trực tiếp −19% |
-| 6 | Miễn phí | **Đổi động từ** trên mọi slide | Cứu toàn bộ phần dữ liệu sơ cấp |
+| 1 | **1 cuộc gọi** | Gài **một ca nghịch** vào 5 phiếu | Quyết định #7 có kiểm được không |
+| 2 | — | Phát phiếu **8 câu** *(đã thêm câu 3, 4, 8a, 8b)* | Nuôi #6, #9, #10 |
+| 3 | **1 giờ** | Mở báo cáo gốc ITviec, trích chính xác kèm cỡ mẫu | Chân đế VN cho #11 |
+| 4 | **30 phút** | Mở PDF WP 2026-02, ghi **số trang** câu *"accrues as capital income"* | Đóng nốt #4 |
+| 5 | **2 giờ** | **Đếm tay** tin tuyển fresher/junior theo quý, 2023 vs 2026 | Đối chứng VN cho #2 |
+| 6 | Miễn phí | Rà lại **động từ** mọi slide | Cứu toàn bộ phần dữ liệu sơ cấp |
 
-### C5 · Cảnh báo về tính lịch sử
+### C4 · Cảnh báo tính lịch sử
 
-Kể cả 5 mệnh đề 🟢 cũng **để ngỏ cho kiểm nghiệm lại**, vì thực tiễn có tính lịch sử:
-
-- **Độ trễ hiệu ứng** — Đan Mạch đo ở mốc **hai năm** sau ChatGPT; năng suất kiểu điện khí hoá có thể mất một thập kỷ mới hiện lên sổ sách.
-- **Điều chỉnh có thể tràn từ biên số lượng sang biên giá** — hiện việc làm đổi mà lương chưa đổi, nhưng khoảng cách nhóm 22–25 đã doãng **từ 15% lên 19% trong 11 tháng**. Xu hướng này chưa dừng.
-- **Thiết chế tiền lương Việt Nam đổi** — vì theo chính kết luận #4, thiết chế mới là cái đảo dấu kết quả.
-- **Xuất hiện nhà cung cấp mô hình nội địa** — sẽ đổi toàn bộ bài toán ở #13.
+Kể cả bốn mệnh đề 🟢 cũng để ngỏ cho kiểm nghiệm lại: **độ trễ hiệu ứng** *(Đan Mạch mới đo ở mốc 2 năm)* · **điều chỉnh có thể tràn từ biên số lượng sang biên giá** *(khoảng cách 22–25 đã doãng 15%→19% trong 11 tháng)* · **thiết chế tiền lương Việt Nam đổi** · **xuất hiện nhà cung cấp mô hình nội địa**.
 
 > **Chốt cứng bất kỳ con số nào thành "quy luật" là giáo điều.**
 > Cách phát biểu đúng: ***"tính đến giữa 2026, trong dữ liệu hiện có."***
@@ -879,25 +785,23 @@ Kể cả 5 mệnh đề 🟢 cũng **để ngỏ cho kiểm nghiệm lại**, v
 
 ## 📚 Nguồn
 
-**Nguồn chính** — ⚠️ *nghiên cứu do một hãng AI công bố, về tác động kinh tế của sản phẩm họ bán, hiệu chuẩn một phần bằng dữ liệu sử dụng sản phẩm đó. Nêu rõ trên slide nguồn.*
-- Korinek, A., Jones, C. I., Sacher, S., Cotter, T., & McCrory, P. (2026). *Economic Scenarios for Transformative AI*. The Anthropic Institute Working Paper No. 2026-02. — số liệu phân phối, việc làm, lương, phân tích độ nhạy, bảng hiệu chuẩn Table 1 (tr. 23–25)
-- *Anthropic's Economic Policy Framework* (6/2026) — khái niệm *structural decoupling*, luận điểm **đo lường**, luận điểm **tầng vào nghề**
+**Nguồn quan sát thật** — ⭐ *bài đứng trên đây*
+- **Humlum, A., & Vestergaard, E. (2025).** *Still Waters, Rapid Currents*. NBER WP 33777 — Đan Mạch, **dữ liệu hành chính**, 25.000 lao động / 7.000 nơi làm việc. **Null chính xác** về thu nhập và giờ công; loại trừ hiệu ứng >2%. → `nber.org/papers/w33777`
+- **Brynjolfsson, E., Chandar, B., & Chen, R. (2026).** *Canaries in the Coal Mine?* Stanford Digital Economy Lab — Mỹ, **bảng lương ADP** tới 6/2026. Nhóm 22–25 nghề phơi nhiễm cao **−19%**; cơ chế **giảm tuyển**. → `digitaleconomy.stanford.edu/news/canariesaug26/`
+- **Lazear, E. P. (2000).** *Performance Pay and Productivity*. **AER** 90(5) — Safelite **+44%**, *nửa do nỗ lực nửa do sàng lọc*
+- **Acemoglu, D. (2025).** *The Simple Macroeconomics of AI*. **Economic Policy** 40(121) — tác động TFP **≤ 0,66% trong 10 năm**
 
-**Nguồn quan sát thật** — ⭐ *đây mới là chỗ bài đứng vững; hình thức kiểm mạnh hơn hẳn kịch bản mô hình hoá*
-- **Humlum, A., & Vestergaard, E. (2025).** *Still Waters, Rapid Currents: Early Labor Market Transformation under Generative AI*. NBER WP 33777 *(tên ban đầu: "Large Language Models, **Small** Labor Market Effects")* — Đan Mạch, **dữ liệu hành chính**, 25.000 lao động / 7.000 nơi làm việc, 11 nghề phơi nhiễm. **Null chính xác** về thu nhập và giờ công; loại trừ hiệu ứng >2%. → `nber.org/papers/w33777`
-- **Brynjolfsson, E., Chandar, B., & Chen, R. (2026).** *Canaries in the Coal Mine?* Stanford Digital Economy Lab, 8/2026 — Mỹ, **bảng lương ADP** hàng tháng tới 6/2026. Nhóm 22–25 ở nghề phơi nhiễm cao **−19%**; cơ chế **giảm tuyển**, không phải sa thải; **Fact 5**: việc làm giảm ở nghề AI *thay thế*, đi ngang/tăng ở nghề AI *bổ trợ*. → `digitaleconomy.stanford.edu/news/canariesaug26/`
-- **Lazear, E. P. (2000).** *Performance Pay and Productivity*. **AER** 90(5) — Safelite: chuyển lương giờ → trả theo sản phẩm, sản lượng/người **+44%**, nửa do nỗ lực nửa do sàng lọc
-- **Acemoglu, D. (2025).** *The Simple Macroeconomics of AI*. **Economic Policy** 40(121) / NBER WP 32487 — ước lượng **thấp**: tác động lên TFP **≤ 0,66% trong 10 năm**
+**Nguồn Việt Nam** — *mỏng, và là lý do tự khai*
+- **ITviec (2025).** *Thực trạng Ứng dụng AI & Tuyển dụng IT tại Việt Nam* — **n = 846**, thu 6–7/2025. **48,6%** dự định mở rộng đội IT *(thấp nhất từ 2021 — lưu ý 2021 là đỉnh chu kỳ vốn rẻ)* · **24,7%** nhóm hạn chế tuyển nêu lý do năng suất AI · **5,4%** tin hoàn toàn đầu ra AI
 
-**Nguồn Việt Nam** — *số VN duy nhất tìm được, và nó có thật*
-- **ITviec (2025).** *Thực trạng Ứng dụng AI & Tuyển dụng IT tại Việt Nam* — khảo sát online **n = 846**, thu 6–7/2025. **48,6%** dự định mở rộng đội IT *(thấp nhất từ 2021)* · **51,4%** giữ nguyên/giảm · **24,7%** nhóm hạn chế tuyển nêu lý do năng suất AI · **5,4%** tin hoàn toàn đầu ra AI
-- **ITviec.** *Báo cáo lương & thị trường tuyển dụng IT 2025–2026* — lương theo cấp bậc, dùng cho **một vế** của chỉ số gãy thước
-- **TopDev.** *Báo cáo thị trường IT Việt Nam* — đếm tin tuyển theo quý
+**Nguồn kịch bản** — ⚠️ *do chính một hãng AI công bố, về tác động kinh tế của sản phẩm họ bán*
+- **Korinek, A., Jones, C. I., Sacher, S., Cotter, T., & McCrory, P. (2026).** *Economic Scenarios for Transformative AI*. Anthropic Institute WP 2026-02 — **kịch bản, không phải dự báo**. Ba kịch bản khác nhau ở **8 tham số** *(Table 1, tr. 23–25)*
+- *Anthropic's Economic Policy Framework* (6/2026) — luận điểm **đo lường**, **tầng vào nghề**
 
-> ⚠️ **Chưa mở bản gốc, KHÔNG được trích:** các con số *"88% lao động tri thức VN dùng AI"* / *"83% lực lượng lao động VN"* (quy cho Microsoft Work Trend Index qua báo chí) và *"VN xếp thứ 38 toàn cầu về tỷ lệ dùng AI"*. Chỉ thấy ở mức kết quả tìm kiếm.
+> ⚠️ **Chưa mở bản gốc, KHÔNG được trích:** *"88% lao động tri thức VN dùng AI"*, *"VN xếp thứ 38 toàn cầu"*.
 
 **Giáo trình** — `vaults/triet/slides/triet-hoc-mac-lenin-dang-hoang-vu.pdf`, TS. Đặng Hoàng Vũ, 232 slide
-slide 66–70 *(vật chất – ý thức)* · 87–88 *(bản chất – hiện tượng)* · 89–90 *(chung – riêng)* · 91–92 *(tất nhiên – ngẫu nhiên)* · 93–94 *(nội dung – hình thức)* · 95–96 *(nguyên nhân – kết quả)* · 97–98 *(hiện thực – khả năng)* · 100, 102–105 *(lượng – chất)* · 106–111 *(mâu thuẫn)* · 112–116 *(phủ định)* · 129–131 *(thực tiễn)* · 139–140 *(chân lý, giáo điều)*
+slide 66–70 · 87–88 · 89–90 · 91–92 · 93–94 · 95–96 · 97–98 · 100, 102–105 · 106–111 · 112–116 · 129–131 · 139–140
 
 **Đề bài** — `material/GK FSB MSA.40_MSA.37_SEM.47.pdf`
 
@@ -905,7 +809,7 @@ slide 66–70 *(vật chất – ý thức)* · 87–88 *(bản chất – hiệ
 
 ## 🔗 Liên kết
 
-- **Bản thiết kế:** [[de-cuong-thuyet-trinh-gk]] — đề cương, rubric CLO×LLO, bản rà 4 bộ lọc
-- **Lý thuyết:** [[../vaults/triet/diem-neo-11-noi-dung]] *(2·6·3)* · [[../vaults/triet/quy-luat-mau-thuan]] *(S8)* · [[../vaults/triet/quy-luat-luong-chat]] *(S12)* · [[../vaults/triet/quy-luat-phu-dinh-cua-phu-dinh]] *(S13)* · [[../vaults/triet/ban-chat-va-hien-tuong]] *(S5)* · [[../vaults/triet/noi-dung-va-hinh-thuc]] *(S6)* · [[../vaults/triet/nguyen-nhan-va-ket-qua]] *(S7)* · [[../vaults/triet/cai-rieng-cai-chung-cai-don-nhat]] *(S11)* · [[../vaults/triet/hien-thuc-va-kha-nang]] *(S14)* · [[../vaults/triet/tat-nhien-va-ngau-nhien]] *(S15)* · [[../vaults/triet/moi-quan-he-vat-chat-y-thuc]] *(S10)*
-- **Phương pháp:** [[../vaults/triet/bon-bo-loc-kiem-ket-qua-ai]] — bốn key word
+- **Bản thiết kế:** [[de-cuong-thuyet-trinh-gk]]
+- **Lý thuyết:** [[../vaults/triet/diem-neo-11-noi-dung]] · [[../vaults/triet/quy-luat-mau-thuan]] · [[../vaults/triet/quy-luat-luong-chat]] · [[../vaults/triet/quy-luat-phu-dinh-cua-phu-dinh]] · [[../vaults/triet/ban-chat-va-hien-tuong]] · [[../vaults/triet/noi-dung-va-hinh-thuc]] · [[../vaults/triet/nguyen-nhan-va-ket-qua]] · [[../vaults/triet/cai-rieng-cai-chung-cai-don-nhat]] · [[../vaults/triet/hien-thuc-va-kha-nang]] · [[../vaults/triet/tat-nhien-va-ngau-nhien]] · [[../vaults/triet/moi-quan-he-vat-chat-y-thuc]]
+- **Phương pháp:** [[../vaults/triet/bon-bo-loc-kiem-ket-qua-ai]]
 - **Quay lại:** [[../vaults/triet/SECOND_BRAIN_TRIET|🧠 Vault Triết]]
