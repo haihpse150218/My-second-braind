@@ -1,12 +1,12 @@
 # 📌 PROGRESS — Second Brain Tổng Hợp
 
-**Cập nhật lần cuối:** 2026-09-13
-**Bước đang làm:** — (P15 đã commit + push xong)
-**Tiến độ:** ✅ 61/61 bước cũ · ✅ P15 xong (trừ 15.7 ❌ không tải được giáo trình)
+**Cập nhật lần cuối:** 2026-09-20
+**Bước đang làm:** P16 — ⏸️ **CHỜ QUYẾT ĐỊNH**: tái cấu trúc theo bản hạ cấp, hay vá từng lỗi? · P17 ✅ xong
+**Tiến độ:** ✅ 61/61 bước cũ · ✅ P15 xong (trừ 15.7 ❌ không tải được giáo trình) · ✅ P17 xong
 **Repo:** https://github.com/haihpse150218/My-second-braind (`main`)
 **🌐 Web live:** https://haihpse150218.github.io/My-second-braind/
 
-**Kho hiện tại:** **353 note** · **7 vault** · 8 project · 271 link gãy *(xem P15 — cố ý, là lộ trình đặt sẵn)*
+**Kho hiện tại:** **354 note** · **7 vault** · 8 project · 271 link gãy *(xem P15 — cố ý, là lộ trình đặt sẵn)*
 
 > ⚠️ **Máy này KHÔNG có Node.js** → `npm run check` / `npm test` / `npm start` đều không chạy được.
 > Số liệu trên đếm bằng script Python tạm ở scratchpad, **không phải** `check-all.mjs`. Cần đối chiếu lại khi về máy có Node.
@@ -93,6 +93,30 @@
 | P15 | 15.7 | Tải giáo trình chính thức 2021 | ❌ | 2026-09-12 | 5 nguồn đều hỏng — xem nhật ký |
 | P15 | 15.8 | Commit + push P15 | ✅ | 2026-09-13 | 3 commit: vault · skill · PROGRESS |
 | P15 | 15.9 | Quyết định `.gitignore` cho `*.pdf` | ✅ | 2026-09-13 | **chốt: commit cả PDF**, không ignore |
+| **P16** | 16.1 | Nhận đề GK — bóc text `material/GK FSB ...pdf` | ✅ | 2026-09-20 | pypdf; 10 từ khoá · rubric 6 CLO |
+| P16 | 16.2 | Chấm 10 từ khoá theo hồ sơ + chốt chủ đề | ✅ | 2026-09-20 | **chốt từ khoá #2 Việc làm** — AI × việc làm ngành gia công |
+| P16 | 16.3 | Viết đề cương → `present/de-cuong-thuyet-trinh-gk.md` | ✅ | 2026-09-20 | 345 dòng · 11 mục · 6 lăng kính |
+| P16 | 16.3b | Rà đề cương bằng **2 nguyên lý · 3 quy luật · 6 cặp phạm trù** | ✅ | 2026-09-20 | chủ đề gánh 11/11; sửa 2 chỗ chấm sai; thêm Vật chất–Ý thức + Nhận thức luận |
+| P16 | 16.3c | Rà đề cương bằng **4 key word** (Phản biện · Pháp lý · Hệ thống · Thực tế) | ✅ | 2026-09-20 | 8 lỗi 🔴 · 5 sửa ngay · 3 câu chặn phải hỏi người dùng |
+| P16 | 16.3d | Xoay chủ đề theo ràng buộc thật (nhóm trộn ngành · 15–20 phút · 1 tuần) | ✅ | 2026-09-20 | gia công phần mềm → **lao động tri thức**; gỡ luôn lỗi P1 |
+| P16 | 16.3e | Dựng lại bài từ **điểm neo CLO × LLO** của rubric | ✅ | 2026-09-20 | đề cương v3 · 15 slide · mỗi slide neo CLO + lý thuyết + key word |
+| P16 | 16.3f | Đọc nguồn Anthropic Institute WP 2026-02 + PDF chính sách | ✅ | 2026-09-20 | số liệu phân phối lao động–vốn; **là kịch bản, KHÔNG phải dự báo** |
+| P16 | 16.3g | Chạy `truy-ban-chat` pha 1 — `tbc-dat-van-de` | ✅ | 2026-09-20 | bắt tiền đề hỏng *"không còn khớp"*; đổi điểm nghẽn sang **quy kết + ai chịu rủi ro** |
+| P16 | 16.3h | Pha 2 — fan-out **8 lăng kính** song song | ✅ | 2026-09-20 | 3 lõi + 5 chọn; mỗi agent tự nêu 1 chỗ có thể sai |
+| P16 | 16.3i | Pha 3 — đối chất *(tự làm, không agent)* | ✅ | 2026-09-20 | 5 hội tụ · 3 chỗ chỏi · **5 lỗi trong đề cương v3** |
+| P16 | 16.3j | Pha 4 — `tbc-thuc-tien` chấm 🟢🟡🔴 | ✅ | 2026-09-20 | **🟢 5 · 🟡 10 · 🔴 6+1 bỏ**; tìm ra số VN thật; bác 3 chỗ trong file |
+| P16 | 16.3k | Pha 5 — `tbc-phan-bien` | ✅ | 2026-09-20 | **3 đòn chí mạng** — sập kiến trúc, phải tái cấu trúc chứ không vá |
+| P16 | 16.3l | Viết `present/de-tai-viec-lam-tri-thuc.md` — kịch bản 15 slide | ✅ | 2026-09-20 | **908 dòng · 15 slide · 3 phụ lục** · 0 link gãy |
+| P16 | 16.4 | Viết note `triet` xương sống của bài | 🟡 | 2026-09-20 | **nhánh D đủ D1–D12** ✅; còn thiếu `hai-giai-doan-nhan-thuc` (E5) — không chặn bài |
+| P16 | 16.5 | Thu dữ liệu — **phiếu ca ngành 6 câu** thay khảo sát | ⬜ | | mỗi thành viên 1 trang về ngành mình, thu trong 2 ngày |
+| P16 | 16.6 | Dựng 15 slide + tổng duyệt bấm giờ | ⬜ | | 3 hình bắt buộc: sơ đồ mâu thuẫn · bảng các bên · trục điểm nút |
+| **P17** | 17.1 | Bóc toàn văn bài Anthropic *"Scenarios for Our Economic Future"* (9/2026) | ✅ | 2026-09-20 | curl + Python strip HTML → `NGUON.md` 18,4 KB. **PowerShell/Node vô dụng như thường lệ** |
+| P17 | 17.2 | Pha 0 — `tbc-dat-van-de` chạy một mình | ✅ | 2026-09-20 | 9 tiền đề ngầm · 4 phép thử đảo chiều · 6 phép kiểm thiết kế sẵn |
+| P17 | 17.3 | Pha 2 — fan-out **9 lăng kính** song song | ✅ | 2026-09-20 | 2 nguyên lý + 3 lõi + 2 chọn + 2 quy luật; ~5 phút/agent |
+| P17 | 17.4 | Pha 3 — đối chất *(tự làm)* | ✅ | 2026-09-20 | 4 hội tụ · 5 chỗ chỏi · 3 mệnh đề chưa giải chuyển xuống pha 4 |
+| P17 | 17.5 | Pha 4 — `tbc-thuc-tien` (có WebSearch) | ✅ | 2026-09-20 | **Tìm được báo cáo kỹ thuật gốc** → giải xong cả 3 câu treo · **bác 1 giả thuyết trung tâm** · kiểm số BLS/CBO thật |
+| P17 | 17.6 | Pha 5 — `tbc-phan-bien` | ✅ | 2026-09-20 | **7 đòn, 4 chí mạng.** Đòn nặng nhất: *"hội tụ 5 hướng"* là giả — cùng tổ tiên pha 0 |
+| P17 | 17.7 | Viết note `vaults/triet/ca-kich-ban-kinh-te-ai-anthropic.md` + vào hub J#4 | ✅ | 2026-09-20 | Ca thực hành đầu tiên chạy đủ 6 pha trên bài ngoài. **354 note** |
 
 ---
 
@@ -442,6 +466,200 @@ Slide là bản rút gọn có chủ ý, nhiều chỗ chỉ ghi từ khoá → 
 
 ---
 
+### 2026-09-20 — P16 ✅ Chốt chủ đề thuyết trình GK Triết
+
+**Đề:** thuyết trình **nhóm** giữa kỳ, chọn 1 trong 10 từ khoá, phác thành chủ đề cụ thể.
+Bắt buộc trả lời 5 câu: *tính mới · áp dụng hạng mục nào · đơn vị nào áp dụng · tác động xã hội · ai thụ hưởng / ai chống đối*.
+Rubric 6 CLO — **6/10 điểm nằm ở phân tích + đề xuất**, chỉ 1.0 cho mô tả.
+
+**Chốt: từ khoá #2 — Việc làm.**
+> Tái cấu trúc việc làm kỹ sư phần mềm dưới tác động của trợ lý lập trình AI — góc nhìn doanh nghiệp gia công phần mềm VN quy mô vừa.
+
+**Ba lý do bỏ từ khoá #1 "Trí tuệ nhân tạo":** ví dụ mẫu của thầy dùng chính từ khoá đó → nửa lớp sẽ trùng; chọn "Việc làm" vẫn nói hết phần AI vì AI là *cơ chế* bên trong; và "Việc làm" có xung đột lợi ích **có địa chỉ cụ thể** → câu "ai chống đối" mới sắc được.
+
+**Mâu thuẫn hạt nhân của bài:** LLSX (công cụ AI, năng suất/người tăng) ↔ QHSX (hợp đồng man-month, tháp nhân sự đông junior). Dùng AI càng giỏi càng tự cắt doanh thu mô hình cũ → giải quyết bằng cách đổi QHSX, không phải kìm LLSX.
+
+**Đề cương:** `present/de-cuong-thuyet-trinh-gk.md` — 11 mục, 6 lăng kính (mâu thuẫn+LLSX/QHSX · bản chất-hiện tượng · nguyên nhân-nguyên cớ · lượng-chất · phủ định của phủ định · chung-riêng), có mục nói rõ **cố ý bỏ** 4 cặp phạm trù khác để ăn điểm CLO4.
+
+⚠️ **Chưa có con số nào.** Toàn bộ số liệu còn ở dạng "cần thu thập" (§7). Không lên slide bất kỳ con số nào trước khi có nguồn.
+⚠️ **Ranh giới bảo mật §7.3:** không đưa tên công ty/khách hàng/đơn giá/điều khoản hợp đồng lên slide khi chưa được duyệt.
+
+**Rà lại v1 bằng bộ khí tài đầy đủ (2 nguyên lý → 3 quy luật → 6 cặp phạm trù):**
+Chủ đề **gánh được 11/11** và **4/4 khối thầy liệt kê trong đề** — không chỗ nào gượng. Ba quy luật khớp ba câu hỏi khác nhau (*vì sao vận động · khi nào lật · đi về đâu*) và không giẫm chân nhau; đây là bằng chứng mạnh nhất cho thấy chọn đúng từ khoá.
+
+**Hai chỗ v1 chấm sai, đã sửa:**
+- `nội dung – hình thức` — v1 gạt vì tưởng trùng bản chất–hiện tượng. Không trùng: bản chất–hiện tượng dùng để **chẩn đoán**, nội dung–hình thức dùng để **kê đơn** (*hình thức lạc hậu kìm hãm nội dung* = chính luận điểm trung tâm). → đưa lên hàng cốt lõi.
+- `khả năng – hiện thực` — v1 gạt vì nghĩ đã ngầm nằm trong lộ trình. Nó cho khung **nêu điều kiện**, đúng thứ CLO5 chấm, và là câu trả lời cho phản biện *"lấy gì đảm bảo"*. → đưa vào phần kiến nghị.
+- Cả hai đều nằm trong danh sách **thầy nêu đích danh** trong đề → gạt là rủi ro không đáng.
+
+**Hai khối bổ sung mới:**
+- **Vật chất – Ý thức:** giải thích vì sao quản lý cấp trung chống đối — ý thức "đếm đầu người" là phản ánh đúng của tồn tại cũ, không phải thói bảo thủ. Thay quy kết đạo đức bằng giải thích khoa học, và tự sinh ra giải pháp: **đổi tồn tại (cách đo, KPI) chứ không đi thuyết phục**.
+- **Nhận thức luận:** 1 slide phương pháp (khái niệm → phán đoán → suy luận) — rẻ, mà làm bài trông đúng như "dự án khoa học" đề yêu cầu.
+
+Slide giãn 24 → **28**, có bảng map *khí tài → slide*. Note `triet` cần viết: 5 → **12**, chia 3 mức ưu tiên.
+
+---
+
+### 2026-09-20 (tối) — P16 ✅ Đề cương v3: xoay chủ đề + bám neo rubric
+
+**Ba giả định ngầm của v1/v2 đều sai hết** — người dùng xác nhận: nhóm **trộn nhiều ngành** (không phải dân phần mềm) · **15–20 phút** (không phải 25–30) · **còn 1 tuần** (không kịp khảo sát). Đúng ba lỗi 🔴 T1/T2/T3 mà bộ lọc ④ Thực tế đã cảnh báo.
+
+**Xoay chủ đề lên một tầng, giữ nguyên từ khoá #2 Việc làm:**
+> *Khi AI tách năng suất khỏi thời gian: cách đo và trả công cho lao động tri thức — một mâu thuẫn chung, nhiều lời giải riêng.*
+
+Mâu thuẫn cốt lõi (năng suất đổi nhưng vẫn đo theo thời gian) **vốn không phải chuyện riêng ngành phần mềm** — đúng với kế toán, kiểm toán, tư vấn, luật, marketing, thiết kế, hành chính. Nhờ vậy **nhóm trộn ngành từ điểm yếu thành điểm mạnh**: mỗi người một ngành một ca, và *cái chung – cái riêng – cái đơn nhất* thành **khung tổ chức của cả bài**.
+
+Đổi này **gỡ luôn lỗi 🔴 P1**: giả định nền chuyển từ *"gia công VN bán man-month"* (hẹp, không nguồn) sang *"lao động tri thức đo theo thời gian"* (**quan sát trực tiếp được** ngay tại chỗ làm).
+
+**Phát hiện đáng giá nhất — cột LLO trong rubric:**
+- **CLO5 là mục duy nhất đòi LLO7 (Sáng tạo)** → "tính mới" phải dồn hết vào phần Hướng giải quyết, không rải đều. Nếu phần đó chỉ tóm tắt lại phân tích là mất 2.0đ.
+- **CLO6 Hình thức chỉ đòi LLO 1–2–3** (Biết · Nhớ · Hiểu) → **2.0 điểm dễ nhất cả rubric**, chỉ cần slide sạch + đúng giờ. Nhóm nào bỏ là bỏ không.
+
+**Bỏ hẳn khảo sát** → thay bằng **phiếu ca ngành 6 câu**, mỗi thành viên tự viết 1 trang về ngành mình, thu trong 2 ngày. Vẫn là dữ liệu sơ cấp, lại không chạm dữ liệu cá nhân của người thứ ba (gỡ luôn lỗi 🔴 L1). Câu 3 và 5 dùng để kiểm chính giả thuyết 🔬 *"quản lý cấp trung chống đối"*.
+
+**Đề cương v3:** 15 slide, **mỗi slide neo sẵn CLO nào · lý thuyết nào · key word nào**. Phủ đủ 2 nguyên lý · 3 quy luật · 6 cặp phạm trù + 4/4 khối thầy nêu. Thêm §0 Điểm neo, §10 Bốn key word, §12 Bản rà 4 bộ lọc (P1–P7 · L1–L5 · H1–H4 · T1–T6 + checklist 9 việc còn lại).
+
+⚠️ **Còn 3 việc 🔴 chưa gỡ:** H1 chưa chạy phương pháp thứ hai · L3 chưa tra Bộ luật Lao động · P7 nhóm phải tự rà lại §4 thay vì tin bảng chấm sao của AI.
+
+---
+
+### 2026-09-20 (khuya) — P16 · Chạy `truy-ban-chat` lên chính đề tài
+
+Người dùng yêu cầu chốt 1 chủ đề, tạo file md mới hoàn chỉnh, và **chạy nhiều subagent quét từng khía cạnh rồi tổng hợp**. Việc này gỡ luôn lỗi 🔴 **H1** *("chưa chạy phương pháp thứ hai")* trong bản rà 4 bộ lọc.
+
+**Nguồn mới:** người dùng đưa `anthropic.com/institute/econ-scenarios`. Đọc ra **3 tài liệu**, trong đó 2 PDF tải được. Con số đắt nhất cho môn này — tỷ trọng lao động **60% → 45,2%**, và nguyên văn *"All of the increase in GDP therefore accrues as capital income"*. Tức **LLSX–QHSX nói bằng số, bởi kinh tế gia chính thống**.
+⚠️ Ba cấm kỵ đã xác minh: không trích trang web cho luận điểm **đo lường** và **entry-level** *(hai nội dung đó nằm ở PDF chính sách, tài liệu khác)*; **không được viết "Anthropic dự báo"** — tài liệu tự nói ba lần nó là **kịch bản, không phải dự báo**.
+
+**Pha 1 bắt được tiền đề hỏng nằm ngay trong tiêu đề:** chữ *"không còn khớp"* giả định thước đo **từng** khớp. Phản đề: trả công theo thời gian **chưa bao giờ đo giá trị** — nó là **thoả hiệp phân bổ rủi ro** khi đầu ra không đo được. Điểm nghẽn dịch từ *"thước đo lạc hậu"* sang **"chưa quy kết được phần giá trị thuộc về ai, và chưa ai chịu rủi ro khi quy kết sai"**.
+
+**Pha 2 — 8 lăng kính.** Năm chỗ **hội tụ qua các đường độc lập**: con số 60%→45,2% là **hiện tượng** không phải bản chất · **sở hữu công cụ** là mắt xích quyết định · AI là **tác nhân làm lộ** không phải nguyên nhân · giấu dùng AI là **hành vi hợp lý** do quan hệ phân phối sinh ra · và **hợp đề hai tầng** *(4 lăng kính, 4 ngôn ngữ, cùng kết luận)*.
+
+**Chỗ chỏi nhau — đúng chỗ bản chất nằm.** `tbc-luong-chat` nghiêng **Khung A** *(khái niệm **Độ** đòi chất cũ phải thật sự vận hành)*, 7 cái còn lại nghiêng **B**. Giải bằng hợp đề: **B là mệnh đề về bản chất (S5, S8) · A là mệnh đề về Độ (S12)** — hai tầng, không phải hai lựa chọn. Bất đồng này **sinh ra kiến trúc bài**.
+Một chỗ **chưa giải được**: AI **tập trung hoá** hay **phi tập trung hoá** tư liệu sản xuất — hai kịch bản ngược dấu, không lăng kính nào phân xử. Đưa lên S15 làm câu hỏi mở.
+
+**Pha 3 — năm lỗi trong đề cương v3, mỗi slide trụ một lỗi:**
+| Mục | Lỗi | Ai bắt |
+|---|---|---|
+| §4.1 S8 | Cặp *"AI ↔ chấm công"* **trượt phép thử tồn tại** | mâu thuẫn |
+| §4.2 S5 | *"Thước đo dịch chuyển"* — **thước đo CHÍNH LÀ hình thức** → S5 chiếm chỗ S6 | nội dung–hình thức |
+| §4.3 S7 | *"Nguyên nhân thật"* vẫn là **sự kiện kỹ thuật** = điều kiện | mâu thuẫn |
+| §4.5 S13 | **Phủ định sai đối tượng** — vẽ *nghề* thay vì *thước đo phân phối* | phủ định |
+| §3.5 §4.9 S10 | *"Ý thức lạc hậu"* vẫn là quy kết, chỉ đổi từ đạo đức sang nhận thức | xã hội |
+
+Không chạy fan-out thì cả năm lỗi lên thẳng sân khấu, và **S7 đá S8, S5 đá S6 ngay trên slide**.
+
+**Phát hiện riêng cho Việt Nam, dùng làm điểm chốt:**
+> **Mỹ mất việc tri thức nhưng giữ được phần vốn. Việt Nam có thể mất việc mà không được phần vốn.**
+
+Vì rent công nghệ chảy ra ngoài qua **phí thuê mô hình**, và không có kênh để người lao động VN tham gia sở hữu vốn AI → công cụ *"đánh thuế vốn bù cho lao động"* yếu hẳn vì **đối tượng đánh thuế không cư trú**. Cộng thêm: khu vực tri thức VN gần như **không có thương lượng tập thể** → không có chủ thể đàm phán quy tắc quy kết → phân phối rơi về **tương quan quyền lực**.
+
+⚠️ **Vẫn chưa có một số liệu Việt Nam nào.** Mọi mệnh đề về VN là **giả thuyết cơ chế**. Phiếu ca ngành (8 câu, đã gộp từ 3 lăng kính đề xuất) là dữ liệu sơ cấp duy nhất, **chưa thu**.
+
+---
+
+### 2026-09-20 — P16 · Pha 4 kiểm nghiệm: bác 3 chỗ, và dịch trọng tâm bằng chứng cả bài
+
+**Ba đính chính, đều nặng:**
+
+| Đã viết sai | Thực tế |
+|---|---|
+| *"Không có một số liệu Việt Nam nào"* | **Có.** ITviec 2025, khảo sát **n=846**, thu 6–7/2025: **48,6%** dự định mở rộng đội IT *(thấp nhất từ 2021)* · **24,7%** nhóm hạn chế tuyển nêu lý do năng suất AI · **5,4%** tin hoàn toàn đầu ra AI |
+| S8 dùng *"hai dấu ngược nhau −11,5% vs +33,6%"* làm bằng chứng | **Lập luận vòng tròn** — hai số nằm **trong cùng một mô hình**, là đầu ra của giả định. Đã thay bằng 3 chân đế quan sát thật |
+| S7 trích *"0,30–0,45 log"* | **Vô nguồn** trong toàn bộ vật liệu. Đã bỏ |
+
+**Trọng tâm bằng chứng dịch chỗ — đây mới là thay đổi lớn nhất.** Trước đó bài dồn trọng lượng vào **một tài liệu kịch bản mô hình hoá do chính hãng bán sản phẩm công bố**. Giờ đứng trên **ba nguồn quan sát thật**:
+- **Humlum & Vestergaard (2025) NBER WP 33777** — Đan Mạch, **dữ liệu hành chính**, 25.000 LĐ: tiết kiệm ~3% thời gian, thu nhập và giờ công **null chính xác**, loại trừ hiệu ứng >2%
+- **Canaries (2026), Stanford DEL** — Mỹ, **bảng lương ADP** tới 6/2026: nhóm 22–25 nghề phơi nhiễm cao **−19%**, doãng từ 15%; cơ chế **giảm tuyển** không phải sa thải
+- **Lazear (2000) AER** — Safelite: lương giờ → trả theo sản phẩm, sản lượng/người **+44%**
+
+> **Năng suất tăng lên đã đi đâu đó, và chỗ đó không phải là lương.**
+> Đan Mạch có thương lượng lương **phi tập trung** — kênh chia phần **có tồn tại** — mà vẫn null. **Ống có, dòng chảy không đủ → vấn đề ở áp suất, không ở ống.**
+
+**Chấm: 🟢 5 · 🟡 10 · 🔴 6 mệnh đề con + 1 kết luận bỏ trọn.**
+
+**Ba lỗi phương pháp đã sửa trong file:**
+1. **Đổi động từ mọi slide** — *"AI khiến…"* → *"trong các ca chúng tôi ghi nhận, xuất hiện cơ chế…"*. 5 ca n=1 chứng minh được **tồn tại**, không bao giờ chứng minh được **phổ biến**.
+2. 🔴 **Bắt buộc gài "ca nghịch" vào phiếu** — nếu cả 5 người đều trả theo thời gian ở tổ chức bán man-day thì biến độc lập **không có biến thiên**, phiếu chỉ thu về 5 lần xác nhận. Tốn một cuộc gọi.
+3. **Vách ngăn** giữa số kịch bản và chữ "Việt Nam".
+
+**Câu hỏi mở bài không trả lời được, có thể là câu quan trọng nhất:** vì sao **Đan Mạch null mà Mỹ −19%**? Cùng công nghệ, hai thiết chế, hai kết quả. Nằm ở S15.
+
+---
+
+### 2026-09-20 — P16 · Pha 5 phản biện: ba đòn chí mạng, kiến trúc không vá được
+
+**① S12 đòi đúng thứ cả bài nói là không có.** Chỉ số gãy thước cần **P90/P50 sản lượng CÁ NHÂN cùng bậc**, trong khi S7 nói *"đóng góp không quy kết được cho cá nhân"*, S8 nói *"không phép đo nào tách ra được phần của ai"*, S14 lùi về *"đo ở mức nhóm"*.
+> Chỉ số cờ đầu (**CLO5 ⭐, mục duy nhất đòi LLO7**) chạy được **khi và chỉ khi điểm nghẽn trung tâm không tồn tại.**
+Bồi thêm: chỉ số **mù với chính hiện tượng nó dựng ra để bắt** — AI nâng năng suất đều thì P90/P50 không đổi, mà Đan Mạch cho thấy mức lợi là **đại trà**.
+
+**② Ba "chân đế quan sát được" ở S8 — không cái nào là quan sát.** (a) phân tích độ nhạy **là đầu ra mô hình** — tức đã bỏ cặp −11,5%/+33,6% vì vòng tròn rồi **thay bằng cặp số cũng từ mô hình đó**; (b) Canaries Fact 5 giữ thiết chế cố định, cho công nghệ biến thiên → chứng minh **AI CÓ hiệu lực nhân quả**, **chỉ ngược** hướng; (c) Đan Mạch vs Mỹ **so hai biến khác nhau** (thu nhập/giờ công vs số đầu việc) — hai nguồn thực ra **khớp nhau**.
+
+**③ Bài có kiến trúc phân phối nhưng KHÔNG có con số nào về lượng của thứ đang được phân phối.** Cụm *"trừ khi bên bán có sức mặc cả"* là **chỗ bất khả bác bỏ thứ 5**. Câu *"năng suất tăng lên đã đi đâu đó"* **giả định luôn cái cần chứng minh** — nguồn chỉ có ~3% **tự báo**, thu nhập **null**, TFP **≤0,66%/thập kỷ**.
+
+**Trả lời ba chỗ đã nghi:**
+- **Hợp đề A/B là né việc phải chọn** — S2 đặt tiêu chuẩn cho A là *"lương tăng đúng bấy nhiêu"*, tức **đẳng thức chính xác** không quan hệ kinh tế nào đạt. **A bị loại bằng định nghĩa, không bằng dữ liệu.** Câu phân định ở phiếu **mất hết sức phân định trước khi phát**.
+- **Đan Mạch null quay ra phá luận đề** — mức lợi nhỏ thì không có phần dôi để tranh chấp, và S14 đề nghị xây hệ quy kết–thẩm định–chia rủi ro để chia **một khoản bé hơn chi phí xây nó**.
+- **Khách hàng bị cắt khỏi chỉnh thể** — S5 **tự liệt kê** *"khách ép giá"* rồi S8 vẽ chỉnh thể hai mặt. Nếu khách ép giá thành công thì phần dôi **chưa từng vào ống**, và nó giải thích Đan Mạch null **không kém luận đề của bài**.
+
+**Ba lỗi thuần đã sửa ngay:** S9 vẫn dùng cặp số bị cấm ở S8 *(fix chưa hoàn tất)* · đếm sai trong bảng C1 *(🟡 11 không phải 10)* · S15 báo *"MỘT kết luận bị bỏ"* trong khi có **hai**.
+
+**⏸️ Đang chờ quyết định.** Đề nghị: **tái cấu trúc theo bản hạ cấp**, không vá.
+> Chưa ghi nhận điều chỉnh nào trên **biên tiền lương**; có ghi nhận trên **biên tuyển dụng**. Hình dạng đó tương thích với giả thuyết hợp đồng giao phần chênh lệch cho bên mua — **nhưng cũng tương thích với ba giả thuyết khác chưa loại trừ**: mức lợi thật còn nhỏ · khách hàng lấy qua cạnh tranh giá · độ trễ chưa lên sổ sách. **Dữ liệu hiện có không phân biệt được bốn giả thuyết này.**
+
+Bài đổi từ *"biết phần dôi đi đâu"* sang *"chứng minh được nó không vào lương, và đây là bốn ứng viên cùng cách phân biệt"*. Câu bị bỏ sót — **phần dôi lớn bao nhiêu** — thành **câu hỏi trung tâm**.
+
+---
+
+### 2026-09-20 — P17 ✅ Chạy đủ 6 pha `truy-ban-chat` lên bài Anthropic *"Scenarios for Our Economic Future"*
+
+**Đầu vào:** <https://www.anthropic.com/institute/econ-scenarios> (v1.0, 9/2026). Ba kịch bản Mỹ tới 2030 · tỷ trọng tư bản 40,6 → 43,9 → 54,8% · chốt *"thách thức không phải đạt tăng trưởng, mà là đảm bảo lợi ích được chia sẻ rộng rãi"*.
+
+**11 agent, ~12–15 phút, model `opus`.** Pha 0 → 9 lăng kính song song → đối chất → `tbc-thuc-tien` → `tbc-phan-bien`.
+
+#### Kết quả nội dung — đối tượng là HAI văn bản, không phải một
+
+Phát hiện chính **không lăng kính nào dự tính**, và chỉ pha 4 tìm ra sau khi truy được **báo cáo kỹ thuật gốc** (Korinek, Jones, Sacher, Cotter, McCrory 2026): bài là **cặp văn bản** — paper + trang công bố — và **khoảng cách giữa hai tầng lặp bốn lần, luôn cùng một hướng**:
+
+| Báo cáo kỹ thuật **CÓ** | Trang công bố |
+|---|---|
+| §4.5: nếu ε = 1 thay vì 3, *"wages would actually **fall**"* — substantial −0,4%, extreme −7,4% | *"average wages rise"* ở cả ba kịch bản. Không nhắc ε |
+| footnote 14: bồi thường lao động nhận thức *"would consume **84 percent of the gains**"* | Không con số chi phí nào |
+| *"**All of the increase in GDP** therefore accrues as capital income"* | Finding 4 không có câu này |
+| *"the **median** respondent's answers are consistent with…"* | Cùng câu, cạnh đồ hoạ, đọc ra như đám đông bảo chứng |
+
+Và cơ chế bị dịch sai: trang kể **câu chuyện giá cả** (*"tư bản hữu dụng hơn → cầu tăng → giá tăng"*), mô hình chạy **chuyển giao quỹ lương** (*"Automation transfers to capital the wage bill of the tasks it takes over"*).
+→ **Bài không giấu số. Bài lọc mất ĐIỀU KIỆN sinh ra số, ở khâu dịch paper → trang phổ thông.**
+
+#### ⚠️ Kết quả quy trình — quan trọng hơn kết quả nội dung
+
+**Phân nửa kết luận của bộ lăng kính bị chính pha 4 + pha 5 bác bỏ.** Ghi lại vì đây là ground truth tốt nhất hiện có để sửa skill:
+
+| Bị bác | Vì sao |
+|---|---|
+| **"5 hướng độc lập hội tụ"** | ⭐ **Lỗi quy trình, không phải lỗi agent.** Pha 0 phát biểu vấn đề thành *"chỉ ra bài đã tách rời phân phối khỏi sản xuất **NHƯ THẾ NÀO**"* rồi **nạp cho cả 9 lăng kính**. Câu hỏi chứa sẵn câu trả lời → "hội tụ" chỉ là một tiền đề nói lại 5 lần. Đúng lỗi **nguyên nhân thứ ba** trong `checklists.md` |
+| "Tư bản tăng vì biến làm nó giảm đã bị loại" | Eq. 11 cho tỷ trọng lao động **tăng** khi `a > 2(1−ρ)` — mô hình *có* vùng đó. *Sống sót, sắc hơn:* ρ đặt ngoại sinh và **không nằm trong 5 nút gạt** |
+| "σ < 1 thì kết luận đảo dấu" | σ **=0,5 thật** nhưng giả thuyết sai — lỗi phạm trù: áp trực giác CES tổng gộp vào mô hình task-based. Tham số chịu lực là **ε** |
+| "Mô hình quên hiệu ứng cung lao động chéo" | **Có net-out.** 3 lăng kính hội tụ về một lỗ hổng **không tồn tại** |
+| "Câu chốt không chủ ngữ" · "owners of capital bị xoá" · "người chịu thiệt không được gọi tên" | **Cả ba bị bác bằng chính văn bản.** Tao tự grep `NGUON.md` xác nhận |
+| "Vùng trống 43,9→54,8" | Bài **có explorer liên tục 5 thanh trượt**. Hiện vật của việc chỉ đọc 3 kịch bản in sẵn, **không ai mở công cụ** |
+| Toàn bộ nhánh Việt Nam | Áp **phép thử "bỏ đi"** của chính quy trình: xoá hết phân tích Anthropic → khuyến nghị VN **không đổi một mục nào**. Bộ lăng kính không sinh ra chúng, nó **trang trí** cho chúng |
+
+**Bốn cấu trúc bất khả bác bỏ phải gỡ:** *"thêm vào / chỉ khai báo"* (thêm biến → "khung tiêu hoá được"; không thêm → "khai báo mà không tiêu hoá" — mọi kết quả đều xác nhận) · *"trung thực định nghĩa tập phản bác"* (cứu được, nhưng **chỉ khi luôn kèm điều kiện bác bỏ**) · *"thay người thiện chí hơn thì bảng lợi ích không đổi"* (vòng tròn, và bài **đã đổi thật** vì reviewer góp ý) · *"đỉnh giả"*.
+
+**Phản biện cũng sai một chỗ** — cáo buộc 4 con số tái phân bổ *"không cộng ra 100 ⇒ artefact bóc HTML"*. Sai: đó là **sơ đồ luồng**, 59,7 + 0,7 + 39,6 = 100,0 ✓ và 59,7 + 0,7 + 1,8 = 62,2 ✓. Nó đếm *"2,5% displaced"* — nhãn luồng — như thành phần phân hoạch.
+
+#### Số thật đã kiểm (không lấy từ bài)
+
+Tỷ trọng lao động Mỹ phi nông nghiệp: 1980 ~63% · 2000 62,8% · 2011 56,0% · **2025 Q4 = 54,4%, thấp nhất chuỗi từ 1947** (BLS `PRS85006173`). **Hình dạng là bậc thang, không phải dốc đều** — phẳng 1980–2000, dốc mạnh 2000–2011 (~0,6 đ/năm, trùng khít cú sốc Trung Quốc + offshoring). ⇒ *"trôi ~0,1–0,15 đ/năm"* mà lăng kính tự đánh dấu CẦN KIỂM là **thấp hơn thực tế**; trung bình thật ~0,20.
+Thất nghiệp 8/2026: U-3 **4,1%** · U-6 **7,7%** · LFPR **61,6%**. Thu ngân sách FY2025: TNCN 50,5% + payroll 33,6% ⇒ **chặn dưới ≥33,6%, chặn trên ≤84,1%** — **đừng trích "70–80%"**.
+WGA/SAG-AFTRA 2023 và Alaska Permanent Fund Dividend: **cả hai có thật**, xác minh xong.
+
+**Đang quan sát thấy:** tỷ trọng lao động giảm nhanh (95,999 → 93,446 trong ~3 quý) **trong khi U-3 đứng yên**. Đúng chữ ký *"vùng chuyển mà đèn báo không sáng"*. ⚠️ Vài quý là **nhiễu**, số đã bị điều chỉnh một lần (53,8 → 54,4). **Theo dõi hằng quý, không trích làm bằng chứng.**
+
+**Đầu ra:** `vaults/triet/ca-kich-ban-kinh-te-ai-anthropic.md` (nhánh J #4, 🟡) + hub đã cập nhật. Độ tin cậy **🟡** — mọi con số từ báo cáo kỹ thuật đi qua **trích xuất tự động, chưa ai đọc PDF bằng mắt**.
+
+---
+
 ## ▶️ RESUME — đọc mục này trước tiên khi mở lại
 
 > ✅ **P15 đã push xong 2026-09-13.** Working tree sạch, remote `origin/main` đã có đủ 3 commit.
@@ -461,6 +679,27 @@ Slide là bản rút gọn có chủ ý, nhiều chỗ chỉ ghi từ khoá → 
 | `note.md` ở thư mục gốc | Sơ đồ ASCII bị vỡ khi paste, chưa sửa. Bản đúng nằm trong `vaults/triet/the-gioi-quan.md` |
 | 11 agent đang để `model: opus` | Chạy 5–8 agent Opus song song khá tốn. Thấy nặng thì sửa 1 dòng/file sang `sonnet` |
 | Giáo trình 2021 | Chưa tải được. Kiếm link khác hoặc tự tải rồi bỏ vào `vaults/triet/slides/` |
+
+### Việc dở của P17 — xếp theo tỷ lệ sức-bác-bỏ / chi phí
+
+| # | Việc | Chi phí | Bác bỏ được gì |
+|---|---|---|---|
+| 1 | **Mở explorer của Anthropic**, đặt Productivity = 10×+ với Capabilities/Adoption thấp | **5 phút, miễn phí** | Lý thuyết nói tỷ trọng lao động tăng khi `a > 2(1−ρ)`. Xuống dưới 40,0 → mô hình **không** bị cài. Không bao giờ xuống → explorer đã **chặn** vùng đổi dấu. **Hai kết quả đều mang thông tin** |
+| 2 | **Đọc trọn PDF báo cáo kỹ thuật bằng mắt** — file đã tải về `tool-results/webfetch-1789880562175-05mla4.pdf` | 2–3 giờ | 6 con số đang gánh gần hết kết luận (σ=0,5 · ρ=0,50/0,25/0 · ε=3 + bảng ε=1 · μ · footnote 14 · núm độ cứng lương) **đều đi qua trích xuất tự động** |
+| 3 | Đối chứng quốc gia tỷ trọng lao động 2015–2026: Mỹ vs Đức/Đan Mạch/Nhật/Hàn *(AMECO, OECD, EU-KLEMS)* | 1–2 ngày | Phép kiểm **duy nhất** tách được "công nghệ" khỏi "thể chế" |
+| 4 | Kiểm artefact đo lường *(Karabarbounis, NBER w31854)* | 2 giờ đọc | ~1/3 mức giảm tỷ trọng lao động quy cho **cách BLS phân bổ thu nhập tự doanh**. >50% biến mất → nền móng của 3 lăng kính hạ cấp cùng lúc |
+| 5 | Corpus đối chứng thể loại: chạy 3 chỉ số ngữ pháp trên OECD/IMF/CBO/ILO | nửa ngày | Cùng mẫu → lập luận "đảo ngược thể thức" chỉ là **quy ước thể loại**, phải rút khỏi note |
+
+### 🔧 Sửa skill `truy-ban-chat` — P17 cho ra ground truth
+
+Lỗi cấu trúc P17 phát hiện, **chưa sửa**:
+
+1. ⭐ **Pha 0 nạp kết luận cho cả 9 lăng kính.** Phải bắt `tbc-dat-van-de` phát biểu vấn đề ở dạng **câu hỏi lưỡng phân** (*"có hay không"*) thay vì *"như thế nào"*. Cân nhắc: cho **1 lăng kính chạy mù** với pha 0 làm nhóm đối chứng.
+2. **Không agent nào mở công cụ / đọc nguồn cấp 1.** 9/9 lăng kính chỉ có `Read · Grep · Glob`; chỉ `tbc-thuc-tien` có web — và nó là agent **duy nhất** tìm ra báo cáo kỹ thuật, tức phát hiện lớn nhất. Cân nhắc cấp web cho ít nhất 1 lăng kính pha 2.
+3. **Thiếu lớp đối chứng thể loại.** Không ai hỏi *"đặc điểm này có phải chuẩn mực của mọi mô hình kịch bản vĩ mô không?"* — CBO bị **luật bắt buộc** giả định luật hiện hành; counterfactual *"so với không có X"* là **định nghĩa** của ước lượng tác động. Nên thêm bước này vào `checklists.md`.
+4. **`tbc-phan-bien` mạnh nhất trong bộ** — 7 đòn, 4 chí mạng, và tự khai phần yếu của chính nó. Nhưng nó cũng **tự phạm đúng lỗi nó đang bắt** (cộng sai sơ đồ luồng). ⇒ **kết quả phản biện cũng phải kiểm, không nhận thẳng.**
+
+⚠️ **Nhắc lại:** sửa ở `<repo>/.claude/` xong **phải copy sang `~/.claude/`**, nếu không hai bên lệch — và nhớ chạy lại `python app-bien-chung/build.py`.
 
 ### ⚠️ Hai cái bẫy của máy này
 

@@ -147,6 +147,7 @@
 1. [[thanh-tuu-khoa-hoc-va-triet-hoc]] *(slide 221)*
 2. [[triet-hoc-va-tri-tue-nhan-tao]] — *AI để thống trị con người hay để phục vụ con người?* *(slide 6, 40, 65)*
 3. [[bon-bo-loc-kiem-ket-qua-ai]] ✅ — **Phản biện · Pháp lý · Hệ thống · Thực tế** — bốn bộ lọc bắt buộc trước khi dùng kết quả AI *(slide 61, 65, 131, 139–140)*
+4. [[ca-kich-ban-kinh-te-ai-anthropic]] 🟡 — **ca thực hành**: chạy đủ 11 lăng kính trên một bài thật (Anthropic, *Scenarios for Our Economic Future*, 9/2026). Đáng đọc nhất ở mục ⚠️ — **phân nửa kết luận của bộ lăng kính bị chính pha phản biện + pha kiểm nghiệm bác bỏ**
 
 ---
 
