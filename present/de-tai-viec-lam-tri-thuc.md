@@ -17,7 +17,7 @@ updated: 2026-09-20
 **Từ khoá neo:** **#2 — Việc làm**
 **Chủ thể:** người lao động tri thức đang được **trả công theo thời gian**
 **Toạ độ:** **Việt Nam · 2024–2026**
-**15 slide · 15–20 phút · 5 người**
+**15 slide · 15–20 phút · 7 người**
 **▶ Công cụ:** [⚖️ mở app Bàn biện chứng](../app-bien-chung/index.html) · [chạy thẳng Claude](http://127.0.0.1:8787/) <small>(cần `run.bat`)</small>
 
 > ⚙️ Mỗi slide là một khối 7 phần: **tiêu đề** · **chữ trên slide** · **hình** · **lời nói** · **neo** · **▶ lăng kính** · **⚠️ nếu bị hỏi**.
@@ -653,7 +653,7 @@ HẠN CHẾ — nói trước khi bị hỏi
 > Mỗi thành viên, về **chính ngành mình**, ~1 trang, nộp trong 2 ngày.
 > 🔒 **Không ghi tên tổ chức, tên khách hàng, đơn giá, điều khoản hợp đồng, doanh thu.**
 
-> 🔴 **BẮT BUỘC — gài ít nhất MỘT CA NGHỊCH.** Nếu cả 5 người đều là lao động trả theo thời gian ở tổ chức bán man-day thì **biến độc lập không có biến thiên**, phiếu chỉ thu về **5 lần xác nhận**. Phải có ít nhất một ca **ăn theo gói / sản phẩm / hoa hồng**. *(Ca nghịch là **ca đối chứng**, nằm trong phạm vi — khác ba ca biên ở S11.)*
+> 🔴 **BẮT BUỘC — gài ít nhất MỘT CA NGHỊCH.** Nếu cả 7 người đều là lao động trả theo thời gian ở tổ chức bán man-day thì **biến độc lập không có biến thiên**, phiếu chỉ thu về **7 lần xác nhận**. Phải có ít nhất một ca **ăn theo gói / sản phẩm / hoa hồng**. *(Ca nghịch là **ca đối chứng**, nằm trong phạm vi — khác ba ca biên ở S11.)*
 
 **Hiện trạng**
 1. Công việc được **đo và trả công bằng gì** — **hai vế**: (a) tổ chức trả cho anh/chị theo đơn vị gì · (b) tổ chức bán ra cho khách theo đơn vị gì.

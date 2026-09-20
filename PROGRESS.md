@@ -118,6 +118,7 @@
 | P16 | 16.6f | **Deck v2** — cấu trúc *bày từ khoá trước, rồi gỡ từng cái* | ✅ | 2026-09-20 | 16 slide + 5 dự phòng · bản đồ 8 từ khoá + dải chỉ vị trí |
 | P16 | 16.6g | Kịch bản nói bản v2 + vá tham chiếu chéo lệch số | ✅ | 2026-09-20 | PDF 10 trang A4; **9 chỗ trỏ sai slide** ở cả 2 đường sinh notes |
 | P16 | 16.6h | **Deck v3** — trả phần chữ về slide, bỏ viết tắt | ✅ | 2026-09-20 | chữ/slide **28–42 → 150–300**; 8 từ khoá viết đủ nghĩa; 0 chữ nghiêng |
+| P16 | 16.6i | Chia phần cho **7 người** (trước là 5) | ✅ | 2026-09-20 | N1–N7 · mốc giây từng slide · tổng **19'00"** · bảng ca ngành nới lên 7 dòng |
 | P16 | 16.7 | Tổng duyệt bấm giờ | ⬜ | | cả nhóm |
 | **P17** | 17.1 | Bóc toàn văn bài Anthropic *"Scenarios for Our Economic Future"* (9/2026) | ✅ | 2026-09-20 | curl + Python strip HTML → `NGUON.md` 18,4 KB. **PowerShell/Node vô dụng như thường lệ** |
 | P17 | 17.2 | Pha 0 — `tbc-dat-van-de` chạy một mình | ✅ | 2026-09-20 | 9 tiền đề ngầm · 4 phép thử đảo chiều · 6 phép kiểm thiết kế sẵn |
@@ -782,6 +783,38 @@ Phản hồi của người dùng: *"Slide hơi ít chữ quá mới nhìn vào 
 Bản v1 và v2 giữ nguyên, không đụng.
 
 ⚠️ **Bẫy máy tái phát 3 lần trong phiên này:** heredoc `<<'EOF'` qua Bash tool **ăn mất dấu `\`** — `"\n"` thành xuống dòng thật, Python báo `unterminated string literal`. Nội dung có dấu thoát thì dùng Write/Edit, đừng dùng heredoc.
+
+---
+
+### 2026-09-20 — P16 · Chia phần cho bảy người
+
+Nhóm là **7 người**, không phải 5 như đề cương ban đầu. Đề cương đã có sẵn dòng dặn *"nhiều hơn thì tách S9 và S10 cho 2 người"* — nhưng đó là số slide của bản v1, ở v3 là **S10 và S11**.
+
+**Cách chia — cắt theo đơn vị lập luận, không cắt theo số slide chia đều:**
+
+| Người | Slide v3 | Nói về | Giây |
+|---|---|---|---|
+| N1 | S1 · S2 · S3 | Mở đề · bản đồ tám từ khoá · câu hỏi của bài | 2'45" |
+| N2 | S4 · S5 · S6 | Phương pháp · khung ba quy luật · bản chất–hiện tượng | 2'45" |
+| N3 | S7 · S8 | Nội dung–hình thức · nguyên cớ khác nguyên nhân | 2'45" |
+| N4 | S9 · S10 | Chỉnh thể ba bên · số liệu kịch bản | 3'00" |
+| N5 | S11 · S12 | Quyền hãm · khoảng lệch hai đầu hợp đồng | 2'15" |
+| N6 | S13 · S14 | Bốn ứng viên H1–H4 · phủ định của phủ định | 3'00" |
+| N7 | S15 · S16 | Kiến nghị · chốt · điều phối hỏi đáp | 2'30" |
+
+**Tổng 19'00" + ~1' chuyển người = sát trần 20 phút.** Đây là rủi ro thật của việc chia 7 người: 6 lần đổi vai ăn gần một phút, mà mạch bài lại là một chuỗi bắc cầu S3 → S13.
+
+**Ba điều đã neo lại trong `build_notes_v3.py` để không trôi:**
+
+1. **Mốc giây gắn thẳng vào từng khối kịch bản** — `N4 · 105 giây · ⭐⭐ · …`. Người nói tự bấm giờ được, không cần nhìn bảng riêng.
+2. **Thứ tự cắt khi quá giờ**: S1 xuống 20 giây → S5 xuống 35 → S12 xuống 45. **Không được cắt S6–S9 và S13–S15** — đề cương ghi đó là 4.0/10 điểm *(đề cương đánh số theo v1 là S5–S8 và S12–S14, đã quy đổi sang v3)*.
+3. **Luật hỏi chéo**: mỗi người đỡ câu thuộc slide mình; câu vắt qua nhiều phần thì N4 đỡ, vì sơ đồ ba bên ở S9 là chỗ cả bài quy về. Ai cũng phải vẽ lại được sơ đồ đó.
+
+**Bài có neo cứng số 5 ở bốn chỗ, đã sửa hết:** `de-tai-viec-lam-tri-thuc.md` *(2 chỗ)* · `slides/index.html` · `slides/index-v2.html` · `slides/notes.html`. Câu *"nếu cả 5 người đều trả theo thời gian thì phiếu chỉ thu về 5 lần xác nhận"* nay là **7**. Bảng ca ngành ở S4 nới từ 4 lên **7 dòng** (6 ngành + 1 ca nghịch).
+
+May là lập luận dùng chữ **"N ngành"** biến chứ không viết cứng "5 ngành", nên đổi sĩ số không phải viết lại phần nào.
+
+⚠️ **Hệ quả cần nhớ:** 7 người là 7 phiếu ca ngành, và **vẫn bắt buộc ít nhất một ca nghịch** *(ăn theo gói / sản phẩm / hoa hồng)*. Bảy ca cùng trả theo thời gian thì biến độc lập không có biến thiên — phiếu chỉ thu về bảy lần xác nhận, kết luận #7 tụt xuống 🔴.
 
 ---
 

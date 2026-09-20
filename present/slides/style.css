@@ -190,3 +190,8 @@ section.v3 .chip { font-size: 12px; letter-spacing: 1.3px; padding: 4px 12px; ma
 .bando.v3 .tk { min-height: 132px; }
 .bando.v3 .tk .ten { font-size: 18px; line-height: 1.2; }
 .bando.v3 .tk .y { font-size: 13px; }
+
+/* dòng chờ điền trong bảng S4 — giữ màu nhạt, bỏ chữ nghiêng cho đồng bộ
+   với luật "hạn chế chữ nghiêng" của bản v3 */
+section.v3 tr.trong td { font-style: normal; }
+section.v3 tr.trong em { font-style: normal; }
