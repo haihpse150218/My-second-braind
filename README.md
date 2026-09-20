@@ -34,6 +34,24 @@ npm start       # → http://localhost:5173
 **Bản tĩnh** (không cần Node): `npm run build` rồi phục vụ `dist/` qua HTTP — `npx serve ../dist`. App tự dò: không thấy `/api` thì đọc `index.json` và chuyển sang chế độ chỉ đọc.
 Đừng mở `dist/index.html` bằng `file://` — trình duyệt chặn `fetch()` qua giao thức file.
 
+## ⚖️ App Bàn biện chứng — không cần Node
+
+Máy không có Node vẫn dùng được: app tĩnh một file, mở bằng double-click.
+
+| | |
+|---|---|
+| Mở nhanh | [`app-bien-chung/index.html`](app-bien-chung/index.html) — chế độ copy prompt tay |
+| **Claude tự chạy** | [`app-bien-chung/run.bat`](app-bien-chung/run.bat) → http://127.0.0.1:8787 — chạy cả pipeline 6 pha, **chỉ local, không cần API key** |
+| Tài liệu | [`app-bien-chung/README.md`](app-bien-chung/README.md) |
+
+11 điểm neo của phép biện chứng (2 nguyên lý · 6 phạm trù · 3 quy luật) thành **15 lăng kính** xếp theo 6 pha; system prompt lấy thẳng từ `.claude/agents/tbc-*.md` nên app và Claude Code không bao giờ lệch nhau. Mỗi note nhánh D của vault `triet` có nút mở đúng lăng kính của nó.
+
+```bash
+cd app-bien-chung
+python build.py     # sinh lại data.js sau khi sửa agent/note
+python serve.py     # hoặc double-click run.bat
+```
+
 ## 4 tab
 
 | Tab | Dùng để |

@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh D · #10 ← cần [[hien-thuc-va-kha-nang]] trước · → kế tiếp [[quy-luat-mau-thuan]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #bien-chung #quy-luat
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-luong-chat) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-luong-chat) <small>(cần `run.bat`)</small> · agent `tbc-luong-chat`
 
 ---
 

@@ -407,7 +407,9 @@ function runPipeline(){
 
 /* ---------------------------------------------------------------- panel */
 function select(id){
+  if(!nodeById(id)) return;
   current=id; markSelected();
+  try{ history.replaceState(null,'','#'+id); }catch(e){ location.hash=id; }
   var n=nodeById(id), r=run(id), note=n.noteInfo, h='';
   h+='<div class="crumb">'+esc(n.sub.toUpperCase())+' · SLIDE '+esc(n.slide)+' · <code>'+esc(n.id)+'</code></div>';
   h+='<h2 class="pt">'+esc(n.num)+'  '+esc(n.label)+'</h2>';
@@ -587,6 +589,14 @@ document.getElementById('btn-reset').addEventListener('click',function(){
 });
 
 drawGraph(); detectEngine();
+
+/* deep-link: index.html#tbc-mau-thuan  → mở thẳng lăng kính đó (note .md trỏ sang) */
+function openFromHash(){
+  var id=(location.hash||'').replace(/^#/,'');
+  if(id && nodeById(id)) select(id);
+}
+window.addEventListener('hashchange',openFromHash);
+openFromHash();
 })();
 </script>
 </body>

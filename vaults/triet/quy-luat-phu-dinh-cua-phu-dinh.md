@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh D · #12 ← cần [[quy-luat-mau-thuan]] trước · → kế tiếp nhánh E, bắt đầu từ [[chan-ly]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #bien-chung #phu-dinh
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-phu-dinh) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-phu-dinh) <small>(cần `run.bat`)</small> · agent `tbc-phu-dinh`
 
 ---
 

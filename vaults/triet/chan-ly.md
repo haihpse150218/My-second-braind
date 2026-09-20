@@ -23,6 +23,7 @@ created: 2026-09-12
 **📖 Lộ trình:** Nhánh E · #6 ← cần [[hai-giai-doan-nhan-thuc]] trước · → kế tiếp [[giao-dieu-va-xet-lai]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #nhan-thuc #chan-ly
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-phan-bien) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-phan-bien) <small>(cần `run.bat`)</small> · agent `tbc-phan-bien`
 
 ---
 

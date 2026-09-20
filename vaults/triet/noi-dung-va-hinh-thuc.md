@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh D · #7 ← cần [[tat-nhien-va-ngau-nhien]] trước · → kế tiếp [[nguyen-nhan-va-ket-qua]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #bien-chung #hinh-thuc
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-noi-dung-hinh-thuc) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-noi-dung-hinh-thuc) <small>(cần `run.bat`)</small> · agent `tbc-noi-dung-hinh-thuc`
 
 ---
 

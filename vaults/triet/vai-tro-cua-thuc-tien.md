@@ -23,6 +23,7 @@ created: 2026-09-12
 **📖 Lộ trình:** Nhánh E · #4 ← cần [[thuc-tien]] trước · → kế tiếp [[hai-giai-doan-nhan-thuc]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #nhan-thuc #thuc-tien
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-thuc-tien) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-thuc-tien) <small>(cần `run.bat`)</small> · agent `tbc-thuc-tien`
 
 ---
 

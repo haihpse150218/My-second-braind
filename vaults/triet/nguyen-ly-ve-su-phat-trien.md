@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh D · #3 ← cần [[nguyen-ly-moi-lien-he-pho-bien]] trước · → kế tiếp [[ban-chat-va-hien-tuong]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #bien-chung #phat-trien
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-phat-trien) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-phat-trien) <small>(cần `run.bat`)</small> · agent `tbc-phat-trien`
 
 ---
 

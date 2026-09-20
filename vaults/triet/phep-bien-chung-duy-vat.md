@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh D · #1 ← cần [[moi-quan-he-vat-chat-y-thuc]] trước · → kế tiếp [[nguyen-ly-moi-lien-he-pho-bien]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #bien-chung #phuong-phap-luan
+**▶ Công cụ:** [⚖️ mở app Bàn biện chứng](../../app-bien-chung/index.html) · [chạy thẳng Claude](http://127.0.0.1:8787/) <small>(cần `run.bat`)</small>
 
 ---
 

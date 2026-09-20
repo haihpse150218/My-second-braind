@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh D · #2 ← cần [[phep-bien-chung-duy-vat]] trước · → kế tiếp [[nguyen-ly-ve-su-phat-trien]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #bien-chung #toan-dien
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-toan-dien) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-toan-dien) <small>(cần `run.bat`)</small> · agent `tbc-toan-dien`
 
 ---
 

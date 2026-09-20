@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh D · #4 ← cần [[nguyen-ly-ve-su-phat-trien]] trước · → kế tiếp [[cai-rieng-cai-chung-cai-don-nhat]]
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #bien-chung #ban-chat
+**▶ Soi bằng lăng kính này:** [⚖️ mở app](../../app-bien-chung/index.html#tbc-hien-tuong) · [chạy thẳng Claude](http://127.0.0.1:8787/#tbc-hien-tuong) <small>(cần `run.bat`)</small> · agent `tbc-hien-tuong`
 
 ---
 

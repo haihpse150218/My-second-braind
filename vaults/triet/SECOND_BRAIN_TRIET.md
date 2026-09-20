@@ -26,8 +26,11 @@
 
 | | |
 |---|---|
-| **App Bàn biện chứng** | `app-bien-chung/index.html` — mở bằng double-click, không cần Node. 15 lăng kính thành sơ đồ 6 pha, sinh system prompt, chấm 🟢🟡🔴, xuất báo cáo `.md` |
-| Rebuild dữ liệu app | `cd app-bien-chung && python build.py` |
+| **⚖️ [Mở app Bàn biện chứng](../../app-bien-chung/index.html)** | Sơ đồ 6 pha · 15 lăng kính · chấm 🟢🟡🔴 · xuất báo cáo `.md`. Mở bằng double-click, **không cần Node** |
+| **▶ [Bản chạy thẳng Claude](http://127.0.0.1:8787/)** | Bật bằng [`app-bien-chung/run.bat`](../../app-bien-chung/run.bat) — Claude tự chạy cả pipeline, **chỉ local** |
+| Deep-link tới một lăng kính | `app-bien-chung/index.html#tbc-mau-thuan` — mỗi note nhánh D đều có sẵn nút này ở đầu bài |
+| Rebuild dữ liệu app | `cd app-bien-chung && python build.py` (sau khi sửa agent hoặc note) |
+| Hướng dẫn đầy đủ | [`app-bien-chung/README.md`](../../app-bien-chung/README.md) |
 | Skill tự động | `.claude/skills/truy-ban-chat/` — cùng bộ 15 agent, chạy song song trong Claude Code |
 
 **Bản đồ slide → chương:**

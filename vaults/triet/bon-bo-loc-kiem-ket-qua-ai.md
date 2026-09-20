@@ -23,6 +23,7 @@ created: 2026-09-20
 **📖 Lộ trình:** Nhánh J · #3 — dùng kèm **mọi** note của nhánh D
 **Chủ đề cha:** [[SECOND_BRAIN_TRIET]]
 **Tags:** #triet #ai #phuong-phap-luan
+**▶ Công cụ:** [⚖️ mở app Bàn biện chứng](../../app-bien-chung/index.html) · [chạy thẳng Claude](http://127.0.0.1:8787/) <small>(cần `run.bat`)</small>
 
 ---
 
