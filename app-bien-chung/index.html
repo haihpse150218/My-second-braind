@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bàn biện chứng</title>
+<style>
+:root{
+  --bg:#1a1b26; --panel:#24283b; --panel2:#1f2335; --ink:#c0caf5; --muted:#565f89;
+  --accent:#7aa2f7; --green:#9ece6a; --yellow:#e0af68; --blue:#7dcfff; --gray:#414868;
+  --red:#f7768e; --purple:#bb9af7; --orange:#ff9e64;
+  --g-nguyenly:#7aa2f7; --g-phamtru:#bb9af7; --g-quyluat:#f7768e; --g-meta:#e0af68; --g-botro:#7dcfff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font:14px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif}
+button,input,textarea,select{font:inherit;color:inherit}
+a{color:var(--blue)}
+
+header{padding:12px 18px;background:var(--panel2);border-bottom:1px solid var(--gray);
+       display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header h1{margin:0;font-size:16px;letter-spacing:.3px}
+header h1 span{color:var(--muted);font-weight:400;font-size:12px;margin-left:8px}
+.spacer{flex:1}
+.btn{background:var(--gray);border:1px solid #4e5578;border-radius:6px;padding:6px 12px;cursor:pointer}
+.btn:hover{background:#4e5578}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#1a1b26;font-weight:600}
+.btn.primary:hover{filter:brightness(1.1)}
+.btn.sm{padding:3px 9px;font-size:12px}
+
+.wrap{display:grid;grid-template-columns:auto 1fr;gap:0;height:calc(100vh - 57px)}
+.left{overflow:auto;padding:14px 16px;border-right:1px solid var(--gray)}
+.right{overflow:auto;padding:16px 20px;background:var(--panel2)}
+
+.problem{background:var(--panel);border:1px solid var(--gray);border-radius:8px;padding:10px;margin-bottom:14px;width:740px}
+.problem label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}
+.problem textarea{width:100%;height:58px;background:var(--bg);border:1px solid var(--gray);
+                  border-radius:6px;padding:8px;resize:vertical}
+.problem .row{display:flex;gap:8px;align-items:center;margin-top:8px}
+.tiny{font-size:12px;color:var(--muted)}
+
+svg{display:block}
+.ph-title{fill:var(--muted);font-size:11px;letter-spacing:1.2px;font-weight:600}
+.ph-note{fill:#3f4667;font-size:10.5px}
+.nd rect{fill:var(--panel);stroke-width:1.6;cursor:pointer;transition:filter .12s}
+.nd:hover rect{filter:brightness(1.35)}
+.nd.sel rect{stroke-width:3}
+.nd .lbl{fill:var(--ink);font-size:12.5px;font-weight:600;pointer-events:none}
+.nd .sub{fill:var(--muted);font-size:10.5px;pointer-events:none}
+.nd .num{font-size:12px;font-weight:700;pointer-events:none}
+.nd .badge{font-size:13px;pointer-events:none}
+.flow{stroke:var(--gray);stroke-width:1.5;fill:none;marker-end:url(#ar)}
+
+h2.pt{margin:0 0 4px;font-size:17px}
+.crumb{font-size:11.5px;color:var(--muted);letter-spacing:.6px;margin-bottom:10px}
+.q{background:var(--panel);border-left:3px solid var(--accent);padding:9px 12px;border-radius:0 6px 6px 0;margin:10px 0}
+.core{color:#9aa5ce;margin:10px 0}
+.meta-row{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:10px 0}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 14px}
+.chip{background:var(--gray);border-radius:20px;padding:2px 10px;font-size:11.5px}
+.chip.f1{background:#3b2b3a;color:#f7768e}
+.chip.f2{background:#3a3326;color:#e0af68}
+.chip.f3{background:#243b4a;color:#7dcfff}
+.chip.f4{background:#2b3a2b;color:#9ece6a}
+
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--gray);margin:14px 0 12px}
+.tab{padding:6px 14px;cursor:pointer;border-bottom:2px solid transparent;color:var(--muted);font-size:13px}
+.tab.on{color:var(--ink);border-bottom-color:var(--accent)}
+.pane{display:none}.pane.on{display:block}
+
+pre.sys{background:var(--bg);border:1px solid var(--gray);border-radius:8px;padding:12px;
+        max-height:430px;overflow:auto;white-space:pre-wrap;word-break:break-word;
+        font:12px/1.5 Consolas,"Cascadia Mono",monospace;color:#9aa5ce;margin:0}
+textarea.res{width:100%;height:190px;background:var(--bg);border:1px solid var(--gray);
+             border-radius:8px;padding:10px;resize:vertical;font:13px/1.5 inherit}
+textarea.note-in{width:100%;height:54px;background:var(--bg);border:1px solid var(--gray);
+                 border-radius:8px;padding:8px;resize:vertical}
+.score{display:flex;gap:8px;margin:10px 0}
+.score button{flex:1;padding:8px;border-radius:8px;border:1.6px solid var(--gray);
+              background:var(--panel);cursor:pointer;font-size:13px}
+.score button.on{border-width:2.5px;font-weight:700}
+.score button[data-s="green"].on{border-color:var(--green);color:var(--green)}
+.score button[data-s="yellow"].on{border-color:var(--yellow);color:var(--yellow)}
+.score button[data-s="red"].on{border-color:var(--red);color:var(--red)}
+.lbl-sm{font-size:12px;color:var(--muted);margin:12px 0 5px;display:block}
+.actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.ok{color:var(--green);font-size:12px;margin-left:6px}
+.warn{background:#3a2b2e;border:1px solid #6b4048;border-radius:8px;padding:10px 12px;
+      font-size:12.5px;color:#ffc9cf;margin:12px 0}
+.empty{color:var(--muted);text-align:center;margin-top:90px;line-height:1.9}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:10px 0 0;width:740px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚖️ Bàn biện chứng <span>11 điểm neo · 15 lăng kính · xét duyệt có giám sát</span></h1>
+  <div class="spacer"></div>
+  <span class="tiny" id="prog">—</span>
+  <button class="btn sm" id="btn-export">Xuất báo cáo .md</button>
+  <button class="btn sm" id="btn-reset">Xoá phiên</button>
+</header>
+
+<div class="wrap">
+  <div class="left">
+    <div class="problem">
+      <label for="prob">VẤN ĐỀ ĐANG SOI — mô tả bằng <b>hiện tượng trần</b>, đừng đưa sẵn kết luận</label>
+      <textarea id="prob" placeholder="Ví dụ: Đội 12 người, 3 tháng gần đây 4 người xin nghỉ. Quản lý nói do lương thị trường tăng…"></textarea>
+      <div class="row">
+        <button class="btn primary" id="btn-save-prob">Lưu vấn đề</button>
+        <span class="tiny" id="prob-state"></span>
+      </div>
+    </div>
+    <div id="graph"></div>
+    <div class="legend">
+      <span><i style="background:var(--g-meta)"></i>meta / trọng tài</span>
+      <span><i style="background:var(--g-nguyenly)"></i>nguyên lý</span>
+      <span><i style="background:var(--g-phamtru)"></i>phạm trù</span>
+      <span><i style="background:var(--g-quyluat)"></i>quy luật</span>
+      <span><i style="background:var(--g-botro)"></i>bổ trợ</span>
+      <span>· 🟢 tin được · 🟡 cần kiểm thêm · 🔴 chưa đủ căn cứ · ◻ chưa chạy</span>
+    </div>
+  </div>
+
+  <div class="right" id="panel">
+    <div class="empty">Bấm vào một lăng kính trong sơ đồ<br><span class="tiny">Pha 0 → 1 → 2 → 3 → 4 → 5. Pha 2 chỉ chọn 2–4 cái hợp câu hỏi.</span></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+"use strict";
+var D = window.TBC;
+if(!D){document.getElementById('graph').innerHTML='<p class="warn">Thiếu data.js — chạy <code>python build.py</code> trong thư mục này.</p>';return;}
+
+var KEY='tbc-ban-bien-chung-v1';
+var state = load();
+function load(){
+  try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&s.runs) return s; }catch(e){}
+  return {problem:'', runs:{}};
+}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+function run(id){ return state.runs[id] || (state.runs[id]={result:'',score:'',note:'',prompted:false}); }
+
+var GROUP_COLOR={'nguyen-ly':'--g-nguyenly','pham-tru':'--g-phamtru','quy-luat':'--g-quyluat','meta':'--g-meta','bo-tro':'--g-botro'};
+var SCORE_COLOR={green:'#9ece6a',yellow:'#e0af68',red:'#f7768e'};
+var SCORE_ICON={green:'🟢',yellow:'🟡',red:'🔴'};
+
+/* ---------------------------------------------------------- sơ đồ đường đi */
+var W=740, NW=210, NH=54, COL=[25,265,505], MID=265;
+var LAYOUT={}; // id -> {x,y}
+var rows=[];   // phần tử vẽ
+
+function layout(){
+  rows=[]; LAYOUT={};            // vẽ lại nhiều lần — phải reset, không thì title chồng nhau
+  var y=42, put=function(id,x,yy){ LAYOUT[id]={x:x,y:yy}; };
+  D.phases.forEach(function(ph){
+    var ns=D.nodes.filter(function(n){return Math.floor(n.phase)===ph.id;});
+    rows.push({type:'title',y:y,title:ph.title,note:ph.note});
+    y+=22;
+    if(ph.id===2){
+      var main=ns.filter(function(n){return n.phase===2;});
+      main.forEach(function(n,i){ put(n.id, COL[i%3], y + Math.floor(i/3)*(NH+12)); });
+      y += Math.ceil(main.length/3)*(NH+12);
+      var extra=D.nodes.filter(function(n){return n.phase===2.5;});
+      extra.forEach(function(n){ put(n.id, MID, y); y+=NH+12; });
+    } else if(ns.length===1){
+      put(ns[0].id, MID, y); y+=NH+12;
+    } else if(ns.length===2){
+      put(ns[0].id, 145, y); put(ns[1].id, 385, y); y+=NH+12;
+    } else {
+      ns.forEach(function(n,i){ put(n.id, COL[i%3], y); });
+      y+=NH+12;
+    }
+    y+=16;
+  });
+  return y;
+}
+
+function drawGraph(){
+  var H=layout();
+  var svg='<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'">';
+  svg+='<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#414868"/></marker></defs>';
+
+  rows.forEach(function(r){
+    svg+='<text class="ph-title" x="25" y="'+r.y+'">'+esc(r.title)+'</text>';
+    svg+='<text class="ph-note" x="'+(25+ (r.title.length*6.6) +14)+'" y="'+r.y+'">'+esc(r.note)+'</text>';
+  });
+
+  // mũi tên nối pha: từ đáy node cuối pha trước xuống đỉnh title pha sau
+  for(var i=0;i<rows.length-1;i++){
+    var y2=rows[i+1].y-18;
+    var below=Math.max.apply(null,D.nodes.filter(function(n){return Math.floor(n.phase)===D.phases[i].id;})
+      .map(function(n){return LAYOUT[n.id].y+NH;}));
+    svg+='<path class="flow" d="M '+(MID+NW/2)+' '+below+' L '+(MID+NW/2)+' '+y2+'"/>';
+  }
+
+  D.nodes.forEach(function(n){
+    var p=LAYOUT[n.id], r=state.runs[n.id]||{}, col='var('+GROUP_COLOR[n.group]+')';
+    var stroke = r.score ? SCORE_COLOR[r.score] : (r.prompted ? 'var(--accent)' : 'var(--gray)');
+    var badge = r.score ? SCORE_ICON[r.score] : (r.prompted ? '◔' : '');
+    svg+='<g class="nd" data-id="'+n.id+'">';
+    svg+='<rect x="'+p.x+'" y="'+p.y+'" width="'+NW+'" height="'+NH+'" rx="9" style="stroke:'+stroke+'"/>';
+    svg+='<text class="num" x="'+(p.x+12)+'" y="'+(p.y+23)+'" style="fill:'+col+'">'+esc(n.num)+'</text>';
+    svg+='<text class="lbl" x="'+(p.x+34)+'" y="'+(p.y+23)+'">'+esc(cut(n.label,24))+'</text>';
+    svg+='<text class="sub" x="'+(p.x+34)+'" y="'+(p.y+40)+'">'+esc(cut(n.sub,30))+'</text>';
+    if(badge) svg+='<text class="badge" x="'+(p.x+NW-22)+'" y="'+(p.y+37)+'">'+badge+'</text>';
+    svg+='</g>';
+  });
+
+  svg+='</svg>';
+  var host=document.getElementById('graph');
+  host.innerHTML=svg;
+  host.querySelectorAll('.nd').forEach(function(g){
+    g.addEventListener('click',function(){ select(g.getAttribute('data-id')); });
+  });
+  markSelected();
+  progress();
+}
+
+var current=null;
+function markSelected(){
+  document.querySelectorAll('.nd').forEach(function(g){
+    g.classList.toggle('sel', g.getAttribute('data-id')===current);
+  });
+}
+
+function progress(){
+  var done=D.nodes.filter(function(n){return (state.runs[n.id]||{}).score;}).length;
+  var started=D.nodes.filter(function(n){return (state.runs[n.id]||{}).prompted;}).length;
+  document.getElementById('prog').textContent='đã chấm '+done+'/15 · đã chạy '+started+'/15';
+}
+
+/* ---------------------------------------------------------------- panel */
+function select(id){
+  current=id; markSelected();
+  var n=D.nodes.filter(function(x){return x.id===id;})[0];
+  var r=run(id);
+  var note=n.noteInfo;
+  var h='';
+  h+='<div class="crumb">'+esc(n.sub.toUpperCase())+' · SLIDE '+esc(n.slide)+' · <code>'+esc(n.id)+'</code></div>';
+  h+='<h2 class="pt">'+esc(n.num)+'  '+esc(n.label)+'</h2>';
+  h+='<div class="q"><b>Hỏi:</b> '+esc(n.question)+'</div>';
+  h+='<div class="core">'+esc(n.core)+'</div>';
+  if(note && !note.missing){
+    h+='<div class="meta-row"><span>📄 Note: <a href="../vaults/triet/'+esc(note.slug)+'.md">'+esc(note.title)+'</a></span></div>';
+    if(note.summary) h+='<div class="tiny" style="margin:-4px 0 10px">'+esc(note.summary)+'</div>';
+  }
+  h+='<div class="chips">';
+  (n.filters||[]).forEach(function(f){
+    var fl=D.filters.filter(function(x){return x.id===f;})[0];
+    h+='<span class="chip f'+f+'" title="'+esc(fl.desc)+'">Bộ lọc '+f+' · '+esc(fl.name)+'</span>';
+  });
+  h+='</div>';
+
+  h+='<div class="tabs"><div class="tab on" data-p="sys">System prompt</div>'
+    +'<div class="tab" data-p="rev">Xét duyệt &amp; chấm</div>'
+    +'<div class="tab" data-p="flt">4 bộ lọc</div></div>';
+
+  // pane 1
+  h+='<div class="pane on" data-p="sys">';
+  if(n.agentMissing){
+    h+='<div class="warn">Chưa có file <code>.claude/agents/'+esc(n.id)+'.md</code>.</div>';
+  }else{
+    h+='<div class="actions"><button class="btn primary" id="cp-full">Copy prompt + vấn đề</button>'
+      +'<button class="btn" id="cp-sys">Copy riêng prompt</button>'
+      +'<span class="ok" id="cp-ok"></span></div>';
+    h+='<label class="lbl-sm">Dán khối này vào Claude / ChatGPT. Trong Claude Code có thể gọi thẳng agent <code>'+esc(n.id)+'</code>.</label>';
+    h+='<pre class="sys" id="sysbox">'+esc(n.systemPrompt)+'</pre>';
+  }
+  h+='</div>';
+
+  // pane 2
+  h+='<div class="pane" data-p="rev">';
+  h+='<label class="lbl-sm">Kết quả AI trả về — dán nguyên văn để còn đối chiếu</label>';
+  h+='<textarea class="res" id="res" placeholder="Dán output của lăng kính này…">'+esc(r.result)+'</textarea>';
+  h+='<label class="lbl-sm">Chấm độ tin cậy <i class="tiny">(theo <code>tbc-thuc-tien</code>: có kiểm được bằng thực tiễn không?)</i></label>';
+  h+='<div class="score">'
+    +'<button data-s="green"'+(r.score==='green'?' class="on"':'')+'>🟢 Tin được</button>'
+    +'<button data-s="yellow"'+(r.score==='yellow'?' class="on"':'')+'>🟡 Cần kiểm thêm</button>'
+    +'<button data-s="red"'+(r.score==='red'?' class="on"':'')+'>🔴 Chưa đủ căn cứ</button></div>';
+  h+='<label class="lbl-sm">Ghi chú của mình — chỗ nào không đồng ý, chỗ nào phải tự kiểm</label>';
+  h+='<textarea class="note-in" id="note">'+esc(r.note)+'</textarea>';
+  h+='<div class="actions"><button class="btn primary" id="btn-save">Lưu vào phiên</button><span class="ok" id="save-ok"></span></div>';
+  h+='</div>';
+
+  // pane 3
+  h+='<div class="pane" data-p="flt">';
+  D.filters.forEach(function(f){
+    var hot=(n.filters||[]).indexOf(f.id)>=0;
+    h+='<div style="margin-bottom:12px"><b class="chip f'+f.id+'">'+f.id+' · '+esc(f.name)+'</b>'
+      +(hot?' <span class="tiny">← neo vào lăng kính này</span>':'')
+      +'<div class="tiny" style="margin-top:5px;color:#9aa5ce">'+esc(f.desc)+'</div></div>';
+  });
+  h+='<div class="warn">Không bộ lọc nào thay được người chịu trách nhiệm. AI không có tư cách chịu trách nhiệm về đầu ra của nó (slide 65).</div>';
+  h+='</div>';
+
+  document.getElementById('panel').innerHTML=h;
+  bindPanel(n);
+}
+
+function bindPanel(n){
+  var P=document.getElementById('panel');
+  P.querySelectorAll('.tab').forEach(function(t){
+    t.addEventListener('click',function(){
+      P.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});
+      P.querySelectorAll('.pane').forEach(function(x){x.classList.remove('on');});
+      t.classList.add('on');
+      P.querySelector('.pane[data-p="'+t.getAttribute('data-p')+'"]').classList.add('on');
+    });
+  });
+
+  var cpFull=P.querySelector('#cp-full'), cpSys=P.querySelector('#cp-sys');
+  if(cpFull) cpFull.addEventListener('click',function(){
+    copy(fullPrompt(n),'cp-ok'); run(n.id).prompted=true; save(); drawGraph();
+  });
+  if(cpSys) cpSys.addEventListener('click',function(){ copy(n.systemPrompt,'cp-ok'); });
+
+  P.querySelectorAll('.score button').forEach(function(b){
+    b.addEventListener('click',function(){
+      P.querySelectorAll('.score button').forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');
+      run(n.id).score=b.getAttribute('data-s'); save(); drawGraph();
+    });
+  });
+
+  var bs=P.querySelector('#btn-save');
+  if(bs) bs.addEventListener('click',function(){
+    var r=run(n.id);
+    r.result=P.querySelector('#res').value;
+    r.note=P.querySelector('#note').value;
+    if(r.result.trim()) r.prompted=true;
+    save(); drawGraph();
+    var ok=P.querySelector('#save-ok'); ok.textContent='đã lưu ✓';
+    setTimeout(function(){ok.textContent='';},1600);
+  });
+}
+
+function fullPrompt(n){
+  var p=state.problem||'(chưa nhập vấn đề — điền ô VẤN ĐỀ ĐANG SOI ở bên trái)';
+  return n.systemPrompt
+    + '\n\n---\n\n## Hiện tượng cần soi\n\n' + p
+    + '\n\n---\n\nSoi hiện tượng trên bằng đúng lăng kính của bạn, trả lời theo **khuôn trả lời** đã quy định ở trên.'
+    + ' Không kết luận ngoài phạm vi lăng kính; phần nào không đủ căn cứ thì nói rõ là không đủ.';
+}
+
+/* ------------------------------------------------------------ tiện ích */
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function cut(s,n){ s=String(s); return s.length>n ? s.slice(0,n-1)+'…' : s; }
+
+function copy(text,okId){
+  var ta=document.createElement('textarea');
+  ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  var done=false;
+  try{ done=document.execCommand('copy'); }catch(e){}
+  document.body.removeChild(ta);
+  if(!done && navigator.clipboard){ navigator.clipboard.writeText(text); done=true; }
+  var ok=document.getElementById(okId);
+  if(ok){ ok.textContent=done?'đã copy ✓':'copy lỗi — bôi đen rồi Ctrl+C'; setTimeout(function(){ok.textContent='';},2000); }
+}
+
+function exportMd(){
+  var L=[];
+  L.push('# Phiên soi biện chứng');
+  L.push('');
+  L.push('**Vấn đề:** ' + (state.problem||'_chưa nhập_'));
+  L.push('');
+  L.push('| # | Lăng kính | Độ tin cậy | Ghi chú |');
+  L.push('|---|---|---|---|');
+  D.nodes.forEach(function(n){
+    var r=state.runs[n.id]; if(!r||(!r.result&&!r.score&&!r.note)) return;
+    L.push('| '+n.num+' | '+n.label+' | '+(r.score?SCORE_ICON[r.score]:'—')+' | '+(r.note||'').replace(/\n/g,' ')+' |');
+  });
+  L.push('');
+  D.nodes.forEach(function(n){
+    var r=state.runs[n.id]; if(!r||!r.result) return;
+    L.push('## '+n.num+' '+n.label+'  '+(r.score?SCORE_ICON[r.score]:''));
+    L.push('');
+    L.push('*Hỏi: '+n.question+' · slide '+n.slide+'*');
+    L.push('');
+    L.push(r.result);
+    if(r.note){ L.push(''); L.push('> **Ghi chú của mình:** '+r.note); }
+    L.push('');
+  });
+  var blob=new Blob([L.join('\n')],{type:'text/markdown;charset=utf-8'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='phien-soi-bien-chung.md';
+  a.click();
+}
+
+/* ------------------------------------------------------------ khởi động */
+var probEl=document.getElementById('prob');
+probEl.value=state.problem||'';
+document.getElementById('btn-save-prob').addEventListener('click',function(){
+  state.problem=probEl.value; save();
+  var s=document.getElementById('prob-state');
+  s.textContent='đã lưu ✓ — prompt sinh ra sẽ kèm vấn đề này';
+  setTimeout(function(){s.textContent='';},2500);
+});
+document.getElementById('btn-export').addEventListener('click',exportMd);
+document.getElementById('btn-reset').addEventListener('click',function(){
+  if(confirm('Xoá toàn bộ kết quả đã chấm trong phiên này?')){
+    state={problem:probEl.value,runs:{}}; save(); drawGraph();
+    if(current) select(current);
+  }
+});
+
+drawGraph();
+})();
+</script>
+</body>
+</html>

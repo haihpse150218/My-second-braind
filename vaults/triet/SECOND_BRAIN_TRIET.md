@@ -22,6 +22,14 @@
 | Quy mô | 232 slide · 10 chương |
 | Nguồn tải | `https://ap.fsb.edu.vn/subject/document/0dd409ff0b20b071788944599.pdf` |
 
+### 🛠️ Công cụ đi kèm kho
+
+| | |
+|---|---|
+| **App Bàn biện chứng** | `app-bien-chung/index.html` — mở bằng double-click, không cần Node. 15 lăng kính thành sơ đồ 6 pha, sinh system prompt, chấm 🟢🟡🔴, xuất báo cáo `.md` |
+| Rebuild dữ liệu app | `cd app-bien-chung && python build.py` |
+| Skill tự động | `.claude/skills/truy-ban-chat/` — cùng bộ 15 agent, chạy song song trong Claude Code |
+
 **Bản đồ slide → chương:**
 
 | Slide | Chương |
@@ -72,18 +80,21 @@
 
 ### **Nhánh D · Phép biện chứng duy vật** *(slide 72–118)*
 
-1. [[hai-loai-hinh-bien-chung]] — Biện chứng khách quan ↔ biện chứng chủ quan *(slide 75)*
-2. [[nguyen-ly-moi-lien-he-pho-bien]] — → quan điểm toàn diện & lịch sử – cụ thể *(slide 80–82)*
-3. [[nguyen-ly-ve-su-phat-trien]] — → quan điểm phát triển *(slide 83–85)*
-4. [[cai-rieng-cai-chung-cai-don-nhat]] *(slide 89–90)*
-5. [[ban-chat-va-hien-tuong]] *(slide 87–88)*
-6. [[tat-nhien-va-ngau-nhien]] ✅ — Điều kiện như nhau → kết quả như nhau; ngẫu nhiên có *nguyên nhân hỗn hợp* *(slide 91–92)*
-7. [[noi-dung-va-hinh-thuc]] *(slide 93–94)*
-8. [[nguyen-nhan-va-ket-qua]] ✅ — Phân biệt **nguyên nhân · điều kiện · nguyên cớ**; *"gà không gáy thì trời vẫn sáng"* *(slide 95–96)*
-9. [[hien-thuc-va-kha-nang]] *(slide 97–98)*
-10. [[quy-luat-luong-chat]] — Độ · điểm nút · bước nhảy *(slide 103–104)*
-11. [[quy-luat-mau-thuan]] — **Hạt nhân của phép biện chứng**: thống nhất & đấu tranh của các mặt đối lập *(slide 106–107)*
-12. [[quy-luat-phu-dinh-cua-phu-dinh]] — Phủ định biện chứng, đường xoáy ốc *(slide 112–114)*
+> 🧭 **Vào bằng trang neo:** [[diem-neo-11-noi-dung]] ✅ — bảng 11 món trong một màn hình + diagram đường đi 6 pha.
+
+0. [[diem-neo-11-noi-dung]] ✅ — **Điểm neo**: 2 nguyên lý · 6 phạm trù · 3 quy luật, kèm sơ đồ thứ tự chạy *(slide 78, 117)*
+1. [[phep-bien-chung-duy-vat]] ✅ — Hai loại hình biện chứng; PBC duy tâm ↔ duy vật; khái niệm **quy luật** (4 dấu) *(slide 72–79, 101)*
+2. [[nguyen-ly-moi-lien-he-pho-bien]] ✅ — *Liên kết tạo ra hệ quả* → **quan điểm toàn diện** *(slide 80–82)*
+3. [[nguyen-ly-ve-su-phat-trien]] ✅ — Phát triển ≠ tăng trưởng; động lực bên trong → **quan điểm phát triển** *(slide 83–85)*
+4. [[ban-chat-va-hien-tuong]] ✅ — *Nếu bản chất và hiện tượng là một thì khoa học trở nên thừa* *(slide 87–88)*
+5. [[cai-rieng-cai-chung-cai-don-nhat]] ✅ — Chống giáo điều lẫn cục bộ; chuyển hoá chung ↔ đơn nhất *(slide 89–90)*
+6. [[tat-nhien-va-ngau-nhien]] ✅ — Điều kiện như nhau → kết quả như nhau *(slide 91–92)*
+7. [[noi-dung-va-hinh-thuc]] ✅ — Thuộc tính ↔ **cấu trúc**; đừng sửa mục lục khi nội dung đang chạy tốt *(slide 93–94)*
+8. [[nguyen-nhan-va-ket-qua]] ✅ — Nguyên nhân · điều kiện · **nguyên cớ**; *gà không gáy thì trời vẫn sáng* *(slide 95–96)*
+9. [[hien-thuc-va-kha-nang]] ✅ — Đang có thật ↔ mới là có thể; đếm cả **khả năng xấu** *(slide 97–98)*
+10. [[quy-luat-luong-chat]] ✅ — **Độ · điểm nút · bước nhảy**; chống nóng vội lẫn bảo thủ *(slide 102–105)*
+11. [[quy-luat-mau-thuan]] ✅ ⭐ — **Hạt nhân**; *đối chọi là bản chất, thống nhất là hiện tượng* *(slide 106–111)*
+12. [[quy-luat-phu-dinh-cua-phu-dinh]] ✅ — Kế thừa · **xoáy ốc**; tránh phủ định sạch trơn *(slide 112–116)*
 
 ### **Nhánh E · Lý luận nhận thức** *(slide 119–141)*
 
@@ -132,6 +143,7 @@
 
 1. [[thanh-tuu-khoa-hoc-va-triet-hoc]] *(slide 221)*
 2. [[triet-hoc-va-tri-tue-nhan-tao]] — *AI để thống trị con người hay để phục vụ con người?* *(slide 6, 40, 65)*
+3. [[bon-bo-loc-kiem-ket-qua-ai]] ✅ — **Phản biện · Pháp lý · Hệ thống · Thực tế** — bốn bộ lọc bắt buộc trước khi dùng kết quả AI *(slide 61, 65, 131, 139–140)*
 
 ---
 

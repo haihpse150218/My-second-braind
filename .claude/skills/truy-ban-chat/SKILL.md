@@ -72,20 +72,29 @@ Cách chạy: với mỗi `A → B`, liệt kê **ít nhất 2 nguyên nhân kh�
 | *"Khi nào thì nó đổ / bùng / lật?"* | `tbc-luong-chat` |
 | *"Rồi nó sẽ đi về đâu?"* | `tbc-phu-dinh` |
 | *"Chuyện này có phổ biến không? Áp chỗ khác được không?"* | `tbc-chung-rieng` |
+| *"Nó dính với cái gì? Bỏ sót yếu tố nào?"* | `tbc-toan-dien` |
+| *"Nó đang đi lên hay đi xuống? Đổi chất hay chỉ to hơn?"* | `tbc-phat-trien` |
+| *"Lỗi ở ruột hay ở khung? Có nên tái cấu trúc không?"* | `tbc-noi-dung-hinh-thuc` |
+| Có kế hoạch, dự báo, cam kết, con số hứa hẹn | `tbc-kha-nang` |
 | Vấn đề xã hội, kinh tế, chính sách, tổ chức, con người | `tbc-xa-hoi` |
 
-> 🔑 **Không chạy hết 11 agent cho mọi câu hỏi.** Một ca điển hình dùng **5–8 agent**: `tbc-dat-van-de` → 3 lõi + 1–4 chọn → `tbc-thuc-tien` → `tbc-phan-bien`.
+> 🔑 **Không chạy hết 15 agent cho mọi câu hỏi.** Một ca điển hình dùng **5–8 agent**: `tbc-dat-van-de` → 3 lõi + 1–4 chọn → `tbc-thuc-tien` → `tbc-phan-bien`.
 > Dùng đủ công cụ cần thiết — chính là *tính cụ thể*. Chạy thừa là hình thức chủ nghĩa.
 
-**Toàn bộ 11 agent:**
+**Toàn bộ 15 agent — phủ đủ 11 điểm neo của phép biện chứng** *(xem `vaults/triet/diem-neo-11-noi-dung.md`)*:
 
-| Pha | Agent |
-|---|---|
-| 1 | `tbc-dat-van-de` ⭐ |
-| 2 lõi | `tbc-hien-tuong` · `tbc-nhan-qua` · `tbc-mau-thuan` |
-| 2 chọn | `tbc-tat-nhien` · `tbc-luong-chat` · `tbc-phu-dinh` · `tbc-chung-rieng` · `tbc-xa-hoi` |
-| 4 | `tbc-thuc-tien` |
-| 5 | `tbc-phan-bien` |
+| Pha | Agent | Món |
+|---|---|---|
+| 1 | `tbc-dat-van-de` ⭐ | — |
+| 2 lõi | `tbc-hien-tuong` · `tbc-nhan-qua` · `tbc-mau-thuan` | phạm trù 1, 5 · quy luật 1 |
+| 2 nguyên lý | `tbc-toan-dien` · `tbc-phat-trien` | **2 nguyên lý** |
+| 2 chọn | `tbc-chung-rieng` · `tbc-tat-nhien` · `tbc-noi-dung-hinh-thuc` · `tbc-kha-nang` | phạm trù 2, 3, 4, 6 |
+| 3 quy luật | `tbc-luong-chat` · `tbc-phu-dinh` | quy luật 2, 3 |
+| bổ trợ | `tbc-xa-hoi` | — |
+| 4 | `tbc-thuc-tien` | — |
+| 5 | `tbc-phan-bien` | — |
+
+> 🖥️ **Bản thủ công:** cùng bộ agent này có giao diện bấm–copy ở `app-bien-chung/index.html` (mở bằng double-click, không cần Node) — dùng khi muốn tự chạy từng lăng kính và tự chấm 🟢🟡🔴.
 
 ### Pha 3 — Đối chất *(tự làm)*
 
