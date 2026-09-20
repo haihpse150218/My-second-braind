@@ -67,12 +67,20 @@ def build_user_message(node, problem, context):
             "## Kết quả của các lăng kính đã chạy trước\n\n"
             "Đây là **đầu vào để đối chất**, không phải kết luận đã chốt — "
             "bạn được phép bác lại bất cứ phần nào.\n\n" + context)
-    parts.append(
-        "## Việc của bạn\n\n"
-        "Soi hiện tượng trên bằng **đúng lăng kính của bạn**, trả lời theo **khuôn trả lời** "
-        "đã quy định trong phần hướng dẫn hệ thống. Không kết luận ngoài phạm vi lăng kính. "
-        "Phần nào không đủ căn cứ thì nói rõ là không đủ — thà thiếu còn hơn bịa. "
-        "Trả lời bằng tiếng Việt.")
+    viec = ("## Việc của bạn\n\n"
+            "Soi hiện tượng trên bằng **đúng lăng kính của bạn**, trả lời theo **khuôn trả lời** "
+            "đã quy định trong phần hướng dẫn hệ thống. Không kết luận ngoài phạm vi lăng kính. "
+            "Phần nào không đủ căn cứ thì nói rõ là không đủ — thà thiếu còn hơn bịa. "
+            "Trả lời bằng tiếng Việt.")
+    if context:
+        # Không có yêu cầu này thì lăng kính sau BỎ QUA kết quả lăng kính trước —
+        # đã đo được trong lần chạy thử ngày 2026-09-20: context gửi đi nhưng không ai đối chất.
+        viec += ("\n\nSau khuôn trả lời, thêm một mục cuối:\n\n"
+                 "### 🔁 Đối chất với lăng kính trước\n"
+                 "Nêu **cụ thể** chỗ nào ở phần trên bạn **xác nhận**, chỗ nào bạn **bác lại hoặc "
+                 "bổ sung** từ góc lăng kính của mình — trích đúng mệnh đề đang nói tới. "
+                 "Không có gì để đối chất thì nói thẳng là không, đừng viết cho có.")
+    parts.append(viec)
     return "\n\n---\n\n".join(parts)
 
 

@@ -40,13 +40,17 @@ Chế độ tự động **không cần API key**: nó gọi lệnh `claude` đ�
 
 ## Chi phí & thời gian thật
 
-Đo trên máy này (model `sonnet`, một lăng kính, vấn đề ngắn):
+Đo thật trên máy này, model `sonnet`:
 
-```
-tbc-nhan-qua   66.8 giây   $0.197
-```
+| Lăng kính | Vấn đề | Thời gian | Cost |
+|---|---|---|---|
+| `tbc-nhan-qua` | ngắn, 3 câu | 66.8 s | $0.197 |
+| `tbc-dat-van-de` | vừa, có số liệu | 109.5 s | $0.243 |
+| `tbc-mau-thuan` | vừa + context pha trước | 119.3 s | $0.161 |
 
-→ Pipeline mặc định 10 lăng kính ≈ **$1.5–2.5** và **3–6 phút** (3 luồng song song). Chọn `opus` thì sâu hơn nhưng đắt hơn đáng kể. Cost tích luỹ hiện ngay trên thanh công cụ.
+→ Pipeline mặc định 10 lăng kính đi qua **6 pha tuần tự** (chỉ song song *trong* một pha), nên tổng thực tế ≈ **11–13 phút** và **$2–3**. `opus` sâu hơn nhưng đắt hơn đáng kể. Cost tích luỹ hiện ngay trên thanh công cụ.
+
+> Muốn nhanh và rẻ hơn: bỏ tick bớt lăng kính pha 2, hoặc chạy lẻ từng cái bằng nút **▶ Chạy lăng kính này** thay vì cả pipeline.
 
 ---
 
