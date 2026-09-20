@@ -209,6 +209,14 @@ function detectEngine(){
     document.getElementById('btn-run').disabled=true;
     return;
   }
+  if(!/^(127\.0\.0\.1|localhost|\[::1\])$/.test(location.hostname)){
+    el.className='engine off';
+    el.textContent='bản online — xem & copy tay';
+    el.title='Bản trên GitHub Pages không chạy được Claude (cần serve.py trên máy). Clone repo rồi chạy run.bat.';
+    document.getElementById('run-state').innerHTML='bản online — copy prompt sang Claude. Muốn Claude tự chạy: clone repo, chạy <code>run.bat</code>';
+    document.getElementById('btn-run').disabled=true;
+    return;
+  }
   fetch('/api/health').then(function(r){return r.json();}).then(function(j){
     ENGINE.on=!!j.ok && j.claude && j.claude.indexOf('KHÔNG')<0;
     el.className='engine '+(ENGINE.on?'on':'off');

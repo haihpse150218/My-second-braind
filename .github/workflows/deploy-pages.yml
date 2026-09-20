@@ -35,6 +35,15 @@ jobs:
         working-directory: app
         run: node scripts/build-index.mjs
 
+      # App Bàn biện chứng là trang tĩnh độc lập (không qua build-index.mjs) —
+      # copy nguyên vào dist/ để Pages phục vụ tại /app-bien-chung/.
+      # serve.py/build.py/run.bat chỉ dùng khi chạy local nên không cần đưa lên.
+      - name: Ghép app Bàn biện chứng vào dist/
+        run: |
+          mkdir -p dist/app-bien-chung
+          cp app-bien-chung/index.html app-bien-chung/data.js dist/app-bien-chung/
+          cp app-bien-chung/README.md dist/app-bien-chung/README.md
+
       # Pages mặc định chạy Jekyll — Jekyll BỎ QUA mọi file/thư mục bắt đầu bằng '_'.
       # Không có file này thì một phần vendor/ có thể biến mất im lặng.
       - name: Tắt Jekyll
