@@ -3,7 +3,7 @@
 > Trang trung tâm (Map of Content) tổ chức toàn bộ kiến thức Triết học Mác – Lênin.
 > Từ đây liên kết tới mọi ghi chú, chủ đề và tài nguyên.
 
-**Cập nhật lần cuối:** 2026-09-12
+**Cập nhật lần cuối:** 2026-09-20
 **Trạng thái:** 🌱 Đang phát triển
 **Nguồn đã học:** `slides/triet-hoc-mac-lenin-dang-hoang-vu.pdf` — 232 slide, 10 chương, TS. Đặng Hoàng Vũ (FSB)
 **Quay lại:** [[../hub/MASTER|🏠 MASTER]]
@@ -64,16 +64,11 @@
 
 ### **Nhánh C · Vật chất và ý thức** *(slide 43–71)*
 
-1. [[pham-tru-vat-chat]] — Từ quan niệm cổ đại đến khủng hoảng vật lý cuối thế kỷ XIX *(slide 45–49)*
-2. [[dinh-nghia-vat-chat-cua-lenin]] — Thực tại khách quan, tồn tại không lệ thuộc cảm giác *(slide 50–51)*
-3. [[van-dong]] — Phương thức tồn tại của vật chất; 5 hình thức; đứng im là tương đối *(slide 53–54)*
-4. [[khong-gian-va-thoi-gian]] — Hình thức tồn tại của vật chất *(slide 55–56)*
-5. [[nguon-goc-cua-y-thuc]] — Nguồn gốc tự nhiên (não + phản ánh) + nguồn gốc xã hội (lao động + ngôn ngữ) *(slide 59)*
-6. [[ban-chat-cua-y-thuc]] — Phản ánh **năng động, sáng tạo**; *chỉ có búa thì đâu cũng thấy đinh* *(slide 61–62)*
-7. [[ket-cau-cua-y-thuc]] — Vô thức · tiềm thức · tự ý thức *(slide 63–64)*
-8. [[vat-chat-quyet-dinh-y-thuc]] — *Lịch sử đến đâu – Tư duy đến đó* *(slide 68)*
-9. [[tinh-doc-lap-tuong-doi-cua-y-thuc]] — *Lực lượng vật chất chỉ có thể bị đánh đổ bằng lực lượng vật chất* *(slide 69)*
-10. [[ton-trong-khach-quan-phat-huy-chu-quan]] — Ý nghĩa phương pháp luận *(slide 70)*
+> Chương II được gộp thành **3 note** theo đúng ba mục lớn của slide, thay cho 10 note lẻ dự kiến ban đầu.
+
+1. [[vat-chat]] ✅ — Lịch sử quan niệm → cú sốc khoa học cuối thế kỷ XIX → **định nghĩa của Lênin** (4 vế); vận động · không gian · thời gian; tính thống nhất vật chất của thế giới *(slide 45–57)*
+2. [[y-thuc]] ✅ — Nguồn gốc **tự nhiên** (não + phản ánh) và **xã hội** (lao động + ngôn ngữ); bản chất là **phản ánh năng động, sáng tạo**; kết cấu theo lớp & theo cấp độ; vấn đề trí tuệ nhân tạo *(slide 58–65)*
+3. [[moi-quan-he-vat-chat-y-thuc]] ✅ — *Lịch sử đến đâu – Tư duy đến đó*; tính độc lập tương đối và tác động trở lại; **sơ đồ chu trình ① vật chất → ⑥ vật chất mới**; tôn trọng khách quan ⟷ phát huy vai trò chủ quan *(slide 66–70)*
 
 ### **Nhánh D · Phép biện chứng duy vật** *(slide 72–118)*
 
