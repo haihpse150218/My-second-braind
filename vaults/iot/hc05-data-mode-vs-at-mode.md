@@ -8,7 +8,7 @@ order: 3
 status: learning
 tags: [iot, bluetooth, cau-hinh]
 prev: [uart-crossover-va-chia-ap]
-next: [hc05-lenh-at]
+next: [hc05-sketch-cau-noi-at]
 related: [hc05-led-trang-thai, uart-serial-monitor, go-loi-hc05]
 sources: ["IAD_MSA33_Part_1_2.pdf"]
 created: 2026-10-24
@@ -20,7 +20,7 @@ created: 2026-10-24
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh D · #3 ← cần [[uart-crossover-va-chia-ap]] · → kế tiếp [[hc05-lenh-at]]
+**📖 Lộ trình:** Nhánh D · #3 ← cần [[uart-crossover-va-chia-ap]] · → kế tiếp [[hc05-sketch-cau-noi-at]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #bluetooth #cau-hinh
 
@@ -44,7 +44,7 @@ created: 2026-10-24
 4. Gõ `AT` → phải thấy `OK`. Từ đây dùng [[hc05-lenh-at]].
 5. Xong: `AT+RESET` (hoặc rút điện cắm lại, không giữ KEY) → về Data Mode.
 
-Trên Arduino cần một sketch "cầu nối" chuyển byte giữa Serial USB và SoftwareSerial (slide: `hc05_at_config.ino`), vì PC không nối thẳng vào HC-05.
+Trên Arduino cần một sketch "cầu nối" chuyển byte giữa Serial USB và SoftwareSerial (slide: `hc05_at_config.ino`), vì PC không nối thẳng vào HC-05 → code đã sửa và 4 lỗi của bản phát tay: [[hc05-sketch-cau-noi-at]].
 
 ## 🧩 Trực giác
 
@@ -61,7 +61,7 @@ Data Mode là **ống nước**: nước (byte) chảy qua, ống không đọc.
 
 ## 🔗 Liên kết
 - **Tiền đề:** [[uart-crossover-va-chia-ap]] · [[uart-serial-monitor]]
-- **Dẫn tới:** [[hc05-lenh-at]] · [[hc05-led-trang-thai]]
+- **Dẫn tới:** [[hc05-sketch-cau-noi-at]] — code cầu nối đã sửa · [[hc05-lenh-at]] · [[hc05-led-trang-thai]]
 - **Liên quan:** [[go-loi-hc05]]
 
 ## ❓ Câu hỏi mở

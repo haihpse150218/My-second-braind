@@ -3,7 +3,7 @@
 > Trang trung tâm (Map of Content) cho môn Phát triển ứng dụng IoT.
 
 **Cập nhật lần cuối:** 2026-10-25
-**Trạng thái:** 🌱 Đang học — Part 1 (Session 1–6) + textbook ch. 1 + bài vẽ nguồn 2S: **34 atomic note**, nhánh A–D và H. Nhánh E–G chờ bài giảng.
+**Trạng thái:** 🌱 Đang học — Part 1 (Session 1–6) + textbook ch. 1 + bài vẽ nguồn 2S: **35 atomic note**, nhánh A–D và H. Nhánh E–G chờ bài giảng.
 **Nguồn:** `D:\MSA-FPT\IOT` — syllabus + 2 bộ slide Part 1 + textbook *Programming the Internet of Things* (Andy King, O'Reilly 2021, 420 trang)
 **Giảng viên:** TS. Đoàn Xuân Huy Minh · **Đánh giá:** 3 bài tập × 15% · thuyết trình 15% · project 40% · qua môn ≥ 5/10
 **Quay lại:** [[../../hub/MASTER|🏠 MASTER]]
@@ -52,11 +52,12 @@
 1. [[bluetooth-hc-05]] — SPP = **cáp serial không dây**; mức logic 3,3 V; 6 chân
 2. [[uart-crossover-va-chia-ap]] — TX→RX chéo; cầu 1 kΩ/2 kΩ hạ 5 V → 3,3 V **chỉ một chiều**
 3. [[hc05-data-mode-vs-at-mode]] — 9600 ống nước vs 38400 van bảo trì; giữ KEY lúc cấp nguồn; **Both NL & CR**
-4. [[hc05-lenh-at]] — 7 lệnh: `AT · NAME · PSWD · UART · ROLE · ORGL · RESET`
-5. [[hc05-led-trang-thai]] — nhanh / chậm 2 s / thưa / kép — nhìn LED trước khi gõ lệnh
-6. [[bluetooth-master-slave]] — ai gọi, ai chờ; điện thoại = Master; nối 2 Arduino bằng `BIND`
-7. [[giao-tiep-hai-chieu-bang-chuoi]] — `TEMP:27.5` lên / `LED_ON` xuống; **"giao thức" là chuỗi tự đặt** — tiền thân của MQTT
-8. [[go-loi-hc05]] — im lặng / ký tự lạ / không thấy tên → dây / NL&CR / kẹt AT mode
+4. [[hc05-sketch-cau-noi-at]] — Uno chỉ có 1 UART (D0/D1) và nó **đã dính USB** → `SoftwareSerial` tạo cổng thứ 2 ở D10/D11; code cầu nối AT đã sửa 4 lỗi (KEY ở chân 9 bật quá muộn · viết hoa cả tên · "cách 2" sai · đuôi CR LF)
+5. [[hc05-lenh-at]] — 7 lệnh: `AT · NAME · PSWD · UART · ROLE · ORGL · RESET`
+6. [[hc05-led-trang-thai]] — nhanh / chậm 2 s / thưa / kép — nhìn LED trước khi gõ lệnh
+7. [[bluetooth-master-slave]] — ai gọi, ai chờ; điện thoại = Master; nối 2 Arduino bằng `BIND`
+8. [[giao-tiep-hai-chieu-bang-chuoi]] — `TEMP:27.5` lên / `LED_ON` xuống; **"giao thức" là chuỗi tự đặt** — tiền thân của MQTT
+9. [[go-loi-hc05]] — im lặng / ký tự lạ / không thấy tên → dây / NL&CR / kẹt AT mode
 
 ### Part 2 · Pi · Linux · Web · Database (Session 7–19) — ⬜ chờ bài giảng
 

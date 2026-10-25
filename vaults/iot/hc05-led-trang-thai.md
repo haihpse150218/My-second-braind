@@ -4,7 +4,7 @@ title: Đọc LED trạng thái HC-05
 vault: iot
 type: concept
 branch: D
-order: 5
+order: 6
 status: learning
 tags: [iot, bluetooth, go-loi]
 prev: [hc05-lenh-at]
@@ -20,7 +20,7 @@ created: 2026-10-24
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh D · #5 ← cần [[hc05-lenh-at]] · → kế tiếp [[bluetooth-master-slave]]
+**📖 Lộ trình:** Nhánh D · #6 ← cần [[hc05-lenh-at]] · → kế tiếp [[bluetooth-master-slave]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #bluetooth #go-loi
 

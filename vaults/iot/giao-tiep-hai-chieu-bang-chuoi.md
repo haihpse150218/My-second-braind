@@ -4,7 +4,7 @@ title: Giao tiếp hai chiều bằng chuỗi — uplink và downlink
 vault: iot
 type: concept
 branch: D
-order: 7
+order: 8
 status: learning
 tags: [iot, bluetooth, giao-tiep, kien-truc]
 prev: [bluetooth-master-slave]
@@ -20,7 +20,7 @@ created: 2026-10-24
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh D · #7 ← cần [[bluetooth-master-slave]] · → kế tiếp [[go-loi-hc05]]
+**📖 Lộ trình:** Nhánh D · #8 ← cần [[bluetooth-master-slave]] · → kế tiếp [[go-loi-hc05]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #bluetooth #giao-tiep #kien-truc
 

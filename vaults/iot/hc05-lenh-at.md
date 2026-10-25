@@ -4,10 +4,10 @@ title: Tập lệnh AT của HC-05
 vault: iot
 type: concept
 branch: D
-order: 4
+order: 5
 status: learning
 tags: [iot, bluetooth, cau-hinh]
-prev: [hc05-data-mode-vs-at-mode]
+prev: [hc05-sketch-cau-noi-at]
 next: [hc05-led-trang-thai]
 related: [bluetooth-master-slave, go-loi-hc05]
 sources: ["IAD_MSA33_Part_1_2.pdf"]
@@ -20,7 +20,7 @@ created: 2026-10-24
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh D · #4 ← cần [[hc05-data-mode-vs-at-mode]] · → kế tiếp [[hc05-led-trang-thai]]
+**📖 Lộ trình:** Nhánh D · #5 ← cần [[hc05-sketch-cau-noi-at]] · → kế tiếp [[hc05-led-trang-thai]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #bluetooth #cau-hinh
 
@@ -43,7 +43,7 @@ Lệnh đọc giá trị hiện tại: thêm `?` — `AT+NAME?`, `AT+UART?`, `AT
 ## ⚙️ Kịch bản cấu hình chuẩn cho bài tập (slide RESET)
 
 ```
-1. Upload hc05_at_config.ino
+1. Upload hc05_at_config.ino      ← code: hc05-sketch-cau-noi-at
 2. Giữ KEY, cấp nguồn → LED chậm          ← hc05-data-mode-vs-at-mode
 3. Serial Monitor: 38400, Both NL & CR
 4. AT                → OK ✓

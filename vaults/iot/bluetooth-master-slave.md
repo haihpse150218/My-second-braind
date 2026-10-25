@@ -4,7 +4,7 @@ title: Bluetooth Master và Slave
 vault: iot
 type: concept
 branch: D
-order: 6
+order: 7
 status: learning
 tags: [iot, bluetooth, kien-truc]
 prev: [hc05-led-trang-thai]
@@ -20,7 +20,7 @@ created: 2026-10-24
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh D · #6 ← cần [[hc05-led-trang-thai]] · → kế tiếp [[giao-tiep-hai-chieu-bang-chuoi]]
+**📖 Lộ trình:** Nhánh D · #7 ← cần [[hc05-led-trang-thai]] · → kế tiếp [[giao-tiep-hai-chieu-bang-chuoi]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #bluetooth #kien-truc
 
