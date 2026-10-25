@@ -3,7 +3,7 @@
 > Trang trung tâm (Map of Content) cho môn Phát triển ứng dụng IoT.
 
 **Cập nhật lần cuối:** 2026-10-25
-**Trạng thái:** 🌱 Đang học — Part 1 (Session 1–6) + textbook ch. 1 + bài vẽ nguồn 2S: **33 atomic note**, nhánh A–D và H. Nhánh E–G chờ bài giảng.
+**Trạng thái:** 🌱 Đang học — Part 1 (Session 1–6) + textbook ch. 1 + bài vẽ nguồn 2S: **34 atomic note**, nhánh A–D và H. Nhánh E–G chờ bài giảng.
 **Nguồn:** `D:\MSA-FPT\IOT` — syllabus + 2 bộ slide Part 1 + textbook *Programming the Internet of Things* (Andy King, O'Reilly 2021, 420 trang)
 **Giảng viên:** TS. Đoàn Xuân Huy Minh · **Đánh giá:** 3 bài tập × 15% · thuyết trình 15% · project 40% · qua môn ≥ 5/10
 **Quay lại:** [[../../hub/MASTER|🏠 MASTER]]
@@ -46,6 +46,7 @@
 8. [[giao-tiep-i2c]] — SDA/SCL (A4/A5), địa chỉ 7-bit; **quét `i2c_scanner` trước**
 9. [[lcd-1602-i2c]] — 16×2 ô ký tự; `init · backlight · setCursor · print · clear`
 10. [[nhiet-ke-lm35]] — **Bài tập 1** ✅ làm xong trên mạch thật: 10 mV/°C → LCD, đèn + còi nhấp nháy > 25 °C; nhật ký 6 lỗi (A5 đụng I2C · 293 °C · còi thụ động cần `tone()` · ký tự lạ · `millis()`)
+11. [[lcd-emoji-ky-tu-tu-tao]] — CGRAM có **8 ký tự 5×8** tự vẽ; ghép 3×2 ô thành một khuôn mặt, đổi mặt bằng lệnh `vui · cuoi · buon · khoc · gian · ngac` từ Serial
 
 **Nhánh D · Giao tiếp không dây — Bluetooth HC-05 (S6)**
 1. [[bluetooth-hc-05]] — SPP = **cáp serial không dây**; mức logic 3,3 V; 6 chân

@@ -8,7 +8,7 @@ order: 10
 status: done
 tags: [iot, arduino, bai-tap, cam-bien, lcd, buzzer, hysteresis]
 prev: [lcd-1602-i2c]
-next: [bluetooth-hc-05]
+next: [lcd-emoji-ky-tu-tu-tao]
 related: [adc-analogread, bon-thanh-phan-iot, co-cau-chap-hanh, giao-tiep-i2c, sketch-setup-loop, uart-serial-monitor]
 sources: ["IAD_MSA33_Part_1.pdf"]
 created: 2026-10-24
@@ -21,7 +21,7 @@ updated: 2026-10-25
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** ✅ Đã nắm — làm xong trên mạch thật 2026-10-25
-**📖 Lộ trình:** Nhánh C · #10 ← cần [[lcd-1602-i2c]] · → kế tiếp [[bluetooth-hc-05]]
+**📖 Lộ trình:** Nhánh C · #10 ← cần [[lcd-1602-i2c]] · → kế tiếp [[lcd-emoji-ky-tu-tu-tao]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #arduino #bai-tap #cam-bien #lcd #buzzer #hysteresis
 
@@ -228,7 +228,7 @@ Lỗi gặp theo đúng thứ tự, mỗi lỗi một tầng — đúng tư duy 
 
 ## 🔗 Liên kết
 - **Tiền đề:** [[lcd-1602-i2c]] · [[adc-analogread]] · [[giao-tiep-i2c]]
-- **Dẫn tới:** [[bluetooth-hc-05]] — bước tiếp theo: gửi nhiệt độ này qua không dây
+- **Dẫn tới:** [[lcd-emoji-ky-tu-tu-tao]] — vẽ ký tự tự tạo trên cùng LCD · [[bluetooth-hc-05]] — bước tiếp theo: gửi nhiệt độ này qua không dây
 - **Liên quan:** [[co-cau-chap-hanh]] · [[cam-bien]] · [[sketch-setup-loop]] — vì sao `delay()` chặn tất cả · [[uart-serial-monitor]] — công cụ đã dùng để bắt lỗi 293 °C
 
 ## ❓ Câu hỏi mở

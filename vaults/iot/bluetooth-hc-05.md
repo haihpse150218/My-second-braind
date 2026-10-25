@@ -7,7 +7,7 @@ branch: D
 order: 1
 status: learning
 tags: [iot, bluetooth, giao-tiep, phan-cung]
-prev: [nhiet-ke-lm35]
+prev: [lcd-emoji-ky-tu-tu-tao]
 next: [uart-crossover-va-chia-ap]
 related: [uart-serial-monitor, bon-thanh-phan-iot]
 sources: ["IAD_MSA33_Part_1_2.pdf"]
@@ -20,7 +20,7 @@ created: 2026-10-24
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh D · #1 ← cần [[nhiet-ke-lm35]] · → kế tiếp [[uart-crossover-va-chia-ap]]
+**📖 Lộ trình:** Nhánh D · #1 ← cần [[lcd-emoji-ky-tu-tu-tao]] · → kế tiếp [[uart-crossover-va-chia-ap]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #bluetooth #giao-tiep #phan-cung
 
@@ -64,6 +64,7 @@ Hãy nghĩ HC-05 là **một sợi dây dài 10 m vô hình** cắm vào cổng 
 
 ## ⚠️ Điều dễ nhầm
 
+- **Nhược điểm lớn nhất (slide Part 1.2): chân RX chỉ nhận mức 3,3 V.** Nối thẳng TX 5 V của Arduino vào là quá áp, chân RX sẽ cháy, có khi không chết ngay mà hỏng dần sau vài tuần. Nguồn VCC 5 V thì không sao vì module có ổn áp; chỉ **dây tín hiệu vào RX** phải hạ áp bằng cầu 1 kΩ / 2 kΩ → [[uart-crossover-va-chia-ap]]. Chiều TX của HC-05 → Arduino nối thẳng được.
 - HC-05 ≠ HC-06: HC-05 làm được **cả master và slave** ([[bluetooth-master-slave]]); HC-06 chỉ slave.
 - Bluetooth 2.0 Classic — **iPhone không ghép đôi được** (iOS chỉ mở BLE cho app bên thứ ba). Android dùng được.
 - LED trên module là công cụ chẩn đoán số 1 → [[hc05-led-trang-thai]].
