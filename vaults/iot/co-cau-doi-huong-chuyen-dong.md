@@ -24,6 +24,7 @@ created: 2026-10-25
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #phan-cung #actuator #co-khi #robot #nullpet
 **Bản gốc:** [co-cau-doi-huong-chuyen-dong.md](D:\MSA-FPT\IOT\Actuators\co-cau-doi-huong-chuyen-dong.md) · dùng cho dự án [[du-an-esp32-mcp]]
+**🎞️ Mô phỏng tương tác:** [mechanical-motion-conversion-explorer.html](mechanical-motion-conversion-explorer.html) — 11 cơ cấu chạy hoạt hình (rack, vít me, tay quay, Scotch yoke, cam, 4 khâu, côn, trục vít, TSA, Geneva, bánh cóc); mở file bằng trình duyệt
 
 > 💡 **Liên hệ bài thực hành servo (2026-10-25):** SG90/MG90S là servo **vị trí** — có chốt chặn và biến trở đo góc bên trong, nên chỉ quay 0–180° rồi quay ngược lại, **không quay tròn mãi như cánh quạt được**. Muốn quay liên tục thì đổi linh kiện (servo 360° FS90R, motor DC + driver, stepper 28BYJ-48), còn muốn biến góc quay thành kiểu chuyển động khác thì dùng các cơ cấu bên dưới. Xem thêm [[ham-map-va-servo]].
 
