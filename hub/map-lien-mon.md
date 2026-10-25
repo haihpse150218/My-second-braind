@@ -3,7 +3,7 @@
 > Chỗ **cùng một ý** xuất hiện ở nhiều môn dưới tên khác nhau.
 > Đây là giá trị mà kho gộp tạo ra — từng repo riêng lẻ không thể có.
 
-**Cập nhật:** 2026-08-09 · **Quay lại:** [[MASTER|🏠 MASTER]]
+**Cập nhật:** 2026-10-24 · **Quay lại:** [[MASTER|🏠 MASTER]]
 
 ---
 
@@ -34,6 +34,16 @@ Danh sách này là **kế hoạch nối**, làm ngay khi chưng cất xong DSP/
 | dl | [[../vaults/dl/phep-tich-chap]] | 2D nhưng kernel được **học ra** từ dữ liệu |
 
 > 💡 Đây là cầu nối đáng giá nhất trong cả kho. Cùng một công thức; khác biệt duy nhất là **ai quyết định kernel** — con người (DSP/IVP cổ điển) hay dữ liệu (DL). Hiểu được trục này thì CNN không còn là hộp đen.
+
+### 🌉 Số hoá tín hiệu — ADC là chỗ IoT chạm DSP và IVP *(nối 2026-10-24)*
+
+| Môn | Note | Góc nhìn |
+|---|---|---|
+| iot | [[../vaults/iot/adc-analogread]] · [[../vaults/iot/chan-digital-vs-analog]] | `analogRead` = một mẫu; 10-bit = 1024 bậc; `delay()` quyết định `f_s` |
+| dsp | [[../vaults/dsp/tin-hieu-roi-rac]] · [[../vaults/dsp/dinh-ly-lay-mau]] | lý thuyết của chính phép `analogRead` đó: aliasing không sửa được ở hậu kỳ |
+| ivp | [[../vaults/ivp/luong-tu-hoa-anh]] · [[../vaults/ivp/cam-bien-anh]] | 256 mức xám vs 1024 mức ADC — cùng một phép lượng tử hoá; camera cũng là cảm biến |
+
+> 💡 DSP và IVP dạy **lý thuyết** số hoá; IoT là nơi **tự tay** làm việc đó với một con chip 5 V. Bài [[../vaults/iot/nhiet-ke-lm35]] (LM35 chỉ dùng 5% dải ADC → 0,5 °C/bậc) là ví dụ sống của "độ phân giải lượng tử quyết định cái bạn thấy". Và [[../vaults/iot/giao-tiep-hai-chieu-bang-chuoi]] — `TEMP:27.5` qua Bluetooth — là tiền thân thô sơ của MQTT topic/payload sẽ học ở nhánh G.
 
 ### 🌉 Miền tần số
 

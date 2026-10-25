@@ -114,6 +114,18 @@
 
 ---
 
+## 📑 Slide gốc
+
+> Giảng viên: PGS.TS. Hồ Văn Khương (BM Viễn thông, ĐH Bách Khoa TP.HCM) · Thư mục: `D:\MSA-FPT\Methods of Learnning and scientific research\`
+
+| # | Slide | Trang | Đã học | Nội dung |
+|---|---|---:|---|---|
+| V1 | [V1_PPNCKH1.pdf](<D:\MSA-FPT\Methods of Learnning and scientific research\V1_PPNCKH1.pdf>) | 151 | ⬜ chưa chưng cất | Course intro · Research methods · Literature review & search · Database search · Viết literature review · Viết research proposal · Google cho academic writing |
+
+> ⚠️ Vault này hiện toàn note **paper** (`type: literature`). Slide V1 dạy *phương pháp* (cách tìm, đọc, viết) — chưa có note khái niệm nào tách từ đó. Khi cần: tách thành nhóm `M · Phương pháp` (literature review · research proposal · citation), bổ sung vào `vaults.json`.
+
+Sản phẩm của môn (không phải slide): `NCKK-Docs\de-tai\DE-CUONG-HarnessEval-v2.pdf` · `slide-HarnessEval-v2.pdf` / `-v3-en.pptx` — thuộc [[../../projects/harness-eval-nckh]].
+
 ## 🔗 Tài nguyên khác
 
 | Tài nguyên | Mô tả |

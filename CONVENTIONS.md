@@ -39,6 +39,15 @@ vaults/<id>/
 | `nckh` | Nghiên cứu khoa học | `literature` |
 | `dsp` | Digital Signal Processing | `concept` (đang dựng) |
 | `ivp` | Image & Video Processing | `concept` (đang dựng) |
+| `iot` | IoT Application Development (IAD591) | `concept` (đang học — Part 1 xong) |
+
+### Mục bắt buộc trong hub `SECOND_BRAIN_<ID>.md`
+
+| Mục | Nội dung |
+|---|---|
+| `## 🧭 Lộ trình đọc` | Nguồn sự thật cho `branch` + `order` |
+| `## 📑 Slide gốc` | **Mỗi slide/bài giảng gốc một dòng**: link tuyệt đối tới PDF, số trang, trạng thái ✅/🟡/⬜ đã chưng cất, note hoặc nhánh tương ứng. Để biết note nào đến từ đâu và slide nào chưa đụng tới. |
+| `## 🔗 Tài nguyên khác` | Notebook, project, link ngoài |
 
 ---
 
@@ -175,6 +184,7 @@ Dưới `# Tiêu đề` vẫn **giữ nguyên** khối metadata dòng đậm cũ
 | **Liên môn** | `[[dl/attention-qkv]]` | Note ở vault khác — `<vault>/<slug>` |
 | Có nhãn | `[[pca\|Phân tích thành phần chính]]` | Muốn đổi chữ hiển thị |
 | File ngoài kho | `[Notebook](D:\MSA-FPT\Machine learning\code-practice\x.ipynb)` | Markdown link, đường dẫn **tuyệt đối** |
+| File có **khoảng trắng** trong đường dẫn | `[Slide 1](<D:\MSA-FPT\Digital Signal Processing\Slide\1 - Signals.pdf>)` | Bọc đích trong `<...>` — không bọc thì markdown cắt link ở khoảng trắng đầu tiên |
 | Web | `[SkLearn](https://...)` | |
 
 **Luật:** trong `vaults/` chỉ dùng `[[wikilink]]` cho note. Mọi thứ trỏ ra ngoài kho phải là markdown link đường dẫn tuyệt đối — đường dẫn tương đối kiểu `../code-practice/` sẽ gãy sau khi migrate.

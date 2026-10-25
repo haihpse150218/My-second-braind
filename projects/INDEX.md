@@ -4,7 +4,7 @@
 > Code · dataset · checkpoint · `.venv` vẫn nằm nguyên ở `repo_path` của từng thẻ.
 > Xem `CONVENTIONS.md` §1.
 
-**Cập nhật:** 2026-08-10 · **Số project:** 8 · **5/8 có repo GitHub**
+**Cập nhật:** 2026-10-24 · **Số project:** 9 · **5/9 có repo GitHub**
 **Quay lại:** [[../hub/MASTER|🏠 MASTER]]
 
 ---
@@ -21,6 +21,7 @@
 | [[sem-hoi-thao]] | SEM501 | 2026-04 → 06 | ✅ xong | — | 3 bài thu hoạch, pipeline `record/`→`output/` |
 | [[coursera-agile]] | — | 2026-02 → 04 | ✅ xong | — | 2 chứng chỉ UVA Darden |
 | [[ivp-enhancement-suite]] | IVP | 2026-03 → 05 | ⏸️ dừng | [img_video_processing](https://github.com/haihpse150218/img_video_processing) | 9 notebook; thư viện dừng, chuyển sang SR |
+| [[nullpet]] | IoT (IAD591) | 2026-10 → nay | 🟡 đang làm | — | Robot pet 4 chân, ESP32-S3 = CDA, laptop MCP = GDA, nút approve vật lý |
 
 > 🔒 `DoAn-ViIC` để **private** — link chỉ mở được khi đăng nhập đúng tài khoản.
 > Ba thẻ không có repo là bài nộp dạng tài liệu (báo cáo, chứng chỉ), không có mã nguồn để đẩy lên.
@@ -42,6 +43,7 @@
 | [[../vaults/ivp/SECOND_BRAIN_IVP\|ivp]] | [[image-super-resolution]] · [[ivp-enhancement-suite]] |
 | [[../vaults/dsp/SECOND_BRAIN_DSP\|dsp]] | [[dsp-urbansound]] |
 | [[../vaults/nckh/SECOND_BRAIN_NCKH\|nckh]] | [[harness-eval-nckh]] |
+| [[../vaults/iot/SECOND_BRAIN_IOT\|iot]] | [[nullpet]] |
 | *(chưa có vault)* | [[pm-nhom4-tai-cau-truc]] · [[sem-hoi-thao]] · [[coursera-agile]] |
 
 ---

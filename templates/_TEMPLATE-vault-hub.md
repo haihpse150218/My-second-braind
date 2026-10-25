@@ -34,6 +34,16 @@
 ## ❓ Câu hỏi mở
 -
 
+## 📑 Slide gốc
+> **Bắt buộc có ở mọi vault.** Mỗi slide một dòng, link markdown đường dẫn TUYỆT ĐỐI bọc `<...>`
+> (vì tên file có khoảng trắng). ✅ = đã chưng cất thành note · 🟡 = một phần · ⬜ = chưa.
+
+> Giảng viên: {{tên}} · Thư mục: `D:\MSA-FPT\{{môn}}\slide\`
+
+| # | Slide | Trang | Đã học | Note chính / nhánh |
+|---|---|---:|---|---|
+| L1 | [L1_xxx.pdf](<D:\MSA-FPT\{{môn}}\slide\L1_xxx.pdf>) | | ⬜ | |
+
 ## 🔗 Tài nguyên khác
 
 | Tài nguyên | Mô tả |

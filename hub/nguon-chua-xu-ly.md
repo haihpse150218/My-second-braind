@@ -3,7 +3,7 @@
 > Danh sách mọi thứ đã **đưa vào kho** nhưng **chưa thành atomic note**.
 > Đây là hàng đợi công việc: mỗi mục xong thì đánh dấu và xoá khỏi đây.
 
-**Cập nhật:** 2026-08-10
+**Cập nhật:** 2026-10-24
 **Quay lại:** [[MASTER|🏠 MASTER]]
 
 ---
@@ -39,7 +39,20 @@ Cả 4 file đã chưng cất hết → **65 atomic note**, 10 nhánh A–J bám
 
 > ⚠️ **Đã sửa lộ trình IVP.** Bản dự kiến cũ có nhánh *Nén ảnh* và *Video & chuyển động* — **không có trong tài liệu nguồn** (nén chỉ được nhắc 1 dòng ở L2; video thuộc Session 9 chưa học). Đã thay bằng 10 nhánh bám lecture thật; hai chủ đề cũ chuyển xuống mục 2 dưới đây.
 
+### `vaults/iot/_inbox/` — 4 file · 🟡 **3/4 XONG 2026-10-24** → 26 note, nhánh A–D
 
+Môn **đang học** (IAD591, kỳ 2026-10). Mới có tài liệu Part 1; vault sẽ bồi đắp theo từng buổi.
+
+| File | Kết quả |
+|---|---|
+| `iot-syllabus-iad591.md` | ✅ khung lộ trình 8 nhánh A–H + phần đánh giá trong hub |
+| `iot-slide-part1-arduino.md` | ✅ nhánh A (5) · B (3) · C (10) |
+| `iot-slide-part1-2-bluetooth.md` | ✅ nhánh D (8) — slide dạng ảnh, đã chép tay vào inbox trước khi tách |
+| `iot-textbook-andy-king-muc-luc.md` | ⬜ **chỉ mới có mục lục** sách 420 trang; trích chương 6–12 khi học tới nhánh G–H |
+
+> ➕ **Nhánh H · Kiến trúc device → edge → cloud** không có trong syllabus, lấy từ cấu trúc textbook (CDA/GDA, edge tier, simulation). Thêm vào vì đó là phần "kiến trúc" mà slide giảng viên (thiên về thực hành) sẽ không bao phủ.
+
+**Chờ nguồn:** slide Part 2 (Pi · Linux · Web · DB) và Part 3 (MQTT · cloud · Android) → nhánh E, F, G. 21 slug đã cắm sẵn dạng backtick trong hub.
 
 ---
 
@@ -49,6 +62,7 @@ Vẫn nằm nguyên ở thư mục gốc, chưa copy vào `Second-brain`.
 
 | Nguồn | Nội dung | Xử lý thế nào |
 |---|---|---|
+| `D:\MSA-FPT\IOT\material\IAD_programming-the-internet-of-things-…pdf` | Textbook Andy King, 420 trang, text trích được | 🟡 Mục lục đã vào inbox. Chương 6–7 (MQTT), 8–9 (CoAP), 11 (cloud) → nhánh G; chương 1–5, 12 → nhánh H. Làm khi học tới S25 |
 | `D:\MSA-FPT\Digital Signal Processing\Slide` | 8 bài giảng PDF | 🔴 **Còn thiếu: `bien-doi-z` và `chuoi-fourier`** — không có trong 6 file inbox, phải đọc thẳng từ PDF |
 | `D:\MSA-FPT\Image and video processing\_txt` | Lecture 0–12 dạng `.txt` (grep được) | 🔴 **Còn thiếu: nén ảnh (DCT/JPEG/PSNR-SSIM) và video/optical flow** — hai chủ đề này không có trong 4 file inbox, phải đọc thẳng từ đây |
 | `D:\MSA-FPT\Image and video processing\HPH_25MS23323` | 9 notebook `session1..9.ipynb` | Trích ví dụ code bổ sung vào mục `⚙️ Khi nào dùng` của 65 note IVP đã có |

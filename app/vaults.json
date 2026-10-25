@@ -117,5 +117,21 @@
       "I": "Ảnh màu (L11)",
       "J": "Keypoint & video (L12)"
     }
+  },
+  "iot": {
+    "label": "IoT Application Development",
+    "dir": "../vaults/iot",
+    "type": "concept",
+    "color": "#f97316",
+    "branches": {
+      "A": "Tổng quan IoT & hệ thống nhúng (S1)",
+      "B": "Điện tử cơ bản & sơ đồ mạch (S1–S2)",
+      "C": "Arduino & C (S3–S6)",
+      "D": "Giao tiếp không dây — Bluetooth HC-05 (S6)",
+      "E": "Raspberry Pi · Linux · Python (S14–S19)",
+      "F": "Giao diện & dữ liệu — Web · MySQL · MongoDB (S7–S13)",
+      "G": "Giao thức IoT — MQTT · CoAP · Pub/Sub (S25–S27)",
+      "H": "Kiến trúc device → edge → cloud (textbook Andy King)"
+    }
   }
 }

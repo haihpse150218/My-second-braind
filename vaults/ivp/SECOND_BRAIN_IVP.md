@@ -140,11 +140,33 @@ Viết note cho hai nhánh đó lúc này là bịa nội dung không có trong 
 - Kernel học được của CNN có tự tìm lại Sobel/Gaussian không?
 - Ảnh JPEG đã mã hoá gamma — CNN huấn luyện trên đó đang học ở thang đo nào?
 
+## 📑 Slide gốc
+
+> Thư mục: `D:\MSA-FPT\Image and video processing\` · Lecture 0→12 · bản text để grep ở `_txt\` · ✅ = đã chưng cất thành note
+
+| # | Slide | Trang | Đã học | Nhánh |
+|---|---|---:|---|---|
+| L0 | [Course Introduction](<D:\MSA-FPT\Image and video processing\Lecture 0-Course Introduction.pdf>) | 16 | — | giới thiệu môn, không có note |
+| L1 | [Introduction and Overview](<D:\MSA-FPT\Image and video processing\Lecture 1-Introduction and Overview.pdf>) | 51 | ✅ | A · Ảnh số & biểu diễn |
+| L2 | [Image Processing Basics](<D:\MSA-FPT\Image and video processing\Lecture 2-Image Processing Basics.pdf>) | 47 | ✅ | A |
+| L3 | [MATLAB Basics and Imaging Toolbox](<D:\MSA-FPT\Image and video processing\Lecture 3-MATLAB Basics and Imaging Toolbox.pdf>) | 60 | ✅ | A · [[kieu-du-lieu-anh]] |
+| L4 | [Image Sensing and Acquisition](<D:\MSA-FPT\Image and video processing\Lecture 4-Image Sensing and Acquisition.pdf>) | 50 | ✅ | B · Thu nhận & số hoá |
+| L5 | [Arithmetic and Logic, Geometrics Operations](<D:\MSA-FPT\Image and video processing\Lecture 5-Arithmetic and Logic, Geometrics Operations.pdf>) | 127 | ✅ | C · Phép số học · logic · hình học |
+| L6 | [Gray-Level Transformations, Histogram and Neighborhood Processing](<D:\MSA-FPT\Image and video processing\Lecture 6-Gray-Level Transformations, Histogram and Neighborhood Processing.pdf>) | 94 | ✅ | D · Histogram + E · Lọc không gian |
+| L7 | [Image Restoration](<D:\MSA-FPT\Image and video processing\Lecture 7-Image Restoration.pdf>) | 94 | ✅ | E · Phục hồi ảnh |
+| L8 | [Morphological Image Processing](<D:\MSA-FPT\Image and video processing\Lecture 8-Morphological Image Processing.pdf>) | 106 | ✅ | F · Hình thái học |
+| L9 | [Edge Detection](<D:\MSA-FPT\Image and video processing\Lecture 9-Edge Detection.pdf>) | 84 | ✅ | G · Phát hiện biên |
+| L10 | [Image Segmentation](<D:\MSA-FPT\Image and video processing\Lecture 10-Image Segmentation.pdf>) | 73 | ✅ | H · Phân đoạn ảnh |
+| L11 | [Color Image Processing](<D:\MSA-FPT\Image and video processing\Lecture 11-Color Image Processing.pdf>) | 83 | ✅ | I · Ảnh màu |
+| L12 | [Keypoint Detection](<D:\MSA-FPT\Image and video processing\Lecture 12-Keypoint Detection.pdf>) | 31 | ✅ | J · Keypoint & video |
+
+> Còn thiếu từ slide: **nén ảnh** (nhắc 1 dòng ở L2) và **video/optical flow** — xem [[../../hub/nguon-chua-xu-ly]]. Đề thi cuối kỳ: `exam-final\Final Exam - Signed.pdf`.
+
 ## 🔗 Tài nguyên khác
 
 | Tài nguyên | Mô tả |
 |---|---|
-| `D:\MSA-FPT\Image and video processing` | Lecture 0→12 PDF + thư mục `_txt` (bản text để grep) |
+| `D:\MSA-FPT\Image and video processing` | Lecture 0→12 PDF — bảng chi tiết ở mục 📑 phía trên · thư mục `_txt` (bản text để grep) |
 | `D:\MSA-FPT\Image and video processing\HPH_25MS23323` | 9 notebook thực hành `session1..9.ipynb` |
 | `D:\MSA-FPT\Image and video processing\image-super-resolution` | Sub-project siêu phân giải |
 | [[../../projects/image-super-resolution\|📦 Project Image Super-Resolution]] | Thẻ project |

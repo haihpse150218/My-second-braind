@@ -83,11 +83,28 @@
 - Nếu chỉ phân loại 6 lớp dừng thì IIR bậc 5 có tương đương mà nhanh hơn 20 lần không?
 - Hai trục của spectrogram không đối xứng (thời gian ≠ tần số) — có kiến trúc nào khai thác điều đó?
 
+## 📑 Slide gốc
+
+> Thư mục: `D:\MSA-FPT\Digital Signal Processing\Slide\` · 8 bài · ✅ = đã có note phủ, 🟡 = note lấy từ báo cáo DSP501 chứ chưa đọc thẳng slide, ⬜ = chưa
+
+| # | Slide | Trang | Đã học | Note chính |
+|---|---|---:|---|---|
+| 1 | [Discrete-Time Signals - Systems](<D:\MSA-FPT\Digital Signal Processing\Slide\1 - Discrete-Time Signals - Systems.pdf>) | 57 | 🟡 | [[tin-hieu-roi-rac]] · [[he-thong-lti]] · [[tich-chap]] |
+| 2 | [Sampling & Reconstruction of Signals](<D:\MSA-FPT\Digital Signal Processing\Slide\2 - Sampling & Reconstruction of Signals.pdf>) | 26 | 🟡 | [[dinh-ly-lay-mau]] |
+| 3 | [Z transform](<D:\MSA-FPT\Digital Signal Processing\Slide\3 - Z transform.pdf>) | 53 | ⬜ | `bien-doi-z` — **chưa viết**, chỉ lấy được từ slide này |
+| 4 | [Frequency Analysis of Signals & Systems](<D:\MSA-FPT\Digital Signal Processing\Slide\4 - Frequency Analysis of Signals & Systems.pdf>) | 51 | 🟡 | [[bien-doi-fourier]] · [[tin-hieu-dung]] — `chuoi-fourier` chưa viết |
+| 5 | [Discrete Fourier Transform](<D:\MSA-FPT\Digital Signal Processing\Slide\5 - Discrete Fourier Transform.pdf>) | 56 | 🟡 | [[dft-fft]] |
+| 6 | [Fast Fourier Transform](<D:\MSA-FPT\Digital Signal Processing\Slide\6 - Fast Fourier Transform.pdf>) | 30 | 🟡 | [[dft-fft]] · [[spectrogram-stft]] |
+| 7 | [Implementation of Discrete-Time Systems](<D:\MSA-FPT\Digital Signal Processing\Slide\7 - Implementation of Discrete-Time Systems.pdf>) | 56 | 🟡 | [[bo-loc-so]] · [[fir-vs-iir]] · [[pha-tuyen-tinh]] |
+| 8 | [Design of Digital Filters](<D:\MSA-FPT\Digital Signal Processing\Slide\8 - Design of Digital Filters.pdf>) | 27 | 🟡 | [[thiet-ke-bo-loc]] |
+
+> 21 note hiện có được chưng cất từ **báo cáo project DSP501**, không phải từ slide. Hai lỗ hổng `bien-doi-z` (slide 3) và `chuoi-fourier` (slide 4) chỉ bù được bằng cách đọc thẳng PDF — xem [[../../hub/nguon-chua-xu-ly]].
+
 ## 🔗 Tài nguyên khác
 
 | Tài nguyên | Mô tả |
 |---|---|
-| `D:\MSA-FPT\Digital Signal Processing\Slide` | 8 bài giảng PDF |
+| `D:\MSA-FPT\Digital Signal Processing\Slide` | 8 bài giảng PDF — bảng chi tiết ở mục 📑 phía trên |
 | `D:\MSA-FPT\Digital Signal Processing\workspaces\final\DSP501` | Bản project đã chốt (docs/ + notebooks/ + results/) |
 | `D:\MSA-FPT\Digital Signal Processing\Baitap\chap1` | Bài tập chương 1 (ảnh scan) |
 | [[../../projects/dsp-urbansound\|📦 Project DSP UrbanSound8K]] | Thẻ project |

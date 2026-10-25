@@ -2,7 +2,7 @@
 
 > Trang chủ của toàn bộ kho kiến thức. Từ đây đi tới mọi môn, mọi project, mọi ghi chú.
 
-**Cập nhật:** 2026-08-10 · **Tổng:** 346 note · 5 vault · 8 project
+**Cập nhật:** 2026-10-24 · **Tổng:** 378 note · 6 vault · 9 project · 131 cạnh liên môn
 **Chạy web:** `cd app && npm start` → http://localhost:5173
 
 ---
@@ -16,15 +16,17 @@
 | `nckh` | Nghiên cứu khoa học | **51** | ✅51 | 10 | [[../vaults/nckh/SECOND_BRAIN_NCKH\|→ vào]] |
 | `dsp` | Digital Signal Processing | **21** | 🟡21 | 5 | [[../vaults/dsp/SECOND_BRAIN_DSP\|→ vào]] |
 | `ivp` | Image & Video Processing | **65** | 🟡65 | 10 | [[../vaults/ivp/SECOND_BRAIN_IVP\|→ vào]] |
+| `iot` | IoT Application Development | **32** | 🟡32 | 8 (5 có note) | [[../vaults/iot/SECOND_BRAIN_IOT\|→ vào]] |
 
 > `dl` và `nckh` toàn ✅ vì được viết một mạch rồi đánh dấu xong.
 > `ml` còn 47 note 🟡 — đây là chỗ đáng ôn lại nhất.
+> `iot` là môn **đang học** (kỳ 2026-10): mới có Part 1 (Arduino + Bluetooth), nhánh E–H chờ slide giảng viên.
 
 ## 📦 Project
 
-**8 thẻ** → [[../projects/INDEX|xem bảng tổng]]
+**9 thẻ** → [[../projects/INDEX|xem bảng tổng]]
 
-Nổi bật: [[../projects/viic-image-captioning|ViIC]] (CIDEr 119.95) · [[../projects/image-super-resolution|Siêu phân giải x4]] (8 phương pháp × 4 benchmark) · [[../projects/harness-eval-nckh|HarnessEval]] (luận văn, đang làm)
+Nổi bật: [[../projects/viic-image-captioning|ViIC]] (CIDEr 119.95) · [[../projects/image-super-resolution|Siêu phân giải x4]] (8 phương pháp × 4 benchmark) · [[../projects/harness-eval-nckh|HarnessEval]] (luận văn, đang làm) · [[../projects/nullpet|NullPet]] (robot pet ESP32 + MCP, đang làm)
 
 ## 🗺️ Bản đồ liên môn
 
@@ -36,7 +38,7 @@ Nổi bật: [[../projects/viic-image-captioning|ViIC]] (CIDEr 119.95) · [[../p
 
 ## 📥 Còn dở
 
-[[nguon-chua-xu-ly|→ Backlog chưng cất]] — 10 file thô trong `_inbox/`, ước tính sinh ra ~57 note nữa.
+[[nguon-chua-xu-ly|→ Backlog chưng cất]] — inbox DSP/IVP đã xong; `iot` còn textbook 420 trang chờ trích theo buổi học.
 
 ---
 

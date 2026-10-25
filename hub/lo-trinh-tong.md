@@ -1,6 +1,6 @@
 # 🧭 Lộ trình học xuyên môn
 
-> Học theo thứ tự nào khi kiến thức nằm rải ở 5 vault.
+> Học theo thứ tự nào khi kiến thức nằm rải ở 6 vault.
 > Lộ trình **trong từng vault** đã có ở hub của vault đó — trang này chỉ nói **thứ tự giữa các vault** và chỗ nào phải nhảy môn.
 
 **Cập nhật:** 2026-08-09 · **Quay lại:** [[MASTER|🏠 MASTER]]
@@ -19,8 +19,8 @@
         │                            │
         └──────────┬─────────────────┘
                    ▼
-        CHUYÊN NGÀNH TÍN HIỆU/ẢNH
-        dsp · ivp   (đang dựng)
+        CHUYÊN NGÀNH TÍN HIỆU/ẢNH         THIẾT BỊ & HẠ TẦNG
+        dsp · ivp                  ◄──►   iot  (đang học — ADC là điểm chạm)
                    │
                    ▼
         NGHIÊN CỨU

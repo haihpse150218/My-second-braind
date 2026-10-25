@@ -127,6 +127,10 @@
 | P17 | 17.5 | Pha 4 — `tbc-thuc-tien` (có WebSearch) | ✅ | 2026-09-20 | **Tìm được báo cáo kỹ thuật gốc** → giải xong cả 3 câu treo · **bác 1 giả thuyết trung tâm** · kiểm số BLS/CBO thật |
 | P17 | 17.6 | Pha 5 — `tbc-phan-bien` | ✅ | 2026-09-20 | **7 đòn, 4 chí mạng.** Đòn nặng nhất: *"hội tụ 5 hướng"* là giả — cùng tổ tiên pha 0 |
 | P17 | 17.7 | Viết note `vaults/triet/ca-kich-ban-kinh-te-ai-anthropic.md` + vào hub J#4 | ✅ | 2026-09-20 | Ca thực hành đầu tiên chạy đủ 6 pha trên bài ngoài. **354 note** |
+| **P18** | 18.1 | Vault mới **`iot`** (IAD591, môn đang học) — khung 8 nhánh + 4 inbox + 26 note Part 1 | ✅ | 2026-10-24 14:30 | 4/8 nhánh có note · 0 link chết · 69/69 test |
+| P18 | 18.2 | Mục `## 📑 Slide gốc` cho **cả 6 hub** + template + CONVENTIONS | ✅ | 2026-10-24 15:10 | 45 file slide, link tuyệt đối, số trang, trạng thái chưng cất |
+| P18 | 18.3 | Buổi học 1: textbook ch. 1 (CDA/GDA) + nguồn 2S + diode → **6 note** + sơ đồ PNG + thẻ project **NullPet** | ✅ | 2026-10-24 16:00 | iot 26 → 32 · 9 project · 0 link chết |
+| P18 | 18.4 | Thêm sổ tay **cơ cấu đổi hướng chuyển động** (30+ cơ cấu, áp cho NullPet) → note `co-cau-doi-huong-chuyen-dong`, nhánh A #6 | ✅ | 2026-10-25 | iot 32 → 33 · 0 link chết · 69/69 test |
 
 ---
 
@@ -424,6 +428,62 @@ Slide là bản rút gọn có chủ ý, nhiều chỗ chỉ ghi từ khoá → 
 **Về 271 link gãy.** Trong đó **240 cái là của 2 vault mới** (tamly 140, triet 100) — **cố ý, đúng thiết kế**: hub là lộ trình đặt sẵn chỗ cho note tương lai, `CONVENTIONS.md §6` cho phép. 31 cái còn lại nằm ở vault cũ (ml 12, ivp 9, dl 7, dsp 2, nckh 1) — **nhiều khả năng là chênh lệch cách đếm**, vì script Python tạm của tao quét cả file `SECOND_BRAIN_*.md` còn `check-all.mjs` có thể không. **Phải chạy `npm run check` trên máy có Node để biết con số thật.**
 
 ✅ **CI không bị ảnh hưởng** — `deploy-pages.yml` chỉ chạy `build-index.mjs`, không chạy `check-links.js` hay test. Push lên là site vẫn build, chỉ có link dangling.
+
+### 2026-10-24 14:30 — P18 ✅ Vault `iot` — môn đang học, quét từ PDF
+
+Vault thứ 6, khác 5 vault trước ở chỗ **môn chưa học xong**: nguồn mới có syllabus + 2 bộ slide Part 1 (Session 1–6) + textbook. Cách làm vì thế đổi: dựng **khung đủ 8 nhánh A–H từ syllabus** ngay, chưng cất phần đã học, cắm slug backtick cho phần chưa học để bồi đắp theo từng buổi.
+
+| | Trước | Sau |
+|---|---|---|
+| Vault | 5 | **6** |
+| Note toàn kho | 346 | **372** |
+| Cạnh đồ thị | 1193 | **2046** |
+| Cạnh liên môn | 120 | **126** |
+| Link gãy | 0 | **0** |
+
+**Nguồn vào kho thế nào.** Hai slide và syllabus trích text bằng `pdftotext -layout` → `_inbox/` (3 file). Slide Part 1.2 (Bluetooth) là **ảnh render**, pdftotext chỉ lấy được 740 ký tự — đã render từng trang bằng PyMuPDF, đọc và chép tay nội dung vào cuối file inbox trước khi tách note. Textbook 420 trang chỉ đưa **mục lục** vào inbox (`iot-textbook-andy-king-muc-luc.md`); nội dung chương trích dần khi học tới.
+
+**26 note, 4 nhánh:** A tổng quan (5) · B điện tử cơ bản (3) · C Arduino (10) · D Bluetooth HC-05 (8). Mỗi note có mục `⚠️ Điều dễ nhầm` lấy từ bẫy thực tế (chia nguyên `5/1023`, `delay()` chặn Serial, thiếu Both NL & CR, D0/D1 bận khi nạp code…).
+
+**Nhánh H là bổ sung ngoài syllabus** — lấy từ cấu trúc textbook (CDA/GDA, edge tier, data simulation, hysteresis). Lý do: slide giảng viên thiên về thực hành, phần "kiến trúc device → edge → cloud" chỉ có trong sách.
+
+**Cạnh liên môn mới (6):** `iot/adc-analogread` ↔ [[../vaults/dsp/tin-hieu-roi-rac]] · [[../vaults/dsp/dinh-ly-lay-mau]] · [[../vaults/ivp/luong-tu-hoa-anh]] — `analogRead` là nơi **tự tay** làm phép lấy mẫu + lượng tử hoá mà DSP/IVP dạy lý thuyết. `iot/cam-bien` ↔ [[../vaults/ivp/cam-bien-anh]]. Đã thêm mục *Số hoá tín hiệu* vào [[hub/map-lien-mon]].
+
+**Việc tiếp cho vault này:** mỗi buổi học mới → `pdftotext` slide vào `_inbox/` → tách note vào nhánh đã cắm sẵn → đổi backtick thành wikilink trong hub. Khi tới S25 (MQTT) thì trích chương 6–7 textbook.
+
+### 2026-10-24 15:10 — P15.2 ✅ Mục "Slide gốc" cho mọi vault
+
+Trước đây mỗi hub ghi nguồn một kiểu: `ml` một dòng dài 8 file, `dl` chỉ liệt kê tên, `dsp`/`ivp` chỉ trỏ thư mục, `nckh` không nhắc slide môn. Giờ **cả 6 hub có cùng một mục `## 📑 Slide gốc`**: bảng *# · Slide (link tuyệt đối) · Trang · Đã học · Note/nhánh*. Đã thêm vào `_TEMPLATE-vault-hub.md` và CONVENTIONS §2 (mục bắt buộc) + §6 (link `<...>` cho đường dẫn có khoảng trắng).
+
+| Vault | Slide | Trạng thái chưng cất |
+|---|---|---|
+| ml | 8 bài L1–L8 + đề cương | ✅ 8/8 |
+| dl | 8 session S01–S08 | ✅ 8/8 — S04 (Face) chỉ có trong `paper\Paper-HealthGPT\slides\`, không có ở gốc |
+| nckh | `V1_PPNCKH1.pdf` 151 trang (PGS.TS. Hồ Văn Khương) | ⬜ **0/1** — vault toàn note paper, slide phương pháp chưa tách note nào |
+| dsp | 8 bài | 🟡 7/8 từ báo cáo DSP501, slide 3 (Z transform) ⬜ |
+| ivp | L0–L12 | ✅ 12/12 |
+| iot | Part 1, Part 1.2, syllabus, textbook | ✅ 3 · 🟡 textbook mục lục · ⬜ Part 2/3 chưa có |
+
+Phát hiện khi rà: **slide PPNCKH 151 trang chưa bao giờ được chưng cất** — vault `nckh` chỉ có paper. Ghi chú trong hub: khi cần, tách thành nhóm `M · Phương pháp` (literature review · research proposal · citation).
+
+### 2026-10-24 16:00 — P15.3 ✅ Buổi học đầu: ch. 1 textbook + nguồn 2S + NullPet
+
+Kiểu làm việc mới cho vault đang học: **người học ghi vài dòng, kho chưng cất ngay trong buổi**. Đầu vào hôm nay: "học IoT & embedded, schematic; ch. 1 CDA/GDA; ESP32-S3 = thiết bị nhỏ, laptop chạy MCP = gateway; vẽ sơ đồ nguồn 2S → servo/logic; cathode âm, anode dương; pin đỏ → anode, đen → cathode; ôn Ohm với U = 6 V".
+
+| Note mới | Nhánh | Từ đâu |
+|---|---|---|
+| [[../vaults/iot/dinh-nghia-he-thong-iot]] | H1 | textbook ch. 1 — Measure/Model/Manage, 5 nhóm hành động |
+| [[../vaults/iot/edge-tier-cloud-tier]] | H2 | ch. 1 — hai tầng, trùng lặp cố ý |
+| [[../vaults/iot/cda-gda]] | H3 | ch. 1 — CDA/GDA/cloud, RFC 7228, 3 kiểu triển khai |
+| [[../vaults/iot/du-an-esp32-mcp]] | H4 | ánh xạ vào **NullPet** (`D:\MSA-FPT\IOT\Lab-Link\Readme.md`) |
+| [[../vaults/iot/diode-anode-cathode]] | B4 | ghi chú của người học + màu dây |
+| [[../vaults/iot/so-do-nguon-2s]] | B5 | bài tập vẽ; **ảnh `so-do-nguon-2s.png`** sinh từ SVG bằng PyMuPDF, nguồn `.svg` để cạnh |
+
+Thêm ví dụ U = 6 V vào [[../vaults/iot/dinh-luat-ohm]] (200 Ω → 220 Ω; quy tắc +1 V → +50 Ω). Thẻ project thứ 9: [[../projects/nullpet]] — robot pet 4 chân, 8 servo MG90S, LOLIN S3 Mini, MCP server trên laptop, 2 nút approve/reject vật lý.
+
+**Sửa số liệu giữa chừng:** sơ đồ nguồn vẽ cho 1 servo SG90 trước, đọc README NullPet mới biết là **8 × MG90S** → nâng UBEC 3 A lên 5–8 A (hoặc 2 × 3 A chia đôi chân), cầu chì 10 A, tụ 2200 µF. Bài học: đọc README dự án **trước** khi vẽ.
+
+**Cạnh liên môn 126 → 131**: `iot/du-an-esp32-mcp` và thẻ NullPet trỏ sang `nckh` (tool-use / function calling, nhóm F của đề tài).
 
 ---
 
@@ -875,6 +935,7 @@ Lỗi cấu trúc P17 phát hiện, **chưa sửa**:
 3. **Viết 3 note gỡ được nhiều link gãy nhất:** `chain-rule` (5 note đang chờ) → `dao-ham-rieng` (3) → `naive-bayes` (3). Gỡ 11/35 link gãy. Xem [[hub/nguon-chua-xu-ly]] mục 4.
 4. **Chưng cất `_inbox/`** — bắt đầu từ `vaults/ivp/_inbox/ivp-tom-tat-lectures.md` (bảng thuật ngữ L0–L12, mỗi dòng ≈ 1 note, tách nhanh nhất). Quy trình 8 bước ở [[hub/nguon-chua-xu-ly]] mục 5. Ước tính ~57 note sẽ sinh ra.
 5. **Soát lại 47 note 🟡 của `ml`** — vault duy nhất còn 0% ✅. Cách kiểm tra: đọc mục `💡 Ý chính` rồi gấp lại giải thích bằng lời mình.
+6. **Bồi đắp `iot` theo buổi học** (P15) — slide Part 2/3 về → `pdftotext -layout <pdf> -` → `vaults/iot/_inbox/` → tách vào nhánh E–H đã cắm sẵn trong `SECOND_BRAIN_IOT.md`.
 
 **Lệnh hay dùng:**
 ```bash

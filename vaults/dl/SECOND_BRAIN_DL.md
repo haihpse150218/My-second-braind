@@ -171,6 +171,23 @@
 
 ---
 
+## 📑 Slide gốc
+
+> Giảng viên: TS. Lê Thanh Tùng · Thư mục: `D:\MSA-FPT\DeepLearning\` · 8 session · ✅ = đã chưng cất thành note
+
+| # | Slide | Trang | Đã học | Nhánh |
+|---|---|---:|---|---|
+| S01 | [Session01-Introduction.pdf](<D:\MSA-FPT\DeepLearning\Session01-Introduction.pdf>) | 108 | ✅ | A · Nền tảng NN & Backprop |
+| S02 | [Session02-CNN-CaseStudy.pdf](<D:\MSA-FPT\DeepLearning\Session02-CNN-CaseStudy.pdf>) | 52 | ✅ | B · CNN & kiến trúc thị giác |
+| S03 | [Session03-ObjDetection.pdf](<D:\MSA-FPT\DeepLearning\Session03-ObjDetection.pdf>) | 57 | ✅ | C · Detection & Segmentation |
+| S04 | [Session04-FaceRecognition.pdf](<D:\MSA-FPT\DeepLearning\paper\Paper-HealthGPT\slides\Session04-FaceRecognition.pdf>) | 37 | ✅ | D · Metric learning & Face (GAN · Diffusion · Face) — ⚠️ file chỉ có trong thư mục `paper\Paper-HealthGPT\slides\`, không có ở gốc |
+| S05 | [Session05-RNN.pdf](<D:\MSA-FPT\DeepLearning\Session05-RNN.pdf>) | 50 | ✅ | E · Chuỗi · RNN · LSTM |
+| S06 | [Session06-NLPWordEmbedding.pdf](<D:\MSA-FPT\DeepLearning\Session06-NLPWordEmbedding.pdf>) | 51 | ✅ | F · NLP & Word Embedding |
+| S07 | [Session07-Attention&Transformer.pdf](<D:\MSA-FPT\DeepLearning\Session07-Attention&Transformer.pdf>) | 51 | ✅ | H · Attention & Transformer |
+| S08 | [Session08-PromptEngineering.pdf](<D:\MSA-FPT\DeepLearning\Session08-PromptEngineering.pdf>) | 64 | ✅ | I · QA · RAG · Prompt Engineering |
+
+Bản sao đầy đủ cả 8 session (kể cả S04) nằm ở `D:\MSA-FPT\DeepLearning\paper\Paper-HealthGPT\slides\`.
+
 ## 🔗 Tài nguyên khác trong repo
 
 | Cần gì | Xem đâu |

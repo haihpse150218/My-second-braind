@@ -2,7 +2,7 @@
 
 Kho kiến thức gộp của toàn bộ chương trình học, kèm web app để xem đồ thị liên môn và theo dõi tiến độ.
 
-**239 note · 5 vault · 8 project · 1193 cạnh đồ thị**
+**378 note · 6 vault · 9 project · 2081 cạnh đồ thị · 131 cạnh liên môn**
 
 **🌐 Xem online (bản chỉ đọc): https://haihpse150218.github.io/My-second-braind/**
 
@@ -73,8 +73,9 @@ Second-brain/
 │   ├── ml/       Machine Learning        86 note
 │   ├── dl/       Deep Learning          123 note
 │   ├── nckh/     Nghiên cứu khoa học     51 note (tóm tắt paper)
-│   ├── dsp/      Digital Signal Proc.     0 note · 6 file trong _inbox/
-│   └── ivp/      Image & Video Proc.      0 note · 4 file trong _inbox/
+│   ├── dsp/      Digital Signal Proc.    21 note
+│   ├── ivp/      Image & Video Proc.     65 note
+│   └── iot/      IoT Application Dev.    32 note · đang học (kỳ 2026-10), 4 file trong _inbox/
 ├── hub/          ZONE 2 — MOC liên môn (MASTER · map-lien-mon · lo-trinh-tong)
 ├── projects/     ZONE 3 — thẻ tham chiếu project (KHÔNG chứa code)
 ├── templates/    5 mẫu note

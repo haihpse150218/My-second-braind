@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<rect width="1180" height="660" fill="#ffffff"/>
+<text x="590.0" y="28" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">NullPet — nguồn pin LiPo 2S → 8 servo MG90S (5 V) và logic ESP32-S3 (5 V → 3,3 V)</text>
+<text x="590.0" y="48" font-size="12" fill="#555" text-anchor="middle">Hai rail tách riêng · GND chung · diode chống cắm ngược · tụ đệm sát servo · chia áp đo pin</text>
+<rect x="30" y="62" width="400" height="128" rx="8" fill="#f8fafc" stroke="#94a3b8"/>
+<text x="45" y="82" font-size="13" fill="#111" text-anchor="start" font-weight="bold">Vì sao</text>
+<text x="45" y="102" font-size="11" fill="#111" text-anchor="start">• 7,4–8,4 V thẳng vào MG90S (max 6 V) hoặc chân 5V board = hỏng → buck</text>
+<text x="45" y="118" font-size="11" fill="#111" text-anchor="start">• LDO 7805 ở 2 A toả (7,4−5)×2 ≈ 5 W → dùng buck, không LDO</text>
+<text x="45" y="134" font-size="11" fill="#111" text-anchor="start">• 8 servo kẹt đồng loạt hút 5–8 A → rail riêng + tụ, tránh ESP32 reset</text>
+<text x="45" y="150" font-size="11" fill="#111" text-anchor="start">• Diode: dòng chỉ đi A → K; cắm ngược pin thì chặn</text>
+<text x="45" y="166" font-size="11" fill="#111" text-anchor="start">• ADC 3,3 V không chịu 8,4 V → luôn qua cầu chia áp</text>
+<text x="45" y="182" font-size="11" fill="#111" text-anchor="start">• Không có GND chung thì xung PWM 'lơ lửng', servo quay loạn</text>
+<rect x="30" y="215" width="130" height="90" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="95.0" y="237" text-anchor="middle" font-weight="bold" font-size="14">Pin LiPo 2S</text>
+<text x="95.0" y="257" text-anchor="middle" font-size="12" fill="#444">7,4 V danh định</text>
+<text x="95.0" y="273" text-anchor="middle" font-size="12" fill="#444">6,0 – 8,4 V</text>
+<text x="95.0" y="289" text-anchor="middle" font-size="12" fill="#444">2 cell nối tiếp</text>
+<text x="165" y="231" font-size="16" fill="#dc2626" text-anchor="start" font-weight="bold">+</text>
+<text x="165" y="301" font-size="16" fill="#111" text-anchor="start" font-weight="bold">−</text>
+<text x="178" y="318" font-size="11" fill="#dc2626" text-anchor="start" font-weight="bold">dây đỏ = + → anode</text>
+<text x="178" y="332" font-size="11" fill="#111" text-anchor="start" font-weight="bold">dây đen = − → cathode / GND</text>
+<line x1="160" y1="235" x2="200" y2="235" stroke="#dc2626" stroke-width="3"/>
+<rect x="200" y="223" width="70" height="24" fill="#fff" stroke="#111" stroke-width="2"/>
+<text x="235.0" y="239" font-size="11" fill="#111" text-anchor="middle">Cầu chì 10 A</text>
+<line x1="270" y1="235" x2="300" y2="235" stroke="#dc2626" stroke-width="3"/>
+<rect x="300" y="223" width="44" height="24" fill="#fff" stroke="#111" stroke-width="2"/>
+<text x="322.0" y="239" font-size="11" fill="#111" text-anchor="middle">SW</text>
+<line x1="344" y1="235" x2="380" y2="235" stroke="#dc2626" stroke-width="3"/>
+<polygon points="380,224 380,246 400,235" fill="#111"/>
+<line x1="400" y1="224" x2="400" y2="246" stroke="#111" stroke-width="3"/>
+<text x="376" y="221" font-size="11" fill="#111" text-anchor="end" font-weight="bold">A</text>
+<text x="406" y="221" font-size="11" fill="#111" text-anchor="start" font-weight="bold">K</text>
+<line x1="400" y1="235" x2="470" y2="235" stroke="#dc2626" stroke-width="3"/>
+<text x="385" y="267" font-size="11" fill="#111" text-anchor="start">D1 Schottky SS54 (5 A)</text>
+<text x="385" y="281" font-size="11" fill="#555" text-anchor="start">chống cắm ngược</text>
+<line x1="470" y1="150" x2="470" y2="470" stroke="#dc2626" stroke-width="3"/>
+<text x="470" y="140" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="bold">VBAT 6 – 8,4 V</text>
+<circle cx="470" cy="235" r="4" fill="#dc2626"/>
+<line x1="470" y1="170" x2="540" y2="170" stroke="#dc2626" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="545" y="130" width="170" height="80" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="630.0" y="152" text-anchor="middle" font-weight="bold" font-size="14">Buck 1 — UBEC</text>
+<text x="630.0" y="172" text-anchor="middle" font-size="12" fill="#444">5 V / 5–8 A (hoặc 2 × 3 A)</text>
+<text x="630.0" y="188" text-anchor="middle" font-size="12" fill="#444">hạ 7,4 → 5 V, ~90 %</text>
+<line x1="715" y1="170" x2="800" y2="170" stroke="#16a34a" stroke-width="3"/>
+<text x="722" y="160" font-size="12" fill="#16a34a" text-anchor="start" font-weight="bold">V_SERVO 5 V</text>
+<circle cx="800" cy="170" r="4" fill="#16a34a"/>
+<line x1="800" y1="170" x2="900" y2="170" stroke="#16a34a" stroke-width="3" marker-end="url(#arr)"/>
+<line x1="800" y1="170" x2="800" y2="182" stroke="#111" stroke-width="2.5"/>
+<line x1="788" y1="182" x2="812" y2="182" stroke="#111" stroke-width="3"/>
+<line x1="788" y1="190" x2="812" y2="190" stroke="#111" stroke-width="3"/>
+<line x1="800" y1="190" x2="800" y2="204" stroke="#111" stroke-width="2.5"/>
+<text x="816" y="190" font-size="11" fill="#111" text-anchor="start">C1 2200 µF</text>
+<line x1="800" y1="204" x2="800" y2="214" stroke="#111" stroke-width="2.5"/>
+<line x1="788" y1="214" x2="812" y2="214" stroke="#111" stroke-width="3"/>
+<line x1="792" y1="219" x2="808" y2="219" stroke="#111" stroke-width="3"/>
+<line x1="796" y1="224" x2="804" y2="224" stroke="#111" stroke-width="3"/>
+<text x="770" y="236" font-size="11" fill="#555" text-anchor="start">sát cụm servo</text>
+<rect x="905" y="120" width="190" height="100" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="1000.0" y="142" text-anchor="middle" font-weight="bold" font-size="14">8 × Servo MG90S</text>
+<text x="1000.0" y="162" text-anchor="middle" font-size="12" fill="#444">4,8–6 V · ~0,2 A chạy</text>
+<text x="1000.0" y="178" text-anchor="middle" font-size="12" fill="#444">0,7–1 A kẹt mỗi con</text>
+<text x="1000.0" y="194" text-anchor="middle" font-size="12" fill="#444">2 servo / chân × 4 chân</text>
+<line x1="470" y1="300" x2="540" y2="300" stroke="#dc2626" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="545" y="260" width="170" height="80" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="630.0" y="282" text-anchor="middle" font-weight="bold" font-size="14">Buck 2</text>
+<text x="630.0" y="302" text-anchor="middle" font-size="12" fill="#444">5 V / 1 A</text>
+<text x="630.0" y="318" text-anchor="middle" font-size="12" fill="#444">rail logic tách riêng</text>
+<line x1="715" y1="300" x2="900" y2="300" stroke="#16a34a" stroke-width="3" marker-end="url(#arr)"/>
+<text x="722" y="290" font-size="12" fill="#16a34a" text-anchor="start" font-weight="bold">5 V vào chân VBUS/5V</text>
+<rect x="905" y="250" width="190" height="110" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="1000.0" y="272" text-anchor="middle" font-weight="bold" font-size="14">LOLIN S3 Mini (ESP32-S3)</text>
+<text x="1000.0" y="292" text-anchor="middle" font-size="12" fill="#444">LDO trên board → 3,3 V</text>
+<text x="1000.0" y="308" text-anchor="middle" font-size="12" fill="#444">GPIO mức 3,3 V</text>
+<text x="1000.0" y="324" text-anchor="middle" font-size="12" fill="#444">ADC 12-bit, ≤ 3,3 V</text>
+<text x="1000.0" y="340" text-anchor="middle" font-size="12" fill="#444">Wi-Fi đỉnh ~400 mA</text>
+<line x1="1000" y1="250" x2="1000" y2="220" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arr)"/>
+<text x="1008" y="238" font-size="11" fill="#2563eb" text-anchor="start" font-weight="bold">8 × GPIO PWM 50 Hz (3,3 V) → SIG</text>
+<line x1="470" y1="430" x2="560" y2="430" stroke="#dc2626" stroke-width="3"/>
+<rect x="552" y="436" width="16" height="28" fill="#fff" stroke="#111" stroke-width="2"/>
+<line x1="560" y1="430" x2="560" y2="436" stroke="#111" stroke-width="2.5"/>
+<line x1="560" y1="464" x2="560" y2="470" stroke="#111" stroke-width="2.5"/>
+<text x="574" y="454" font-size="11" fill="#111" text-anchor="start">R1 100 kΩ</text>
+<circle cx="560" cy="476" r="4" fill="#2563eb"/>
+<line x1="560" y1="476" x2="880" y2="476" stroke="#2563eb" stroke-width="2.5"/>
+<line x1="880" y1="476" x2="880" y2="360" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arr)"/>
+<text x="600" y="494" font-size="11" fill="#2563eb" text-anchor="start">→ GPIO ADC: 8,4 V × 47/147 = 2,69 V (≤ 3,3 V)</text>
+<line x1="560" y1="470" x2="560" y2="486" stroke="#111" stroke-width="2.5"/>
+<rect x="552" y="492" width="16" height="28" fill="#fff" stroke="#111" stroke-width="2"/>
+<line x1="560" y1="486" x2="560" y2="492" stroke="#111" stroke-width="2.5"/>
+<line x1="560" y1="520" x2="560" y2="526" stroke="#111" stroke-width="2.5"/>
+<text x="574" y="510" font-size="11" fill="#111" text-anchor="start">R2 47 kΩ</text>
+<line x1="560" y1="526" x2="560" y2="536" stroke="#111" stroke-width="2.5"/>
+<line x1="548" y1="536" x2="572" y2="536" stroke="#111" stroke-width="3"/>
+<line x1="552" y1="541" x2="568" y2="541" stroke="#111" stroke-width="3"/>
+<line x1="556" y1="546" x2="564" y2="546" stroke="#111" stroke-width="3"/>
+<line x1="160" y1="301" x2="160" y2="590" stroke="#111" stroke-width="2.5"/>
+<line x1="160" y1="590" x2="1100" y2="590" stroke="#111" stroke-width="4"/>
+<line x1="630" y1="210" x2="630" y2="590" stroke="#111" stroke-width="1.5"/>
+<line x1="630" y1="340" x2="630" y2="590" stroke="#111" stroke-width="1.5"/>
+<line x1="1000" y1="360" x2="1000" y2="590" stroke="#111" stroke-width="1.5"/>
+<line x1="1020" y1="220" x2="1020" y2="590" stroke="#111" stroke-width="1.5"/>
+<line x1="640" y1="592" x2="640" y2="602" stroke="#111" stroke-width="2.5"/>
+<line x1="628" y1="602" x2="652" y2="602" stroke="#111" stroke-width="3"/>
+<line x1="632" y1="607" x2="648" y2="607" stroke="#111" stroke-width="3"/>
+<line x1="636" y1="612" x2="644" y2="612" stroke="#111" stroke-width="3"/>
+<text x="665" y="612" font-size="12" fill="#111" text-anchor="start" font-weight="bold">GND CHUNG — pin · buck 1 · buck 2 · ESP32 · 8 servo · cầu chia áp đều về đây</text>
+</svg>

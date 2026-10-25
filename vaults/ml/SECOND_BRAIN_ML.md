@@ -195,11 +195,27 @@ Các lĩnh vực toán cốt lõi cho ML — xem chi tiết tại [[note]].
 
 ---
 
+## 📑 Slide gốc
+
+> Giảng viên: TS. Cao Tiến Dũng · Thư mục: `D:\MSA-FPT\Machine learning\slide\` · 8 bài + đề cương · ✅ = đã chưng cất thành note
+
+| # | Slide | Trang | Đã học | Note chính |
+|---|---|---:|---|---|
+| L1 | [L1_Math_Overview.pdf](<D:\MSA-FPT\Machine learning\slide\L1_Math_Overview.pdf>) | 60 | ✅ | [[note]] — 5 mảng toán nền |
+| L2 | [L2_Intro_ML_DL_GenAI.pdf](<D:\MSA-FPT\Machine learning\slide\L2_Intro_ML_DL_GenAI.pdf>) | 67 | ✅ | [[dinh-huong-hoc]] · nhánh F |
+| L3 | [L3_LinearReg.pdf](<D:\MSA-FPT\Machine learning\slide\L3_LinearReg.pdf>) | 31 | ✅ | [[linear-regression]] · [[metric-hoi-quy]] |
+| L4 | [L4_LogisticsReg.pdf](<D:\MSA-FPT\Machine learning\slide\L4_LogisticsReg.pdf>) | 29 | ✅ | [[logistic-regression]] · [[softmax]] · [[class-imbalance]] · [[danh-gia-mo-hinh]] |
+| L5 | [L5_Regularization_FeatureSelection.pdf](<D:\MSA-FPT\Machine learning\slide\L5_Regularization_FeatureSelection.pdf>) | 32 | ✅ | [[regularization]] · [[feature-selection]] · [[bias-variance]] |
+| L6 | [L6_DecisionTree.pdf](<D:\MSA-FPT\Machine learning\slide\L6_DecisionTree.pdf>) | 26 | ✅ | [[decision-tree]] · [[hyperparameter-tuning]] · [[cross-validation]] |
+| L7 | [L7_Ensemble.pdf](<D:\MSA-FPT\Machine learning\slide\L7_Ensemble.pdf>) | 50 | ✅ | [[ensemble-learning]] · [[random-forest]] · [[adaboost]] · [[xgboost]] |
+| L8 | [L8_NeuralNetwork.pdf](<D:\MSA-FPT\Machine learning\slide\L8_NeuralNetwork.pdf>) | 35 | ✅ | [[neural-network]] → sang vault `dl` |
+| — | [DeCuong_HocMay_Summer2026.pdf](<D:\MSA-FPT\Machine learning\slide\DeCuong_HocMay_Summer2026.pdf>) | 5 | — | Đề cương học phần: 10 buổi, CLO1–4 |
+
+Kèm theo: `D:\MSA-FPT\Machine learning\slide\ref-tree.md` — link cách tính tay CART & ID3 (cho [[decision-tree]]).
+
 ## 📚 Tài nguyên
 > Sách, khóa học, bài viết, video tham khảo.
 
-- 📑 Slide môn học (TS. Cao Tiến Dũng) — thư mục `D:\MSA-FPT\Machine learning\slide\`: `L1_Math_Overview.pdf` ✅ · `L2_Intro_ML_DL_GenAI.pdf` ✅ · `L3_LinearReg.pdf` ✅ · `L4_LogisticsReg.pdf` ✅ · `L5_Regularization_FeatureSelection.pdf` ✅ · `L6_DecisionTree.pdf` ✅ · `L7_Ensemble.pdf` ✅ · `L8_NeuralNetwork.pdf` ✅ · `DeCuong_HocMay_Summer2026.pdf`
-  - 🔗 `D:\MSA-FPT\Machine learning\slide\ref-tree.md` — link tham khảo cách tính tay CART & ID3 (cho [[decision-tree]]).
 - 🖼️ Hình tự vẽ: `eigenvector-pca.png` (Eigenvector & PCA) · `chon-mo-hinh.png` (sơ đồ chọn mô hình) · `bias-variance-target.png` (4 ô bia bắn Bias-Variance — [[bias-variance]])
 - 🎥 Tham khảo: StatQuest, 3Blue1Brown (Essence of Linear Algebra/Calculus)
 
