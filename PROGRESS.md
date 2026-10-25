@@ -131,6 +131,7 @@
 | P18 | 18.2 | Mục `## 📑 Slide gốc` cho **cả 6 hub** + template + CONVENTIONS | ✅ | 2026-10-24 15:10 | 45 file slide, link tuyệt đối, số trang, trạng thái chưng cất |
 | P18 | 18.3 | Buổi học 1: textbook ch. 1 (CDA/GDA) + nguồn 2S + diode → **6 note** + sơ đồ PNG + thẻ project **NullPet** | ✅ | 2026-10-24 16:00 | iot 26 → 32 · 9 project · 0 link chết |
 | P18 | 18.4 | Thêm sổ tay **cơ cấu đổi hướng chuyển động** (30+ cơ cấu, áp cho NullPet) → note `co-cau-doi-huong-chuyen-dong`, nhánh A #6 | ✅ | 2026-10-25 | iot 32 → 33 · 0 link chết · 69/69 test |
+| P18 | 18.5 | **Bài tập 1 LM35 làm xong trên mạch thật** → viết lại `nhiet-ke-lm35`: sơ đồ chân A0 · A4/A5 · D12, code cuối (`millis()` nháy đèn + còi `tone()`), nhật ký 6 lỗi, bảng tra điện áp A0 | ✅ | 2026-10-25 | code trong note khớp bản đã compile cho Uno · status learning → done |
 
 ---
 

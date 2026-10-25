@@ -45,7 +45,7 @@
 7. [[ham-map-va-servo]] — `map(0..1023 → 0..180)`; servo theo **vị trí**, không theo tốc độ
 8. [[giao-tiep-i2c]] — SDA/SCL (A4/A5), địa chỉ 7-bit; **quét `i2c_scanner` trước**
 9. [[lcd-1602-i2c]] — 16×2 ô ký tự; `init · backlight · setCursor · print · clear`
-10. [[nhiet-ke-lm35]] — **Bài tập 1**: 10 mV/°C → LCD, LED > 25 °C; đủ bốn khối IoT trên một bo
+10. [[nhiet-ke-lm35]] — **Bài tập 1** ✅ làm xong trên mạch thật: 10 mV/°C → LCD, đèn + còi nhấp nháy > 25 °C; nhật ký 6 lỗi (A5 đụng I2C · 293 °C · còi thụ động cần `tone()` · ký tự lạ · `millis()`)
 
 **Nhánh D · Giao tiếp không dây — Bluetooth HC-05 (S6)**
 1. [[bluetooth-hc-05]] — SPP = **cáp serial không dây**; mức logic 3,3 V; 6 chân
