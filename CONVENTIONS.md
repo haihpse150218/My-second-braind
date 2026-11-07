@@ -25,6 +25,7 @@ vaults/<id>/
 ├── <slug>.md               ← note nguyên tử — PHẲNG, không thư mục con
 ├── <slug>.png              ← ảnh đặt ngay cạnh note dùng nó
 ├── _inbox/                 ← note thô chưa chưng cất (app BỎ QUA)
+├── raw/                    ← PDF slide gốc (app BỎ QUA); repo public nên phải xóa mật khẩu, IP trước khi thêm
 └── _archive/               ← note bỏ (app BỎ QUA)
 ```
 

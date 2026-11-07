@@ -140,7 +140,7 @@
 
 ## 📑 Slide gốc
 
-> Giảng viên: TS. Đoàn Xuân Huy Minh · Thư mục: `D:\MSA-FPT\IOT\material\` · đã có Part 1, Part 2 · ✅ = đã chưng cất thành note
+> Giảng viên: TS. Đoàn Xuân Huy Minh · Thư mục: `D:\MSA-FPT\IOT\material\` · đã có Part 1, Part 2 · ✅ = đã chưng cất thành note · Bản trên GitHub: `vaults/iot/raw/` (Part 2 đã xóa nội dung tr. 8)
 
 | # | Slide | Trang | Đã học | Nhánh |
 |---|---|---:|---|---|
