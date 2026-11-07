@@ -8,7 +8,7 @@ order: 9
 status: learning
 tags: [iot, bluetooth, go-loi]
 prev: [giao-tiep-hai-chieu-bang-chuoi]
-next: []
+next: [raspberry-pi-la-gi]
 related: [hc05-led-trang-thai, hc05-data-mode-vs-at-mode, uart-crossover-va-chia-ap, uart-serial-monitor]
 sources: ["IAD_MSA33_Part_1_2.pdf"]
 created: 2026-10-24
@@ -20,7 +20,7 @@ created: 2026-10-24
 
 **Ngày tạo:** 2026-10-24
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh D · #9 ← cần [[giao-tiep-hai-chieu-bang-chuoi]]
+**📖 Lộ trình:** Nhánh D · #9 ← cần [[giao-tiep-hai-chieu-bang-chuoi]] · → kế tiếp [[raspberry-pi-la-gi]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #bluetooth #go-loi
 

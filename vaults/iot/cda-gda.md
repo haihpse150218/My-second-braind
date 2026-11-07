@@ -9,7 +9,7 @@ status: learning
 tags: [iot, kien-truc, textbook, edge]
 prev: [edge-tier-cloud-tier]
 next: [du-an-esp32-mcp]
-related: [he-thong-nhung, giao-tiep-hai-chieu-bang-chuoi, arduino-la-gi]
+related: [he-thong-nhung, giao-tiep-hai-chieu-bang-chuoi, arduino-la-gi, pi-lam-cda-gda]
 sources: ["Programming the Internet of Things — Andy King, ch. 1 (tr. 9–13)"]
 created: 2026-10-24
 ---

@@ -2,9 +2,9 @@
 
 > Trang trung tâm (Map of Content) cho môn Phát triển ứng dụng IoT.
 
-**Cập nhật lần cuối:** 2026-10-25
-**Trạng thái:** 🌱 Đang học — Part 1 (Session 1–6) + textbook ch. 1 + bài vẽ nguồn 2S: **35 atomic note**, nhánh A–D và H. Nhánh E–G chờ bài giảng.
-**Nguồn:** `D:\MSA-FPT\IOT` — syllabus + 2 bộ slide Part 1 + textbook *Programming the Internet of Things* (Andy King, O'Reilly 2021, 420 trang)
+**Cập nhật lần cuối:** 2026-11-07
+**Trạng thái:** 🌱 Đang học — Part 1, Part 2 + textbook ch. 1 + bài vẽ nguồn 2S: **52 atomic note**, nhánh A–F và H. Nhánh G chờ Part 3.
+**Nguồn:** `D:\MSA-FPT\IOT` — syllabus + 3 bộ slide (Part 1, 1.2, 2) + textbook *Programming the Internet of Things* (Andy King, O'Reilly 2021, 420 trang)
 **Giảng viên:** TS. Đoàn Xuân Huy Minh · **Đánh giá:** 3 bài tập × 15% · thuyết trình 15% · project 40% · qua môn ≥ 5/10
 **Quay lại:** [[../../hub/MASTER|🏠 MASTER]]
 
@@ -59,21 +59,33 @@
 8. [[giao-tiep-hai-chieu-bang-chuoi]] — `TEMP:27.5` lên / `LED_ON` xuống; **"giao thức" là chuỗi tự đặt** — tiền thân của MQTT
 9. [[go-loi-hc05]] — im lặng / ký tự lạ / không thấy tên → dây / NL&CR / kẹt AT mode
 
-### Part 2 · Pi · Linux · Web · Database (Session 7–19) — ⬜ chờ bài giảng
+### Part 2 · Pi · GUI · CDA/GDA · Dữ liệu (Session 7–19) — 🟡 slide Part 2 đã chưng cất 2026-11-07
 
 **Nhánh E · Raspberry Pi · Linux · Python (S14–S19)**
-1. `raspberry-pi-la-gi` — vi xử lý + hệ điều hành; khi nào thay Arduino
-2. `linux-co-ban` — shell, quyền, service
-3. `gpio-python` — `RPi.GPIO` / `gpiozero`
-4. `lap-trinh-c-tren-linux` — gcc, make
-5. `sense-hat-emulator` — textbook ch. 4: giả lập cảm biến khi không có phần cứng
+1. [[raspberry-pi-la-gi]] — máy tính Linux có GPIO; so với Arduino: 3,3 V, không có ADC, có mạng sẵn
+2. [[pi-gpio-pinout]] — 40 chân, **số BCM ≠ số Board**; 3,3 V, 16 mA; GPIO 2/3 có sẵn kéo lên
+3. [[pi-truy-cap-tu-xa]] — VNC · WinSCP · Thonny · `raspi-config`; dùng VS Code Remote - SSH thay thế được
+4. [[gpio-python]] — `gpiozero` (đồ vật) vs `RPi.GPIO` (chân); Practice 4.1 Blink
+5. [[pi-nut-nhan-va-pwm]] — Practice 4.2, 4.3; `when_pressed`, `PWMLED`; ⚠️ đề 4.2 tự mâu thuẫn
+6. [[hc-sr04-sieu-am]] — tiếng vọng chia đôi; **Echo 5 V phải qua cầu chia áp**; Practice 4.4
+7. [[led-7-doan-5161as]] — cathode chung, bảng mẫu `[a..g]`
+8. [[ic-74hc595]] — 3 chân GPIO thành 8 chân xuất; dịch rồi chốt
+9. [[led-4-so-3641as]] — quét luân phiên; LOW mới bật chữ số; phải quét liên tục
+10. [[uart-pi-arduino]] — Arduino đọc analog, Pi đọc `/dev/ttyS0`
+11. [[dht11-dht22]] — đọc digital một dây, luôn cần `try/except`; dùng nguồn 3,3 V
+12. `linux-co-ban` — shell, quyền, service *(chưa có trong slide Part 2)*
+13. `lap-trinh-c-tren-linux` — gcc, make *(chưa có trong slide Part 2)*
+14. `sense-hat-emulator` — textbook ch. 4: giả lập cảm biến khi không có phần cứng
 
 **Nhánh F · Giao diện & dữ liệu — Web · MySQL · MongoDB (S7–S13)**
-1. `giao-dien-iot` — từ LCD lên web dashboard
-2. `web-front-end` — HTML · CSS · JavaScript
-3. `web-backend` — JavaScript (Node) · PHP; REST API nhận dữ liệu cảm biến
-4. `co-so-du-lieu-iot` — time-series, lưu gì, giữ bao lâu
-5. `mysql-vs-mongodb` — bảng vs document cho dữ liệu cảm biến
+1. [[giao-dien-iot]] — Tkinter · **guizero** · Easygui; không chặn vòng lặp GUI; 2 bài 5.1, 2 bài 5.2
+2. [[luu-csv-tren-pi]] — mode `a`, timestamp, `NA` khi lỗi; Practice 6.2, 6.3; ⚠️ 4 lỗi trong code slide
+3. [[co-so-du-lieu-iot]] — SQLite (file) vs MariaDB (server); ⚠️ `pip3 install sqlite3` không tồn tại
+4. [[flask-tren-pi]] — URL thành hàm Python; Exercise 3 điều khiển Arduino từ web
+5. [[http-post-json]] — Practice 6_4; ⚠️ Flask mặc định trả 200, code slide chờ 201; thiếu Practice 6_5.py
+6. `web-front-end` — HTML · CSS · JavaScript *(chưa có trong slide Part 2)*
+7. `web-backend` — JavaScript (Node) · PHP; REST API *(chưa có trong slide Part 2)*
+8. `mysql-vs-mongodb` — bảng vs document cho dữ liệu cảm biến *(chưa có trong slide Part 2)*
 
 ### Part 3 · Giao thức · Cloud · Project (Session 20–30) — ⬜ chờ bài giảng
 
@@ -89,10 +101,11 @@
 2. [[edge-tier-cloud-tier]] — Edge phải ở cạnh vật lý, Cloud ở đâu cũng được; 5 nhóm **cố ý trùng** ở hai tầng; quyết định khẩn cấp làm tại chỗ
 3. [[cda-gda]] — CDA = data collection + triggers; GDA = data mgmt + config + analytics, cửa duy nhất ra cloud; RFC 7228 Class 2; 3 kiểu triển khai
 4. [[du-an-esp32-mcp]] — **dự án của mình**: ESP32-S3 = CDA · laptop MCP server = GDA · LLM = analytics; *separated physical*
-5. `data-simulation-emulation` — ch. 3–4: sinh dữ liệu giả để phát triển không cần phần cứng
-6. `hysteresis-threshold` — ch. 3–4: chống nhấp nháy quanh ngưỡng — đã đụng ở [[nhiet-ke-lm35]]
-7. `cloud-iot-ubidots-aws` — ch. 11: Ubidots · AWS IoT Core qua MQTT
-8. `ba-use-case-iot` — ch. 12: home monitoring · garden · pond
+5. [[pi-lam-cda-gda]] — Part 2: Pi đóng cả hai vai (*blended physical*); ⚠️ slide và textbook dùng chữ CDA khác nhau
+6. `data-simulation-emulation` — ch. 3–4: sinh dữ liệu giả để phát triển không cần phần cứng
+7. `hysteresis-threshold` — ch. 3–4: chống nhấp nháy quanh ngưỡng — đã đụng ở [[nhiet-ke-lm35]]
+8. `cloud-iot-ubidots-aws` — ch. 11: Ubidots · AWS IoT Core qua MQTT
+9. `ba-use-case-iot` — ch. 12: home monitoring · garden · pond
 
 ---
 
@@ -115,8 +128,9 @@
 | `_inbox/iot-slide-part1-2-bluetooth.md` | ✅ chưng cất → nhánh D (8 note); slide dạng ảnh, đã chép tay nội dung |
 | `_inbox/iot-textbook-andy-king-muc-luc.md` | ⬜ mới có mục lục; nội dung chương trích dần khi học tới nhánh G, H |
 | `_inbox/iot-nullpet-readme.md` | 🟡 bản sao README NullPet (2026-11-07); bản gốc ở `D:\MSA-FPT\IOT\Lab-Link\Readme.md` |
+| `_inbox/iot-slide-part2-raspberry-pi.md` | ✅ chép đủ 72 trang (trừ tr. 8) → nhánh E, F, H (17 note) |
 
-**Chưa có nguồn** (chờ slide Part 2, Part 3 của giảng viên): toàn bộ nhánh E–H ở trên.
+**Chưa có nguồn:** nhánh G và các slug còn trong backtick ở E, F, H (chờ Part 3 và textbook). **Cần xin giảng viên:** `Practice 6_5.py`.
 
 ## ❓ Câu hỏi mở
 
@@ -126,14 +140,14 @@
 
 ## 📑 Slide gốc
 
-> Giảng viên: TS. Đoàn Xuân Huy Minh · Thư mục: `D:\MSA-FPT\IOT\material\` · mới có Part 1 · ✅ = đã chưng cất thành note
+> Giảng viên: TS. Đoàn Xuân Huy Minh · Thư mục: `D:\MSA-FPT\IOT\material\` · đã có Part 1, Part 2 · ✅ = đã chưng cất thành note
 
 | # | Slide | Trang | Đã học | Nhánh |
 |---|---|---:|---|---|
 | — | [Syllabus IAD591](<D:\MSA-FPT\IOT\Syllabus_IAD591.22_260303.pdf_1773288514.pdf>) | 7 | ✅ | khung 8 nhánh A–H, đánh giá |
 | P1 | [IAD_MSA33_Part_1.pdf](<D:\MSA-FPT\IOT\material\IAD_MSA33_Part_1.pdf>) | 62 | ✅ | A · B · C — Session 1–6, Arduino |
 | P1.2 | [IAD_MSA33_Part_1_2.pdf](<D:\MSA-FPT\IOT\material\IAD_MSA33_Part_1_2.pdf>) | 19 | ✅ | D — Bluetooth HC-05 (slide dạng ảnh, đã chép tay vào inbox) |
-| P2 | *chưa có* | | ⬜ | E · F — Pi · Linux · Web · DB (S7–S19) |
+| P2 | [IAD_MSA33_Part_2.pdf](<D:\MSA-FPT\IOT\material\IAD_MSA33_Part_2.pdf>) | 72 | ✅ | E · F · H — Pi · GUI · CDA/GDA · CSV · DB · Flask; chép từ ảnh, tr. 8 không đưa vào repo |
 | P3 | *chưa có* | | ⬜ | G — MQTT · cloud · Android (S20–S30) |
 | 📘 | [Programming the Internet of Things — Andy King](<D:\MSA-FPT\IOT\material\IAD_programming-the-internet-of-things-an-introduction-to-building-integrated-device-to-cloud-iot-solutions-1nbsped-1492081418-9781492081418.pdf>) | 420 | 🟡 mục lục | G · H — textbook chính, trích theo chương khi học tới |
 

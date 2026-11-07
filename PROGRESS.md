@@ -489,6 +489,15 @@ Thêm ví dụ U = 6 V vào [[../vaults/iot/dinh-luat-ohm]] (200 Ω → 220 Ω; 
 
 **Cạnh liên môn 126 → 131**: `iot/du-an-esp32-mcp` và thẻ NullPet trỏ sang `nckh` (tool-use / function calling, nhóm F của đề tài).
 
+### 2026-11-07 — P18.1 ✅ Chưng cất slide Part 2 vào vault `iot`
+
+`IAD_MSA33_Part_2.pdf` (72 trang) → `_inbox/iot-slide-part2-raspberry-pi.md` + 17 note: nhánh E #1–11, nhánh F #1–5, nhánh H #5. Vault `iot` từ 35 lên **52 note**.
+
+- **Cách quét:** `pdftotext` làm rơi dấu tiếng Việt (PDF từ *Microsoft Print To PDF*), nên đọc bằng ảnh render từng trang.
+- **Không đưa vào repo public:** tr. 8 (IP lab + tài khoản Pi); không chép ảnh slide.
+- **Lỗi slide đã ghi trong note:** đề Practice 4.2 mâu thuẫn · `//` trong Python · nháy cong và thiếu `\n` ở phần CSV · `pip3 install sqlite3` không tồn tại · `apt-get install pip3` sai tên gói · client chờ 201 còn Flask mặc định 200.
+- **Thiếu:** `Practice 6_5.py` không có trong PDF. Code tự viết đã chạy bằng giả lập, chưa chạy trên Pi thật.
+
 ---
 
 ## 📊 Kết quả cuối

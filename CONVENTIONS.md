@@ -39,7 +39,7 @@ vaults/<id>/
 | `nckh` | Nghiên cứu khoa học | `literature` |
 | `dsp` | Digital Signal Processing | `concept` (đang dựng) |
 | `ivp` | Image & Video Processing | `concept` (đang dựng) |
-| `iot` | IoT Application Development (IAD591) | `concept` (đang học — Part 1 xong) |
+| `iot` | IoT Application Development (IAD591) | `concept` (đang học — Part 1, 2 xong) |
 
 ### Mục bắt buộc trong hub `SECOND_BRAIN_<ID>.md`
 
