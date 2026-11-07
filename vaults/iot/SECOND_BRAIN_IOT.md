@@ -114,6 +114,7 @@
 | `_inbox/iot-slide-part1-arduino.md` | ✅ chưng cất → nhánh A, B, C (18 note) |
 | `_inbox/iot-slide-part1-2-bluetooth.md` | ✅ chưng cất → nhánh D (8 note); slide dạng ảnh, đã chép tay nội dung |
 | `_inbox/iot-textbook-andy-king-muc-luc.md` | ⬜ mới có mục lục; nội dung chương trích dần khi học tới nhánh G, H |
+| `_inbox/iot-nullpet-readme.md` | 🟡 bản sao README NullPet (2026-11-07); bản gốc ở `D:\MSA-FPT\IOT\Lab-Link\Readme.md` |
 
 **Chưa có nguồn** (chờ slide Part 2, Part 3 của giảng viên): toàn bộ nhánh E–H ở trên.
 

@@ -12,7 +12,7 @@ next: [lcd-emoji-ky-tu-tu-tao]
 related: [adc-analogread, bon-thanh-phan-iot, co-cau-chap-hanh, giao-tiep-i2c, sketch-setup-loop, uart-serial-monitor]
 sources: ["IAD_MSA33_Part_1.pdf"]
 created: 2026-10-24
-updated: 2026-10-25
+updated: 2026-11-07
 ---
 
 # Bài tập 1 — Nhiệt kế điện tử với LM35
@@ -32,6 +32,8 @@ updated: 2026-10-25
 - Hiển thị nhiệt độ từ cảm biến **LM35** trên màn hình **LCD 1602**.
 - Điều khiển **LED** dựa trên nhiệt độ đo được: đèn / còi báo khi nhiệt độ **> 25 °C**.
 - Thông số: `Vout = 10 mV/°C` (0 °C → 0 V, 25 °C → 0,25 V, 100 °C → 1 V).
+
+![Slide đề bài: mạch LM35 + LCD 1602 + LED + còi](nhiet-ke-lm35-de-bai.png)
 
 ## 🔌 Sơ đồ chân (bài làm thực tế)
 

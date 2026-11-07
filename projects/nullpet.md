@@ -19,6 +19,7 @@ created: 2026-10-24
 
 **Môn:** IoT Application Development (IAD591) · **Thời gian:** 2026-10 → nay · **Vai trò:** cá nhân
 **Thư mục gốc:** `D:\MSA-FPT\IOT\Lab-Link`
+**Bản sao README:** `vaults/iot/_inbox/iot-nullpet-readme.md`
 **Repo GitHub:** chưa có
 **Quay lại:** [[INDEX|📦 Tất cả project]]
 
