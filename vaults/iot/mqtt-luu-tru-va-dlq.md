@@ -85,6 +85,22 @@ Các thí nghiệm, Mosquitto 2.0.18 chạy trong WSL Ubuntu, client `paho-mqtt`
 
 Mosquitto 2.x không có file cấu hình: log in `Starting in local only mode` → đã kiểm chứng cảnh báo ở [[mosquitto-broker]].
 
+**Giới hạn số pub / sub.** Chuẩn MQTT không giới hạn; Mosquitto mặc định `max_connections -1`. Broker **chỉ đếm kết nối**, không đếm riêng pub và sub. Một Pi vừa publish vừa subscribe tính là 1. `mosquitto_pub` kết nối, gửi, ngắt ngay. Số topic và số subscription mỗi client cũng không giới hạn.
+
+| # | Thử (broker + client cùng trong WSL) | Kết quả 🔎 |
+|---|---|---|
+| I | `max_connections 5` (đặt sau `listener`), mở 8 client | nhận 5; log `Client connection from 127.0.0.1 denied: max_connections exceeded.` |
+| J | broker chạy với `ulimit -n 64`, mở 100 client | nhận 57; còn lại log `denied access by tcpd` |
+| K | mặc định, 500 subscriber cùng topic, 1 publish | **500/500 nhận trong ~132 ms**; broker ~**9,4 MB RAM** |
+
+Giới hạn thật là **file descriptor của hệ điều hành** (`ulimit -n`), RAM, CPU và mạng. Thứ nặng nhất là **fan-out**: 1 bản tin × N subscriber = N lần gửi. Lab 6 nhóm chỉ vài chục kết nối, xa mọi giới hạn. Kiểm tra trên Pi: `cat /proc/$(pidof mosquitto)/limits | grep -i "open files"` *(chưa xem trên Pi lab)*.
+
+| Cấu hình | Mặc định | Nghĩa |
+|---|---|---|
+| `max_connections` | `-1` | không giới hạn; đặt ngay sau `listener` |
+| `message_size_limit` / `max_packet_size` | `0` | không tự giới hạn; chuẩn cho tối đa ~256 MB / gói |
+| `max_keepalive` | 65535 | keep alive tối đa (giây) client được xin |
+
 ## ⚙️ Khi nào dùng / Ứng dụng
 
 - **Cần lịch sử** → subscriber ghi vào database ([[co-so-du-lieu-iot]], `data/data.db` của [[dashboard-flask-sqlite]]). Broker không thay được database.
@@ -109,6 +125,7 @@ Mosquitto 2.x không có file cấu hình: log in `Starting in local only mode` 
 - `persistence true` vẫn có thể mất phần chưa kịp lưu nếu broker bị kill đột ngột giữa hai lần autosave *(theo cấu hình, chưa thử)*.
 - `test.mosquitto.org` giữ phiên (`session_present=True`) nhưng **không giao bản tin đã xếp hàng** khi thử: đừng dùng broker công khai để kiểm tra hành vi hàng đợi.
 - Broker Python `amqtt` giao retained **2 lần**: không dùng để học hành vi chuẩn.
+- ⚠️ Client bị từ chối vì quá `max_connections` thì **`mosquitto_sub` lặng lẽ thử kết nối lại**, không in lỗi. Nhìn phía client tưởng đang chạy; phải xem log broker.
 
 ## 🔗 Liên kết
 
