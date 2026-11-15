@@ -52,23 +52,82 @@ pip3 install paho-mqtt                     # thư viện client cho Python
 **2. Mở cho máy khác trong mạng** — ⚠️ Mosquitto **từ bản 2.0** mặc định *chỉ nghe localhost*; sách dùng 1.4.8 nên không nhắc. 🔎 Đã thử với 2.0.18 trong WSL: chạy không có cấu hình thì log in `Starting in local only mode`; thêm 2 dòng dưới thì Windows kết nối vào được. Tạo `/etc/mosquitto/conf.d/lab.conf` (*chưa thử trên Pi lab*):
 
 ```text
-listener 1883
+listener 1883 0.0.0.0
 allow_anonymous true
 ```
 
 ```bash
 sudo systemctl restart mosquitto
+hostname -I                        # IP của máy broker, ví dụ 192.168.1.50
+ss -ltn | grep 1883                # phải thấy 0.0.0.0:1883, không phải 127.0.0.1:1883
 ```
+
+🔎 Lúc thử, dịch vụ Mosquitto cài bằng apt đang nghe `127.0.0.1:1883`: mọi lệnh dùng IP đều báo `Error: Connection refused`, còn `localhost` thì chạy.
 
 `allow_anonymous true` chỉ để học trong mạng lab. Hệ thật: `password_file` + TLS.
 
-**3. Thử bằng dòng lệnh** — mở 2 terminal:
+**3. Thử bằng dòng lệnh** (🔎 chạy thật trên Mosquitto 2.0.18 trong WSL; output dưới là thật, còn IP `192.168.1.x` là **ví dụ**, ở lab thay bằng IP thật và không ghi IP lab vào repo này):
+
+```text
+   Pi nhóm 1 (publisher)            Laptop (subscriber)
+   192.168.1.51                      192.168.1.100
+         │ mosquitto_pub -h 192.168.1.50   │ mosquitto_sub -h 192.168.1.50
+         └──────────────►  BROKER  ◄───────┘
+                   Pi chạy Mosquitto 192.168.1.50:1883
+```
+
+**Cả bên gửi lẫn bên nhận đều chỉ dùng IP của máy broker.** Hai bên không cần biết IP của nhau. `localhost` chỉ dùng khi lệnh chạy trên chính máy broker.
+
+Bên nhận, subscribe trước (lệnh chạy treo để chờ; Ctrl+C để dừng):
 
 ```bash
-mosquitto_sub -h <IP-broker> -t 'iad591/#' -v                 # -v in cả topic
-mosquitto_pub -h <IP-broker> -t iad591/group1/dht11 -m '{"temperature": 29.4}'
-mosquitto_pub -h <IP-broker> -t iad591/group1/dht11 -r -n     # -r -n: xoá retained
+mosquitto_sub -h 192.168.1.50 -t 'iad591/#' -v
 ```
+
+Bên gửi (Pi), terminal khác:
+
+```bash
+mosquitto_pub -h 192.168.1.50 -t iad591/group1/dht11 -q 1 -m '{"temperature": 29.4, "humidity": 70.2}'
+mosquitto_pub -h 192.168.1.50 -t iad591/group2/dht11 -q 1 -m '{"temperature": 27.1, "humidity": 65.0}'
+mosquitto_pub -h 192.168.1.50 -t iad591/group1/status -q 1 -r -m online
+```
+
+Bên nhận hiện ngay:
+
+```text
+iad591/group1/dht11 {"temperature": 29.4, "humidity": 70.2}
+iad591/group2/dht11 {"temperature": 27.1, "humidity": 65.0}
+iad591/group1/status online
+```
+
+| Tuỳ chọn | Nghĩa |
+|---|---|
+| `-h` | IP của **broker** |
+| `-p` | cổng, mặc định 1883 |
+| `-t` | topic; để `'…/#'` trong nháy đơn kẻo shell hiểu `#` là chú thích |
+| `-m` | nội dung bản tin |
+| `-q 1` | QoS 1 |
+| `-r` | retain; `-r -n` = gửi bản rỗng để **xoá** retained |
+| `-v` | (sub) in cả tên topic |
+| `-W 2` | (sub) chờ 2 giây rồi thoát |
+
+Ba thử nghiệm thêm, output thật:
+
+| Lệnh | Kết quả | Vì sao |
+|---|---|---|
+| Subscriber đến sau: `mosquitto_sub -h … -t 'iad591/#' -v -W 2` | `iad591/group1/status online` rồi `Timed out` | chỉ bản có `-r` còn lại; 2 bản `dht11` đã qua |
+| Chỉ nhóm 2: `-t 'iad591/group2/#'`, rồi gửi cả nhóm 1 và 2 | chỉ `iad591/group2/dht11 {"temperature": 26.8}` | topic lọc ở broker |
+| Sai cổng: `-p 1884` | `Error: Connection refused` | không có gì nghe ở cổng đó |
+
+| Hiện ra | Nguyên nhân | Sửa |
+|---|---|---|
+| `Connection refused` khi dùng IP, `localhost` thì chạy | broker chỉ nghe máy nội bộ | `listener 1883 0.0.0.0`, restart |
+| `Connection refused` ở mọi chỗ | broker chưa chạy hoặc sai cổng | `systemctl status mosquitto` |
+| Chờ mãi rồi timeout | sai IP, khác mạng Wi-Fi, tường lửa | `ping 192.168.1.50` |
+| Kết nối được mà không nhận gì | topic sai hoặc sai hoa thường | subscribe `'#'` để xem hết |
+| Windows không có `mosquitto_sub` | chưa cài | cài Mosquitto cho Windows, hoặc app MQTT Explorer |
+
+Sang Python giống hệt: trong code bên dưới chỉ cần điền `BROKER = "192.168.1.50"`.
 
 **4. Pi publish** (🔎 đã chạy với `paho-mqtt` 2.1.0 tới `test.mosquitto.org`, số đo giả):
 

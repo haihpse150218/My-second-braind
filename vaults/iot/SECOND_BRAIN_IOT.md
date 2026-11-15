@@ -93,7 +93,7 @@
 **Nhánh G · Giao thức IoT — MQTT · CoAP · Pub/Sub (S25–S27)** — 🟡 MQTT học trước từ textbook ch. 6, 2026-11-15
 1. [[pub-sub]] — gửi lên **topic** ở **broker**, không gọi thẳng nhau; thêm người nhận không phải sửa Pi; so với HTTP POST của Practice 6.5
 2. [[mqtt]] — wildcard `+` một mức / `#` mọi mức; QoS 0/1/2; **retain** = bảng tin giá trị cuối; **last will** báo chết; keep alive; ⚠️ sách in sai tên QoS 2; trùng Client ID là đá nhau
-3. [[mosquitto-broker]] — cài Mosquitto trên Pi; ⚠️ bản 2.x chỉ nghe localhost nếu thiếu `listener 1883`; Practice 6.5 viết lại bằng MQTT → cùng `data/data.db` 🔎 chạy thử với broker thật
+3. [[mosquitto-broker]] — cài Mosquitto trên Pi; ⚠️ bản 2.x chỉ nghe localhost nếu thiếu `listener 1883`; CLI `mosquitto_pub` / `mosquitto_sub` từng bước, **cả hai bên chỉ dùng IP broker**, output thật + bảng lỗi; Practice 6.5 viết lại bằng MQTT → cùng `data/data.db` 🔎 chạy thử với broker thật
 4. [[mqtt-luu-tru-va-dlq]] — realtime kiểu push (1 ms LAN, ~200 ms Internet); **không phải stream log**; chỉ lưu tạm retained · hàng đợi phiên bền · in-flight; **không có DLQ**: hàng đầy là bỏ; 8 thí nghiệm trên Mosquitto 2.0.18 🎞️ [mô phỏng](mqtt-broker-explorer.html)
 5. `coap` — REST cho thiết bị ràng buộc, UDP, OBSERVE (textbook ch. 8–9)
 6. `tls-dtls-cho-iot` — bảo mật kênh (textbook ch. 10)
