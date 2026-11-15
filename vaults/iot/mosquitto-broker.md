@@ -8,7 +8,7 @@ order: 3
 status: learning
 tags: [iot, giao-thuc, mqtt, raspberry-pi, python, bai-tap]
 prev: [mqtt]
-next: []
+next: [mqtt-luu-tru-va-dlq]
 related: [dashboard-flask-sqlite, co-so-du-lieu-iot, pi-lam-cda-gda, du-an-esp32-mcp]
 sources: ["Programming the Internet of Things (Andy King) — ch. 6"]
 created: 2026-11-15
@@ -20,7 +20,7 @@ created: 2026-11-15
 
 **Ngày tạo:** 2026-11-15
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh G · #3 ← cần [[mqtt]]
+**📖 Lộ trình:** Nhánh G · #3 ← cần [[mqtt]] · → kế tiếp [[mqtt-luu-tru-va-dlq]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #giao-thuc #mqtt #raspberry-pi #python #bai-tap
 
@@ -49,7 +49,7 @@ sudo systemctl enable --now mosquitto      # chạy nền, tự bật khi khởi
 pip3 install paho-mqtt                     # thư viện client cho Python
 ```
 
-**2. Mở cho máy khác trong mạng** — ⚠️ Mosquitto **từ bản 2.0** mặc định *chỉ nghe localhost*; sách dùng 1.4.8 nên không nhắc. Tạo `/etc/mosquitto/conf.d/lab.conf` (*theo tài liệu Mosquitto, chưa thử trên Pi*):
+**2. Mở cho máy khác trong mạng** — ⚠️ Mosquitto **từ bản 2.0** mặc định *chỉ nghe localhost*; sách dùng 1.4.8 nên không nhắc. 🔎 Đã thử với 2.0.18 trong WSL: chạy không có cấu hình thì log in `Starting in local only mode`; thêm 2 dòng dưới thì Windows kết nối vào được. Tạo `/etc/mosquitto/conf.d/lab.conf` (*chưa thử trên Pi lab*):
 
 ```text
 listener 1883
@@ -172,6 +172,7 @@ Kết quả lần chạy thử: nhóm 1 publish 2 bản tin **trước** khi ser
 ## 🔗 Liên kết
 
 - **Tiền đề:** [[mqtt]] · [[dashboard-flask-sqlite]]
+- **Dẫn tới:** [[mqtt-luu-tru-va-dlq]] — broker lưu gì, có DLQ không (kèm mô phỏng HTML)
 - **Liên quan:** [[co-so-du-lieu-iot]] · [[pi-lam-cda-gda]] · [[du-an-esp32-mcp]]
 
 ## ❓ Câu hỏi mở

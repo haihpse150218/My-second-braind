@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}</style>
+<title>Bên trong broker MQTT</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: một bàn mô phỏng rộng ở trên (publisher → broker → subscriber), bảng điều khiển + nhật ký ngay dưới, rồi 4 câu trả lời có bằng chứng. */
+:root{
+  --bg:#f3f5f4; --panel:#ffffff; --ink:#17201d; --muted:#5b6b66; --line:#d5ddd9; --wire:#b9c6c1;
+  --broker:#e8eeeb; --deliver:#0f8a72; --queue:#c07a10; --drop:#c8372d; --retain:#6a4fc4; --share:#2f6fb5;
+  --font-body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101614; --panel:#18201d; --ink:#e4ece8; --muted:#93a39d; --line:#2c3833; --wire:#3c4a45;
+  --broker:#1d2824; --deliver:#35c2a2; --queue:#e3a23a; --drop:#ef6a5f; --retain:#a48df0; --share:#6aa6ea; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101614; --panel:#18201d; --ink:#e4ece8; --muted:#93a39d; --line:#2c3833; --wire:#3c4a45;
+  --broker:#1d2824; --deliver:#35c2a2; --queue:#e3a23a; --drop:#ef6a5f; --retain:#a48df0; --share:#6aa6ea; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 var(--font-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.25}
+h1{font-size:clamp(26px,4vw,38px);font-weight:700;letter-spacing:-.01em}
+h2{font-size:22px;font-weight:700}
+h3{font-size:16px;font-weight:600}
+p{margin:0}
+.lead{color:var(--muted);max-width:68ch;margin-top:8px}
+code,.mono{font-family:var(--font-mono);font-size:.88em}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* sân khấu mô phỏng */
+.stage{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:14px}
+.scroll{overflow-x:auto}
+svg#sim{display:block;width:100%;min-width:760px;height:auto}
+svg text{fill:var(--ink);font-family:var(--font-body)}
+svg .m{font-family:var(--font-mono)}
+svg .mut{fill:var(--muted)}
+.node rect{fill:var(--panel);stroke:var(--line);stroke-width:1.5}
+.node.off rect{stroke-dasharray:5 4;opacity:.7}
+.node.off text{fill:var(--muted)}
+.wire{fill:none;stroke:var(--wire);stroke-width:1.5}
+.brokerbox{fill:var(--broker);stroke:var(--line);stroke-width:1.5}
+.sect{fill:var(--panel);stroke:var(--line)}
+.slot{fill:none;stroke:var(--line);stroke-width:1.2}
+.slot.full{fill:var(--queue);stroke:var(--queue)}
+.flash{animation:fl .6s ease-out}
+@keyframes fl{0%{opacity:.25}100%{opacity:1}}
+
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.ctl{display:flex;flex-direction:column;gap:6px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;min-width:0}
+.ctl label{font-weight:600;font-size:14px}
+.ctl small{color:var(--muted);font-size:12.5px;line-height:1.45}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+button{font:600 13.5px var(--font-body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 11px;cursor:pointer}
+button:hover{border-color:var(--muted)}
+button[aria-pressed="true"]{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--share);outline-offset:2px}
+button.danger{border-color:var(--drop);color:var(--drop)}
+input[type=range]{width:100%;accent-color:var(--queue)}
+
+.below{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:14px}
+@media (max-width:820px){.below{grid-template-columns:1fr}}
+.counters{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.cnt{border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.cnt b{display:block;font:700 22px var(--font-mono);font-variant-numeric:tabular-nums}
+.cnt span{font-size:12px;color:var(--muted)}
+.cnt.d b{color:var(--deliver)} .cnt.q b{color:var(--queue)} .cnt.x b{color:var(--drop)} .cnt.r b{color:var(--retain)}
+.log{border:1px solid var(--line);border-radius:10px;height:236px;overflow-y:auto;padding:6px 0;font-size:13.5px}
+.log div{display:grid;grid-template-columns:auto 1fr;gap:8px;padding:3px 10px;align-items:baseline}
+.chip{font:600 11px var(--font-mono);padding:1px 6px;border-radius:5px;color:var(--panel);white-space:nowrap}
+.c-GIAO{background:var(--deliver)} .c-XEP{background:var(--queue)} .c-BO{background:var(--drop)} .c-LUU{background:var(--retain)} .c-MAT{background:var(--drop)} .c-CHIA{background:var(--share)}
+
+/* câu trả lời */
+.answers{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,500px),1fr));gap:16px}
+.ans{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.verdict{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+.dot{width:10px;height:10px;border-radius:50%}
+.yes .dot{background:var(--deliver)} .part .dot{background:var(--queue)} .no .dot{background:var(--drop)}
+.ans ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.ev{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.foot{font-size:13px;color:var(--muted);max-width:80ch}
+@media (prefers-reduced-motion:reduce){.flash{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">IAD591 · nhánh G · MQTT 3.1.1 / 5.0 · Mosquitto 2.0.18</div>
+    <h1>Bên trong broker MQTT</h1>
+    <p class="lead">Ba Pi gửi số đo DHT11 lên broker. Broker không phải kho dữ liệu: nó định tuyến ngay, chỉ giữ <b>một giá trị cuối mỗi topic</b> (retain) và <b>một hàng đợi nhỏ cho client đã hẹn phiên bền</b>. Bấm các nút để xem bản tin nào được giao, được xếp hàng, hay bị bỏ.</p>
+  </header>
+
+  <section class="stage" aria-label="Mô phỏng broker">
+    <div class="scroll">
+      <svg id="sim" viewBox="0 0 1000 560" role="img" aria-label="Sơ đồ publisher, broker và subscriber">
+        <g id="wires"></g>
+        <rect class="brokerbox" x="320" y="24" width="360" height="512" rx="14"/>
+        <text x="340" y="52" font-weight="700" font-size="17">Broker</text>
+        <text x="410" y="52" class="m mut" font-size="12">mosquitto · cổng 1883</text>
+
+        <rect class="sect" x="336" y="66" width="328" height="128" rx="8"/>
+        <text x="348" y="88" font-weight="600" font-size="13">① Định tuyến theo topic (không lưu)</text>
+        <text x="348" y="112" class="m" font-size="11.5">lab/+/dht11 → Dashboard</text>
+        <text x="348" y="132" class="m" font-size="11.5">lab/# → App điện thoại (phiên bền)</text>
+        <text x="348" y="152" class="m" font-size="11.5">$share/g/lab/+/dht11 → Worker A | B</text>
+        <text x="348" y="176" class="mut" font-size="11.5">Bản tin đến → khớp mẫu → đẩy đi ngay</text>
+
+        <rect class="sect" x="336" y="206" width="328" height="132" rx="8"/>
+        <text x="348" y="228" font-weight="600" font-size="13" fill="var(--retain)" style="fill:var(--retain)">② Retained: 1 ô / topic</text>
+        <g id="retained"></g>
+
+        <rect class="sect" x="336" y="350" width="328" height="170" rx="8"/>
+        <text x="348" y="372" font-weight="600" font-size="13" style="fill:var(--queue)">③ Hàng đợi phiên bền của App</text>
+        <text id="qinfo" x="348" y="392" class="mut" font-size="11.5"></text>
+        <g id="queue"></g>
+        <text id="qnote" x="348" y="506" class="mut" font-size="11.5"></text>
+
+        <g id="nodes"></g>
+        <g id="dots"></g>
+      </svg>
+    </div>
+
+    <div class="controls">
+      <div class="ctl">
+        <label>Gửi bản tin</label>
+        <div class="seg">
+          <button id="p1">Pi nhóm 1</button><button id="p2">Pi nhóm 2</button><button id="p3">Pi nhóm 3</button>
+        </div>
+        <div class="seg"><button id="auto" aria-pressed="true">Tự gửi mỗi 1,5 s</button></div>
+      </div>
+      <div class="ctl">
+        <label>QoS và retain của Pi</label>
+        <div class="seg">
+          <button id="q0" aria-pressed="false">QoS 0</button><button id="q1" aria-pressed="true">QoS 1</button>
+          <button id="rt" aria-pressed="true">retain</button>
+        </div>
+        <small>QoS 0 không được xếp hàng cho client offline (<code>queue_qos0_messages false</code>).</small>
+      </div>
+      <div class="ctl">
+        <label>App điện thoại</label>
+        <div class="seg">
+          <button id="phone" aria-pressed="false">Đang offline</button>
+          <button id="clean" aria-pressed="false">clean session</button>
+        </div>
+        <small>Tắt clean session = phiên bền: broker giữ hàng đợi khi App offline.</small>
+      </div>
+      <div class="ctl">
+        <label for="lim">max_queued_messages: <span id="limv" class="mono">5</span></label>
+        <input id="lim" type="range" min="1" max="10" value="5">
+        <small>Mặc định thật là 1000; để nhỏ cho dễ thấy cảnh hàng đầy.</small>
+      </div>
+      <div class="ctl">
+        <label>Broker</label>
+        <div class="seg">
+          <button id="persist" aria-pressed="false">persistence</button>
+          <button id="restart" class="danger">Khởi động lại</button>
+        </div>
+        <small>Mặc định <code>persistence false</code>: restart là mất retained và hàng đợi.</small>
+      </div>
+      <div class="ctl">
+        <label>Subscriber đến sau</label>
+        <div class="seg"><button id="newsub">Laptop mới subscribe lab/#</button></div>
+        <small>Chỉ nhận retained, tức 1 giá trị cuối mỗi topic, không có lịch sử.</small>
+      </div>
+    </div>
+
+    <div class="below">
+      <div class="counters">
+        <div class="cnt d"><b id="nD">0</b><span>đã giao</span></div>
+        <div class="cnt q"><b id="nQ">0</b><span>đang xếp hàng</span></div>
+        <div class="cnt x"><b id="nX">0</b><span>bị bỏ</span></div>
+        <div class="cnt r"><b id="nR">0</b><span>retained</span></div>
+      </div>
+      <div class="log" id="log" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:14px">
+    <h2>Trả lời 4 câu hỏi</h2>
+    <div class="answers">
+      <article class="ans">
+        <div class="eyebrow">Realtime?</div>
+        <div class="verdict yes"><span class="dot"></span>Có, theo nghĩa đẩy ngay. Không phải hard real-time.</div>
+        <ul>
+          <li>Broker <b>push</b> bản tin cho subscriber ngay khi nhận, không cần hỏi vòng như HTTP.</li>
+          <li>Độ trễ chủ yếu là đường mạng: cùng máy ~1 ms, qua Internet ~200 ms.</li>
+          <li>Không có cam kết hạn chót. TCP phải gửi lại gói khi mạng chập chờn. Broker chỉ phát hiện client chết sau khoảng 1,5 × keep alive.</li>
+          <li>Thứ tự được giữ <b>trong cùng một topic</b> từ cùng một publisher (spec 3.1.1 mục 4.6), không giữ giữa các topic khác nhau.</li>
+        </ul>
+        <p class="ev">Đã đo 10 bản tin QoS 0: Mosquitto 2.0.18 trong WSL, median <b>1 ms</b>; <code>test.mosquitto.org</code>, median <b>203 ms</b>.</p>
+      </article>
+      <article class="ans">
+        <div class="eyebrow">Stream?</div>
+        <div class="verdict part"><span class="dot"></span>Là dòng bản tin đẩy tới, nhưng không phải stream log như Kafka.</div>
+        <ul>
+          <li>Subscriber nhận <b>từ lúc subscribe trở đi</b>. Không có offset, không tua lại, không đọc lại.</li>
+          <li>Thứ duy nhất có trước lúc subscribe là bản tin retained: <b>1 bản cuối</b> mỗi topic.</li>
+          <li>Muốn có lịch sử thì subscriber phải tự ghi vào database (như <code>data/data.db</code> của Practice 6.5).</li>
+        </ul>
+        <p class="ev">Đã thử: publish <code>r0, r1, r2</code> có retain rồi mới subscribe → chỉ nhận <code>['r2']</code>.</p>
+      </article>
+      <article class="ans">
+        <div class="eyebrow">Có store vào pool không?</div>
+        <div class="verdict part"><span class="dot"></span>Chỉ lưu tạm 3 thứ, và không có pool dùng chung.</div>
+        <ul>
+          <li><b>Retained</b>: 1 bản tin / topic, bị ghi đè bởi bản sau.</li>
+          <li><b>Hàng đợi phiên bền</b>: riêng cho từng client có <code>clean_session=False</code> đang offline; chỉ QoS 1/2; tối đa <code>max_queued_messages</code> (mặc định 1000).</li>
+          <li><b>In-flight</b>: QoS 1/2 đã gửi đi, đang chờ PUBACK / PUBCOMP (<code>max_inflight_messages</code> 20).</li>
+          <li>Mặc định chỉ nằm trong RAM. Bật <code>persistence true</code> thì ghi ra <code>mosquitto.db</code> khi tắt đúng cách và mỗi <code>autosave_interval</code> (1800 s).</li>
+          <li>Gần với "pool" nhất là <b>shared subscription</b> của MQTT 5 (<code>$share/nhóm/topic</code>): broker chia lần lượt cho các worker, mỗi bản tin chỉ 1 worker nhận.</li>
+        </ul>
+        <p class="ev">Đã thử: App offline, gửi 3 bản QoS 1 + 2 bản QoS 0 → online lại nhận <code>q1-0, q1-1, q1-2</code>, mất cả 2 bản QoS 0. Clean session → nhận <code>[]</code>. Restart không persistence → mất hàng đợi lẫn retained; có persistence → còn đủ. Shared sub 6 job → Worker A <code>0,2,4</code>, Worker B <code>1,3,5</code>.</p>
+      </article>
+      <article class="ans">
+        <div class="eyebrow">Dead-letter queue?</div>
+        <div class="verdict no"><span class="dot"></span>Không. Chuẩn MQTT không có DLQ.</div>
+        <ul>
+          <li>Hàng đợi đầy thì broker <b>bỏ bản tin mới</b>, chỉ ghi một dòng log; không đẩy sang đâu cả.</li>
+          <li>MQTT 5 có <b>message expiry</b>: bản tin chờ quá hạn thì bị xoá, cũng không vào DLQ.</li>
+          <li>Subscriber nhận rồi xử lý lỗi (ví dụ ghi database thất bại): broker đã coi là giao xong. Phải tự lo: ghi lỗi vào bảng riêng, hoặc tự publish sang topic <code>lab/deadletter</code>.</li>
+          <li>Cần DLQ thật thì dùng message queue (RabbitMQ có dead-letter exchange) hoặc bridge MQTT sang đó. Một số broker thương mại có tính năng riêng, nằm ngoài chuẩn.</li>
+        </ul>
+        <p class="ev">Đã thử với <code>max_queued_messages 3</code>: gửi <code>m0…m5</code> lúc App offline → nhận lại <code>m0, m1, m2</code>; log broker: <code>Outgoing messages are being dropped for client ov.</code> MQTT 5: bản tin hạn 2 s chờ 5 s → bị xoá, bản hạn 60 s → còn.</p>
+      </article>
+    </div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <h2>Đặt cạnh Kafka và RabbitMQ</h2>
+    <div class="tbl">
+      <table>
+        <thead><tr><th></th><th>MQTT broker</th><th>Kafka</th><th>RabbitMQ (queue)</th></tr></thead>
+        <tbody>
+          <tr><td>Mô hình</td><td>pub/sub theo topic, đẩy ngay</td><td>log bền, chia partition</td><td>hàng đợi, có routing</td></tr>
+          <tr><td>Giữ bản tin bao lâu</td><td>tới khi giao xong; retained 1 bản / topic</td><td>theo thời hạn cấu hình, kể cả đã đọc</td><td>tới khi consumer ack</td></tr>
+          <tr><td>Đọc lại lịch sử</td><td>không</td><td>có, theo offset</td><td>không, ack là xoá</td></tr>
+          <tr><td>Chia tải giữa consumer</td><td>MQTT 5 shared subscription</td><td>consumer group</td><td>nhiều consumer trên một queue</td></tr>
+          <tr><td>Dead-letter</td><td>không có trong chuẩn</td><td>tự làm (topic DLQ ở tầng ứng dụng)</td><td>có (dead-letter exchange)</td></tr>
+          <tr><td>Hợp với</td><td>thiết bị yếu, mạng chập chờn, gói tin nhỏ</td><td>phân tích luồng dữ liệu lớn ở server</td><td>xử lý tác vụ cần chắc chắn từng việc</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="foot">Cách hay dùng trong IoT: thiết bị → MQTT broker ở biên → một subscriber đẩy tiếp vào database hoặc Kafka ở cloud. MQTT lo phần "đưa tới nơi"; lưu lâu, đọc lại, DLQ là việc của tầng phía sau. Số liệu "đã thử" lấy từ các lần chạy <code>paho-mqtt</code> 2.1.0 ngày 2026-11-15.</p>
+  </section>
+</div>
+
+<script>
+(() => {
+  const NS = "http://www.w3.org/2000/svg";
+  const $ = id => document.getElementById(id);
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const S = { qos: 1, retain: true, phoneOn: false, clean: false, limit: 5, persist: false,
+              retained: {}, queue: [], rr: 0, n: { D: 0, X: 0 }, auto: true, val: [27.8, 29.1, 26.4] };
+
+  const pubs = [1, 2, 3].map((g, i) => ({ id: "p" + g, label: "Pi nhóm " + g, sub: "lab/group" + g + "/dht11", x: 20, y: 110 + i * 150, w: 150, h: 56 }));
+  const subs = {
+    dash: { label: "Dashboard", sub: "lab/+/dht11", x: 830, y: 40, w: 150, h: 56 },
+    phone: { label: "App điện thoại", sub: "lab/# · phiên bền", x: 830, y: 150, w: 150, h: 56 },
+    wa: { label: "Worker A", sub: "$share/g/…", x: 830, y: 290, w: 150, h: 56 },
+    wb: { label: "Worker B", sub: "$share/g/…", x: 830, y: 380, w: 150, h: 56 },
+    late: { label: "Laptop mới", sub: "lab/# (đến sau)", x: 830, y: 478, w: 150, h: 56 }
+  };
+  const BIN = { x: 320, y: 280 }, BOUT = { x: 680, y: 280 };
+  const paths = {};
+
+  function el(tag, attrs, parent, text) {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function wire(key, x1, y1, x2, y2) {
+    const mx = (x1 + x2) / 2;
+    paths[key] = el("path", { class: "wire", d: `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}` }, $("wires"));
+  }
+  function node(key, n) {
+    const g = el("g", { class: "node", id: "n-" + key }, $("nodes"));
+    el("rect", { x: n.x, y: n.y, width: n.w, height: n.h, rx: 9 }, g);
+    el("text", { x: n.x + 12, y: n.y + 23, "font-weight": 600, "font-size": 14 }, g, n.label);
+    el("text", { x: n.x + 12, y: n.y + 42, class: "m mut", "font-size": 10.5 }, g, n.sub);
+    return g;
+  }
+  pubs.forEach(p => { wire(p.id, p.x + p.w, p.y + p.h / 2, BIN.x, BIN.y); node(p.id, p); });
+  for (const k in subs) { const n = subs[k]; wire(k, BOUT.x, BOUT.y, n.x, n.y + n.h / 2); node(k, n); }
+
+  function travel(key, color, rev, done) {
+    const p = paths[key];
+    if (reduce) { done && done(); return; }
+    const L = p.getTotalLength(), dot = el("circle", { r: 6, fill: color }, $("dots"));
+    const t0 = performance.now(), dur = 650;
+    (function step(t) {
+      const k = Math.min(1, (t - t0) / dur), pt = p.getPointAtLength((rev ? 1 - k : k) * L);
+      dot.setAttribute("cx", pt.x); dot.setAttribute("cy", pt.y);
+      if (k < 1) requestAnimationFrame(step); else { dot.remove(); done && done(); }
+    })(t0);
+  }
+  function burst(x, y, color) {
+    if (reduce) return;
+    const c = el("circle", { cx: x, cy: y, r: 6, fill: "none", stroke: color, "stroke-width": 2 }, $("dots"));
+    const t0 = performance.now();
+    (function s(t) { const k = (t - t0) / 500; c.setAttribute("r", 6 + k * 16); c.setAttribute("opacity", 1 - k);
+      if (k < 1) requestAnimationFrame(s); else c.remove(); })(t0);
+  }
+
+  function log(tag, html) {
+    const box = $("log"), row = document.createElement("div");
+    const name = { GIAO: "GIAO", XEP: "XẾP HÀNG", BO: "BỎ", LUU: "LƯU", MAT: "MẤT", CHIA: "CHIA" }[tag];
+    row.innerHTML = `<span class="chip c-${tag}">${name}</span><span>${html}</span>`;
+    box.prepend(row);
+    while (box.children.length > 60) box.lastChild.remove();
+  }
+  const fmt = m => `<code>${m.topic}</code> = ${m.v.toFixed(1)} °C`;
+
+  function render() {
+    const R = $("retained"); R.innerHTML = "";
+    [1, 2, 3].forEach((g, i) => {
+      const t = "lab/group" + g + "/dht11", m = S.retained[t], y = 254 + i * 26;
+      el("text", { x: 348, y, class: "m", "font-size": 11.5 }, R, t);
+      el("text", { x: 560, y, class: "m", "font-size": 11.5, style: m ? "fill:var(--retain);font-weight:600" : "", "data-k": t }, R, m ? m.v.toFixed(1) + " °C" : "trống");
+    });
+    el("text", { x: 348, y: 330, class: "mut", "font-size": 11.5 }, R, "Bản tin retain mới ghi đè ô cũ.");
+
+    const Q = $("queue"); Q.innerHTML = "";
+    const cols = 5, w = 58, h = 30;
+    for (let i = 0; i < S.limit; i++) {
+      const x = 348 + (i % cols) * (w + 6), y = 404 + Math.floor(i / cols) * (h + 8), m = S.queue[i];
+      el("rect", { x, y, width: w, height: h, rx: 5, class: "slot" + (m ? " full" : "") }, Q);
+      if (m) el("text", { x: x + 6, y: y + 19, class: "m", "font-size": 10.5, style: "fill:var(--panel)" }, Q, "g" + m.g + " " + m.v.toFixed(1));
+    }
+    $("qinfo").textContent = S.clean ? "clean session: không có hàng đợi, offline là mất." :
+      S.phoneOn ? "App đang online: bản tin đi thẳng, hàng trống." : `App offline · ${S.queue.length}/${S.limit} ô · chỉ nhận QoS ≥ 1`;
+    $("qnote").textContent = S.persist ? "persistence true: hàng đợi và retained sống qua restart." : "persistence false: chỉ ở RAM.";
+
+    $("n-phone").classList.toggle("off", !S.phoneOn);
+    $("nD").textContent = S.n.D; $("nQ").textContent = S.queue.length; $("nX").textContent = S.n.X;
+    $("nR").textContent = Object.keys(S.retained).length;
+    $("q0").setAttribute("aria-pressed", S.qos === 0); $("q1").setAttribute("aria-pressed", S.qos === 1);
+    $("rt").setAttribute("aria-pressed", S.retain);
+    $("phone").setAttribute("aria-pressed", S.phoneOn); $("phone").textContent = S.phoneOn ? "Đang online" : "Đang offline";
+    $("clean").setAttribute("aria-pressed", S.clean); $("clean").disabled = !S.phoneOn;
+    $("clean").title = S.phoneOn ? "" : "Đổi kiểu phiên khi App đang online (lúc kết nối)";
+    $("persist").setAttribute("aria-pressed", S.persist); $("auto").setAttribute("aria-pressed", S.auto);
+    $("limv").textContent = S.limit;
+  }
+
+  function deliver(key, m, color) {
+    travel(key, color, false, () => { S.n.D++; burst(subs[key].x, subs[key].y + 28, color); render(); });
+  }
+
+  function publish(g) {
+    S.val[g - 1] = Math.round((S.val[g - 1] + (Math.random() - 0.5) * 0.8) * 10) / 10;
+    const m = { g, topic: "lab/group" + g + "/dht11", v: S.val[g - 1], qos: S.qos, retain: S.retain };
+    travel("p" + g, "var(--ink)", false, () => arrive(m));
+  }
+
+  function arrive(m) {
+    if (m.retain) { S.retained[m.topic] = m; log("LUU", `${fmt(m)} vào ô retained (đè bản cũ)`); }
+    deliver("dash", m, "var(--deliver)");
+    log("GIAO", `${fmt(m)} → Dashboard, QoS ${m.qos}`);
+    const w = S.rr++ % 2 ? "wb" : "wa";
+    deliver(w, m, "var(--share)");
+    log("CHIA", `${fmt(m)} → ${subs[w].label} (chỉ 1 worker nhận)`);
+    if (S.phoneOn) { deliver("phone", m, "var(--deliver)"); log("GIAO", `${fmt(m)} → App`); }
+    else if (S.clean) { S.n.X++; log("BO", `App offline, clean session → không ai giữ ${fmt(m)}`); }
+    else if (m.qos === 0) { S.n.X++; log("BO", `${fmt(m)} QoS 0 → không xếp hàng cho client offline`); }
+    else if (S.queue.length >= S.limit) { S.n.X++; burst(600, 440, "var(--drop)"); log("BO", `Hàng đầy ${S.limit}/${S.limit} → bỏ ${fmt(m)}. Không có dead-letter, chỉ 1 dòng log.`); }
+    else { S.queue.push(m); log("XEP", `${fmt(m)} vào hàng của App (${S.queue.length}/${S.limit})`); }
+    render();
+  }
+
+  function flush() {
+    const q = S.queue.splice(0);
+    if (q.length) log("GIAO", `App online lại → broker giao ${q.length} bản tin đã xếp hàng, theo đúng thứ tự`);
+    q.forEach((m, i) => setTimeout(() => deliver("phone", m, "var(--queue)"), i * 180));
+    render();
+  }
+
+  $("p1").onclick = () => publish(1); $("p2").onclick = () => publish(2); $("p3").onclick = () => publish(3);
+  $("q0").onclick = () => { S.qos = 0; render(); };
+  $("q1").onclick = () => { S.qos = 1; render(); };
+  $("rt").onclick = () => { S.retain = !S.retain; render(); };
+  $("phone").onclick = () => {
+    S.phoneOn = !S.phoneOn;
+    if (S.phoneOn) { log("GIAO", S.clean ? "App kết nối với clean session → phiên mới, không có gì chờ" : "App kết nối lại, session_present = True"); if (!S.clean) flush(); }
+    else log("XEP", S.clean ? "App ngắt kết nối (clean session) → broker xoá phiên" : "App ngắt kết nối, broker giữ phiên và bắt đầu xếp hàng");
+    render();
+  };
+  $("clean").onclick = () => { S.clean = !S.clean; S.queue = []; render(); };
+  $("lim").oninput = e => { S.limit = +e.target.value; if (S.queue.length > S.limit) S.queue.length = S.limit; render(); };
+  $("persist").onclick = () => { S.persist = !S.persist; render(); };
+  $("restart").onclick = () => {
+    const box = document.querySelector(".brokerbox"); box.classList.remove("flash"); void box.getBBox(); box.classList.add("flash");
+    if (S.persist) log("LUU", `Broker restart, persistence true → nạp lại ${Object.keys(S.retained).length} retained và ${S.queue.length} bản tin trong hàng`);
+    else { const a = Object.keys(S.retained).length, b = S.queue.length; S.n.X += b; S.retained = {}; S.queue = [];
+      log("MAT", `Broker restart, persistence false → mất ${a} retained và ${b} bản tin đang xếp hàng`); }
+    render();
+  };
+  $("newsub").onclick = () => {
+    const ms = Object.values(S.retained);
+    if (!ms.length) { log("GIAO", "Laptop mới subscribe lab/# → không có retained nào, chờ bản tin mới"); return; }
+    log("GIAO", `Laptop mới subscribe lab/# → nhận ngay ${ms.length} retained, mỗi topic 1 bản cuối, không có lịch sử`);
+    ms.forEach((m, i) => setTimeout(() => deliver("late", m, "var(--retain)"), i * 200));
+  };
+  let timer;
+  function setAuto(on) { S.auto = on; clearInterval(timer); if (on) timer = setInterval(() => publish(1 + Math.floor(Math.random() * 3)), 1500); render(); }
+  $("auto").onclick = () => setAuto(!S.auto);
+
+  // Trạng thái mở đầu: đã có retained, App offline với 2 bản tin đang chờ.
+  [1, 2, 3].forEach(g => S.retained["lab/group" + g + "/dht11"] = { g, topic: "lab/group" + g + "/dht11", v: S.val[g - 1] });
+  S.queue.push({ g: 1, topic: "lab/group1/dht11", v: 27.6 }, { g: 2, topic: "lab/group2/dht11", v: 29.0 });
+  log("LUU", "3 Pi đã gửi số đo có retain → mỗi topic 1 ô retained");
+  log("XEP", "App offline với phiên bền → 2 bản tin QoS 1 đang chờ");
+  render();
+  setAuto(!reduce);
+})();
+</script>
+</body>
+</html>

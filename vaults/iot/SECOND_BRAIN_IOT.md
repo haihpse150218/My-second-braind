@@ -3,7 +3,7 @@
 > Trang trung tâm (Map of Content) cho môn Phát triển ứng dụng IoT.
 
 **Cập nhật lần cuối:** 2026-11-15
-**Trạng thái:** 🌱 Đang học — Part 1, Part 2, Practice 6.5 + textbook ch. 1, ch. 6 + bài vẽ nguồn 2S: **56 atomic note**, nhánh A–H. Nhánh G mới có MQTT (từ textbook), chờ slide Part 3.
+**Trạng thái:** 🌱 Đang học — Part 1, Part 2, Practice 6.5 + textbook ch. 1, ch. 6 + bài vẽ nguồn 2S: **57 atomic note**, nhánh A–H. Nhánh G mới có MQTT (từ textbook), chờ slide Part 3.
 **Nguồn:** `D:\MSA-FPT\IOT` — syllabus + 3 bộ slide (Part 1, 1.2, 2) + textbook *Programming the Internet of Things* (Andy King, O'Reilly 2021, 420 trang)
 **Giảng viên:** TS. Đoàn Xuân Huy Minh · **Đánh giá:** 3 bài tập × 15% · thuyết trình 15% · project 40% · qua môn ≥ 5/10
 **Quay lại:** [[../../hub/MASTER|🏠 MASTER]]
@@ -94,9 +94,10 @@
 1. [[pub-sub]] — gửi lên **topic** ở **broker**, không gọi thẳng nhau; thêm người nhận không phải sửa Pi; so với HTTP POST của Practice 6.5
 2. [[mqtt]] — wildcard `+` một mức / `#` mọi mức; QoS 0/1/2; **retain** = bảng tin giá trị cuối; **last will** báo chết; keep alive; ⚠️ sách in sai tên QoS 2; trùng Client ID là đá nhau
 3. [[mosquitto-broker]] — cài Mosquitto trên Pi; ⚠️ bản 2.x chỉ nghe localhost nếu thiếu `listener 1883`; Practice 6.5 viết lại bằng MQTT → cùng `data/data.db` 🔎 chạy thử với broker thật
-4. `coap` — REST cho thiết bị ràng buộc, UDP, OBSERVE (textbook ch. 8–9)
-5. `tls-dtls-cho-iot` — bảo mật kênh (textbook ch. 10)
-6. `android-app-iot` — S20–S22, điều khiển từ mobile
+4. [[mqtt-luu-tru-va-dlq]] — realtime kiểu push (1 ms LAN, ~200 ms Internet); **không phải stream log**; chỉ lưu tạm retained · hàng đợi phiên bền · in-flight; **không có DLQ**: hàng đầy là bỏ; 8 thí nghiệm trên Mosquitto 2.0.18 🎞️ [mô phỏng](mqtt-broker-explorer.html)
+5. `coap` — REST cho thiết bị ràng buộc, UDP, OBSERVE (textbook ch. 8–9)
+6. `tls-dtls-cho-iot` — bảo mật kênh (textbook ch. 10)
+7. `android-app-iot` — S20–S22, điều khiển từ mobile
 
 **Nhánh H · Kiến trúc device → edge → cloud (textbook Andy King)** — 🟡 ch. 1 xong 2026-10-24
 1. [[dinh-nghia-he-thong-iot]] — problem statement 1 câu → **Measure · Model · Manage** → 5 nhóm hành động
