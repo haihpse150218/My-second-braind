@@ -205,7 +205,7 @@ app.run(host="0.0.0.0", port=5000)
 ## 🔗 Liên kết
 
 - **Tiền đề:** [[http-post-json]] · [[uart-pi-arduino]] · [[dht11-dht22]]
-- **Dẫn tới:** [[pi-lam-cda-gda]]
+- **Dẫn tới:** [[pi-lam-cda-gda]] · [[pub-sub]] → [[mosquitto-broker]] (cùng bài này nhưng gửi qua MQTT)
 - **Liên quan:** [[co-so-du-lieu-iot]] · [[flask-tren-pi]] · [[luu-csv-tren-pi]]
 
 ## ❓ Câu hỏi mở

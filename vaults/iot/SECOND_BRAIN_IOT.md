@@ -3,7 +3,7 @@
 > Trang trung tâm (Map of Content) cho môn Phát triển ứng dụng IoT.
 
 **Cập nhật lần cuối:** 2026-11-15
-**Trạng thái:** 🌱 Đang học — Part 1, Part 2, Practice 6.5 + textbook ch. 1 + bài vẽ nguồn 2S: **53 atomic note**, nhánh A–F và H. Nhánh G chờ Part 3.
+**Trạng thái:** 🌱 Đang học — Part 1, Part 2, Practice 6.5 + textbook ch. 1, ch. 6 + bài vẽ nguồn 2S: **56 atomic note**, nhánh A–H. Nhánh G mới có MQTT (từ textbook), chờ slide Part 3.
 **Nguồn:** `D:\MSA-FPT\IOT` — syllabus + 3 bộ slide (Part 1, 1.2, 2) + textbook *Programming the Internet of Things* (Andy King, O'Reilly 2021, 420 trang)
 **Giảng viên:** TS. Đoàn Xuân Huy Minh · **Đánh giá:** 3 bài tập × 15% · thuyết trình 15% · project 40% · qua môn ≥ 5/10
 **Quay lại:** [[../../hub/MASTER|🏠 MASTER]]
@@ -90,12 +90,13 @@
 
 ### Part 3 · Giao thức · Cloud · Project (Session 20–30) — ⬜ chờ bài giảng
 
-**Nhánh G · Giao thức IoT — MQTT · CoAP · Pub/Sub (S25–S27)**
-1. `mqtt` — broker · topic · publish/subscribe · QoS 0/1/2 (textbook ch. 6–7)
-2. `coap` — REST cho thiết bị ràng buộc, UDP, OBSERVE (textbook ch. 8–9)
-3. `pub-sub` — mô hình nhắn tin tách rời producer/consumer
-4. `tls-dtls-cho-iot` — bảo mật kênh (textbook ch. 10)
-5. `android-app-iot` — S20–S22, điều khiển từ mobile
+**Nhánh G · Giao thức IoT — MQTT · CoAP · Pub/Sub (S25–S27)** — 🟡 MQTT học trước từ textbook ch. 6, 2026-11-15
+1. [[pub-sub]] — gửi lên **topic** ở **broker**, không gọi thẳng nhau; thêm người nhận không phải sửa Pi; so với HTTP POST của Practice 6.5
+2. [[mqtt]] — wildcard `+` một mức / `#` mọi mức; QoS 0/1/2; **retain** = bảng tin giá trị cuối; **last will** báo chết; keep alive; ⚠️ sách in sai tên QoS 2; trùng Client ID là đá nhau
+3. [[mosquitto-broker]] — cài Mosquitto trên Pi; ⚠️ bản 2.x chỉ nghe localhost nếu thiếu `listener 1883`; Practice 6.5 viết lại bằng MQTT → cùng `data/data.db` 🔎 chạy thử với broker thật
+4. `coap` — REST cho thiết bị ràng buộc, UDP, OBSERVE (textbook ch. 8–9)
+5. `tls-dtls-cho-iot` — bảo mật kênh (textbook ch. 10)
+6. `android-app-iot` — S20–S22, điều khiển từ mobile
 
 **Nhánh H · Kiến trúc device → edge → cloud (textbook Andy King)** — 🟡 ch. 1 xong 2026-10-24
 1. [[dinh-nghia-he-thong-iot]] — problem statement 1 câu → **Measure · Model · Manage** → 5 nhóm hành động
@@ -127,7 +128,7 @@
 | `_inbox/iot-syllabus-iad591.md` | ✅ dùng cho khung nhánh E–H và phần đánh giá ở đầu hub |
 | `_inbox/iot-slide-part1-arduino.md` | ✅ chưng cất → nhánh A, B, C (18 note) |
 | `_inbox/iot-slide-part1-2-bluetooth.md` | ✅ chưng cất → nhánh D (8 note); slide dạng ảnh, đã chép tay nội dung |
-| `_inbox/iot-textbook-andy-king-muc-luc.md` | ⬜ mới có mục lục; nội dung chương trích dần khi học tới nhánh G, H |
+| `_inbox/iot-textbook-andy-king-muc-luc.md` | 🟡 mục lục; ch. 1 → nhánh H, ch. 6 (MQTT) → nhánh G #1–#3 (đọc thẳng từ PDF, không chép chương vào repo) |
 | `_inbox/iot-nullpet-readme.md` | 🟡 bản sao README NullPet (2026-11-07); bản gốc ở `D:\MSA-FPT\IOT\Lab-Link\Readme.md` |
 | `_inbox/iot-slide-part2-raspberry-pi.md` | ✅ chép đủ 72 trang (trừ tr. 8) → nhánh E, F, H (17 note) |
 | `_inbox/iot-practice-6-5-dashboard.md` | ✅ chép từ ảnh (3 trang) → [[dashboard-flask-sqlite]] |
@@ -152,7 +153,7 @@
 | P2 | [IAD_MSA33_Part_2.pdf](<D:\MSA-FPT\IOT\material\IAD_MSA33_Part_2.pdf>) | 72 | ✅ | E · F · H — Pi · GUI · CDA/GDA · CSV · DB · Flask; chép từ ảnh, tr. 8 không đưa vào repo |
 | P6.5 | [Practice 6_5.pdf](<D:\MSA-FPT\IOT\material\Practice 6_5.pdf>) | 3 | ✅ | F — đề bài dashboard Flask + SQLite cho 6 nhóm |
 | P3 | *chưa có* | | ⬜ | G — MQTT · cloud · Android (S20–S30) |
-| 📘 | [Programming the Internet of Things — Andy King](<D:\MSA-FPT\IOT\material\IAD_programming-the-internet-of-things-an-introduction-to-building-integrated-device-to-cloud-iot-solutions-1nbsped-1492081418-9781492081418.pdf>) | 420 | 🟡 mục lục | G · H — textbook chính, trích theo chương khi học tới |
+| 📘 | [Programming the Internet of Things — Andy King](<D:\MSA-FPT\IOT\material\IAD_programming-the-internet-of-things-an-introduction-to-building-integrated-device-to-cloud-iot-solutions-1nbsped-1492081418-9781492081418.pdf>) | 420 | 🟡 ch. 1, 6 | G · H — textbook chính, trích theo chương khi học tới |
 
 ## 🔗 Tài nguyên khác
 
