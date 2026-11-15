@@ -49,7 +49,24 @@ Mặc định **chỉ trong RAM** (`persistence false`). Bật `persistence true
 
 ## 🧩 Trực giác / Ví dụ
 
-Broker như **bưu tá có túi nhỏ**: thư đến là đem đi ngay. Nhà nào đã đăng ký "giữ thư khi vắng" thì bưu tá cất hộ vài lá (tối đa N), quá thì vứt thư mới. Bảng tin đầu ngõ chỉ dán **một tờ mới nhất** mỗi mục. Bưu tá không giữ bản sao nào, và không có hộp "thư không giao được".
+**Kể bằng chuyện bưu điện xã** (giải thích cho người không học kỹ thuật): **Pi** = người gửi thư · **broker** = bưu điện · **Dashboard, điện thoại, máy tính** = các nhà nhận thư.
+
+| # | Chuyện bưu điện | Tên kỹ thuật |
+|---:|---|---|
+| 1 | Máy nhỏ gắn nhiệt kế, 10 giây đọc một lần: "29 độ" | Pi đọc DHT11 |
+| 2 | Viết vào thư, ngoài phong bì chỉ ghi **chủ đề** ("nhiệt độ nhóm 1"), không ghi người nhận | publish lên topic |
+| 3 | Ai muốn biết thì ra bưu điện đăng ký theo chủ đề, như đặt báo; "nhóm nào cũng được", "mọi thứ" | subscribe, wildcard `+` `#` |
+| 4 | Thư tới là đem đi liền: trong nhà ~1 phần nghìn giây, đi xa ~1/5 giây; đường tắc vẫn có thể muộn | push, không phải hard real-time |
+| 5 | Thư thường rơi là mất; thư bảo đảm phải ký nhận, chưa ký thì gửi lại, có khi nhận 2 lá | QoS 0 · QoS 1 |
+| 6 | Bảng tin đầu ngõ: mỗi chủ đề một chỗ dán, tờ mới đè tờ cũ | retained |
+| 7 | Nhà vắng: không dặn thì mất thư; có dặn thì cất vào túi nhỏ, chỉ cất thư bảo đảm, túi đầy vứt thư mới | clean session · phiên bền · `max_queued_messages` |
+| 8 | Thư bị vứt không cất vào đâu, bưu điện chỉ ghi một dòng sổ | không có DLQ |
+| 9 | Bưu điện mất điện: không có sổ thì mất sạch, có sổ thì còn đủ | `persistence` |
+| 10 | Hai người làm chung việc: chia lần lượt A, B, A… | shared subscription |
+| 11 | Máy dặn trước "tôi biến mất thì báo mọi người"; chào tạm biệt đàng hoàng thì không báo | last will |
+| 12 | Bưu điện không giữ bản sao; muốn xem lại thì tự chép sổ | database |
+
+**Tóm lại:** bưu điện MQTT đưa thư rất nhanh nhưng là **người đưa thư, không phải nhà kho**. Phần này cũng có trên trang mô phỏng.
 
 ## 🔢 Công thức / Định nghĩa
 

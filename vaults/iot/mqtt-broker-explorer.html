@@ -91,6 +91,15 @@ th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vert
 th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 tr:last-child td{border-bottom:0}
 .foot{font-size:13px;color:var(--muted);max-width:80ch}
+.story{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px;counter-reset:st}
+.story li{counter-increment:st;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px 14px 56px;position:relative;min-width:0}
+.story li::before{content:counter(st);position:absolute;left:14px;top:13px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font:700 14px var(--font-mono);background:var(--bg);border:1px solid var(--line)}
+.story h3{margin-bottom:4px}
+.story p{color:var(--ink);font-size:14.5px}
+.story .tech{display:block;margin-top:6px;font-size:12.5px;color:var(--muted)}
+.cast{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted)}
+.cast b{color:var(--ink)}
+.moral{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--deliver);border-radius:10px;padding:12px 16px;font-size:15px}
 @media (prefers-reduced-motion:reduce){.flash{animation:none}}
 </style>
 </head>
@@ -236,6 +245,26 @@ tr:last-child td{border-bottom:0}
         <p class="ev">Đã thử với <code>max_queued_messages 3</code>: gửi <code>m0…m5</code> lúc App offline → nhận lại <code>m0, m1, m2</code>; log broker: <code>Outgoing messages are being dropped for client ov.</code> MQTT 5: bản tin hạn 2 s chờ 5 s → bị xoá, bản hạn 60 s → còn.</p>
       </article>
     </div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px" aria-labelledby="story-h">
+    <h2 id="story-h">Kể bằng chuyện bưu điện xã</h2>
+    <div class="cast"><span><b>Pi</b> = người gửi thư</span><span><b>Broker</b> = bưu điện</span><span><b>Dashboard, điện thoại, máy tính</b> = các nhà nhận thư</span></div>
+    <ol class="story">
+      <li><h3>Đo nhiệt độ</h3><p>Mỗi nhóm có một máy nhỏ gắn nhiệt kế. Cứ 10 giây nó đọc một lần, ví dụ “29 độ”.</p><span class="tech">Pi đọc DHT11</span></li>
+      <li><h3>Gửi thư lên bưu điện</h3><p>Máy viết số đo vào thư. Ngoài phong bì không ghi tên người nhận, chỉ ghi <b>chủ đề</b> như “nhiệt độ nhóm 1”. Máy không cần biết ai sẽ đọc.</p><span class="tech">publish lên topic <code>lab/group1/dht11</code></span></li>
+      <li><h3>Đăng ký nhận thư</h3><p>Ai muốn biết thì ra bưu điện đăng ký theo chủ đề, như đặt báo dài hạn: “nhóm nào cũng được” hay “mọi thứ của phòng lab”. Thêm người đọc thì máy gửi không phải làm gì.</p><span class="tech">subscribe, wildcard <code>+</code> và <code>#</code></span></li>
+      <li><h3>Bưu điện chuyển ngay</h3><p>Thư tới là đem đi liền, không để dành. Trong nhà mất khoảng 1 phần nghìn giây, đi xa khoảng 1/5 giây. Nhanh, nhưng không hứa đúng giờ tuyệt đối khi đường tắc.</p><span class="tech">push; 1 ms LAN, ~200 ms Internet; không phải hard real-time</span></li>
+      <li><h3>Thư thường hay thư bảo đảm</h3><p>Thư thường gửi rồi thôi, rơi là mất. Thư bảo đảm phải có chữ ký nhận; chưa thấy chữ ký thì gửi lại, nên đôi khi nhà nhận được hai lá giống nhau.</p><span class="tech">QoS 0 và QoS 1</span></li>
+      <li><h3>Bảng tin đầu ngõ</h3><p>Mỗi chủ đề có một chỗ dán, tờ mới dán đè tờ cũ. Người mới chuyển đến nhìn là biết nhiệt độ mới nhất, nhưng không xem được các tờ trước.</p><span class="tech">retained message, 1 bản / topic</span></li>
+      <li><h3>Nhà vắng người</h3><p>Không dặn giữ thư thì thư tới lúc vắng nhà là mất. Có dặn thì bưu điện cất vào một túi nhỏ, chủ về đưa đủ, đúng thứ tự. Nhưng chỉ cất thư bảo đảm, và túi đầy thì vứt thư mới.</p><span class="tech">clean session vs phiên bền; <code>max_queued_messages</code>; QoS 0 không xếp hàng</span></li>
+      <li><h3>Không có thùng thư thất lạc</h3><p>Thư bị vứt vì túi đầy hay quá hạn không được cất vào đâu. Bưu điện chỉ ghi một dòng vào sổ. Muốn giữ thì phải tự làm thùng riêng.</p><span class="tech">không có dead-letter queue</span></li>
+      <li><h3>Bưu điện mất điện</h3><p>Không có sổ ghi chép thì mở cửa lại là bảng tin trống, túi thư giữ hộ mất sạch. Có sổ thì trước khi đóng cửa chép hết vào, mở lại còn đủ.</p><span class="tech">restart; <code>persistence false</code> (mặc định) / <code>true</code></span></li>
+      <li><h3>Chia việc cho hai người</h3><p>Hai người làm chung một việc thì bưu điện chia lần lượt: lá 1 cho A, lá 2 cho B, lá 3 lại cho A. Không ai làm trùng.</p><span class="tech">shared subscription <code>$share/g/…</code> (MQTT 5)</span></li>
+      <li><h3>Dặn trước khi đi</h3><p>Lúc mới đến, máy gửi bưu điện lá thư dặn: “Nếu tôi tự nhiên biến mất thì báo mọi người tôi đã tắt.” Bị rút điện thì bưu điện mở thư ra báo cả xóm. Chào tạm biệt đàng hoàng thì không mở.</p><span class="tech">last will</span></li>
+      <li><h3>Muốn xem lại hôm qua</h3><p>Bưu điện không giữ bản sao thư nào. Muốn xem lại thì nhà nhận phải tự chép vào sổ riêng.</p><span class="tech">subscriber ghi vào <code>data/data.db</code> (Practice 6.5)</span></li>
+    </ol>
+    <p class="moral"><b>Tóm lại:</b> bưu điện MQTT đưa thư rất nhanh, nhưng nó là người đưa thư, không phải nhà kho. Nó chỉ giữ tạm tờ mới nhất trên bảng tin và một túi nhỏ cho nhà nào đã dặn. Lưu lâu, xem lại, hay gom thư bị bỏ thì phải tự làm.</p>
   </section>
 
   <section style="display:flex;flex-direction:column;gap:12px">
