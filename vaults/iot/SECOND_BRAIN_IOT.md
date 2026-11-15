@@ -2,8 +2,8 @@
 
 > Trang trung tâm (Map of Content) cho môn Phát triển ứng dụng IoT.
 
-**Cập nhật lần cuối:** 2026-11-07
-**Trạng thái:** 🌱 Đang học — Part 1, Part 2 + textbook ch. 1 + bài vẽ nguồn 2S: **52 atomic note**, nhánh A–F và H. Nhánh G chờ Part 3.
+**Cập nhật lần cuối:** 2026-11-15
+**Trạng thái:** 🌱 Đang học — Part 1, Part 2, Practice 6.5 + textbook ch. 1 + bài vẽ nguồn 2S: **53 atomic note**, nhánh A–F và H. Nhánh G chờ Part 3.
 **Nguồn:** `D:\MSA-FPT\IOT` — syllabus + 3 bộ slide (Part 1, 1.2, 2) + textbook *Programming the Internet of Things* (Andy King, O'Reilly 2021, 420 trang)
 **Giảng viên:** TS. Đoàn Xuân Huy Minh · **Đánh giá:** 3 bài tập × 15% · thuyết trình 15% · project 40% · qua môn ≥ 5/10
 **Quay lại:** [[../../hub/MASTER|🏠 MASTER]]
@@ -82,10 +82,11 @@
 2. [[luu-csv-tren-pi]] — mode `a`, timestamp, `NA` khi lỗi; Practice 6.2, 6.3; ⚠️ 4 lỗi trong code slide
 3. [[co-so-du-lieu-iot]] — SQLite (file) vs MariaDB (server); ⚠️ `pip3 install sqlite3` không tồn tại
 4. [[flask-tren-pi]] — URL thành hàm Python; Exercise 3 điều khiển Arduino từ web
-5. [[http-post-json]] — Practice 6_4; ⚠️ Flask mặc định trả 200, code slide chờ 201; thiếu Practice 6_5.py
-6. `web-front-end` — HTML · CSS · JavaScript *(chưa có trong slide Part 2)*
-7. `web-backend` — JavaScript (Node) · PHP; REST API *(chưa có trong slide Part 2)*
-8. `mysql-vs-mongodb` — bảng vs document cho dữ liệu cảm biến *(chưa có trong slide Part 2)*
+5. [[http-post-json]] — Practice 6_4; ⚠️ Flask mặc định trả 200, code slide chờ 201
+6. [[dashboard-flask-sqlite]] — **Practice 6.5**: DHT11 → Arduino → Serial → Pi → `POST /api/data` → server chung `data/data.db` → dashboard 6 nhóm; JSON thêm `group_id · device_id · timestamp`; ⚠️ đề lẫn `<IP-server>` với `<IP-raspberry>`; Arduino in `nan` lọt qua `float()`
+7. `web-front-end` — HTML · CSS · JavaScript *(chưa có trong slide Part 2)*
+8. `web-backend` — JavaScript (Node) · PHP; REST API *(chưa có trong slide Part 2)*
+9. `mysql-vs-mongodb` — bảng vs document cho dữ liệu cảm biến *(chưa có trong slide Part 2)*
 
 ### Part 3 · Giao thức · Cloud · Project (Session 20–30) — ⬜ chờ bài giảng
 
@@ -129,8 +130,9 @@
 | `_inbox/iot-textbook-andy-king-muc-luc.md` | ⬜ mới có mục lục; nội dung chương trích dần khi học tới nhánh G, H |
 | `_inbox/iot-nullpet-readme.md` | 🟡 bản sao README NullPet (2026-11-07); bản gốc ở `D:\MSA-FPT\IOT\Lab-Link\Readme.md` |
 | `_inbox/iot-slide-part2-raspberry-pi.md` | ✅ chép đủ 72 trang (trừ tr. 8) → nhánh E, F, H (17 note) |
+| `_inbox/iot-practice-6-5-dashboard.md` | ✅ chép từ ảnh (3 trang) → [[dashboard-flask-sqlite]] |
 
-**Chưa có nguồn:** nhánh G và các slug còn trong backtick ở E, F, H (chờ Part 3 và textbook). **Cần xin giảng viên:** `Practice 6_5.py`.
+**Chưa có nguồn:** nhánh G và các slug còn trong backtick ở E, F, H (chờ Part 3 và textbook). **Cần hỏi giảng viên:** IP server chung của Practice 6.5; code server phía giảng viên (đề 6.5 chỉ mô tả chức năng).
 
 ## ❓ Câu hỏi mở
 
@@ -148,6 +150,7 @@
 | P1 | [IAD_MSA33_Part_1.pdf](<D:\MSA-FPT\IOT\material\IAD_MSA33_Part_1.pdf>) | 62 | ✅ | A · B · C — Session 1–6, Arduino |
 | P1.2 | [IAD_MSA33_Part_1_2.pdf](<D:\MSA-FPT\IOT\material\IAD_MSA33_Part_1_2.pdf>) | 19 | ✅ | D — Bluetooth HC-05 (slide dạng ảnh, đã chép tay vào inbox) |
 | P2 | [IAD_MSA33_Part_2.pdf](<D:\MSA-FPT\IOT\material\IAD_MSA33_Part_2.pdf>) | 72 | ✅ | E · F · H — Pi · GUI · CDA/GDA · CSV · DB · Flask; chép từ ảnh, tr. 8 không đưa vào repo |
+| P6.5 | [Practice 6_5.pdf](<D:\MSA-FPT\IOT\material\Practice 6_5.pdf>) | 3 | ✅ | F — đề bài dashboard Flask + SQLite cho 6 nhóm |
 | P3 | *chưa có* | | ⬜ | G — MQTT · cloud · Android (S20–S30) |
 | 📘 | [Programming the Internet of Things — Andy King](<D:\MSA-FPT\IOT\material\IAD_programming-the-internet-of-things-an-introduction-to-building-integrated-device-to-cloud-iot-solutions-1nbsped-1492081418-9781492081418.pdf>) | 420 | 🟡 mục lục | G · H — textbook chính, trích theo chương khi học tới |
 

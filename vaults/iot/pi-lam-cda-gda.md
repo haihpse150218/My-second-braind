@@ -7,7 +7,7 @@ branch: H
 order: 5
 status: learning
 tags: [iot, kien-truc, raspberry-pi, edge]
-prev: [http-post-json]
+prev: [dashboard-flask-sqlite]
 next: []
 related: [cda-gda, du-an-esp32-mcp, raspberry-pi-la-gi, dht11-dht22, co-so-du-lieu-iot]
 sources: ["IAD_MSA33_Part_2.pdf"]
@@ -20,7 +20,7 @@ created: 2026-11-07
 
 **Ngày tạo:** 2026-11-07
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh H · #5 ← cần [[http-post-json]]
+**📖 Lộ trình:** Nhánh H · #5 ← cần [[http-post-json]] · [[dashboard-flask-sqlite]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #kien-truc #raspberry-pi #edge
 
@@ -47,6 +47,7 @@ created: 2026-11-07
 | Flask nhận dữ liệu | GDA | [[flask-tren-pi]] |
 | Lưu SQLite | GDA | [[co-so-du-lieu-iot]] |
 | POST tiếp lên Cloud Server | GDA | tr. 67 |
+| 6 Pi cùng POST về một server chung (Practice 6.5) | Pi là CDA, server lớp là GDA/"Cloud" | [[dashboard-flask-sqlite]] |
 
 ## 🔢 Công thức / Định nghĩa
 
@@ -61,6 +62,7 @@ Pi (GDA) ── HTTP POST ──► Cloud Server                 cửa ra cloud
 ## ⚙️ Khi nào dùng / Ứng dụng
 
 - Lab có một Pi: chạy cả hai chương trình trên một máy, `server_ip` chính là Pi.
+- Practice 6.5 tách hai vai ra hai máy: Pi mỗi nhóm chỉ gửi, một server chung nhận cho cả 6 nhóm, gần kiểu *separated physical* của [[cda-gda]] → [[dashboard-flask-sqlite]].
 - NullPet tách đôi: ESP32-S3 là CDA, laptop là GDA → [[du-an-esp32-mcp]]. Cách đóng gói JSON và kiểm tra phản hồi ở đây dùng lại được.
 
 ## ⚠️ Lỗi thường gặp / Điều dễ nhầm
@@ -71,7 +73,7 @@ Pi (GDA) ── HTTP POST ──► Cloud Server                 cửa ra cloud
 
 ## 🔗 Liên kết
 
-- **Tiền đề:** [[cda-gda]] · [[http-post-json]]
+- **Tiền đề:** [[cda-gda]] · [[http-post-json]] · [[dashboard-flask-sqlite]]
 - **Liên quan:** [[du-an-esp32-mcp]] · [[raspberry-pi-la-gi]]
 
 ## ❓ Câu hỏi mở
@@ -81,3 +83,4 @@ Pi (GDA) ── HTTP POST ──► Cloud Server                 cửa ra cloud
 ## 📚 Nguồn
 
 - `IAD_MSA33_Part_2.pdf` — tr. 46–47, 51, 58, 67
+- `Practice 6_5.pdf` — kiến trúc 6 nhóm gửi về một server

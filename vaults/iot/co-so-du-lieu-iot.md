@@ -96,11 +96,11 @@ conn.close()
 ## 🔗 Liên kết
 
 - **Tiền đề:** [[luu-csv-tren-pi]]
-- **Dẫn tới:** [[flask-tren-pi]] · [[http-post-json]]
+- **Dẫn tới:** [[flask-tren-pi]] · [[http-post-json]] · [[dashboard-flask-sqlite]]
 
 ## ❓ Câu hỏi mở
 
-- Slide tạo database MariaDB nhưng tr. 67 lại nói lưu vào SQLite. Practice 6_5.py dùng loại nào?
+- ~~Slide tạo database MariaDB nhưng tr. 67 lại nói lưu vào SQLite. Practice 6_5 dùng loại nào?~~ ✅ **SQLite**, file `data/data.db` (`Practice 6_5.pdf`) → [[dashboard-flask-sqlite]].
 
 ## 📚 Nguồn
 

@@ -8,7 +8,7 @@ order: 5
 status: learning
 tags: [iot, raspberry-pi, web, python, bai-tap]
 prev: [flask-tren-pi]
-next: [pi-lam-cda-gda]
+next: [dashboard-flask-sqlite]
 related: [dht11-dht22, co-so-du-lieu-iot, giao-tiep-hai-chieu-bang-chuoi]
 sources: ["IAD_MSA33_Part_2.pdf"]
 created: 2026-11-07
@@ -20,7 +20,7 @@ created: 2026-11-07
 
 **Ngày tạo:** 2026-11-07
 **Trạng thái:** 🟡 Đang học
-**📖 Lộ trình:** Nhánh F · #5 ← cần [[flask-tren-pi]] · → kế tiếp [[pi-lam-cda-gda]]
+**📖 Lộ trình:** Nhánh F · #5 ← cần [[flask-tren-pi]] · → kế tiếp [[dashboard-flask-sqlite]]
 **Chủ đề cha:** [[SECOND_BRAIN_IOT]]
 **Tags:** #iot #raspberry-pi #web #python #bai-tap
 
@@ -114,12 +114,12 @@ app.run(host="0.0.0.0", port=5000)
 ## 🔗 Liên kết
 
 - **Tiền đề:** [[flask-tren-pi]] · [[dht11-dht22]]
-- **Dẫn tới:** [[pi-lam-cda-gda]]
+- **Dẫn tới:** [[dashboard-flask-sqlite]] (Practice 6.5: 6 nhóm, `/api/data`) · [[pi-lam-cda-gda]]
 - **Liên quan:** [[co-so-du-lieu-iot]]
 
 ## ❓ Câu hỏi mở
 
-- Cần xin Practice 6_5.py của giảng viên để đối chiếu: v2 khác v1 ở đâu?
+- ~~Cần xin Practice 6_5.py của giảng viên để đối chiếu.~~ 2026-11-15 đã nhận `Practice 6_5.pdf`, nhưng đó là **đề bài mới** (dashboard 6 nhóm, endpoint `/api/data`), không phải code server cho `/post-data` → [[dashboard-flask-sqlite]]. Code server phía giảng viên vẫn chưa có.
 
 ## 📚 Nguồn
 
